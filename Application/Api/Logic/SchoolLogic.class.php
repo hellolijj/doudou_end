@@ -34,4 +34,8 @@ class SchoolLogic extends BaseLogic {
             return $this->setError('搜索结果为空');
         }
     }
+    
+    public function t() {
+        echo 23;
+    }
 }
