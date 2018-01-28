@@ -36,7 +36,6 @@ class GatewayController extends BaseController {
 
 
         $logic = D($logic_name, 'logic');
-        $logic->search();
         
         print_r($logic);die;
 
