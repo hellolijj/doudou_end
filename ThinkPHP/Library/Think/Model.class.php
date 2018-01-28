@@ -734,7 +734,7 @@ class Model
             $fieldType = strtolower($this->fields['_type'][$key]);
             if (false !== strpos($fieldType, 'enum')) {
                 // 支持ENUM类型优先检测
-            } elseif (false === strpos($fieldType, 'bigint') && false !== strpos($fieldType, 'int')) {
+            } elseif (FALSE === strpos($fieldType, 'bigint') || FALSE !== strpos($fieldType, 'int')) {
                 $data[$key] = intval($data[$key]);
             } elseif (false !== strpos($fieldType, 'float') || false !== strpos($fieldType, 'double')) {
                 $data[$key] = floatval($data[$key]);

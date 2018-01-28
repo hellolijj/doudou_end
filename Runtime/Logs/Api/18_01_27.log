@@ -1,0 +1,795 @@
+[ 2018-01-27T00:17:10+08:00 ] 127.0.0.1 /pingshifen/index.php/api
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001422s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001825s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000305s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000377s ]
+NOTIC: [2048] Declaration of Home\Controller\BaseController::ajaxReturn() should be compatible with Think\Controller::ajaxReturn($data, $type = '', $json_option = 0) /usr/local/var/www/pingshifen/Application/Home/Controller/BaseController.class.php 第 35 行.
+ERR: 无法加载控制器:Index
+
+[ 2018-01-27T00:17:21+08:00 ] 127.0.0.1 /pingshifen/index.php/Api
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000759s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001035s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000269s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000335s ]
+NOTIC: [2048] Declaration of Home\Controller\BaseController::ajaxReturn() should be compatible with Think\Controller::ajaxReturn($data, $type = '', $json_option = 0) /usr/local/var/www/pingshifen/Application/Home/Controller/BaseController.class.php 第 35 行.
+ERR: 无法加载控制器:Index
+
+[ 2018-01-27T00:17:53+08:00 ] 127.0.0.1 /pingshifen/index.php/Api
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001084s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001443s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000375s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000461s ]
+NOTIC: [2048] Declaration of Home\Controller\BaseController::ajaxReturn() should be compatible with Think\Controller::ajaxReturn($data, $type = '', $json_option = 0) /usr/local/var/www/pingshifen/Application/Api/Controller/BaseController.class.php 第 35 行.
+
+[ 2018-01-27T00:18:15+08:00 ] 127.0.0.1 /pingshifen/index.php/Api
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001097s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001502s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000347s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000433s ]
+NOTIC: [2048] Declaration of Api\Controller\BaseController::ajaxReturn() should be compatible with Think\Controller::ajaxReturn($data, $type = '', $json_option = 0) /usr/local/var/www/pingshifen/Application/Api/Controller/BaseController.class.php 第 35 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000481s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000602s ]
+
+[ 2018-01-27T00:20:32+08:00 ] 127.0.0.1 /pingshifen/index.php/Api
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000056s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003943s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004998s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001584s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001699s ]
+NOTIC: [2048] Declaration of Api\Controller\BaseController::ajaxReturn() should be compatible with Think\Controller::ajaxReturn($data, $type = '', $json_option = 0) /usr/local/var/www/pingshifen/Application/Api/Controller/BaseController.class.php 第 35 行.
+ERR: 1146:Table 'pingshifen.pingshifen_student' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `pingshifen_student`
+ERR: 1146:Table 'pingshifen.pingshifen_student' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `pingshifen_student`
+
+[ 2018-01-27T00:24:43+08:00 ] 127.0.0.1 /pingshifen/index.php/Api
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000872s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001206s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000259s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000324s ]
+NOTIC: [2048] Declaration of Api\Controller\BaseController::ajaxReturn() should be compatible with Think\Controller::ajaxReturn($data, $type = '', $json_option = 0) /usr/local/var/www/pingshifen/Application/Api/Controller/BaseController.class.php 第 35 行.
+SQL: SHOW COLUMNS FROM `pingshifen_student` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `pingshifen_student`  [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005576s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005750s ]
+
+[ 2018-01-27T12:11:52+08:00 ] 127.0.0.1 /pingshifen/index.php/Api
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001643s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002045s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000483s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000613s ]
+NOTIC: [2048] Declaration of Api\Controller\BaseController::ajaxReturn() should be compatible with Think\Controller::ajaxReturn($data, $type = '', $json_option = 0) /usr/local/var/www/pingshifen/Application/Api/Controller/BaseController.class.php 第 35 行.
+ERR: 1146:Table 'pingshifen.pingshifenstudent' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `pingshifenstudent` 
+ERR: 1146:Table 'pingshifen.pingshifenstudent' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `pingshifenstudent` 
+
+[ 2018-01-27T12:12:17+08:00 ] 127.0.0.1 /pingshifen/index.php/Api
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001571s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002079s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000438s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000530s ]
+NOTIC: [2048] Declaration of Api\Controller\BaseController::ajaxReturn() should be compatible with Think\Controller::ajaxReturn($data, $type = '', $json_option = 0) /usr/local/var/www/pingshifen/Application/Api/Controller/BaseController.class.php 第 35 行.
+SQL: SELECT * FROM `pingshifen_student`  [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000460s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000535s ]
+
+[ 2018-01-27T12:15:42+08:00 ] 127.0.0.1 /pingshifen/index.php/Api
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001092s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001484s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000355s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000436s ]
+NOTIC: [2048] Declaration of Api\Controller\BaseController::ajaxReturn() should be compatible with Think\Controller::ajaxReturn($data, $type = '', $json_option = 0) /usr/local/var/www/pingshifen/Application/Api/Controller/BaseController.class.php 第 35 行.
+SQL: SELECT * FROM `pingshifen_student`  [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000461s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000538s ]
+
+[ 2018-01-27T12:15:45+08:00 ] 127.0.0.1 /pingshifen/index.php/Api
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000801s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001072s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000247s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000313s ]
+NOTIC: [2048] Declaration of Api\Controller\BaseController::ajaxReturn() should be compatible with Think\Controller::ajaxReturn($data, $type = '', $json_option = 0) /usr/local/var/www/pingshifen/Application/Api/Controller/BaseController.class.php 第 35 行.
+SQL: SELECT * FROM `pingshifen_student`  [ RunTime:0.0058s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000408s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000523s ]
+
+[ 2018-01-27T12:16:02+08:00 ] 127.0.0.1 /pingshifen/index.php/Api
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.007124s ]
+INFO: [ app_init ] --END-- [ RunTime:0.007577s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000474s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000579s ]
+NOTIC: [2048] Declaration of Api\Controller\BaseController::ajaxReturn() should be compatible with Think\Controller::ajaxReturn($data, $type = '', $json_option = 0) /usr/local/var/www/pingshifen/Application/Api/Controller/BaseController.class.php 第 35 行.
+SQL: SELECT * FROM `pingshifen_student`  [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000517s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000621s ]
+
+[ 2018-01-27T14:57:23+08:00 ] 127.0.0.1 /pingshifen/index.php/Api
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000779s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001071s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000404s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000509s ]
+NOTIC: [2048] Declaration of Api\Controller\BaseController::ajaxReturn() should be compatible with Think\Controller::ajaxReturn($data, $type = '', $json_option = 0) /usr/local/var/www/pingshifen/Application/Api/Controller/BaseController.class.php 第 35 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000515s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000609s ]
+
+[ 2018-01-27T14:58:06+08:00 ] 127.0.0.1 /pingshifen/index.php/Api
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000081s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001107s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001685s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000336s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000411s ]
+NOTIC: [2048] Declaration of Api\Controller\BaseController::ajaxReturn() should be compatible with Think\Controller::ajaxReturn($data, $type = '', $json_option = 0) /usr/local/var/www/pingshifen/Application/Api/Controller/BaseController.class.php 第 35 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000486s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000586s ]
+
+[ 2018-01-27T15:23:20+08:00 ] 127.0.0.1 /pingshifen/index.php/Api
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001768s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002221s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000527s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000642s ]
+NOTIC: [2048] Declaration of Api\Controller\BaseController::ajaxReturn() should be compatible with Think\Controller::ajaxReturn($data, $type = '', $json_option = 0) /usr/local/var/www/pingshifen/Application/Api/Controller/BaseController.class.php 第 35 行.
+SQL: SELECT * FROM `pingshifen_student` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0025s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000651s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000769s ]
+
+[ 2018-01-27T15:23:28+08:00 ] 127.0.0.1 /pingshifen/index.php/Api
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001399s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001888s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000400s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000488s ]
+NOTIC: [2048] Declaration of Api\Controller\BaseController::ajaxReturn() should be compatible with Think\Controller::ajaxReturn($data, $type = '', $json_option = 0) /usr/local/var/www/pingshifen/Application/Api/Controller/BaseController.class.php 第 35 行.
+ERR: 1054:Unknown column 'id1' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `pingshifen_student` WHERE `id1` = 1 LIMIT 1  
+ERR: 1054:Unknown column 'id1' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `pingshifen_student` WHERE `id1` = 1 LIMIT 1  
+
+[ 2018-01-27T15:23:55+08:00 ] 127.0.0.1 /pingshifen/index.php/Api
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001396s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000470s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000662s ]
+NOTIC: [2048] Declaration of Api\Controller\BaseController::ajaxReturn() should be compatible with Think\Controller::ajaxReturn($data, $type = '', $json_option = 0) /usr/local/var/www/pingshifen/Application/Api/Controller/BaseController.class.php 第 35 行.
+NOTIC: [4096] Argument 1 passed to Api\Model\BaseModel::getByIds() must be of the type array, integer given, called in /usr/local/var/www/pingshifen/Application/Api/Controller/IndexController.class.php on line 21 and defined /usr/local/var/www/pingshifen/Application/Api/Model/BaseModel.class.php 第 60 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000496s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000594s ]
+
+[ 2018-01-27T15:24:06+08:00 ] 127.0.0.1 /pingshifen/index.php/Api
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000993s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001342s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000599s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000703s ]
+NOTIC: [2048] Declaration of Api\Controller\BaseController::ajaxReturn() should be compatible with Think\Controller::ajaxReturn($data, $type = '', $json_option = 0) /usr/local/var/www/pingshifen/Application/Api/Controller/BaseController.class.php 第 35 行.
+ERR: 1054:Unknown column 'openid' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `pingshifen_student` WHERE `openid` = 1 LIMIT 1  
+ERR: 1054:Unknown column 'openid' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `pingshifen_student` WHERE `openid` = 1 LIMIT 1  
+
+[ 2018-01-27T15:24:24+08:00 ] 127.0.0.1 /pingshifen/index.php/Api
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001198s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001738s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000395s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000480s ]
+NOTIC: [2048] Declaration of Api\Controller\BaseController::ajaxReturn() should be compatible with Think\Controller::ajaxReturn($data, $type = '', $json_option = 0) /usr/local/var/www/pingshifen/Application/Api/Controller/BaseController.class.php 第 35 行.
+ERR: 1054:Unknown column 'openid' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `pingshifen_student` WHERE `openid` = 1 LIMIT 1  
+ERR: 1054:Unknown column 'openid' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `pingshifen_student` WHERE `openid` = 1 LIMIT 1  
+
+[ 2018-01-27T15:24:39+08:00 ] 127.0.0.1 /pingshifen/index.php/Api
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001143s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001588s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000439s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000520s ]
+NOTIC: [2048] Declaration of Api\Controller\BaseController::ajaxReturn() should be compatible with Think\Controller::ajaxReturn($data, $type = '', $json_option = 0) /usr/local/var/www/pingshifen/Application/Api/Controller/BaseController.class.php 第 35 行.
+
+[ 2018-01-27T15:25:23+08:00 ] 127.0.0.1 /pingshifen/index.php/Api
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001306s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000318s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000388s ]
+NOTIC: [2048] Declaration of Api\Controller\BaseController::ajaxReturn() should be compatible with Think\Controller::ajaxReturn($data, $type = '', $json_option = 0) /usr/local/var/www/pingshifen/Application/Api/Controller/BaseController.class.php 第 35 行.
+
+[ 2018-01-27T15:25:51+08:00 ] 127.0.0.1 /pingshifen/index.php/Api
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000807s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001088s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000252s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000319s ]
+NOTIC: [2048] Declaration of Api\Controller\BaseController::ajaxReturn() should be compatible with Think\Controller::ajaxReturn($data, $type = '', $json_option = 0) /usr/local/var/www/pingshifen/Application/Api/Controller/BaseController.class.php 第 35 行.
+SQL: SELECT * FROM `pingshifen_weixin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0017s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000520s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000603s ]
+
+[ 2018-01-27T15:26:25+08:00 ] 127.0.0.1 /pingshifen/index.php/Api
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000795s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001068s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000250s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000315s ]
+NOTIC: [2048] Declaration of Api\Controller\BaseController::ajaxReturn() should be compatible with Think\Controller::ajaxReturn($data, $type = '', $json_option = 0) /usr/local/var/www/pingshifen/Application/Api/Controller/BaseController.class.php 第 35 行.
+SQL: SELECT * FROM `pingshifen_weixin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000327s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000394s ]
+
+[ 2018-01-27T15:26:57+08:00 ] 127.0.0.1 /pingshifen/index.php/Api
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000719s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000966s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000226s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000284s ]
+NOTIC: [2048] Declaration of Api\Controller\BaseController::ajaxReturn() should be compatible with Think\Controller::ajaxReturn($data, $type = '', $json_option = 0) /usr/local/var/www/pingshifen/Application/Api/Controller/BaseController.class.php 第 35 行.
+NOTIC: [4096] Argument 1 passed to Api\Model\BaseModel::getByIds() must be of the type array, integer given, called in /usr/local/var/www/pingshifen/Application/Api/Controller/IndexController.class.php on line 21 and defined /usr/local/var/www/pingshifen/Application/Api/Model/BaseModel.class.php 第 60 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000362s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000454s ]
+
+[ 2018-01-27T15:27:01+08:00 ] 127.0.0.1 /pingshifen/index.php/Api
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000787s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001061s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000248s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000314s ]
+NOTIC: [2048] Declaration of Api\Controller\BaseController::ajaxReturn() should be compatible with Think\Controller::ajaxReturn($data, $type = '', $json_option = 0) /usr/local/var/www/pingshifen/Application/Api/Controller/BaseController.class.php 第 35 行.
+ERR: 1054:Unknown column 'ids1' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `pingshifen_weixin` WHERE `ids1` = 1 LIMIT 1  
+ERR: 1054:Unknown column 'ids1' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `pingshifen_weixin` WHERE `ids1` = 1 LIMIT 1  
+
+[ 2018-01-27T15:27:10+08:00 ] 127.0.0.1 /pingshifen/index.php/Api
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000692s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000927s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000214s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000270s ]
+NOTIC: [2048] Declaration of Api\Controller\BaseController::ajaxReturn() should be compatible with Think\Controller::ajaxReturn($data, $type = '', $json_option = 0) /usr/local/var/www/pingshifen/Application/Api/Controller/BaseController.class.php 第 35 行.
+SQL: SELECT * FROM `pingshifen_weixin` WHERE `openid` = 1 LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000374s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000450s ]
+
+[ 2018-01-27T15:27:19+08:00 ] 127.0.0.1 /pingshifen/index.php/Api
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000707s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000949s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000221s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000280s ]
+NOTIC: [2048] Declaration of Api\Controller\BaseController::ajaxReturn() should be compatible with Think\Controller::ajaxReturn($data, $type = '', $json_option = 0) /usr/local/var/www/pingshifen/Application/Api/Controller/BaseController.class.php 第 35 行.
+ERR: 1054:Unknown column 'openids' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `pingshifen_weixin` WHERE `openids` = 1 LIMIT 1  
+ERR: 1054:Unknown column 'openids' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `pingshifen_weixin` WHERE `openids` = 1 LIMIT 1  
+
+[ 2018-01-27T15:31:09+08:00 ] 127.0.0.1 /pingshifen/index.php/Api
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000698s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000934s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000215s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000277s ]
+NOTIC: [2048] Declaration of Api\Controller\BaseController::ajaxReturn() should be compatible with Think\Controller::ajaxReturn($data, $type = '', $json_option = 0) /usr/local/var/www/pingshifen/Application/Api/Controller/BaseController.class.php 第 35 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000415s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000559s ]
+
+[ 2018-01-27T22:02:48+08:00 ] 127.0.0.1 /pingshifen/index.php/Api
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.004019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005657s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000866s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001076s ]
+NOTIC: [2048] Declaration of Api\Controller\BaseController::ajaxReturn() should be compatible with Think\Controller::ajaxReturn($data, $type = '', $json_option = 0) /usr/local/var/www/pingshifen/Application/Api/Controller/BaseController.class.php 第 35 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000987s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001835s ]
+
+[ 2018-01-27T22:05:28+08:00 ] 127.0.0.1 /pingshifen/index.php/Api
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003487s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004530s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000891s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001004s ]
+NOTIC: [2048] Declaration of Api\Controller\BaseController::ajaxReturn() should be compatible with Think\Controller::ajaxReturn($data, $type = '', $json_option = 0) /usr/local/var/www/pingshifen/Application/Api/Controller/BaseController.class.php 第 35 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001624s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001752s ]
+
+[ 2018-01-27T22:13:44+08:00 ] 127.0.0.1 /pingshifen/index.php/Api
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000990s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001406s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000333s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000408s ]
+NOTIC: [2048] Declaration of Api\Controller\BaseController::ajaxReturn() should be compatible with Think\Controller::ajaxReturn($data, $type = '', $json_option = 0) /usr/local/var/www/pingshifen/Application/Api/Controller/BaseController.class.php 第 35 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000390s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000486s ]
+
+[ 2018-01-27T22:13:46+08:00 ] 127.0.0.1 /pingshifen/index.php/Api
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000676s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000916s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000214s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000271s ]
+NOTIC: [2048] Declaration of Api\Controller\BaseController::ajaxReturn() should be compatible with Think\Controller::ajaxReturn($data, $type = '', $json_option = 0) /usr/local/var/www/pingshifen/Application/Api/Controller/BaseController.class.php 第 35 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000224s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000284s ]
+
+[ 2018-01-27T22:14:06+08:00 ] 127.0.0.1 /pingshifen/index.php/Api
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001152s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001561s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000368s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001409s ]
+NOTIC: [2048] Declaration of Api\Controller\BaseController::ajaxReturn() should be compatible with Think\Controller::ajaxReturn($data, $type = '', $json_option = 0) /usr/local/var/www/pingshifen/Application/Api/Controller/BaseController.class.php 第 35 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000556s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000721s ]
+
+[ 2018-01-27T22:14:27+08:00 ] 127.0.0.1 /pingshifen/index.php/Api
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001197s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001607s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000416s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000512s ]
+NOTIC: [2048] Declaration of Api\Controller\BaseController::ajaxReturn() should be compatible with Think\Controller::ajaxReturn($data, $type = '', $json_option = 0) /usr/local/var/www/pingshifen/Application/Api/Controller/BaseController.class.php 第 35 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000378s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000477s ]
+
+[ 2018-01-27T22:16:14+08:00 ] 127.0.0.1 /pingshifen/index.php/Api
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001166s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001656s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000391s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000516s ]
+NOTIC: [2048] Declaration of Api\Controller\BaseController::ajaxReturn() should be compatible with Think\Controller::ajaxReturn($data, $type = '', $json_option = 0) /usr/local/var/www/pingshifen/Application/Api/Controller/BaseController.class.php 第 35 行.
+NOTIC: [8] Trying to get property of non-object /usr/local/var/www/pingshifen/Application/Api/logic/Schoollogic.class.php 第 22 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000407s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000482s ]
+
+[ 2018-01-27T22:16:31+08:00 ] 127.0.0.1 /pingshifen/index.php/Api
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001367s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000332s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000405s ]
+NOTIC: [2048] Declaration of Api\Controller\BaseController::ajaxReturn() should be compatible with Think\Controller::ajaxReturn($data, $type = '', $json_option = 0) /usr/local/var/www/pingshifen/Application/Api/Controller/BaseController.class.php 第 35 行.
+NOTIC: [8] Trying to get property of non-object /usr/local/var/www/pingshifen/Application/Api/logic/Schoollogic.class.php 第 19 行.
+NOTIC: [8] Trying to get property of non-object /usr/local/var/www/pingshifen/Application/Api/logic/Schoollogic.class.php 第 22 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000751s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000986s ]
+
+[ 2018-01-27T22:16:46+08:00 ] 127.0.0.1 /pingshifen/index.php/Api
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001162s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001574s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000390s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000475s ]
+NOTIC: [2048] Declaration of Api\Controller\BaseController::ajaxReturn() should be compatible with Think\Controller::ajaxReturn($data, $type = '', $json_option = 0) /usr/local/var/www/pingshifen/Application/Api/Controller/BaseController.class.php 第 35 行.
+
+[ 2018-01-27T22:16:54+08:00 ] 127.0.0.1 /pingshifen/index.php/Api
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000694s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000929s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000256s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000326s ]
+NOTIC: [2048] Declaration of Api\Controller\BaseController::ajaxReturn() should be compatible with Think\Controller::ajaxReturn($data, $type = '', $json_option = 0) /usr/local/var/www/pingshifen/Application/Api/Controller/BaseController.class.php 第 35 行.
+NOTIC: [2] Attempt to assign property of non-object /usr/local/var/www/pingshifen/Application/Api/logic/Schoollogic.class.php 第 20 行.
+NOTIC: [8] Trying to get property of non-object /usr/local/var/www/pingshifen/Application/Api/logic/Schoollogic.class.php 第 23 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000463s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000608s ]
+
+[ 2018-01-27T22:17:26+08:00 ] 127.0.0.1 /pingshifen/index.php/Api
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000847s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001132s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000250s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000316s ]
+NOTIC: [2048] Declaration of Api\Controller\BaseController::ajaxReturn() should be compatible with Think\Controller::ajaxReturn($data, $type = '', $json_option = 0) /usr/local/var/www/pingshifen/Application/Api/Controller/BaseController.class.php 第 35 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000388s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000528s ]
+
+[ 2018-01-27T22:19:48+08:00 ] 127.0.0.1 /pingshifen/index.php/Api
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000797s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001073s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000248s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000315s ]
+NOTIC: [2048] Declaration of Api\Controller\BaseController::ajaxReturn() should be compatible with Think\Controller::ajaxReturn($data, $type = '', $json_option = 0) /usr/local/var/www/pingshifen/Application/Api/Controller/BaseController.class.php 第 35 行.
+
+[ 2018-01-27T22:20:00+08:00 ] 127.0.0.1 /pingshifen/index.php/Api
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000807s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001081s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000247s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000325s ]
+NOTIC: [2048] Declaration of Api\Controller\BaseController::ajaxReturn() should be compatible with Think\Controller::ajaxReturn($data, $type = '', $json_option = 0) /usr/local/var/www/pingshifen/Application/Api/Controller/BaseController.class.php 第 35 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000257s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000328s ]
+
+[ 2018-01-27T22:20:08+08:00 ] 127.0.0.1 /pingshifen/index.php/Api
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000750s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001014s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000234s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000292s ]
+NOTIC: [2048] Declaration of Api\Controller\BaseController::ajaxReturn() should be compatible with Think\Controller::ajaxReturn($data, $type = '', $json_option = 0) /usr/local/var/www/pingshifen/Application/Api/Controller/BaseController.class.php 第 35 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000230s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000291s ]
+
+[ 2018-01-27T22:24:10+08:00 ] 127.0.0.1 /pingshifen/index.php/Api
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000949s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001236s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000268s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000339s ]
+NOTIC: [2048] Declaration of Api\Controller\BaseController::ajaxReturn() should be compatible with Think\Controller::ajaxReturn($data, $type = '', $json_option = 0) /usr/local/var/www/pingshifen/Application/Api/Controller/BaseController.class.php 第 35 行.
+ERR: 1146:Table 'pingshifen.pingshifen_school' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `pingshifen_school`
+ERR: 1146:Table 'pingshifen.pingshifen_school' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `pingshifen_school`
+
+[ 2018-01-27T22:30:36+08:00 ] 127.0.0.1 /pingshifen/index.php/Api
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002285s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003025s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000695s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000791s ]
+NOTIC: [2048] Declaration of Api\Controller\BaseController::ajaxReturn() should be compatible with Think\Controller::ajaxReturn($data, $type = '', $json_option = 0) /usr/local/var/www/pingshifen/Application/Api/Controller/BaseController.class.php 第 35 行.
+SQL: SHOW COLUMNS FROM `pingshifen_school` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `pingshifen_school` WHERE `name` = '浙江大学' LIMIT 1   [ RunTime:0.0039s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000702s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000773s ]
+
+[ 2018-01-27T22:31:14+08:00 ] 127.0.0.1 /pingshifen/index.php/Api
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000786s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001056s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000277s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000342s ]
+NOTIC: [2048] Declaration of Api\Controller\BaseController::ajaxReturn() should be compatible with Think\Controller::ajaxReturn($data, $type = '', $json_option = 0) /usr/local/var/www/pingshifen/Application/Api/Controller/BaseController.class.php 第 35 行.
+SQL: SHOW COLUMNS FROM `pingshifen_school` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `pingshifen_school` WHERE `name` = '浙江大学' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2018-01-27T22:32:10+08:00 ] 127.0.0.1 /pingshifen/index.php/Api
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000785s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001058s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000285s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000351s ]
+NOTIC: [2048] Declaration of Api\Controller\BaseController::ajaxReturn() should be compatible with Think\Controller::ajaxReturn($data, $type = '', $json_option = 0) /usr/local/var/www/pingshifen/Application/Api/Controller/BaseController.class.php 第 35 行.
+SQL: SHOW COLUMNS FROM `pingshifen_school` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `pingshifen_school` WHERE `name` = '浙江大学' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2018-01-27T22:32:11+08:00 ] 127.0.0.1 /pingshifen/index.php/Api
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000775s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001057s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000272s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000351s ]
+NOTIC: [2048] Declaration of Api\Controller\BaseController::ajaxReturn() should be compatible with Think\Controller::ajaxReturn($data, $type = '', $json_option = 0) /usr/local/var/www/pingshifen/Application/Api/Controller/BaseController.class.php 第 35 行.
+SQL: SHOW COLUMNS FROM `pingshifen_school` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `pingshifen_school` WHERE `name` = '浙江大学' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2018-01-27T22:33:24+08:00 ] 127.0.0.1 /pingshifen/index.php/Api
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000790s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001066s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000247s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000313s ]
+NOTIC: [2048] Declaration of Api\Controller\BaseController::ajaxReturn() should be compatible with Think\Controller::ajaxReturn($data, $type = '', $json_option = 0) /usr/local/var/www/pingshifen/Application/Api/Controller/BaseController.class.php 第 35 行.
+
+[ 2018-01-27T22:33:36+08:00 ] 127.0.0.1 /pingshifen/index.php/Api
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000793s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001067s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000251s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000316s ]
+NOTIC: [2048] Declaration of Api\Controller\BaseController::ajaxReturn() should be compatible with Think\Controller::ajaxReturn($data, $type = '', $json_option = 0) /usr/local/var/www/pingshifen/Application/Api/Controller/BaseController.class.php 第 35 行.
+
+[ 2018-01-27T22:33:56+08:00 ] 127.0.0.1 /pingshifen/index.php/Api
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000944s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001351s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000257s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000325s ]
+NOTIC: [2048] Declaration of Api\Controller\BaseController::ajaxReturn() should be compatible with Think\Controller::ajaxReturn($data, $type = '', $json_option = 0) /usr/local/var/www/pingshifen/Application/Api/Controller/BaseController.class.php 第 35 行.
+
+[ 2018-01-27T22:34:17+08:00 ] 127.0.0.1 /pingshifen/index.php/Api
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000790s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001061s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000269s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000339s ]
+NOTIC: [2048] Declaration of Api\Controller\BaseController::ajaxReturn() should be compatible with Think\Controller::ajaxReturn($data, $type = '', $json_option = 0) /usr/local/var/www/pingshifen/Application/Api/Controller/BaseController.class.php 第 35 行.
+
+[ 2018-01-27T22:35:22+08:00 ] 127.0.0.1 /pingshifen/index.php/Api
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002199s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002808s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000599s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000670s ]
+NOTIC: [2048] Declaration of Api\Controller\BaseController::ajaxReturn() should be compatible with Think\Controller::ajaxReturn($data, $type = '', $json_option = 0) /usr/local/var/www/pingshifen/Application/Api/Controller/BaseController.class.php 第 35 行.
+
+[ 2018-01-27T22:36:02+08:00 ] 127.0.0.1 /pingshifen/index.php/Api
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003108s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004091s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000762s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000861s ]
+NOTIC: [2048] Declaration of Api\Controller\BaseController::ajaxReturn() should be compatible with Think\Controller::ajaxReturn($data, $type = '', $json_option = 0) /usr/local/var/www/pingshifen/Application/Api/Controller/BaseController.class.php 第 35 行.
+
+[ 2018-01-27T22:37:40+08:00 ] 127.0.0.1 /pingshifen/index.php/Api
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002228s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002711s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000570s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000639s ]
+NOTIC: [2048] Declaration of Api\Controller\BaseController::ajaxReturn() should be compatible with Think\Controller::ajaxReturn($data, $type = '', $json_option = 0) /usr/local/var/www/pingshifen/Application/Api/Controller/BaseController.class.php 第 35 行.
+
+[ 2018-01-27T22:37:41+08:00 ] 127.0.0.1 /pingshifen/index.php/Api
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000918s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001206s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000252s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000317s ]
+NOTIC: [2048] Declaration of Api\Controller\BaseController::ajaxReturn() should be compatible with Think\Controller::ajaxReturn($data, $type = '', $json_option = 0) /usr/local/var/www/pingshifen/Application/Api/Controller/BaseController.class.php 第 35 行.
+
+[ 2018-01-27T22:37:54+08:00 ] 127.0.0.1 /pingshifen/index.php/Api
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000792s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001069s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000253s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000320s ]
+NOTIC: [2048] Declaration of Api\Controller\BaseController::ajaxReturn() should be compatible with Think\Controller::ajaxReturn($data, $type = '', $json_option = 0) /usr/local/var/www/pingshifen/Application/Api/Controller/BaseController.class.php 第 35 行.
+
+[ 2018-01-27T22:37:56+08:00 ] 127.0.0.1 /pingshifen/index.php/Api
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000777s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001050s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000598s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000692s ]
+NOTIC: [2048] Declaration of Api\Controller\BaseController::ajaxReturn() should be compatible with Think\Controller::ajaxReturn($data, $type = '', $json_option = 0) /usr/local/var/www/pingshifen/Application/Api/Controller/BaseController.class.php 第 35 行.
+
+[ 2018-01-27T22:38:32+08:00 ] 127.0.0.1 /pingshifen/index.php/Api?n_name=%E6%B5%99%E6%B1%9F%E5%A4%A7%E5%AD%A6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000934s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001252s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000247s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000310s ]
+NOTIC: [2048] Declaration of Api\Controller\BaseController::ajaxReturn() should be compatible with Think\Controller::ajaxReturn($data, $type = '', $json_option = 0) /usr/local/var/www/pingshifen/Application/Api/Controller/BaseController.class.php 第 35 行.
+
+[ 2018-01-27T22:38:42+08:00 ] 127.0.0.1 /pingshifen/index.php/Api?s_name=%E6%B5%99%E6%B1%9F%E5%A4%A7%E5%AD%A6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001445s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000304s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000388s ]
+NOTIC: [2048] Declaration of Api\Controller\BaseController::ajaxReturn() should be compatible with Think\Controller::ajaxReturn($data, $type = '', $json_option = 0) /usr/local/var/www/pingshifen/Application/Api/Controller/BaseController.class.php 第 35 行.
+SQL: SHOW COLUMNS FROM `pingshifen_school` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `pingshifen_school` WHERE `name` = '浙江大学' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2018-01-27T22:39:05+08:00 ] 127.0.0.1 /pingshifen/index.php/Api?s_name=%E6%B5%99%E6%B1%9F%E5%A4%A7%E5%AD%A6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000070s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002879s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003525s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000327s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000399s ]
+NOTIC: [2048] Declaration of Api\Controller\BaseController::ajaxReturn() should be compatible with Think\Controller::ajaxReturn($data, $type = '', $json_option = 0) /usr/local/var/www/pingshifen/Application/Api/Controller/BaseController.class.php 第 35 行.
+SQL: SHOW COLUMNS FROM `pingshifen_school` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `pingshifen_school` WHERE `name` = '浙江大学' LIMIT 1   [ RunTime:0.0007s ]
+
+[ 2018-01-27T22:50:51+08:00 ] 127.0.0.1 /pingshifen/index.php/Api?s_name=%E6%B5%99%E6%B1%9F%E5%A4%A7%E5%AD%A6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002283s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002861s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000684s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000770s ]
+NOTIC: [2048] Declaration of Api\Controller\BaseController::ajaxReturn() should be compatible with Think\Controller::ajaxReturn($data, $type = '', $json_option = 0) /usr/local/var/www/pingshifen/Application/Api/Controller/BaseController.class.php 第 35 行.
+SQL: SHOW COLUMNS FROM `pingshifen_school` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `pingshifen_school` WHERE `name` = '浙江大学' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2018-01-27T22:51:40+08:00 ] 127.0.0.1 /pingshifen/index.php/Api?s_name=%E6%B5%99%E6%B1%9F%E5%A4%A7%E5%AD%A6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001553s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001883s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001282s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001599s ]
+NOTIC: [2048] Declaration of Api\Controller\BaseController::ajaxReturn() should be compatible with Think\Controller::ajaxReturn($data, $type = '', $json_option = 0) /usr/local/var/www/pingshifen/Application/Api/Controller/BaseController.class.php 第 35 行.
+SQL: SHOW COLUMNS FROM `pingshifen_school` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `pingshifen_school` WHERE `name` = '浙江大学' LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2018-01-27T23:13:56+08:00 ] 127.0.0.1 /pingshifen/index.php/Api?n_name=%E6%B5%99%E6%B1%9F%E5%A4%A7%E5%AD%A6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002803s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003583s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000592s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000668s ]
+NOTIC: [2048] Declaration of Api\Controller\BaseController::ajaxReturn() should be compatible with Think\Controller::ajaxReturn($data, $type = '', $json_option = 0) /usr/local/var/www/pingshifen/Application/Api/Controller/BaseController.class.php 第 30 行.
+
+[ 2018-01-27T23:13:58+08:00 ] 127.0.0.1 /pingshifen/index.php/Api?s_name=%E6%B5%99%E6%B1%9F%E5%A4%A7%E5%AD%A6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001303s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001775s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000261s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000328s ]
+NOTIC: [2048] Declaration of Api\Controller\BaseController::ajaxReturn() should be compatible with Think\Controller::ajaxReturn($data, $type = '', $json_option = 0) /usr/local/var/www/pingshifen/Application/Api/Controller/BaseController.class.php 第 30 行.
+SQL: SHOW COLUMNS FROM `pingshifen_school` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `pingshifen_school` WHERE `name` = '浙江大学' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2018-01-27T23:14:13+08:00 ] 127.0.0.1 /pingshifen/index.php/Api?method=123&s_name=%E6%B5%99%E6%B1%9F%E5%A4%A7%E5%AD%A6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000780s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001049s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000252s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000320s ]
+NOTIC: [2048] Declaration of Api\Controller\BaseController::ajaxReturn() should be compatible with Think\Controller::ajaxReturn($data, $type = '', $json_option = 0) /usr/local/var/www/pingshifen/Application/Api/Controller/BaseController.class.php 第 30 行.
+SQL: SHOW COLUMNS FROM `pingshifen_school` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `pingshifen_school` WHERE `name` = '浙江大学' LIMIT 1   [ RunTime:0.0003s ]
+

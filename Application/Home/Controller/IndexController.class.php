@@ -18,9 +18,7 @@ class IndexController extends BaseController {
 	//系统首页
     public function index(){
 
-        $is_login = is_login();
-        echo json_encode($is_login);
-        echo 12;
+
     }
 
 }

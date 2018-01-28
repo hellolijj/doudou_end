@@ -7,15 +7,19 @@
 // | Author: 麦当苗儿 <zuojiazi@vip.qq.com> <http://www.zjzit.cn>
 // +----------------------------------------------------------------------
 
-namespace Home\Controller;
+namespace Api\Controller;
 
 /**
- * 用户控制器
- * 包括用户中心，用户登录及注册
+ * 前台首页控制器
+ * 主要获取首页聚合数据
  */
-class UserController extends HomeController {
+class IndexController extends BaseController {
+
+    //系统首页
+    public function index ()
+    {
 
 
-
+    }
 
 }
