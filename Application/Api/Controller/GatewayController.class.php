@@ -33,7 +33,7 @@ class GatewayController extends BaseController {
         $method_arr = explode('.', $this->method);
         $logic_name = $method_arr[1];
         $function_name = $method_arr[2];
-        var_dump($this->method);die;
+        var_dump($logic_name); var_dump($function_name);die;
 
         $logic = D($logic_name, 'logic');
 
