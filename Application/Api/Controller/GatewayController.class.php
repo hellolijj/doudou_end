@@ -39,8 +39,9 @@ class GatewayController extends BaseController {
         // 对方法的判断
         $result = new BaseLogic();
         if (!method_exists($logic, $function_name)) {
-            echo 1;die;
+            
             $this->ajaxReturn($result->setError('无效的API参数'));
+            echo 1;die;
         }
         // 处理openid uid
         $this->dealOpenidOrUid();
