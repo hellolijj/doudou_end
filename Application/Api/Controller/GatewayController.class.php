@@ -37,7 +37,7 @@ class GatewayController extends BaseController {
 
         $logic = D($logic_name, 'logic');
         
-        print_r($logic);die;
+      
 
         // 对方法的判断
         $result = new BaseLogic();
