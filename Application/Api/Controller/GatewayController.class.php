@@ -35,7 +35,7 @@ class GatewayController extends BaseController {
         $function_name = $method_arr[2];
 
 
-        $logic = D($logic_name, 'logic');
+        $logic = D('School', 'logic');
         $logic->t();die;
 
         // 对方法的判断
