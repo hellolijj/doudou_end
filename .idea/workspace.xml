@@ -1,59 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" readonly="true" id="b8f5d9e1-cf0e-4ff7-81ec-75807ed902bd" name="Default" comment="change 2file">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources/33abc544-207c-45ec-8459-1a038f630304.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/deployment.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/php.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/pingshifen.iml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.phpstorm.meta.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Application/Api/Common/function.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Application/Api/Conf/config.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Application/Api/Conf/database.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Application/Api/Controller/BaseController.class.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Application/Api/Controller/EmptyController.class.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Application/Api/Controller/GatewayController.class.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Application/Api/Controller/HomeController.class.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Application/Api/Controller/IndexController.class.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Application/Api/Controller/UserController.class.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Application/Api/Logic/ArticleLogic.class.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Application/Api/Logic/BaseLogic.class.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Application/Api/Logic/SchoolLogic.class.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Application/Api/Logic/StudentLogic.class.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Application/Api/Model/BaseModel.class.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Application/Api/Model/SchoolModel.class.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Application/Api/Model/StudentModel.class.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Application/Api/Model/TeacherModel.class.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Application/Api/Model/WeixinModel.class.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Application/Api/Service/BaseService.class.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Application/Api/Service/SchoolService.class.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Application/Api/Service/ShortMessageService.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Application/Api/Service/StudentService.class.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Application/Api/Service/WeixinService.class.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Application/Home/Model/StudentModel.class.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Runtime/Logs/Api/18_01_27.log" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Runtime/Logs/Api/18_01_28.log" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Runtime/Logs/Home/18_01_27.log" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Runtime/Temp/02cc44d64afa53f3594ad3978e8847f1.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Runtime/Temp/2b6fd93fe3887cacba8446b41a2daedc.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Runtime/Temp/661668766073a1d6a4f7400fc15422db.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Runtime/Temp/876d9eb9a1a6dc48a5216fdc8b1b6862.php" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change beforePath="$PROJECT_DIR$/Application/Home/Controller/IndexController.class.php" afterPath="$PROJECT_DIR$/Application/Home/Controller/IndexController.class.php" />
-      <change beforePath="$PROJECT_DIR$/Application/Home/Controller/UserController.class.php" afterPath="$PROJECT_DIR$/Application/Home/Controller/UserController.class.php" />
-      <change beforePath="$PROJECT_DIR$/Runtime/Cache/Install/c6bbce5b1f1dcf027c8ceb5cf5141b65.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Runtime/Logs/Home/18_01_21.log" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Runtime/Logs/Install/18_01_21.log" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/ThinkPHP/Library/Think/Model.class.php" afterPath="$PROJECT_DIR$/ThinkPHP/Library/Think/Model.class.php" />
-      <change beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+    <list default="true" readonly="true" id="b8f5d9e1-cf0e-4ff7-81ec-75807ed902bd" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -113,7 +62,7 @@
         <entry file="file://$PROJECT_DIR$/Application/Api/Logic/ArticleLogic.class.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
-              <caret line="0" column="78" lean-forward="false" selection-start-line="0" selection-start-column="78" selection-end-line="0" selection-end-column="78" />
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -399,7 +348,7 @@
       <workItem from="1516978587664" duration="4135000" />
       <workItem from="1516984330414" duration="1777000" />
       <workItem from="1517019706063" duration="8112000" />
-      <workItem from="1517032207034" duration="42130000" />
+      <workItem from="1517032207034" duration="42179000" />
     </task>
     <task id="LOCAL-00001" summary="change 2file">
       <created>1517133907048</created>
@@ -408,11 +357,18 @@
       <option name="project" value="LOCAL" />
       <updated>1517133907048</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="add">
+      <created>1517134233802</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1517134233802</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="58669000" />
+    <option name="totallyTimeSpent" value="58718000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -431,8 +387,8 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32889965" sideWeight="0.50572246" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32889965" sideWeight="0.49713877" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32889965" sideWeight="0.49427754" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20600858" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32889965" sideWeight="0.49427754" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20600858" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection Results" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32889965" sideWeight="0.49713877" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14663805" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -466,10 +422,10 @@
     <MESSAGE value="李俊君" />
     <MESSAGE value="1、完成了微信首次访问记录在数据库中功能&#10;2、学生端注册接口需要个前端连调" />
     <MESSAGE value="1、完成了微信首次访问记录在数据库中功能&#10;2、学生端注册接口需要和前端连调" />
-    <MESSAGE value="add" />
     <MESSAGE value="add 1 file" />
     <MESSAGE value="change 2file" />
-    <option name="LAST_COMMIT_MESSAGE" value="change 2file" />
+    <MESSAGE value="add" />
+    <option name="LAST_COMMIT_MESSAGE" value="add" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -819,7 +775,7 @@
     <entry file="file://$PROJECT_DIR$/Application/Api/Logic/ArticleLogic.class.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="78" lean-forward="false" selection-start-line="0" selection-start-column="78" selection-end-line="0" selection-end-column="78" />
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
