@@ -1,4 +1,5 @@
 ./Runtime
 ./Runtime/*
 ./readme.html
-./.idae/*
+.idea
+.idea/*
