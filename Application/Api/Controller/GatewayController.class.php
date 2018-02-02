@@ -30,10 +30,12 @@ class GatewayController extends BaseController {
     {
 
         $this->check();
-        print_r($this->method);
+        
         $method_arr = explode('.', $this->method);
         $logic_name = $method_arr[1];
         $function_name = $method_arr[2];
+        print_r($login_name);
+        print_r($function_name);
 
         $logic = D($logic_name, 'Logic');
         
