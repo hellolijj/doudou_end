@@ -1,2 +1,3 @@
 handle:
-- directoryindex:  index.html 
+- directoryindex: index.html
+- rewrite:  if ( !is_dir() && !is_file() && path ~ "api" ) goto "index.php/Api/Gateway/route"
