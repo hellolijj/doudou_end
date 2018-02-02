@@ -30,11 +30,17 @@ class GatewayController extends BaseController {
     {
 
         $this->check();
+        
         $method_arr = explode('.', $this->method);
         $logic_name = $method_arr[1];
         $function_name = $method_arr[2];
-
+       
         $logic = D($logic_name, 'Logic');
+        
+        echo 43;
+        var_dump(D($logic_name, 'Logic')); die;
+        
+        var_dump($logic);die;
 
         // 对方法的判断
         $result = new BaseLogic();
