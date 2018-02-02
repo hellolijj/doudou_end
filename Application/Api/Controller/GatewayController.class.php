@@ -36,6 +36,8 @@ class GatewayController extends BaseController {
         $function_name = $method_arr[2];
        
         $logic = D($logic_name, 'Logic');
+        
+        echo 43;
         var_dump(D($logic_name, 'Logic')); die;
         
         var_dump($logic);die;
