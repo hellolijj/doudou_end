@@ -34,14 +34,8 @@ class GatewayController extends BaseController {
         $method_arr = explode('.', $this->method);
         $logic_name = $method_arr[1];
         $function_name = $method_arr[2];
-       
         $logic = D($logic_name, 'Logic');
-        
-        echo 43;
-        var_dump(D($logic_name, 'Logic')); die;
-        
-        var_dump($logic);die;
-
+ 
         // 对方法的判断
         $result = new BaseLogic();
         if (!method_exists($logic, $function_name)) {
@@ -97,7 +91,7 @@ class GatewayController extends BaseController {
         $uid = I('uid') ? I('uid') : session('uid');
         $openid = I('openid') ? I('openid') : session('openid');
         if (empty($openid) && empty($openid)) {
-            $this->ajaxReturn($result->setError('无效的API参数'));
+            $this->ajaxReturn($result->setError('无效的OPENID参数'));
         }
         // update session
         if (I('uid') && I('uid') != session('uid')) {
