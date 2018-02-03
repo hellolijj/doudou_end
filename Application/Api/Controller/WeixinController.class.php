@@ -44,7 +44,7 @@ class WeixinController extends Controller {
             $de_json = json_decode($content, TRUE);
             $openid = $de_json['openid'];
             session('openid', $openid);
-            header("Location: http://psf.gailvlunpt.com/index.html#/My/index?openid=" . $openid);
+            header("Location: http://psf.gailvlunpt.com");
         } else {
             echo "NO CODE";
         }
