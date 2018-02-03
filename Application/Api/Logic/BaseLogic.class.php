@@ -13,7 +13,7 @@ namespace Api\Logic;
  * 文档模型逻辑层公共模型
  * 所有逻辑层模型都需要继承此模型
  */
-class BaseLogic extends \Think\Model{
+class BaseLogic{
 
 
     public $result = ['success' => FALSE, 'message' => '', 'data' => NULL,];
