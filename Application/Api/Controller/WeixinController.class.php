@@ -50,11 +50,6 @@ class WeixinController extends Controller {
         }
     }
 
-    public function t ()
-    {
-        var_dump(session('a'));
-    }
-
     public function getOpenid ()
     {
         $openid = session('openid');
