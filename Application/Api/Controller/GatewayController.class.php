@@ -91,7 +91,7 @@ class GatewayController extends BaseController {
         $uid = I('uid') ? I('uid') : session('uid');
         $openid = I('openid') ? I('openid') : session('openid');
         if (empty($openid) && empty($openid)) {
-            $this->ajaxReturn($result->setError('无效的API参数'));
+            //$this->ajaxReturn($result->setError('无效的API参数'));
         }
         // update session
         if (I('uid') && I('uid') != session('uid')) {
