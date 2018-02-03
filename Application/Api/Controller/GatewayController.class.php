@@ -38,7 +38,7 @@ class GatewayController extends BaseController {
         $logic = D($logic_name, 'Logic');
         
         
-        var_dump(D('school'); die;
+        var_dump(D('school')); die;
         
         var_dump($logic);die;
 
