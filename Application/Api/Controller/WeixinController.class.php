@@ -55,5 +55,15 @@ class WeixinController extends Controller {
         var_dump(session('a'));
     }
 
+    public function getOpenid ()
+    {
+        $openid = session('openid');
+        if ($openid) {
+            $this->ajaxReturn(['success' => TRUE, 'data' => $openid]);
+        } else {
+            $this->ajaxReturn(['success' => FALSE, 'data' => NULL]);
+        }
+    }
+
 
 }
