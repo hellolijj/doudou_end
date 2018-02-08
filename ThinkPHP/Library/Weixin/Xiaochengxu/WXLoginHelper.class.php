@@ -13,8 +13,8 @@ class WXLoginHelper {
 
     //默认配置
     protected $config = ['url' => "https://api.weixin.qq.com/sns/jscode2session", //微信获取session_key接口url
-        'appid' => 'your appId', // APPId
-        'secret' => 'your secret', // 秘钥
+        'appid' => 'wx7af4d4e3dc78c624', // APPId
+        'secret' => '5d70813a51f658c26a922e7eae0c9196', // 秘钥
         'grant_type' => 'authorization_code', // grant_type，一般情况下固定的
     ];
 
@@ -89,7 +89,7 @@ class WXLoginHelper {
         $session3rd = $this->randomFromDev(16);
 
         $data['session3rd'] = $session3rd;
-        cache($session3rd, $data['openId'] . $sessionKey);
+        S($session3rd, $data['openId'] . $sessionKey);
 
         return $data;
     }
