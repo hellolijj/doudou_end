@@ -73,8 +73,8 @@ class WXLoginHelper {
         $pc = new WXBizDataCrypt($this->config['appid'], $sessionKey);
         $errCode = $pc->decryptData($encryptedData, $iv, $data);
 
-        if ($errCode !== 0) {
-            return ['code' => ErrorCode::$EncryptDataNotMatch, 'message' => '解密信息错误'];
+        if ($errCode != 0) {
+            return ['code' => ErrorCode::$EncryptDataNotMatch, 'message' => '解密信息错误', 'code' => $errCode];
         }
 
 
