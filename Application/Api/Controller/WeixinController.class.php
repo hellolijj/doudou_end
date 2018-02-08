@@ -68,13 +68,13 @@ class WeixinController extends Controller {
     {
 
         $code = I("code");
-        $rawData = I("rawData", '', 'stripslashes');
+        $rawData = I("rawData");
         $signature = I("signature");
         $encryptedData = I("encryptedData");
         $iv = I("iv");
         $wxHelper = NEW  \Weixin\Xiaochengxu\WXLoginHelper();
         $data = $wxHelper->checkLogin($code, $rawData, $signature, $encryptedData, $iv);
-        $this->ajaxReturn($data);
+        echo $data;
 
     }
 
