@@ -61,4 +61,30 @@ class WeixinController extends Controller {
     }
 
 
+    /*
+     * 小程序的授权登陆接口
+     */
+    public function login ()
+    {
+
+        $code = I("code", '', 'htmlspecialchars');
+        $rawData = I("rawData", '', 'htmlspecialchars');
+        $signature = I("signature", '', 'htmlspecialchars');
+        $encryptedData = I("encryptedData", '', 'htmlspecialchars');
+        $iv = I("iv", '', 'htmlspecialchars');
+        print_r(I());
+        die;
+
+
+        $wxHelper = NEW  \Weixin\Xiaochengxu\WXLoginHelper();
+        $data = $wxHelper->checkLogin($code, $rawData, $signature, $encryptedData, $iv);
+
+    }
+
+    public function checkLogin ()
+    {
+
+    }
+
+
 }
