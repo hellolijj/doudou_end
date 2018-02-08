@@ -74,7 +74,8 @@ class WeixinController extends Controller {
         $iv = I("iv");
         $wxHelper = NEW  \Weixin\Xiaochengxu\WXLoginHelper();
         $data = $wxHelper->checkLogin($code, $rawData, $signature, $encryptedData, $iv);
-        echo $data;
+
+        print_r($data);
 
     }
 
