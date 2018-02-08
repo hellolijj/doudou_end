@@ -23,9 +23,4 @@ class WeixinModel extends BaseModel {
         return $this->where(['openid' => $openid])->find();
     }
 
-    public function say ()
-    {
-        echo 'sa';
-    }
-
 }

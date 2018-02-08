@@ -68,7 +68,7 @@ class WeixinController extends Controller {
     {
 
         $code = I("code");
-        $rawData = I("rawData");
+        $rawData = I("rawData", '', 'stripslashes');
         $signature = I("signature");
         $encryptedData = I("encryptedData");
         $iv = I("iv");

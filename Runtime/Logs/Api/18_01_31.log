@@ -1,0 +1,920 @@
+[ 2018-01-31T22:22:02+08:00 ] 127.0.0.1 /pingshifen/index.php/Api/gateway/route
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.005001s ]
+INFO: [ app_init ] --END-- [ RunTime:0.007631s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001018s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001147s ]
+NOTIC: [2048] Declaration of Api\Controller\BaseController::ajaxReturn() should be compatible with Think\Controller::ajaxReturn($data, $type = '', $json_option = 0) /usr/local/var/www/pingshifen/Application/Api/Controller/BaseController.class.php 第 38 行.
+
+[ 2018-01-31T22:23:28+08:00 ] 127.0.0.1 /pingshifen/index.php/Api/gateway/route
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001300s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002089s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000373s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000460s ]
+NOTIC: [2048] Declaration of Api\Controller\BaseController::ajaxReturn() should be compatible with Think\Controller::ajaxReturn($data, $type = '', $json_option = 0) /usr/local/var/www/pingshifen/Application/Api/Controller/BaseController.class.php 第 38 行.
+
+[ 2018-01-31T22:24:23+08:00 ] 127.0.0.1 /pingshifen/index.php/Api/gateway/route
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001093s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001482s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000334s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000412s ]
+NOTIC: [2048] Declaration of Api\Controller\BaseController::ajaxReturn() should be compatible with Think\Controller::ajaxReturn($data, $type = '', $json_option = 0) /usr/local/var/www/pingshifen/Application/Api/Controller/BaseController.class.php 第 38 行.
+
+[ 2018-01-31T22:24:47+08:00 ] 127.0.0.1 /pingshifen/index.php/Api/gateway/route
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001071s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001460s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000642s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000740s ]
+NOTIC: [2048] Declaration of Api\Controller\BaseController::ajaxReturn() should be compatible with Think\Controller::ajaxReturn($data, $type = '', $json_option = 0) /usr/local/var/www/pingshifen/Application/Api/Controller/BaseController.class.php 第 38 行.
+
+[ 2018-01-31T22:27:10+08:00 ] 127.0.0.1 /pingshifen/index.php/Api/gateway/route
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001372s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001940s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000354s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000435s ]
+NOTIC: [2048] Declaration of Api\Controller\BaseController::ajaxReturn() should be compatible with Think\Controller::ajaxReturn($data, $type = '', $json_option = 0) /usr/local/var/www/pingshifen/Application/Api/Controller/BaseController.class.php 第 38 行.
+
+[ 2018-01-31T22:27:37+08:00 ] 127.0.0.1 /pingshifen/index.php/Api/gateway/route
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001688s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002117s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000668s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000775s ]
+NOTIC: [2048] Declaration of Api\Controller\BaseController::ajaxReturn() should be compatible with Think\Controller::ajaxReturn($data, $type = '', $json_option = 0) /usr/local/var/www/pingshifen/Application/Api/Controller/BaseController.class.php 第 38 行.
+
+[ 2018-01-31T22:28:15+08:00 ] 127.0.0.1 /pingshifen/index.php/Api/gateway/route
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000148s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002113s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003022s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000383s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000603s ]
+NOTIC: [2048] Declaration of Api\Controller\BaseController::ajaxReturn() should be compatible with Think\Controller::ajaxReturn($data, $type = '', $json_option = 0) /usr/local/var/www/pingshifen/Application/Api/Controller/BaseController.class.php 第 38 行.
+
+[ 2018-01-31T22:30:15+08:00 ] 127.0.0.1 /pingshifen/index.php/Api/gateway/route
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002470s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000423s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000515s ]
+NOTIC: [2048] Declaration of Api\Controller\BaseController::ajaxReturn() should be compatible with Think\Controller::ajaxReturn($data, $type = '', $json_option = 0) /usr/local/var/www/pingshifen/Application/Api/Controller/BaseController.class.php 第 38 行.
+
+[ 2018-01-31T22:35:30+08:00 ] 127.0.0.1 /pingshifen/index.php/Api/gateway/route
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002791s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003609s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000793s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000891s ]
+NOTIC: [2048] Declaration of Api\Controller\BaseController::ajaxReturn() should be compatible with Think\Controller::ajaxReturn($data, $type = '', $json_option = 0) /usr/local/var/www/pingshifen/Application/Api/Controller/BaseController.class.php 第 38 行.
+
+[ 2018-01-31T22:35:58+08:00 ] 127.0.0.1 /pingshifen/index.php/Api/gateway/route
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001253s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001565s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000271s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000360s ]
+NOTIC: [2048] Declaration of Api\Controller\BaseController::ajaxReturn() should be compatible with Think\Controller::ajaxReturn($data, $type = '', $json_option = 0) /usr/local/var/www/pingshifen/Application/Api/Controller/BaseController.class.php 第 38 行.
+
+[ 2018-01-31T22:37:31+08:00 ] 127.0.0.1 /pingshifen/index.php/Api/gateway/route
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002247s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003006s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000612s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000690s ]
+NOTIC: [2048] Declaration of Api\Controller\BaseController::ajaxReturn() should be compatible with Think\Controller::ajaxReturn($data, $type = '', $json_option = 0) /usr/local/var/www/pingshifen/Application/Api/Controller/BaseController.class.php 第 38 行.
+
+[ 2018-01-31T22:37:32+08:00 ] 127.0.0.1 /pingshifen/index.php/Api/gateway/route
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000855s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001142s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000249s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000339s ]
+NOTIC: [2048] Declaration of Api\Controller\BaseController::ajaxReturn() should be compatible with Think\Controller::ajaxReturn($data, $type = '', $json_option = 0) /usr/local/var/www/pingshifen/Application/Api/Controller/BaseController.class.php 第 38 行.
+
+[ 2018-01-31T22:38:02+08:00 ] 127.0.0.1 /pingshifen/index.php/Api/gateway/route
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000748s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001011s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000383s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000535s ]
+NOTIC: [2048] Declaration of Api\Controller\BaseController::ajaxReturn() should be compatible with Think\Controller::ajaxReturn($data, $type = '', $json_option = 0) /usr/local/var/www/pingshifen/Application/Api/Controller/BaseController.class.php 第 38 行.
+
+[ 2018-01-31T22:38:02+08:00 ] 127.0.0.1 /pingshifen/index.php/Api/gateway/route
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002209s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003733s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000712s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001372s ]
+NOTIC: [2048] Declaration of Api\Controller\BaseController::ajaxReturn() should be compatible with Think\Controller::ajaxReturn($data, $type = '', $json_option = 0) /usr/local/var/www/pingshifen/Application/Api/Controller/BaseController.class.php 第 38 行.
+
+[ 2018-01-31T22:40:19+08:00 ] 127.0.0.1 /pingshifen/index.php/Api/gateway/route
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000105s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003842s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005454s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000316s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000420s ]
+NOTIC: [2048] Declaration of Api\Controller\BaseController::ajaxReturn() should be compatible with Think\Controller::ajaxReturn($data, $type = '', $json_option = 0) /usr/local/var/www/pingshifen/Application/Api/Controller/BaseController.class.php 第 38 行.
+
+[ 2018-01-31T22:40:19+08:00 ] 127.0.0.1 /pingshifen/index.php/Api/gateway/route
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000987s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001325s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000305s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000399s ]
+NOTIC: [2048] Declaration of Api\Controller\BaseController::ajaxReturn() should be compatible with Think\Controller::ajaxReturn($data, $type = '', $json_option = 0) /usr/local/var/www/pingshifen/Application/Api/Controller/BaseController.class.php 第 38 行.
+
+[ 2018-01-31T22:44:52+08:00 ] 127.0.0.1 /pingshifen/index.php/Api/gateway/route
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003396s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004202s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000596s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000683s ]
+NOTIC: [2048] Declaration of Api\Controller\BaseController::ajaxReturn() should be compatible with Think\Controller::ajaxReturn($data, $type = '', $json_option = 0) /usr/local/var/www/pingshifen/Application/Api/Controller/BaseController.class.php 第 38 行.
+
+[ 2018-01-31T22:44:52+08:00 ] 127.0.0.1 /pingshifen/index.php/Api/gateway/route
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003428s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004202s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000604s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000680s ]
+NOTIC: [2048] Declaration of Api\Controller\BaseController::ajaxReturn() should be compatible with Think\Controller::ajaxReturn($data, $type = '', $json_option = 0) /usr/local/var/www/pingshifen/Application/Api/Controller/BaseController.class.php 第 38 行.
+
+[ 2018-01-31T22:46:05+08:00 ] 127.0.0.1 /pingshifen/index.php/Api/gateway/route
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001139s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001519s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000229s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000291s ]
+NOTIC: [2048] Declaration of Api\Controller\BaseController::ajaxReturn() should be compatible with Think\Controller::ajaxReturn($data, $type = '', $json_option = 0) /usr/local/var/www/pingshifen/Application/Api/Controller/BaseController.class.php 第 38 行.
+
+[ 2018-01-31T22:46:05+08:00 ] 127.0.0.1 /pingshifen/index.php/Api/gateway/route
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001226s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001611s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000341s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000434s ]
+NOTIC: [2048] Declaration of Api\Controller\BaseController::ajaxReturn() should be compatible with Think\Controller::ajaxReturn($data, $type = '', $json_option = 0) /usr/local/var/www/pingshifen/Application/Api/Controller/BaseController.class.php 第 38 行.
+
+[ 2018-01-31T22:46:23+08:00 ] 127.0.0.1 /pingshifen/index.php/Api/gateway/route
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001313s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001689s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002531s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002668s ]
+NOTIC: [2048] Declaration of Api\Controller\BaseController::ajaxReturn() should be compatible with Think\Controller::ajaxReturn($data, $type = '', $json_option = 0) /usr/local/var/www/pingshifen/Application/Api/Controller/BaseController.class.php 第 38 行.
+
+[ 2018-01-31T22:46:23+08:00 ] 127.0.0.1 /pingshifen/index.php/Api/gateway/route
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001822s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002208s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000345s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000418s ]
+NOTIC: [2048] Declaration of Api\Controller\BaseController::ajaxReturn() should be compatible with Think\Controller::ajaxReturn($data, $type = '', $json_option = 0) /usr/local/var/www/pingshifen/Application/Api/Controller/BaseController.class.php 第 38 行.
+
+[ 2018-01-31T22:47:32+08:00 ] 127.0.0.1 /pingshifen/index.php/Api/gateway/route
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000988s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001395s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000302s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000421s ]
+NOTIC: [2048] Declaration of Api\Controller\BaseController::ajaxReturn() should be compatible with Think\Controller::ajaxReturn($data, $type = '', $json_option = 0) /usr/local/var/www/pingshifen/Application/Api/Controller/BaseController.class.php 第 38 行.
+NOTIC: [2] Missing argument 1 for I(), called in /usr/local/var/www/pingshifen/Application/Api/Controller/GatewayController.class.php on line 32 and defined /usr/local/var/www/pingshifen/ThinkPHP/Common/functions.php 第 303 行.
+NOTIC: [8] Undefined variable: name /usr/local/var/www/pingshifen/ThinkPHP/Common/functions.php 第 306 行.
+NOTIC: [8] Undefined variable: name /usr/local/var/www/pingshifen/ThinkPHP/Common/functions.php 第 313 行.
+NOTIC: [8] Undefined variable: name /usr/local/var/www/pingshifen/ThinkPHP/Common/functions.php 第 376 行.
+
+[ 2018-01-31T22:47:32+08:00 ] 127.0.0.1 /pingshifen/index.php/Api/gateway/route
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000796s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001047s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000255s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000326s ]
+NOTIC: [2048] Declaration of Api\Controller\BaseController::ajaxReturn() should be compatible with Think\Controller::ajaxReturn($data, $type = '', $json_option = 0) /usr/local/var/www/pingshifen/Application/Api/Controller/BaseController.class.php 第 38 行.
+NOTIC: [2] Missing argument 1 for I(), called in /usr/local/var/www/pingshifen/Application/Api/Controller/GatewayController.class.php on line 32 and defined /usr/local/var/www/pingshifen/ThinkPHP/Common/functions.php 第 303 行.
+NOTIC: [8] Undefined variable: name /usr/local/var/www/pingshifen/ThinkPHP/Common/functions.php 第 306 行.
+NOTIC: [8] Undefined variable: name /usr/local/var/www/pingshifen/ThinkPHP/Common/functions.php 第 313 行.
+NOTIC: [8] Undefined variable: name /usr/local/var/www/pingshifen/ThinkPHP/Common/functions.php 第 376 行.
+
+[ 2018-01-31T22:48:20+08:00 ] 127.0.0.1 /pingshifen/index.php/Api/gateway/route
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001079s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001426s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000376s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000474s ]
+NOTIC: [2048] Declaration of Api\Controller\BaseController::ajaxReturn() should be compatible with Think\Controller::ajaxReturn($data, $type = '', $json_option = 0) /usr/local/var/www/pingshifen/Application/Api/Controller/BaseController.class.php 第 38 行.
+NOTIC: [2] Missing argument 1 for I(), called in /usr/local/var/www/pingshifen/Application/Api/Controller/GatewayController.class.php on line 32 and defined /usr/local/var/www/pingshifen/ThinkPHP/Common/functions.php 第 303 行.
+NOTIC: [8] Undefined variable: name /usr/local/var/www/pingshifen/ThinkPHP/Common/functions.php 第 306 行.
+NOTIC: [8] Undefined variable: name /usr/local/var/www/pingshifen/ThinkPHP/Common/functions.php 第 313 行.
+NOTIC: [8] Undefined variable: name /usr/local/var/www/pingshifen/ThinkPHP/Common/functions.php 第 376 行.
+
+[ 2018-01-31T22:48:20+08:00 ] 127.0.0.1 /pingshifen/index.php/Api/gateway/route
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001291s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001668s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001449s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002705s ]
+NOTIC: [2048] Declaration of Api\Controller\BaseController::ajaxReturn() should be compatible with Think\Controller::ajaxReturn($data, $type = '', $json_option = 0) /usr/local/var/www/pingshifen/Application/Api/Controller/BaseController.class.php 第 38 行.
+NOTIC: [2] Missing argument 1 for I(), called in /usr/local/var/www/pingshifen/Application/Api/Controller/GatewayController.class.php on line 32 and defined /usr/local/var/www/pingshifen/ThinkPHP/Common/functions.php 第 303 行.
+NOTIC: [8] Undefined variable: name /usr/local/var/www/pingshifen/ThinkPHP/Common/functions.php 第 306 行.
+NOTIC: [8] Undefined variable: name /usr/local/var/www/pingshifen/ThinkPHP/Common/functions.php 第 313 行.
+NOTIC: [8] Undefined variable: name /usr/local/var/www/pingshifen/ThinkPHP/Common/functions.php 第 376 行.
+
+[ 2018-01-31T22:49:52+08:00 ] 127.0.0.1 /pingshifen/index.php/Api/gateway/route
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000715s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000970s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000215s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000285s ]
+NOTIC: [2048] Declaration of Api\Controller\BaseController::ajaxReturn() should be compatible with Think\Controller::ajaxReturn($data, $type = '', $json_option = 0) /usr/local/var/www/pingshifen/Application/Api/Controller/BaseController.class.php 第 38 行.
+NOTIC: [2] Missing argument 1 for I(), called in /usr/local/var/www/pingshifen/Application/Api/Controller/GatewayController.class.php on line 32 and defined /usr/local/var/www/pingshifen/ThinkPHP/Common/functions.php 第 303 行.
+NOTIC: [8] Undefined variable: name /usr/local/var/www/pingshifen/ThinkPHP/Common/functions.php 第 306 行.
+NOTIC: [8] Undefined variable: name /usr/local/var/www/pingshifen/ThinkPHP/Common/functions.php 第 313 行.
+NOTIC: [8] Undefined variable: name /usr/local/var/www/pingshifen/ThinkPHP/Common/functions.php 第 376 行.
+
+[ 2018-01-31T22:52:07+08:00 ] 127.0.0.1 /pingshifen/index.php/Api/gateway/route
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003573s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004478s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000788s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001168s ]
+NOTIC: [2048] Declaration of Api\Controller\BaseController::ajaxReturn() should be compatible with Think\Controller::ajaxReturn($data, $type = '', $json_option = 0) /usr/local/var/www/pingshifen/Application/Api/Controller/BaseController.class.php 第 38 行.
+NOTIC: [2] Missing argument 1 for I(), called in /usr/local/var/www/pingshifen/Application/Api/Controller/GatewayController.class.php on line 32 and defined /usr/local/var/www/pingshifen/ThinkPHP/Common/functions.php 第 303 行.
+NOTIC: [8] Undefined variable: name /usr/local/var/www/pingshifen/ThinkPHP/Common/functions.php 第 306 行.
+NOTIC: [8] Undefined variable: name /usr/local/var/www/pingshifen/ThinkPHP/Common/functions.php 第 313 行.
+NOTIC: [8] Undefined variable: name /usr/local/var/www/pingshifen/ThinkPHP/Common/functions.php 第 376 行.
+
+[ 2018-01-31T22:54:52+08:00 ] 127.0.0.1 /pingshifen/index.php/Api/gateway/route
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002815s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003372s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000549s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000626s ]
+NOTIC: [2048] Declaration of Api\Controller\BaseController::ajaxReturn() should be compatible with Think\Controller::ajaxReturn($data, $type = '', $json_option = 0) /usr/local/var/www/pingshifen/Application/Api/Controller/BaseController.class.php 第 38 行.
+NOTIC: [2] Missing argument 1 for I(), called in /usr/local/var/www/pingshifen/Application/Api/Controller/GatewayController.class.php on line 32 and defined /usr/local/var/www/pingshifen/ThinkPHP/Common/functions.php 第 303 行.
+NOTIC: [8] Undefined variable: name /usr/local/var/www/pingshifen/ThinkPHP/Common/functions.php 第 306 行.
+NOTIC: [8] Undefined variable: name /usr/local/var/www/pingshifen/ThinkPHP/Common/functions.php 第 313 行.
+NOTIC: [8] Undefined variable: name /usr/local/var/www/pingshifen/ThinkPHP/Common/functions.php 第 376 行.
+
+[ 2018-01-31T22:57:01+08:00 ] 127.0.0.1 /pingshifen/index.php/Api/gateway/route
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001429s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002711s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000387s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000532s ]
+NOTIC: [2048] Declaration of Api\Controller\BaseController::ajaxReturn() should be compatible with Think\Controller::ajaxReturn($data, $type = '', $json_option = 0) /usr/local/var/www/pingshifen/Application/Api/Controller/BaseController.class.php 第 38 行.
+NOTIC: [2] Missing argument 1 for I(), called in /usr/local/var/www/pingshifen/Application/Api/Controller/GatewayController.class.php on line 32 and defined /usr/local/var/www/pingshifen/ThinkPHP/Common/functions.php 第 303 行.
+NOTIC: [8] Undefined variable: name /usr/local/var/www/pingshifen/ThinkPHP/Common/functions.php 第 306 行.
+NOTIC: [8] Undefined variable: name /usr/local/var/www/pingshifen/ThinkPHP/Common/functions.php 第 313 行.
+NOTIC: [8] Undefined variable: name /usr/local/var/www/pingshifen/ThinkPHP/Common/functions.php 第 376 行.
+
+[ 2018-01-31T22:57:35+08:00 ] 127.0.0.1 /pingshifen/index.php/Api/gateway/route
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000804s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001084s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000244s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000310s ]
+NOTIC: [2048] Declaration of Api\Controller\BaseController::ajaxReturn() should be compatible with Think\Controller::ajaxReturn($data, $type = '', $json_option = 0) /usr/local/var/www/pingshifen/Application/Api/Controller/BaseController.class.php 第 38 行.
+
+[ 2018-01-31T23:02:50+08:00 ] 127.0.0.1 /pingshifen/index.php/Api/gateway/route
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000081s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003083s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004250s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000717s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000808s ]
+NOTIC: [2048] Declaration of Api\Controller\BaseController::ajaxReturn() should be compatible with Think\Controller::ajaxReturn($data, $type = '', $json_option = 0) /usr/local/var/www/pingshifen/Application/Api/Controller/BaseController.class.php 第 38 行.
+
+[ 2018-01-31T23:09:11+08:00 ] 127.0.0.1 /pingshifen/index.php/Api/gateway/route
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002404s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003059s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000583s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000649s ]
+NOTIC: [2048] Declaration of Api\Controller\BaseController::ajaxReturn() should be compatible with Think\Controller::ajaxReturn($data, $type = '', $json_option = 0) /usr/local/var/www/pingshifen/Application/Api/Controller/BaseController.class.php 第 38 行.
+
+[ 2018-01-31T23:09:30+08:00 ] 127.0.0.1 /pingshifen/index.php/Api/gateway/route
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001150s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001425s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000880s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000985s ]
+NOTIC: [2048] Declaration of Api\Controller\BaseController::ajaxReturn() should be compatible with Think\Controller::ajaxReturn($data, $type = '', $json_option = 0) /usr/local/var/www/pingshifen/Application/Api/Controller/BaseController.class.php 第 38 行.
+
+[ 2018-01-31T23:13:27+08:00 ] 127.0.0.1 /pingshifen/index.php/Api/gateway/route
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.004553s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005251s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000676s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000762s ]
+NOTIC: [2048] Declaration of Api\Controller\BaseController::ajaxReturn() should be compatible with Think\Controller::ajaxReturn($data, $type = '', $json_option = 0) /usr/local/var/www/pingshifen/Application/Api/Controller/BaseController.class.php 第 38 行.
+
+[ 2018-01-31T23:24:09+08:00 ] 127.0.0.1 /pingshifen/index.php/Api/gateway/route
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.004737s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005799s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000941s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001077s ]
+NOTIC: [2048] Declaration of Api\Controller\BaseController::ajaxReturn() should be compatible with Think\Controller::ajaxReturn($data, $type = '', $json_option = 0) /usr/local/var/www/pingshifen/Application/Api/Controller/BaseController.class.php 第 38 行.
+
+[ 2018-01-31T23:29:28+08:00 ] 127.0.0.1 /pingshifen/index.php/Api/gateway/route?t=123
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000097s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003748s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004752s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000927s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002627s ]
+NOTIC: [2048] Declaration of Api\Controller\BaseController::ajaxReturn() should be compatible with Think\Controller::ajaxReturn($data, $type = '', $json_option = 0) /usr/local/var/www/pingshifen/Application/Api/Controller/BaseController.class.php 第 38 行.
+
+[ 2018-01-31T23:29:28+08:00 ] 127.0.0.1 /pingshifen/index.php/Api/gateway/route
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003696s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004702s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002823s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002966s ]
+NOTIC: [2048] Declaration of Api\Controller\BaseController::ajaxReturn() should be compatible with Think\Controller::ajaxReturn($data, $type = '', $json_option = 0) /usr/local/var/www/pingshifen/Application/Api/Controller/BaseController.class.php 第 38 行.
+
+[ 2018-01-31T23:30:08+08:00 ] 127.0.0.1 /pingshifen/index.php/Api/gateway/route?t=123
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001118s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001515s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000402s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000488s ]
+NOTIC: [2048] Declaration of Api\Controller\BaseController::ajaxReturn() should be compatible with Think\Controller::ajaxReturn($data, $type = '', $json_option = 0) /usr/local/var/www/pingshifen/Application/Api/Controller/BaseController.class.php 第 38 行.
+
+[ 2018-01-31T23:30:08+08:00 ] 127.0.0.1 /pingshifen/index.php/Api/gateway/route
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001118s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001480s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000404s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000505s ]
+NOTIC: [2048] Declaration of Api\Controller\BaseController::ajaxReturn() should be compatible with Think\Controller::ajaxReturn($data, $type = '', $json_option = 0) /usr/local/var/www/pingshifen/Application/Api/Controller/BaseController.class.php 第 38 行.
+
+[ 2018-01-31T23:44:04+08:00 ] 127.0.0.1 /pingshifen/index.php/Api/gateway/route?t=123
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003317s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004367s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001221s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001392s ]
+NOTIC: [2048] Declaration of Api\Controller\BaseController::ajaxReturn() should be compatible with Think\Controller::ajaxReturn($data, $type = '', $json_option = 0) /usr/local/var/www/pingshifen/Application/Api/Controller/BaseController.class.php 第 38 行.
+
+[ 2018-01-31T23:44:04+08:00 ] 127.0.0.1 /pingshifen/index.php/Api/gateway/route
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000075s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003357s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001226s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001418s ]
+NOTIC: [2048] Declaration of Api\Controller\BaseController::ajaxReturn() should be compatible with Think\Controller::ajaxReturn($data, $type = '', $json_option = 0) /usr/local/var/www/pingshifen/Application/Api/Controller/BaseController.class.php 第 38 行.
+
+[ 2018-01-31T23:44:46+08:00 ] 127.0.0.1 /pingshifen/index.php/Api/gateway/route
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001131s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001443s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000268s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000347s ]
+NOTIC: [2048] Declaration of Api\Controller\BaseController::ajaxReturn() should be compatible with Think\Controller::ajaxReturn($data, $type = '', $json_option = 0) /usr/local/var/www/pingshifen/Application/Api/Controller/BaseController.class.php 第 38 行.
+
+[ 2018-01-31T23:44:46+08:00 ] 127.0.0.1 /pingshifen/index.php/Api/gateway/route?t=123
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000092s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002194s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003136s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000362s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000443s ]
+NOTIC: [2048] Declaration of Api\Controller\BaseController::ajaxReturn() should be compatible with Think\Controller::ajaxReturn($data, $type = '', $json_option = 0) /usr/local/var/www/pingshifen/Application/Api/Controller/BaseController.class.php 第 38 行.
+
+[ 2018-01-31T23:46:42+08:00 ] 127.0.0.1 /pingshifen/index.php/Api/gateway/route?t=123
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003438s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004233s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000604s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000693s ]
+NOTIC: [2048] Declaration of Api\Controller\BaseController::ajaxReturn() should be compatible with Think\Controller::ajaxReturn($data, $type = '', $json_option = 0) /usr/local/var/www/pingshifen/Application/Api/Controller/BaseController.class.php 第 38 行.
+
+[ 2018-01-31T23:46:42+08:00 ] 127.0.0.1 /pingshifen/index.php/Api/gateway/route
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003438s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004233s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000619s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000720s ]
+NOTIC: [2048] Declaration of Api\Controller\BaseController::ajaxReturn() should be compatible with Think\Controller::ajaxReturn($data, $type = '', $json_option = 0) /usr/local/var/www/pingshifen/Application/Api/Controller/BaseController.class.php 第 38 行.
+
+[ 2018-01-31T23:48:22+08:00 ] 127.0.0.1 /pingshifen/index.php/Api/gateway/route
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.005311s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005899s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000630s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000730s ]
+NOTIC: [2048] Declaration of Api\Controller\BaseController::ajaxReturn() should be compatible with Think\Controller::ajaxReturn($data, $type = '', $json_option = 0) /usr/local/var/www/pingshifen/Application/Api/Controller/BaseController.class.php 第 38 行.
+
+[ 2018-01-31T23:48:22+08:00 ] 127.0.0.1 /pingshifen/index.php/Api/gateway/route?t=123
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.005261s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005936s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000646s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000736s ]
+NOTIC: [2048] Declaration of Api\Controller\BaseController::ajaxReturn() should be compatible with Think\Controller::ajaxReturn($data, $type = '', $json_option = 0) /usr/local/var/www/pingshifen/Application/Api/Controller/BaseController.class.php 第 38 行.
+
+[ 2018-01-31T23:48:23+08:00 ] 127.0.0.1 /pingshifen/index.php/Api/gateway/route
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000812s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001119s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000292s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000360s ]
+NOTIC: [2048] Declaration of Api\Controller\BaseController::ajaxReturn() should be compatible with Think\Controller::ajaxReturn($data, $type = '', $json_option = 0) /usr/local/var/www/pingshifen/Application/Api/Controller/BaseController.class.php 第 38 行.
+
+[ 2018-01-31T23:49:09+08:00 ] 127.0.0.1 /pingshifen/index.php/Api/gateway/route
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003083s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003814s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000569s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000686s ]
+NOTIC: [2048] Declaration of Api\Controller\BaseController::ajaxReturn() should be compatible with Think\Controller::ajaxReturn($data, $type = '', $json_option = 0) /usr/local/var/www/pingshifen/Application/Api/Controller/BaseController.class.php 第 38 行.
+
+[ 2018-01-31T23:49:09+08:00 ] 127.0.0.1 /pingshifen/index.php/Api/gateway/route?t=123
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003147s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003898s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001498s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001701s ]
+NOTIC: [2048] Declaration of Api\Controller\BaseController::ajaxReturn() should be compatible with Think\Controller::ajaxReturn($data, $type = '', $json_option = 0) /usr/local/var/www/pingshifen/Application/Api/Controller/BaseController.class.php 第 38 行.
+
+[ 2018-01-31T23:49:43+08:00 ] 127.0.0.1 /pingshifen/index.php/Api/gateway/route
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001184s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003539s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000795s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000900s ]
+NOTIC: [2048] Declaration of Api\Controller\BaseController::ajaxReturn() should be compatible with Think\Controller::ajaxReturn($data, $type = '', $json_option = 0) /usr/local/var/www/pingshifen/Application/Api/Controller/BaseController.class.php 第 38 行.
+NOTIC: [2] Missing argument 1 for I(), called in /usr/local/var/www/pingshifen/Application/Api/Controller/GatewayController.class.php on line 32 and defined /usr/local/var/www/pingshifen/ThinkPHP/Common/functions.php 第 303 行.
+NOTIC: [8] Undefined variable: name /usr/local/var/www/pingshifen/ThinkPHP/Common/functions.php 第 306 行.
+NOTIC: [8] Undefined variable: name /usr/local/var/www/pingshifen/ThinkPHP/Common/functions.php 第 313 行.
+NOTIC: [8] Undefined variable: name /usr/local/var/www/pingshifen/ThinkPHP/Common/functions.php 第 376 行.
+
+[ 2018-01-31T23:49:43+08:00 ] 127.0.0.1 /pingshifen/index.php/Api/gateway/route?t=123
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002119s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002538s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000400s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000512s ]
+NOTIC: [2048] Declaration of Api\Controller\BaseController::ajaxReturn() should be compatible with Think\Controller::ajaxReturn($data, $type = '', $json_option = 0) /usr/local/var/www/pingshifen/Application/Api/Controller/BaseController.class.php 第 38 行.
+NOTIC: [2] Missing argument 1 for I(), called in /usr/local/var/www/pingshifen/Application/Api/Controller/GatewayController.class.php on line 32 and defined /usr/local/var/www/pingshifen/ThinkPHP/Common/functions.php 第 303 行.
+NOTIC: [8] Undefined variable: name /usr/local/var/www/pingshifen/ThinkPHP/Common/functions.php 第 306 行.
+NOTIC: [8] Undefined variable: name /usr/local/var/www/pingshifen/ThinkPHP/Common/functions.php 第 313 行.
+NOTIC: [8] Undefined variable: name /usr/local/var/www/pingshifen/ThinkPHP/Common/functions.php 第 376 行.
+
+[ 2018-01-31T23:50:53+08:00 ] 127.0.0.1 /pingshifen/index.php/Api/gateway/route?t=123
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001075s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001460s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000697s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001088s ]
+NOTIC: [2048] Declaration of Api\Controller\BaseController::ajaxReturn() should be compatible with Think\Controller::ajaxReturn($data, $type = '', $json_option = 0) /usr/local/var/www/pingshifen/Application/Api/Controller/BaseController.class.php 第 38 行.
+NOTIC: [2] Missing argument 1 for I(), called in /usr/local/var/www/pingshifen/Application/Api/Controller/GatewayController.class.php on line 32 and defined /usr/local/var/www/pingshifen/ThinkPHP/Common/functions.php 第 303 行.
+NOTIC: [8] Undefined variable: name /usr/local/var/www/pingshifen/ThinkPHP/Common/functions.php 第 306 行.
+NOTIC: [8] Undefined variable: name /usr/local/var/www/pingshifen/ThinkPHP/Common/functions.php 第 313 行.
+NOTIC: [8] Undefined variable: name /usr/local/var/www/pingshifen/ThinkPHP/Common/functions.php 第 376 行.
+
+[ 2018-01-31T23:50:53+08:00 ] 127.0.0.1 /pingshifen/index.php/Api/gateway/route
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003441s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006953s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000345s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000443s ]
+NOTIC: [2048] Declaration of Api\Controller\BaseController::ajaxReturn() should be compatible with Think\Controller::ajaxReturn($data, $type = '', $json_option = 0) /usr/local/var/www/pingshifen/Application/Api/Controller/BaseController.class.php 第 38 行.
+NOTIC: [2] Missing argument 1 for I(), called in /usr/local/var/www/pingshifen/Application/Api/Controller/GatewayController.class.php on line 32 and defined /usr/local/var/www/pingshifen/ThinkPHP/Common/functions.php 第 303 行.
+NOTIC: [8] Undefined variable: name /usr/local/var/www/pingshifen/ThinkPHP/Common/functions.php 第 306 行.
+NOTIC: [8] Undefined variable: name /usr/local/var/www/pingshifen/ThinkPHP/Common/functions.php 第 313 行.
+NOTIC: [8] Undefined variable: name /usr/local/var/www/pingshifen/ThinkPHP/Common/functions.php 第 376 行.
+
+[ 2018-01-31T23:51:27+08:00 ] 127.0.0.1 /pingshifen/index.php/Api/gateway/route?t=123
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002286s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003023s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000698s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000862s ]
+NOTIC: [2048] Declaration of Api\Controller\BaseController::ajaxReturn() should be compatible with Think\Controller::ajaxReturn($data, $type = '', $json_option = 0) /usr/local/var/www/pingshifen/Application/Api/Controller/BaseController.class.php 第 38 行.
+NOTIC: [2] Missing argument 1 for I(), called in /usr/local/var/www/pingshifen/Application/Api/Controller/GatewayController.class.php on line 32 and defined /usr/local/var/www/pingshifen/ThinkPHP/Common/functions.php 第 303 行.
+NOTIC: [8] Undefined variable: name /usr/local/var/www/pingshifen/ThinkPHP/Common/functions.php 第 306 行.
+NOTIC: [8] Undefined variable: name /usr/local/var/www/pingshifen/ThinkPHP/Common/functions.php 第 313 行.
+NOTIC: [8] Undefined variable: name /usr/local/var/www/pingshifen/ThinkPHP/Common/functions.php 第 376 行.
+
+[ 2018-01-31T23:51:28+08:00 ] 127.0.0.1 /pingshifen/index.php/Api/gateway/route
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000873s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001183s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000256s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000325s ]
+NOTIC: [2048] Declaration of Api\Controller\BaseController::ajaxReturn() should be compatible with Think\Controller::ajaxReturn($data, $type = '', $json_option = 0) /usr/local/var/www/pingshifen/Application/Api/Controller/BaseController.class.php 第 38 行.
+NOTIC: [2] Missing argument 1 for I(), called in /usr/local/var/www/pingshifen/Application/Api/Controller/GatewayController.class.php on line 32 and defined /usr/local/var/www/pingshifen/ThinkPHP/Common/functions.php 第 303 行.
+NOTIC: [8] Undefined variable: name /usr/local/var/www/pingshifen/ThinkPHP/Common/functions.php 第 306 行.
+NOTIC: [8] Undefined variable: name /usr/local/var/www/pingshifen/ThinkPHP/Common/functions.php 第 313 行.
+NOTIC: [8] Undefined variable: name /usr/local/var/www/pingshifen/ThinkPHP/Common/functions.php 第 376 行.
+
+[ 2018-01-31T23:51:51+08:00 ] 127.0.0.1 /pingshifen/index.php/Api/gateway/route?t=123
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001301s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001821s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001864s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002093s ]
+NOTIC: [2048] Declaration of Api\Controller\BaseController::ajaxReturn() should be compatible with Think\Controller::ajaxReturn($data, $type = '', $json_option = 0) /usr/local/var/www/pingshifen/Application/Api/Controller/BaseController.class.php 第 38 行.
+NOTIC: [2] Missing argument 1 for I(), called in /usr/local/var/www/pingshifen/Application/Api/Controller/GatewayController.class.php on line 32 and defined /usr/local/var/www/pingshifen/ThinkPHP/Common/functions.php 第 303 行.
+NOTIC: [8] Undefined variable: name /usr/local/var/www/pingshifen/ThinkPHP/Common/functions.php 第 306 行.
+NOTIC: [8] Undefined variable: name /usr/local/var/www/pingshifen/ThinkPHP/Common/functions.php 第 313 行.
+NOTIC: [8] Undefined variable: name /usr/local/var/www/pingshifen/ThinkPHP/Common/functions.php 第 376 行.
+
+[ 2018-01-31T23:51:51+08:00 ] 127.0.0.1 /pingshifen/index.php/Api/gateway/route
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002907s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003314s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000268s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000337s ]
+NOTIC: [2048] Declaration of Api\Controller\BaseController::ajaxReturn() should be compatible with Think\Controller::ajaxReturn($data, $type = '', $json_option = 0) /usr/local/var/www/pingshifen/Application/Api/Controller/BaseController.class.php 第 38 行.
+NOTIC: [2] Missing argument 1 for I(), called in /usr/local/var/www/pingshifen/Application/Api/Controller/GatewayController.class.php on line 32 and defined /usr/local/var/www/pingshifen/ThinkPHP/Common/functions.php 第 303 行.
+NOTIC: [8] Undefined variable: name /usr/local/var/www/pingshifen/ThinkPHP/Common/functions.php 第 306 行.
+NOTIC: [8] Undefined variable: name /usr/local/var/www/pingshifen/ThinkPHP/Common/functions.php 第 313 行.
+NOTIC: [8] Undefined variable: name /usr/local/var/www/pingshifen/ThinkPHP/Common/functions.php 第 376 行.
+
+[ 2018-01-31T23:54:06+08:00 ] 127.0.0.1 /pingshifen/index.php/Api/gateway/route
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003122s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004439s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000691s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000833s ]
+NOTIC: [2048] Declaration of Api\Controller\BaseController::ajaxReturn() should be compatible with Think\Controller::ajaxReturn($data, $type = '', $json_option = 0) /usr/local/var/www/pingshifen/Application/Api/Controller/BaseController.class.php 第 38 行.
+NOTIC: [2] Missing argument 1 for I(), called in /usr/local/var/www/pingshifen/Application/Api/Controller/GatewayController.class.php on line 32 and defined /usr/local/var/www/pingshifen/ThinkPHP/Common/functions.php 第 303 行.
+NOTIC: [8] Undefined variable: name /usr/local/var/www/pingshifen/ThinkPHP/Common/functions.php 第 306 行.
+NOTIC: [8] Undefined variable: name /usr/local/var/www/pingshifen/ThinkPHP/Common/functions.php 第 313 行.
+NOTIC: [8] Undefined variable: name /usr/local/var/www/pingshifen/ThinkPHP/Common/functions.php 第 376 行.
+
+[ 2018-01-31T23:54:06+08:00 ] 127.0.0.1 /pingshifen/index.php/Api/gateway/route?t=123
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003696s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000747s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000856s ]
+NOTIC: [2048] Declaration of Api\Controller\BaseController::ajaxReturn() should be compatible with Think\Controller::ajaxReturn($data, $type = '', $json_option = 0) /usr/local/var/www/pingshifen/Application/Api/Controller/BaseController.class.php 第 38 行.
+NOTIC: [2] Missing argument 1 for I(), called in /usr/local/var/www/pingshifen/Application/Api/Controller/GatewayController.class.php on line 32 and defined /usr/local/var/www/pingshifen/ThinkPHP/Common/functions.php 第 303 行.
+NOTIC: [8] Undefined variable: name /usr/local/var/www/pingshifen/ThinkPHP/Common/functions.php 第 306 行.
+NOTIC: [8] Undefined variable: name /usr/local/var/www/pingshifen/ThinkPHP/Common/functions.php 第 313 行.
+NOTIC: [8] Undefined variable: name /usr/local/var/www/pingshifen/ThinkPHP/Common/functions.php 第 376 行.
+
+[ 2018-01-31T23:54:07+08:00 ] 127.0.0.1 /pingshifen/index.php/Api/gateway/route?t=123
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000924s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001273s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000227s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000284s ]
+NOTIC: [2048] Declaration of Api\Controller\BaseController::ajaxReturn() should be compatible with Think\Controller::ajaxReturn($data, $type = '', $json_option = 0) /usr/local/var/www/pingshifen/Application/Api/Controller/BaseController.class.php 第 38 行.
+NOTIC: [2] Missing argument 1 for I(), called in /usr/local/var/www/pingshifen/Application/Api/Controller/GatewayController.class.php on line 32 and defined /usr/local/var/www/pingshifen/ThinkPHP/Common/functions.php 第 303 行.
+NOTIC: [8] Undefined variable: name /usr/local/var/www/pingshifen/ThinkPHP/Common/functions.php 第 306 行.
+NOTIC: [8] Undefined variable: name /usr/local/var/www/pingshifen/ThinkPHP/Common/functions.php 第 313 行.
+NOTIC: [8] Undefined variable: name /usr/local/var/www/pingshifen/ThinkPHP/Common/functions.php 第 376 行.
+
+[ 2018-01-31T23:54:07+08:00 ] 127.0.0.1 /pingshifen/index.php/Api/gateway/route
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000797s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001118s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000216s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000274s ]
+NOTIC: [2048] Declaration of Api\Controller\BaseController::ajaxReturn() should be compatible with Think\Controller::ajaxReturn($data, $type = '', $json_option = 0) /usr/local/var/www/pingshifen/Application/Api/Controller/BaseController.class.php 第 38 行.
+NOTIC: [2] Missing argument 1 for I(), called in /usr/local/var/www/pingshifen/Application/Api/Controller/GatewayController.class.php on line 32 and defined /usr/local/var/www/pingshifen/ThinkPHP/Common/functions.php 第 303 行.
+NOTIC: [8] Undefined variable: name /usr/local/var/www/pingshifen/ThinkPHP/Common/functions.php 第 306 行.
+NOTIC: [8] Undefined variable: name /usr/local/var/www/pingshifen/ThinkPHP/Common/functions.php 第 313 行.
+NOTIC: [8] Undefined variable: name /usr/local/var/www/pingshifen/ThinkPHP/Common/functions.php 第 376 行.
+
+[ 2018-01-31T23:54:20+08:00 ] 127.0.0.1 /pingshifen/index.php/Api/gateway/route?t=123
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003433s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004040s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000617s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000699s ]
+NOTIC: [2048] Declaration of Api\Controller\BaseController::ajaxReturn() should be compatible with Think\Controller::ajaxReturn($data, $type = '', $json_option = 0) /usr/local/var/www/pingshifen/Application/Api/Controller/BaseController.class.php 第 38 行.
+NOTIC: [2] Missing argument 1 for I(), called in /usr/local/var/www/pingshifen/Application/Api/Controller/GatewayController.class.php on line 32 and defined /usr/local/var/www/pingshifen/ThinkPHP/Common/functions.php 第 303 行.
+NOTIC: [8] Undefined variable: name /usr/local/var/www/pingshifen/ThinkPHP/Common/functions.php 第 306 行.
+NOTIC: [8] Undefined variable: name /usr/local/var/www/pingshifen/ThinkPHP/Common/functions.php 第 313 行.
+NOTIC: [8] Undefined variable: name /usr/local/var/www/pingshifen/ThinkPHP/Common/functions.php 第 376 行.
+
+[ 2018-01-31T23:54:20+08:00 ] 127.0.0.1 /pingshifen/index.php/Api/gateway/route
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000834s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001103s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000239s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000306s ]
+NOTIC: [2048] Declaration of Api\Controller\BaseController::ajaxReturn() should be compatible with Think\Controller::ajaxReturn($data, $type = '', $json_option = 0) /usr/local/var/www/pingshifen/Application/Api/Controller/BaseController.class.php 第 38 行.
+NOTIC: [2] Missing argument 1 for I(), called in /usr/local/var/www/pingshifen/Application/Api/Controller/GatewayController.class.php on line 32 and defined /usr/local/var/www/pingshifen/ThinkPHP/Common/functions.php 第 303 行.
+NOTIC: [8] Undefined variable: name /usr/local/var/www/pingshifen/ThinkPHP/Common/functions.php 第 306 行.
+NOTIC: [8] Undefined variable: name /usr/local/var/www/pingshifen/ThinkPHP/Common/functions.php 第 313 行.
+NOTIC: [8] Undefined variable: name /usr/local/var/www/pingshifen/ThinkPHP/Common/functions.php 第 376 行.
+
+[ 2018-01-31T23:54:30+08:00 ] 127.0.0.1 /pingshifen/index.php/Api/gateway/route?t=123
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000784s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001060s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000292s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000360s ]
+NOTIC: [2048] Declaration of Api\Controller\BaseController::ajaxReturn() should be compatible with Think\Controller::ajaxReturn($data, $type = '', $json_option = 0) /usr/local/var/www/pingshifen/Application/Api/Controller/BaseController.class.php 第 38 行.
+NOTIC: [2] Missing argument 1 for I(), called in /usr/local/var/www/pingshifen/Application/Api/Controller/GatewayController.class.php on line 32 and defined /usr/local/var/www/pingshifen/ThinkPHP/Common/functions.php 第 303 行.
+NOTIC: [8] Undefined variable: name /usr/local/var/www/pingshifen/ThinkPHP/Common/functions.php 第 306 行.
+NOTIC: [8] Undefined variable: name /usr/local/var/www/pingshifen/ThinkPHP/Common/functions.php 第 313 行.
+NOTIC: [8] Undefined variable: name /usr/local/var/www/pingshifen/ThinkPHP/Common/functions.php 第 376 行.
+
+[ 2018-01-31T23:54:30+08:00 ] 127.0.0.1 /pingshifen/index.php/Api/gateway/route
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000774s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001038s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000236s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000302s ]
+NOTIC: [2048] Declaration of Api\Controller\BaseController::ajaxReturn() should be compatible with Think\Controller::ajaxReturn($data, $type = '', $json_option = 0) /usr/local/var/www/pingshifen/Application/Api/Controller/BaseController.class.php 第 38 行.
+NOTIC: [2] Missing argument 1 for I(), called in /usr/local/var/www/pingshifen/Application/Api/Controller/GatewayController.class.php on line 32 and defined /usr/local/var/www/pingshifen/ThinkPHP/Common/functions.php 第 303 行.
+NOTIC: [8] Undefined variable: name /usr/local/var/www/pingshifen/ThinkPHP/Common/functions.php 第 306 行.
+NOTIC: [8] Undefined variable: name /usr/local/var/www/pingshifen/ThinkPHP/Common/functions.php 第 313 行.
+NOTIC: [8] Undefined variable: name /usr/local/var/www/pingshifen/ThinkPHP/Common/functions.php 第 376 行.
+
+[ 2018-01-31T23:55:03+08:00 ] 127.0.0.1 /pingshifen/index.php/Api/gateway/route?t=123
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000084s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001384s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004019s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000391s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000492s ]
+NOTIC: [2048] Declaration of Api\Controller\BaseController::ajaxReturn() should be compatible with Think\Controller::ajaxReturn($data, $type = '', $json_option = 0) /usr/local/var/www/pingshifen/Application/Api/Controller/BaseController.class.php 第 38 行.
+NOTIC: [2] Missing argument 1 for I(), called in /usr/local/var/www/pingshifen/Application/Api/Controller/GatewayController.class.php on line 32 and defined /usr/local/var/www/pingshifen/ThinkPHP/Common/functions.php 第 303 行.
+NOTIC: [8] Undefined variable: name /usr/local/var/www/pingshifen/ThinkPHP/Common/functions.php 第 306 行.
+NOTIC: [8] Undefined variable: name /usr/local/var/www/pingshifen/ThinkPHP/Common/functions.php 第 313 行.
+NOTIC: [8] Undefined variable: name /usr/local/var/www/pingshifen/ThinkPHP/Common/functions.php 第 376 行.
+
+[ 2018-01-31T23:55:03+08:00 ] 127.0.0.1 /pingshifen/index.php/Api/gateway/route
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001316s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001615s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000229s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000293s ]
+NOTIC: [2048] Declaration of Api\Controller\BaseController::ajaxReturn() should be compatible with Think\Controller::ajaxReturn($data, $type = '', $json_option = 0) /usr/local/var/www/pingshifen/Application/Api/Controller/BaseController.class.php 第 38 行.
+NOTIC: [2] Missing argument 1 for I(), called in /usr/local/var/www/pingshifen/Application/Api/Controller/GatewayController.class.php on line 32 and defined /usr/local/var/www/pingshifen/ThinkPHP/Common/functions.php 第 303 行.
+NOTIC: [8] Undefined variable: name /usr/local/var/www/pingshifen/ThinkPHP/Common/functions.php 第 306 行.
+NOTIC: [8] Undefined variable: name /usr/local/var/www/pingshifen/ThinkPHP/Common/functions.php 第 313 行.
+NOTIC: [8] Undefined variable: name /usr/local/var/www/pingshifen/ThinkPHP/Common/functions.php 第 376 行.
+
+[ 2018-01-31T23:55:19+08:00 ] 127.0.0.1 /pingshifen/index.php/Api/gateway/route
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001891s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002167s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000223s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000282s ]
+NOTIC: [2048] Declaration of Api\Controller\BaseController::ajaxReturn() should be compatible with Think\Controller::ajaxReturn($data, $type = '', $json_option = 0) /usr/local/var/www/pingshifen/Application/Api/Controller/BaseController.class.php 第 38 行.
+NOTIC: [2] Missing argument 1 for I(), called in /usr/local/var/www/pingshifen/Application/Api/Controller/GatewayController.class.php on line 32 and defined /usr/local/var/www/pingshifen/ThinkPHP/Common/functions.php 第 303 行.
+NOTIC: [8] Undefined variable: name /usr/local/var/www/pingshifen/ThinkPHP/Common/functions.php 第 306 行.
+NOTIC: [8] Undefined variable: name /usr/local/var/www/pingshifen/ThinkPHP/Common/functions.php 第 313 行.
+NOTIC: [8] Undefined variable: name /usr/local/var/www/pingshifen/ThinkPHP/Common/functions.php 第 376 行.
+
+[ 2018-01-31T23:55:19+08:00 ] 127.0.0.1 /pingshifen/index.php/Api/gateway/route?t=123
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000693s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000942s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000225s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000284s ]
+NOTIC: [2048] Declaration of Api\Controller\BaseController::ajaxReturn() should be compatible with Think\Controller::ajaxReturn($data, $type = '', $json_option = 0) /usr/local/var/www/pingshifen/Application/Api/Controller/BaseController.class.php 第 38 行.
+NOTIC: [2] Missing argument 1 for I(), called in /usr/local/var/www/pingshifen/Application/Api/Controller/GatewayController.class.php on line 32 and defined /usr/local/var/www/pingshifen/ThinkPHP/Common/functions.php 第 303 行.
+NOTIC: [8] Undefined variable: name /usr/local/var/www/pingshifen/ThinkPHP/Common/functions.php 第 306 行.
+NOTIC: [8] Undefined variable: name /usr/local/var/www/pingshifen/ThinkPHP/Common/functions.php 第 313 行.
+NOTIC: [8] Undefined variable: name /usr/local/var/www/pingshifen/ThinkPHP/Common/functions.php 第 376 行.
+
+[ 2018-01-31T23:55:57+08:00 ] 127.0.0.1 /pingshifen/index.php/Api/gateway/route?t=123
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002766s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004433s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000731s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000816s ]
+NOTIC: [2048] Declaration of Api\Controller\BaseController::ajaxReturn() should be compatible with Think\Controller::ajaxReturn($data, $type = '', $json_option = 0) /usr/local/var/www/pingshifen/Application/Api/Controller/BaseController.class.php 第 38 行.
+NOTIC: [2] Missing argument 1 for I(), called in /usr/local/var/www/pingshifen/Application/Api/Controller/GatewayController.class.php on line 32 and defined /usr/local/var/www/pingshifen/ThinkPHP/Common/functions.php 第 303 行.
+NOTIC: [8] Undefined variable: name /usr/local/var/www/pingshifen/ThinkPHP/Common/functions.php 第 306 行.
+NOTIC: [8] Undefined variable: name /usr/local/var/www/pingshifen/ThinkPHP/Common/functions.php 第 313 行.
+NOTIC: [8] Undefined variable: name /usr/local/var/www/pingshifen/ThinkPHP/Common/functions.php 第 376 行.
+
+[ 2018-01-31T23:56:41+08:00 ] 127.0.0.1 /pingshifen/index.php/Api/gateway/route?t=123
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000788s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001061s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000243s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000309s ]
+NOTIC: [2048] Declaration of Api\Controller\BaseController::ajaxReturn() should be compatible with Think\Controller::ajaxReturn($data, $type = '', $json_option = 0) /usr/local/var/www/pingshifen/Application/Api/Controller/BaseController.class.php 第 38 行.
+NOTIC: [2] Missing argument 1 for I(), called in /usr/local/var/www/pingshifen/Application/Api/Controller/GatewayController.class.php on line 32 and defined /usr/local/var/www/pingshifen/ThinkPHP/Common/functions.php 第 303 行.
+NOTIC: [8] Undefined variable: name /usr/local/var/www/pingshifen/ThinkPHP/Common/functions.php 第 306 行.
+NOTIC: [8] Undefined variable: name /usr/local/var/www/pingshifen/ThinkPHP/Common/functions.php 第 313 行.
+NOTIC: [8] Undefined variable: name /usr/local/var/www/pingshifen/ThinkPHP/Common/functions.php 第 376 行.
+
+[ 2018-01-31T23:56:41+08:00 ] 127.0.0.1 /pingshifen/index.php/Api/gateway/route
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000839s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001162s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000248s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000315s ]
+NOTIC: [2048] Declaration of Api\Controller\BaseController::ajaxReturn() should be compatible with Think\Controller::ajaxReturn($data, $type = '', $json_option = 0) /usr/local/var/www/pingshifen/Application/Api/Controller/BaseController.class.php 第 38 行.
+NOTIC: [2] Missing argument 1 for I(), called in /usr/local/var/www/pingshifen/Application/Api/Controller/GatewayController.class.php on line 32 and defined /usr/local/var/www/pingshifen/ThinkPHP/Common/functions.php 第 303 行.
+NOTIC: [8] Undefined variable: name /usr/local/var/www/pingshifen/ThinkPHP/Common/functions.php 第 306 行.
+NOTIC: [8] Undefined variable: name /usr/local/var/www/pingshifen/ThinkPHP/Common/functions.php 第 313 行.
+NOTIC: [8] Undefined variable: name /usr/local/var/www/pingshifen/ThinkPHP/Common/functions.php 第 376 行.
+
+[ 2018-01-31T23:58:03+08:00 ] 127.0.0.1 /pingshifen/index.php/Api/gateway/route?t=123
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000909s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001221s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000265s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000390s ]
+NOTIC: [2048] Declaration of Api\Controller\BaseController::ajaxReturn() should be compatible with Think\Controller::ajaxReturn($data, $type = '', $json_option = 0) /usr/local/var/www/pingshifen/Application/Api/Controller/BaseController.class.php 第 38 行.
+NOTIC: [2] Missing argument 1 for I(), called in /usr/local/var/www/pingshifen/Application/Api/Controller/GatewayController.class.php on line 32 and defined /usr/local/var/www/pingshifen/ThinkPHP/Common/functions.php 第 303 行.
+NOTIC: [8] Undefined variable: name /usr/local/var/www/pingshifen/ThinkPHP/Common/functions.php 第 306 行.
+NOTIC: [8] Undefined variable: name /usr/local/var/www/pingshifen/ThinkPHP/Common/functions.php 第 313 行.
+NOTIC: [8] Undefined variable: name /usr/local/var/www/pingshifen/ThinkPHP/Common/functions.php 第 376 行.
+
+[ 2018-01-31T23:59:15+08:00 ] 127.0.0.1 /pingshifen/index.php/Api/gateway/route?t=123
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000091s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002915s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004227s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000376s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000466s ]
+NOTIC: [2048] Declaration of Api\Controller\BaseController::ajaxReturn() should be compatible with Think\Controller::ajaxReturn($data, $type = '', $json_option = 0) /usr/local/var/www/pingshifen/Application/Api/Controller/BaseController.class.php 第 38 行.
+NOTIC: [2] Missing argument 1 for I(), called in /usr/local/var/www/pingshifen/Application/Api/Controller/GatewayController.class.php on line 32 and defined /usr/local/var/www/pingshifen/ThinkPHP/Common/functions.php 第 303 行.
+NOTIC: [8] Undefined variable: name /usr/local/var/www/pingshifen/ThinkPHP/Common/functions.php 第 306 行.
+NOTIC: [8] Undefined variable: name /usr/local/var/www/pingshifen/ThinkPHP/Common/functions.php 第 313 行.
+NOTIC: [8] Undefined variable: name /usr/local/var/www/pingshifen/ThinkPHP/Common/functions.php 第 376 行.
+
+[ 2018-01-31T23:59:19+08:00 ] 127.0.0.1 /pingshifen/index.php/Api/gateway/route?t=123
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001189s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001473s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000454s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000555s ]
+NOTIC: [2048] Declaration of Api\Controller\BaseController::ajaxReturn() should be compatible with Think\Controller::ajaxReturn($data, $type = '', $json_option = 0) /usr/local/var/www/pingshifen/Application/Api/Controller/BaseController.class.php 第 38 行.
+NOTIC: [2] Missing argument 1 for I(), called in /usr/local/var/www/pingshifen/Application/Api/Controller/GatewayController.class.php on line 32 and defined /usr/local/var/www/pingshifen/ThinkPHP/Common/functions.php 第 303 行.
+NOTIC: [8] Undefined variable: name /usr/local/var/www/pingshifen/ThinkPHP/Common/functions.php 第 306 行.
+NOTIC: [8] Undefined variable: name /usr/local/var/www/pingshifen/ThinkPHP/Common/functions.php 第 313 行.
+NOTIC: [8] Undefined variable: name /usr/local/var/www/pingshifen/ThinkPHP/Common/functions.php 第 376 行.
+
+[ 2018-01-31T23:59:48+08:00 ] 127.0.0.1 /pingshifen/index.php/Api/gateway/route?t=123
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.005778s ]
+INFO: [ app_init ] --END-- [ RunTime:0.007963s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000708s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000794s ]
+NOTIC: [2048] Declaration of Api\Controller\BaseController::ajaxReturn() should be compatible with Think\Controller::ajaxReturn($data, $type = '', $json_option = 0) /usr/local/var/www/pingshifen/Application/Api/Controller/BaseController.class.php 第 38 行.
+NOTIC: [2] Missing argument 1 for I(), called in /usr/local/var/www/pingshifen/Application/Api/Controller/GatewayController.class.php on line 32 and defined /usr/local/var/www/pingshifen/ThinkPHP/Common/functions.php 第 303 行.
+NOTIC: [8] Undefined variable: name /usr/local/var/www/pingshifen/ThinkPHP/Common/functions.php 第 306 行.
+NOTIC: [8] Undefined variable: name /usr/local/var/www/pingshifen/ThinkPHP/Common/functions.php 第 313 行.
+NOTIC: [8] Undefined variable: name /usr/local/var/www/pingshifen/ThinkPHP/Common/functions.php 第 376 行.
+

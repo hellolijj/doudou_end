@@ -19,9 +19,9 @@ class WeixinLogic extends BaseLogic {
     {
         $openid = session('openid');
         if ($openid) {
-            $this->ajaxReturn(['success' => TRUE, 'data' => $openid]);
+            return $this->setSuccess(['openid' => $openid], '获取openid成功');
         } else {
-            $this->ajaxReturn(['success' => FALSE, 'data' => NULL]);
+            return $this->setError('获取openid失败');
         }
     }
 }
