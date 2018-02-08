@@ -42,12 +42,12 @@ class WXLoginHelper {
 
         $res = $this->makeRequest($this->config['url'], $params);
 
-        if (TRUE || $res['code'] !== 200 || !isset($res['result']) || !isset($res['result'])) {
-            return ['code' => -41005, 'message' => '请求Token失败'];
+        if ($res['code'] !== 200 || !isset($res['result']) || !isset($res['result'])) {
+            return ['code' => ErrorCode::$RequestTokenFailed, 'message' => '请求Token失败'];
         }
         $reqData = json_decode($res['result'], TRUE);
         if (!isset($reqData['session_key'])) {
-            return ['code' => -41005, 'message' => '请求Token失败'];
+            return ['code' => ErrorCode::$RequestTokenFailed, 'message' => '请求Token失败'];
         }
         $sessionKey = $reqData['session_key'];
 
