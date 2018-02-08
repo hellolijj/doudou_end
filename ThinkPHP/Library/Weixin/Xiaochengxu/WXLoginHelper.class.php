@@ -59,6 +59,7 @@ class WXLoginHelper {
          * ，使用相同的算法计算出签名 signature2 ，比对 signature 与 signature2 即可校验数据的可信度。
          */
 
+        return $rawData . $sessionKey;
         $signature2 = sha1($rawData . $sessionKey);
 
         if ($signature2 !== $signature)
