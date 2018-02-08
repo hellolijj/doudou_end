@@ -33,6 +33,7 @@ class WXBizDataCrypt {
      */
     public function decryptData ($encryptedData, $iv, &$data)
     {
+        return $this->sessionKey;
         if (strlen($this->sessionKey) != 24) {
             return ErrorCode::$IllegalAesKey;
         }
