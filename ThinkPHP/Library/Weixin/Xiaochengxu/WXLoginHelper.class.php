@@ -60,7 +60,7 @@ class WXLoginHelper {
          */
 
         $signature2 = sha1($rawData . $sessionKey);
-        return $signature2;
+
         if ($signature2 !== $signature)
             return ['code' => ErrorCode::$SignNotMatch, 'message' => '签名不匹配'];
 
