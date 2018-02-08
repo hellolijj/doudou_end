@@ -58,8 +58,9 @@ class WXLoginHelper {
          * 将 signature、rawData、以及用户登录态发送给开发者服务器，开发者在数据库中找到该用户对应的 session-key
          * ，使用相同的算法计算出签名 signature2 ，比对 signature 与 signature2 即可校验数据的可信度。
          */
-        $signature2 = sha1($rawData . $sessionKey);
 
+        $signature2 = sha1($rawData . $sessionKey);
+        return $signature2;
         if ($signature2 !== $signature)
             return ['code' => ErrorCode::$SignNotMatch, 'message' => '签名不匹配'];
 
