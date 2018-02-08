@@ -98,28 +98,6 @@ class GatewayController extends BaseController {
         if (I('openid') && I('openid') != session('openid')) {
             session('openid', $openid);
         }
-
-        // 对微信uid的判断
-        /*$cache_key = 'user_info_by_uid_'.$uid;
-        $cache_value = json_decode(S($cache_key));
-        if (empty($cache_value->user_info)) {
-            // 判断是否注册
-            var_dump($openid);
-            var_dump(weixinService::$current_user_openid);
-
-            echo WeixinService::$current_user_openid; die;
-            if (is_register()) {
-                // todo add 缓存
-            } else {
-                // todo 是否在weixin 表中有记录
-                if (is_passer()){
-                    // todo 添加微信表 中记录
-                }
-
-                // todo 提示你还没有注册
-            }
-        }*/
-
     }
 
 }
