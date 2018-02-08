@@ -74,7 +74,7 @@ class WXLoginHelper {
         $errCode = $pc->decryptData($encryptedData, $iv, $data);
 
         if ($errCode != 0) {
-            return ['code' => ErrorCode::$EncryptDataNotMatch, 'message' => '解密信息错误', 'code' => $errCode];
+            return ['code' => ErrorCode::$EncryptDataNotMatch, 'message' => '解密信息错误', 'code1' => $errCode];
         }
 
 
