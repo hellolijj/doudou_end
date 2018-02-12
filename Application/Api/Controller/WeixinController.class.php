@@ -74,9 +74,11 @@ class WeixinController extends Controller {
         $iv = I("iv");
         $wxHelper = NEW  \Weixin\Xiaochengxu\WXLoginHelper();
         $data = $wxHelper->checkLogin($code, $rawData, $signature, $encryptedData, $iv);
-        session('openid', $data['openId'] . 'session');
+        session('openid', $data['openId']);
         S('openid', $data['openId'] . 'memcache', 3600);
         session('session3rd', $data['session3rd']);
+
+        print_r(session('openid'));
 
         $this->ajaxReturn(['success' => TRUE, 'data' => $data]);
 
