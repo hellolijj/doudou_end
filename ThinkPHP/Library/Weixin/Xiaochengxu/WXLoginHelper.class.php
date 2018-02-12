@@ -74,7 +74,7 @@ class WXLoginHelper {
         $errCode = $pc->decryptData($encryptedData, $iv, $data);
 
         if ($errCode != 0) {
-            return ['code' => ErrorCode::$EncryptDataNotMatch, 'message' => '解密信息错误', 'code1' => $errCode];
+            return ['code' => ErrorCode::$EncryptDataNotMatch, 'message' => '解密信息错误'];
         }
 
 
@@ -90,7 +90,7 @@ class WXLoginHelper {
         $session3rd = $this->randomFromDev(16);
 
         $data['session3rd'] = $session3rd;
-        S($session3rd, $data['openId'] . $sessionKey);
+        session('session3rd', $session3rd);
 
         return $data;
     }
