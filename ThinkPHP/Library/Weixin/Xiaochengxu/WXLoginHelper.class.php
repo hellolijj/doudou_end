@@ -71,7 +71,6 @@ class WXLoginHelper {
          * （使用官方提供的方法即可）
          */
         $pc = new WXBizDataCrypt($this->config['appid'], $sessionKey);
-        echo $sessionKey;
         $errCode = $pc->decryptData($encryptedData, $iv, $data);
 
         if ($errCode != 0) {
