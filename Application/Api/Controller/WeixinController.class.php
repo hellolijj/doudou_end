@@ -94,6 +94,7 @@ class WeixinController extends Controller {
 
         $local_3rdsession = session('3rdsession');
         $post_3rdsession = I('rd3_session');
+        print_r([$local_3rdsession, $post_3rdsession]);
 
         // 未过期
         if ($post_3rdsession && $post_3rdsession == $local_3rdsession) {
