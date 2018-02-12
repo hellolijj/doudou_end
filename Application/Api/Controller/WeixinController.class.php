@@ -75,19 +75,16 @@ class WeixinController extends Controller {
         $wxHelper = NEW  \Weixin\Xiaochengxu\WXLoginHelper();
         $data = $wxHelper->checkLogin($code, $rawData, $signature, $encryptedData, $iv);
         session('openid', $data['openId']);
-        S('openid', $data['openId'] . 'memcache', 3600);
+        S('openid', $data['openId'] . 'memcache');
         session('session3rd', $data['session3rd']);
+        print_r(S('openid'));
 
-        print_r(session('openid'));
+
 
         $this->ajaxReturn(['success' => TRUE, 'data' => $data]);
 
     }
 
-    public function checkLogin ()
-    {
-
-    }
 
     /*
      * 跟客户端保持check_3rdsession相同
@@ -97,7 +94,7 @@ class WeixinController extends Controller {
 
         $local_3rdsession = session('session3rd');
         $post_3rdsession = I('rd3_session');
-        print_r([$local_3rdsession, $post_3rdsession, session('openid'), session('session3rd')]);
+        print_r([$local_3rdsession, $post_3rdsession, session('openid'), session('session3rd'), S('openid')]);
 
         // 未过期
         if ($post_3rdsession && $post_3rdsession == $local_3rdsession) {
