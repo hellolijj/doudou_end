@@ -41,8 +41,6 @@ class WXLoginHelper {
         $params = ['appid' => $this->config['appid'], 'secret' => $this->config['secret'], 'js_code' => $code, 'grant_type' => $this->config['grant_type']];
 
         $res = $this->makeRequest($this->config['url'], $params);
-        print_r($res);
-        die;
 
         if ($res['code'] !== 200 || !isset($res['result']) || !isset($res['result'])) {
             return ['code' => ErrorCode::$RequestTokenFailed, 'message' => '请求Token失败'];
