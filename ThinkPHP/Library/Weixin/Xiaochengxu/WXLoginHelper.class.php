@@ -41,6 +41,8 @@ class WXLoginHelper {
         $params = ['appid' => $this->config['appid'], 'secret' => $this->config['secret'], 'js_code' => $code, 'grant_type' => $this->config['grant_type']];
 
         $res = $this->makeRequest($this->config['url'], $params);
+        print_r($res);
+        die;
 
         if ($res['code'] !== 200 || !isset($res['result']) || !isset($res['result'])) {
             return ['code' => ErrorCode::$RequestTokenFailed, 'message' => '请求Token失败'];
@@ -73,7 +75,7 @@ class WXLoginHelper {
         $pc = new WXBizDataCrypt($this->config['appid'], $sessionKey);
         $errCode = $pc->decryptData($encryptedData, $iv, $data);
 
-        if ($errCode !== 0) {
+        if ($errCode != 0) {
             return ['code' => ErrorCode::$EncryptDataNotMatch, 'message' => '解密信息错误', 'code1' => $errCode];
         }
 
