@@ -73,6 +73,7 @@ class WeixinController extends Controller {
         $wxHelper = NEW  \Weixin\Xiaochengxu\WXLoginHelper();
         $data = $wxHelper->checkLogin($code, $rawData, $signature, $encryptedData, $iv);
         S($data['session3rd'], json_encode($data), 3600);
+        S($data['openId'], json_encode($data), 3600);
         $this->save_weixin_user($data);
         // session缓存
         session('openid', $data['openId']);

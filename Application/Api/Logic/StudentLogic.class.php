@@ -40,7 +40,7 @@ class StudentLogic extends BaseLogic {
         }
 
         // 添加头像url 性别等参数 todo 使用crul抓取图像存到本地服务器
-        $weixin_user = json_encode(S(session('openid')), TRUE);
+        $weixin_user = json_decode(S(session('openid')), TRUE);
         if (!count($weixin_user)) {
             $this->setError('微信缓存数据失效');
         }
