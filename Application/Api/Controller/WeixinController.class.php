@@ -66,7 +66,6 @@ class WeixinController extends Controller {
      */
     public function login ()
     {
-
         $code = I("code");
         $rawData = I("rawData");
         $signature = I("signature");
@@ -75,14 +74,13 @@ class WeixinController extends Controller {
         $wxHelper = NEW  \Weixin\Xiaochengxu\WXLoginHelper();
         $data = $wxHelper->checkLogin($code, $rawData, $signature, $encryptedData, $iv);
         S($data['session3rd'], json_encode($data), 3600);
-
+        $this->save_weixin_user($data);
         $this->ajaxReturn(['success' => TRUE, 'data' => $data]);
-
     }
 
 
     /*
-     * 跟客户端保持check_3rdsession相同
+     * 跟客户端保持check_3rdsession相同,,实际上就是检查是否登陆
      */
     public function check_3rdsession ()
     {
@@ -97,7 +95,58 @@ class WeixinController extends Controller {
         } else {
             $this->ajaxReturn(['success' => FALSE, 'data' => FALSE]);
         }
+    }
 
+    /*
+     * 获取用户手机号码
+     */
+    public function get_user_tel ()
+    {
+        $post_3rdsession = I('rd3_session');
+        $encryptedData = I('encryptedData');
+        $iv = I('iv');
+        $wxHelper = NEW  \Weixin\Xiaochengxu\WXLoginHelper();
+        $data = $wxHelper->getUserTel($post_3rdsession, $encryptedData, $iv);
+        if (!$data) {
+            $this->ajaxReturn(['success' => FALSE, 'data' => NULL, 'message' => '获取数据为空']);
+        } else {
+            $this->ajaxReturn(['success' => TRUE, 'data' => $data]);
+        }
+
+    }
+
+    /*
+     * 保存每个登陆访问的用户信息
+     */
+    private function save_weixin_user ($user_info = '')
+    {
+        if (!is_array($user_info) || !$user_info['openId']) {
+            return FALSE;
+        }
+        $openid = $user_info['openId'];
+        $is_register = $this->is_register($openid);
+        if (!$is_register) {
+            $data = ['openid' => $user_info['openId'], 'nick' => $user_info['nickName'], 'sex' => intval($user_info['gender']), 'country' => $user_info['country'], 'province' => $user_info['province'], 'city' => $user_info['city'], 'avater' => $user_info['avatarUrl'], 'gmt_create' => time(), 'gmt_modified' => time(),
+
+            ];
+            M('Weixin')->add($data);
+        }
+    }
+
+    private function is_register ($openid = '')
+    {
+        $openid = 'oxk_l5RpzI36qpJz60b4ewMZUJOk';
+        $user_info = json_decode(S('openid_' . $openid), TRUE);
+        if (is_null($user_info)) {
+            $user_info = M('Weixin')->getByOpenid($openid);
+            if (is_null($user_info)) {
+                return FALSE;
+            } else {
+                S('openid' . $openid, json_encode($user_info), 3600);
+                return TRUE;
+            }
+        }
+        return TRUE;
     }
 
 
