@@ -23,7 +23,6 @@ class BaseLogic{
     public function __construct ()
     {
         $this->openidInit();
-        // $this->uidInit();
     }
 
     public function setError ($message, $data = NULL)

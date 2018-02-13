@@ -16,28 +16,18 @@ class StudentService extends BaseService {
     }
 
 
-    public function register ()
+    public function bind ($name, $tel, $school, $number, $enter_year, $head_img, $sex)
     {
-
-
+        $data = ['name' => $name, 'tel' => $tel, 'school' => $school, 'number' => $number, 'enter_year' => $enter_year, 'head_img' => $head_img, 'sex' => $sex, 'gmt_create' => time(), 'gmt_modified' => time(),];
+        $openid = session('openid');
+        $weixinService = new WeixinService();
+        if (!$weixinService->is_bind($openid, 'student')) {
+            $uid = M('Student')->add($data);
+            $weixinService->BeStudent($openid, $uid);
+            return TRUE;
+        }
+        return FALSE;
     }
-
-    public function isStudent ()
-    {
-        $user_type = $this::$current_user_type;
-        return $user_type == $this::$USER_TYPE_STUDENT;
-    }
-
-    /*
-     * 自动成为学生用户
-     */
-    public function autoAdd ()
-    {
-        $data = ['name' => '', 'school' => '', 'number' => 0, 'tel' => 0, 'sex' => 0, 'avater' => '', 'gmt_create' => time(), 'gmt_modified' => time(), 'status' => 1,];
-        $Student = D('Student');
-        return $Student->add($data);
-    }
-
 
 
 }

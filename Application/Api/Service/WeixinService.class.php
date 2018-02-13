@@ -13,32 +13,27 @@ class WeixinService extends BaseService {
     public function __construct ()
     {
         parent::__construct();
-        $this->recordOpenid();
     }
 
-    /*
-     * 如果首次使用平台则记录下其openid
-     */
-    private function recordOpenid ()
-    {
-        $openid = $this::$current_user_openid;
-        $user_type = $this::$current_user_type;
 
-        if ($openid && $user_type < 0) {
-            $data = ['openid' => $openid, 'type' => self::$USER_TYPE_UN_REGISTER,];
-            $WEIXIN = D('weixin');
-            $WEIXIN->create($data);
-            $WEIXIN->add();
+    /*
+     * 判断openid 是否绑定
+     * @param user_type string 'student' or 'teacher'
+     */
+    public function is_bind ($openid, $user_type)
+    {
+        $weixin_user = $this->getByOpenid($openid);
+        $USER_TYPE = [1 => 'student', 2 => 'teacher',];
+        if (!$weixin_user) {
+            return FALSE;
         }
+        if (!empty($weixin_user['uid']) && $weixin_user['type'] && $USER_TYPE[$weixin_user['type']] == $user_type) {
+            return TRUE;
+        }
+        return FALSE;
     }
 
-    /*
-     * 从微信订阅号 根据openid 信息
-     */
-    private function getWeixinInfoByTecent ()
-    {
-        // todo
-    }
+
 
     /*
      * be a student
@@ -55,9 +50,9 @@ class WeixinService extends BaseService {
         }
 
         // 更新缓存信息
-        $cache_key = 'user_openid_' . $openid;
-        $openid_result = $Weixin->getByOpenid($openid);
-        S($cache_key, json_encode(['openid' => $openid_result]), 3600);
+        $cache_key = $openid;
+        $weixin_user = $Weixin->getByOpenid($openid);
+        S($cache_key, json_encode($weixin_user), 3600);
         return TRUE;
     }
 
@@ -70,21 +65,21 @@ class WeixinService extends BaseService {
         if (!$openid) {
             return FALSE;
         }
-        $cache_key = 'user_openid_' . $openid;
+        $cache_key = $openid;
         $cache_value = json_decode(S($cache_key), TRUE);
-        if (empty($cache_value['openid'])) {
+        if (empty($cache_value)) {
             $Weixin = D('Weixin');
-            $openid_result = $Weixin->getByOpenid($openid);
-            if ($openid_result) {
-                S($cache_key, json_encode(['openid' => $openid_result]), 3600);
+            $weixin_user = $Weixin->getByOpenid($openid);
+            if ($weixin_user) {
+                S($cache_key, json_encode($weixin_user), 3600);
             } else {
                 return FALSE;
             }
         } else {
-            $openid_result = $cache_value['openid'];
+            $weixin_user = $cache_value;
         }
 
-        return $openid_result;
+        return $weixin_user;
     }
 
 

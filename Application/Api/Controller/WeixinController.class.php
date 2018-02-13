@@ -60,7 +60,6 @@ class WeixinController extends Controller {
         }
     }
 
-
     /*
      * 小程序的授权登陆接口
      */
@@ -75,7 +74,9 @@ class WeixinController extends Controller {
         $data = $wxHelper->checkLogin($code, $rawData, $signature, $encryptedData, $iv);
         S($data['session3rd'], json_encode($data), 3600);
         $this->save_weixin_user($data);
+        // session缓存
         session('openid', $data['openId']);
+        $data['session_id'] = session_id();
         $this->ajaxReturn(['success' => TRUE, 'data' => $data]);
     }
 
