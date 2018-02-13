@@ -75,6 +75,7 @@ class WeixinController extends Controller {
         $data = $wxHelper->checkLogin($code, $rawData, $signature, $encryptedData, $iv);
         S($data['session3rd'], json_encode($data), 3600);
         $this->save_weixin_user($data);
+        session('openid', $data['openId']);
         $this->ajaxReturn(['success' => TRUE, 'data' => $data]);
     }
 

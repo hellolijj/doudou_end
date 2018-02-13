@@ -23,7 +23,7 @@ class BaseLogic{
     public function __construct ()
     {
         $this->openidInit();
-        $this->uidInit();
+        // $this->uidInit();
     }
 
     public function setError ($message, $data = NULL)
@@ -67,7 +67,7 @@ class BaseLogic{
      */
     private function openidInit ()
     {
-        $openid = I('openid') ? I('openid') : session('openid');
+        $openid = session('openid');
         if (!$openid) {
             return $this->setError('无效的openid参数');
         }
