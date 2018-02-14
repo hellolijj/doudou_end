@@ -26,7 +26,7 @@ class MyLogic extends BaseLogic {
         if (!count($weixin_info)) {
             return $this->setError('缓存数据失效');
         }
-        $data = ['head_img' => $weixin_info['head_img'], 'is_bind' => $weixin_info['type'] > 0 ? TRUE : FALSE,];
+        $data = ['head_img' => $weixin_info['avatar'], 'is_bind' => $weixin_info['type'] > 0 ? TRUE : FALSE,];
         return $this->setSuccess($data, '获取数据成功');
     }
 
