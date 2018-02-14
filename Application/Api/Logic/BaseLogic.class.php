@@ -9,10 +9,6 @@
 
 namespace Api\Logic;
 
-use Api\Service\BaseService;
-use Api\Service\StudentService;
-use Api\Service\WeixinService;
-
 /**
  * 文档模型逻辑层公共模型
  * 所有逻辑层模型都需要继承此模型
@@ -22,7 +18,10 @@ class BaseLogic{
 
     public function __construct ()
     {
-        $this->openidInit();
+        $openidInid = $this->openidInit();
+        if (is_array($openidInid)) {
+            return $openidInid;
+        }
     }
 
     public function setError ($message, $data = NULL)
@@ -70,56 +69,16 @@ class BaseLogic{
         if (!$openid) {
             return $this->setError('无效的openid参数');
         }
-        if ($openid != session('openid')) {
-            session('openid', $openid);
-        }
-        $weixinService = new WeixinService();
-        $openid_result = $weixinService->getByOpenid($openid);
-        if (!$openid_result) {
-            $data = ['openid' => $openid, 'uid' => 0, 'type' => 0];
-            $Weixin = D('Weixin');
-            $Weixin->create($data);
-            if (!$Weixin->create($data)) {
-                return $this->setError($Weixin->getError());
-            } elseif (!$Weixin->add()) {
-                return $this->setError($Weixin->getError());
+        // todo 将微信信息缓存起来
+        $user_info = json_decode(S($openid), TRUE);
+        if (!count($user_info)) {
+            $user_info = M('Weixin')->getByOpenid($openid);
+            if (is_null($user_info)) {
+                return ['success' => FALSE, 'message' => '你还没有注册'];
             }
+            S($openid, json_encode($user_info), 3600);
         }
     }
 
-    /*
-     * uid 初始化处理
-     * uid 依赖于openid
-     */
-    private function uidInit ()
-    {
-        $openid = session('openid');
-        $uid = 0;
-        if (!$openid) {
-            return $this->setError('无效的openid参数');
-        }
-        $weixinService = new WeixinService();
-        $openid_result = $weixinService->getByOpenid($openid);
-        if (!$openid_result) {
-            return $this->setError('获取openid参数失败');
-        }
-        $uid = $openid_result['uid'];
-        if ($uid <= BaseService::$USER_TYPE_UN_REGISTER) {
-            // 自增uid
-            $studentService = new StudentService();
-            $Student = D('Student');
-            $sid = $studentService->autoAdd();
-            if (empty($sid)) {
-                return $this->setError('用户注册失败');
-            }
-            $student = $Student->getById($sid);
-            if (empty($student) || empty($student['id'])) {
-                return $this->setError('获取用户注册信息失败');
-            }
-            $uid = intval($student['id']);
-            $weixinService->BeStudent($openid, $uid);
-        }
-        session('uid', $uid);
-    }
 
 }

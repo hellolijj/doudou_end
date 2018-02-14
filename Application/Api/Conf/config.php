@@ -8,7 +8,7 @@
 
 return array(
 
-    'APP_NAME' => 'pingshifen', 'API_LIST' => ['SCHOOL', 'STUDENT', 'WEIXIN'],
+    'APP_NAME' => 'pingshifen', 'API_LIST' => ['SCHOOL', 'STUDENT', 'WEIXIN', 'TEACHER', 'MY'],
 
     /* 数据库配置 */
     'DB_TYPE' => 'mysql', // 数据库类型
@@ -18,4 +18,7 @@ return array(
     'DB_PWD' => '',  // 密码
     'DB_PORT' => '3306', // 端口
     'DB_PREFIX' => 'pingshifen_', // 数据库表前缀
+
+    'DB_PARAMS' => array(\PDO::ATTR_CASE => \PDO::CASE_NATURAL), // 数据库兼容大小写
+
 );

@@ -44,15 +44,16 @@ class StudentLogic extends BaseLogic {
         if (!count($weixin_user)) {
             $this->setError('微信缓存数据失效');
         }
-        $head_img = $weixin_user['avatarUrl'];
-        $sex = $weixin_user['gender'];
 
+        $head_img = $weixin_user['avatar'];
+        $sex = $weixin_user['gender'];
         $studentService = new StudentService();
         $result = $studentService->bind($name, $tel, $school, $number, $enter_year, $head_img, $sex);
-        if (!$result) {
-            return $this->setError('注册失败');
+        if (TRUE === $result) {
+            return $this->setSuccess([], '绑定成功');
+        } else {
+            return $this->setError($result['message']);
         }
-        return $this->setSuccess([], '注册成功');
     }
 
     public function info ()

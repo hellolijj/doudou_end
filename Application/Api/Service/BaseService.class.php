@@ -10,14 +10,16 @@ namespace Api\Service;
 
 class BaseService {
 
-    public static $USER_TYPE_STUDENT = 1;       // 学生用户
-    public static $USER_TYPE_TEACHER = 2;       // 教师用户
+    public static $USER_TYPE_STUDENT = 1;        // 学生用户
+    public static $USER_TYPE_TEACHER = 2;        // 教师用户
     public static $USER_TYPE_UN_REGISTER = 0;    // 未注册用户
+    public static $SYSTEM_UID = 145;             // 系统操作 系统uid
 
     public static $current_user_type = -1;       // 未存入数据类型
     public static $current_user_info = NULL;    // 用户信息
     public static $current_user_openid = NULL;
     public static $current_user_uid = 0;
+
 
     public static $GET_USER_LOGIN_TYPE_KEY = 'get_user_type_';
 

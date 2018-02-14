@@ -13,7 +13,6 @@ class SchoolLogic extends BaseLogic {
 
     public function search ()
     {
-
         $s_name = I('s_name');
         $page = intval(I('page'));
         $page_size = intval(I('page_size'));

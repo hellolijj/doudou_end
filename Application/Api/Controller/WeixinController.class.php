@@ -72,9 +72,13 @@ class WeixinController extends Controller {
         $iv = I("iv");
         $wxHelper = NEW  \Weixin\Xiaochengxu\WXLoginHelper();
         $data = $wxHelper->checkLogin($code, $rawData, $signature, $encryptedData, $iv);
-        S($data['session3rd'], json_encode($data), 3600);
-        S($data['openId'], json_encode($data), 3600);
-        $this->save_weixin_user($data);
+        $data['avater'] = $data['avatarUrl'];    //解决命名大小写问题
+        $data['nickname'] = $data['nickName'];
+        S($data['session3rd'], json_encode($data), 3600);  // 此缓存用于后面的验证是否登陆
+        $save_result = $this->save_weixin_user($data);
+        if (is_array($save_result)) {
+            $this->ajaxReturn($save_result);
+        }
         // session缓存
         session('openid', $data['openId']);
         $data['session_id'] = session_id();
@@ -110,16 +114,12 @@ class WeixinController extends Controller {
         $iv = I('iv');
         $wxHelper = NEW  \Weixin\Xiaochengxu\WXLoginHelper();
         $data = $wxHelper->getUserTel($post_3rdsession, $encryptedData, $iv);
-        if (!$data) {
-            $this->ajaxReturn(['success' => FALSE, 'data' => NULL, 'message' => '获取数据为空']);
-        } else {
-            $this->ajaxReturn(['success' => TRUE, 'data' => $data]);
-        }
-
+        $this->ajaxReturn($data);
     }
 
     /*
      * 保存每个登陆访问的用户信息
+     * @return true 保持功能 array 包含返回提示信息
      */
     private function save_weixin_user ($user_info = '')
     {
@@ -128,24 +128,32 @@ class WeixinController extends Controller {
         }
         $openid = $user_info['openId'];
         $is_register = $this->is_register($openid);
-        if (!$is_register) {
+        if (FALSE === $is_register) {
             $data = ['openid' => $user_info['openId'], 'nick' => $user_info['nickName'], 'sex' => intval($user_info['gender']), 'country' => $user_info['country'], 'province' => $user_info['province'], 'city' => $user_info['city'], 'avater' => $user_info['avatarUrl'], 'gmt_create' => time(), 'gmt_modified' => time(),
-
             ];
             M('Weixin')->add($data);
+            return TRUE;
+        } elseif (is_array($is_register)) {
+            return $is_register;
         }
     }
 
+    /*
+     * 判断是否注册
+     * @ return true 注册 false 未注册 array 错误的原因
+     */
     private function is_register ($openid = '')
     {
-        $openid = 'oxk_l5RpzI36qpJz60b4ewMZUJOk';
-        $user_info = json_decode(S('openid_' . $openid), TRUE);
-        if (is_null($user_info)) {
+        if (!$openid) {
+            return ['success' => FALSE, 'message' => '参数为空'];
+        }
+        $user_info = json_decode(S($openid), TRUE);
+        if (!count($user_info)) {
             $user_info = M('Weixin')->getByOpenid($openid);
             if (is_null($user_info)) {
                 return FALSE;
             } else {
-                S('openid' . $openid, json_encode($user_info), 3600);
+                S($openid, json_encode($user_info), 3600);
                 return TRUE;
             }
         }
