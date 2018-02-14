@@ -104,7 +104,6 @@ class WXLoginHelper {
         if (is_null($session3rd)) {
             return FALSE;
         }
-        print_r($sessionKey);die;
         $pc = new WXBizDataCrypt($this->config['appid'], $sessionKey);
         $errCode = $pc->decryptData($encryptedData, $iv, $data);
 
