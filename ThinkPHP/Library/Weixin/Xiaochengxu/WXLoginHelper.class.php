@@ -101,17 +101,17 @@ class WXLoginHelper {
     public function getUserTel ($session3rd, $encryptedData, $iv)
     {
         $sessionKey = S($session3rd . 'session_key');
-        if (is_null($session3rd)) {
-            return FALSE;
+        if (!$sessionKey || !count($sessionKey)) {
+            return ['success' => FALSE, 'message' => 'session缓存数据失效'];
         }
         $pc = new WXBizDataCrypt($this->config['appid'], $sessionKey);
         $errCode = $pc->decryptData($encryptedData, $iv, $data);
 
         if ($errCode != 0) {
-            return ['code' => ErrorCode::$EncryptDataNotMatch, 'message' => '解密信息错误'];
+            return ['success' => FALSE, 'code' => ErrorCode::$EncryptDataNotMatch, 'message' => '解密信息错误'];
         }
         $data = json_decode($data, TRUE);
-        return $data;
+        return ['success' => TRUE, 'data' => $data];
     }
 
 
