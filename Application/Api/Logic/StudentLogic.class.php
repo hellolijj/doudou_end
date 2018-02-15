@@ -47,6 +47,8 @@ class StudentLogic extends BaseLogic {
 
         $head_img = $weixin_user['avatar'];
         $sex = $weixin_user['gender'];
+        var_dump(session('openid'));
+        var_dump(S(session('openid')));
         var_dump($weixin_user);
         die;
         $studentService = new StudentService();
