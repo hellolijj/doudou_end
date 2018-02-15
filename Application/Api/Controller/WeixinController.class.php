@@ -72,7 +72,7 @@ class WeixinController extends Controller {
         $iv = I("iv");
         $wxHelper = NEW  \Weixin\Xiaochengxu\WXLoginHelper();
         $data = $wxHelper->checkLogin($code, $rawData, $signature, $encryptedData, $iv);
-        $data['avater'] = $data['avatarUrl'];    //解决命名大小写问题
+        $data['avatar'] = $data['avatarUrl'];    //解决命名大小写问题
         $data['nickname'] = $data['nickName'];
         S($data['session3rd'], json_encode($data), 3600);  // 此缓存用于后面的验证是否登陆
         $save_result = $this->save_weixin_user($data);
