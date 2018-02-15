@@ -10,6 +10,7 @@ namespace Api\Logic;
 
 
 use Api\Service\StudentService;
+use Api\Service\WeixinService;
 
 class StudentLogic extends BaseLogic {
 
@@ -40,7 +41,8 @@ class StudentLogic extends BaseLogic {
         }
 
         // 添加头像url 性别等参数 todo 使用crul抓取图像存到本地服务器
-        $weixin_user = json_decode(S(session('openid')), TRUE);
+        $weixinService = new WeixinService();
+        $weixin_user = $weixinService->getByOpenid(session('openid'));
         if (!count($weixin_user)) {
             $this->setError('微信缓存数据失效');
         }
