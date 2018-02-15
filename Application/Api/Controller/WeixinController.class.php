@@ -129,7 +129,7 @@ class WeixinController extends Controller {
         $openid = $user_info['openId'];
         $is_register = $this->is_register($openid);
         if (FALSE === $is_register) {
-            $data = ['openid' => $user_info['openId'], 'nick' => $user_info['nickName'], 'sex' => intval($user_info['gender']), 'country' => $user_info['country'], 'province' => $user_info['province'], 'city' => $user_info['city'], 'avater' => $user_info['avatarUrl'], 'gmt_create' => time(), 'gmt_modified' => time(),
+            $data = ['openid' => $user_info['openId'], 'nick' => $user_info['nickName'], 'sex' => intval($user_info['gender']), 'country' => $user_info['country'], 'province' => $user_info['province'], 'city' => $user_info['city'], 'avatar' => $user_info['avatarUrl'], 'gmt_create' => time(), 'gmt_modified' => time(),
             ];
             M('Weixin')->add($data);
             return TRUE;
