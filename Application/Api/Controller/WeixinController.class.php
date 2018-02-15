@@ -94,7 +94,11 @@ class WeixinController extends Controller {
         $post_session3rd = I('rd3_session');
         $local_session3rd = session('session3rd');
         if (empty($local_3rdsession)) {
+            session('session3rd', NULL);
             $this->ajaxReturn(['success' => FALSE, 'data' => FALSE, 'message' => '服务端数据过期']);
+        }
+        if (!session('openid')) {
+            $this->ajaxReturn(['success' => FALSE, 'data' => FALSE, 'message' => 'openid数据失效']);
         }
         if ($post_session3rd && $post_session3rd != $local_session3rd) {
             session('session3rd', NULL);
