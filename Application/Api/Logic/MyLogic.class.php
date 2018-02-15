@@ -22,11 +22,13 @@ class MyLogic extends BaseLogic {
     public function index ()
     {
         $openid = session('openid');
-        $weixin_info = json_decode(S($openid), TRUE);
-        if (!count($weixin_info)) {
-            return $this->setError('缓存数据失效');
+        $weixinService = new WeixinService();
+        $weixin_user_result = $weixinService->getByOpenid($openid);
+        if ($weixin_user_result['success'] === FALSE) {
+            return $this->setError($weixin_user_result['message']);
         }
-        $data = ['avatar' => $weixin_info['avatar'], 'is_bind' => $weixin_info['type'] > 0 ? TRUE : FALSE,];
+        $weixin_user = $weixin_user_result['data'];
+        $data = ['avatar' => $weixin_user['avatar'], 'is_bind' => $weixin_user['type'] > 0 ? TRUE : FALSE,];
         return $this->setSuccess($data, '获取数据成功');
     }
 
