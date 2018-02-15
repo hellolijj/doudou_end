@@ -53,7 +53,7 @@ class TeacherLogic extends BaseLogic {
         if (is_array($bind_result)) {
             return $bind_result;
         } elseif (is_numeric($bind_result)) {
-            $uid = $this->setError($bind_result['message']);
+            $uid = $bind_result;
             $invationService->add($uid, $invitation_code, $invitor_uid);
             return $this->setSuccess([], '绑定成功');
         } else {
