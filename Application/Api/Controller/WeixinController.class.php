@@ -117,6 +117,9 @@ class WeixinController extends Controller {
         $iv = I('iv');
         $wxHelper = NEW  \Weixin\Xiaochengxu\WXLoginHelper();
         $data = $wxHelper->getUserTel($post_3rdsession, $encryptedData, $iv);
+        if ($data['success'] === FALSE) {
+            $this->ajaxReturn(['success' => FALSE, 'message' => $data['message']]);
+        }
         $this->ajaxReturn(['success' => TRUE, 'data' => $data]);
     }
 
