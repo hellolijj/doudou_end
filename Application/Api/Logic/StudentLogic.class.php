@@ -47,6 +47,8 @@ class StudentLogic extends BaseLogic {
 
         $head_img = $weixin_user['avatar'];
         $sex = $weixin_user['gender'];
+        var_dump($weixin_user);
+        die;
         $studentService = new StudentService();
         $result = $studentService->bind($name, $tel, $school, $number, $enter_year, $head_img, $sex);
         if (TRUE === $result) {
