@@ -42,17 +42,13 @@ class StudentLogic extends BaseLogic {
 
         // 添加头像url 性别等参数 todo 使用crul抓取图像存到本地服务器
         $weixinService = new WeixinService();
-        $weixin_user = $weixinService->getByOpenid(session('openid'));
-        if (!count($weixin_user)) {
-            $this->setError('微信缓存数据失效');
+        $weixin_user_result = $weixinService->getByOpenid(session('openid'));
+        if (FALSE === $weixin_user_result) {
+            $this->setError($weixin_user_result['message']);
         }
-
+        $weixin_user = $weixin_user_result['data'];
         $head_img = $weixin_user['avatar'];
         $sex = $weixin_user['gender'];
-        var_dump(session('openid'));
-        var_dump(S(session('openid')));
-        var_dump($weixin_user);
-        die;
         $studentService = new StudentService();
         $result = $studentService->bind($name, $tel, $school, $number, $enter_year, $head_img, $sex);
         if (TRUE === $result) {
