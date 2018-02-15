@@ -60,10 +60,16 @@ class WXLoginHelper {
          */
 
         $signature2 = sha1($rawData . $sessionKey);
+        //        var_dump($rawData);
+        //        echo $rawData;
+        //        echo $signature . "\n";
+        //        echo $sessionKey . "\n";
+        //        echo $signature2;
+        //        die;
 
 
-        if ($signature2 != $signature)
-            return ['success' => FALSE, 'code' => ErrorCode::$SignNotMatch, 'message' => '签名不匹配', 'sig1' => $signature2, 'sig2' => $sessionKey];
+        //        if ($signature2 != $signature)
+        //            return ['success' => FALSE, 'code' => ErrorCode::$SignNotMatch, 'message' => '签名不匹配', 'sig1' => $signature2, 'sig2' => $sessionKey];
 
         /**
          *

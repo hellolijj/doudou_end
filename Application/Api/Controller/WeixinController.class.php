@@ -9,6 +9,7 @@
 
 namespace Api\Controller;
 
+use Api\Service\WeixinService;
 use Think\Controller;
 
 /**
@@ -66,21 +67,22 @@ class WeixinController extends Controller {
     public function login ()
     {
         $code = I("code");
-        $rawData = I("rawData");
+        $rawData = htmlspecialchars(I("rawData"));
         $signature = I("signature");
         $encryptedData = I("encryptedData");
         $iv = I("iv");
         $wxHelper = NEW  \Weixin\Xiaochengxu\WXLoginHelper();
-        $data = $wxHelper->checkLogin($code, $rawData, $signature, $encryptedData, $iv);
-        if ($data['success'] === FALSE) {
-            $this->ajaxReturn(['success' => FALSE, 'message' => $data['message']]);
+        $data_result = $wxHelper->checkLogin($code, $rawData, $signature, $encryptedData, $iv);
+        if ($data_result['success'] === FALSE) {
+            $this->ajaxReturn(['success' => FALSE, 'message' => $data_result['message']]);
         }
+        $data = $data_result['data'];
         $data['avatar'] = $data['avatarUrl'];    //解决命名大小写问题
         $data['nickname'] = $data['nickName'];
         S($data['session3rd'], json_encode($data), 3600);  // 此缓存用于后面的验证是否登陆
         $save_result = $this->save_weixin_user($data);
-        if (is_array($save_result)) {
-            $this->ajaxReturn($save_result);
+        if ($save_result['success'] === FALSE) {
+            $this->ajaxReturn(['success' => FALSE, 'message' => $save_result['message']]);
         }
         // session缓存
         session('openid', $data['openId']);
@@ -137,17 +139,16 @@ class WeixinController extends Controller {
     private function save_weixin_user ($user_info = '')
     {
         if (!is_array($user_info) || !$user_info['openId']) {
-            return FALSE;
+            return ['success' => FALSE, 'message' => '无效的openid'];
         }
         $openid = $user_info['openId'];
         $is_register = $this->is_register($openid);
         if (FALSE === $is_register) {
-            $data = ['openid' => $user_info['openId'], 'nick' => $user_info['nickName'], 'sex' => intval($user_info['gender']), 'country' => $user_info['country'], 'province' => $user_info['province'], 'city' => $user_info['city'], 'avatar' => $user_info['avatarUrl'], 'gmt_create' => time(), 'gmt_modified' => time(),
-            ];
+            $data = ['openid' => $user_info['openId'], 'nickname' => $user_info['nickName'], 'gender' => intval($user_info['gender']), 'country' => $user_info['country'], 'province' => $user_info['province'], 'city' => $user_info['city'], 'avatar' => $user_info['avatarUrl'], 'gmt_create' => time(), 'gmt_modified' => time(),];
             M('Weixin')->add($data);
-            return TRUE;
+            return ['success' => TRUE];
         } elseif (is_array($is_register)) {
-            return $is_register;
+            return ['success' => FALSE, 'message' => $is_register['message']];
         }
     }
 
@@ -160,17 +161,15 @@ class WeixinController extends Controller {
         if (!$openid) {
             return ['success' => FALSE, 'message' => '参数为空'];
         }
-        $user_info = json_decode(S($openid), TRUE);
-        if (!count($user_info)) {
-            $user_info = M('Weixin')->getByOpenid($openid);
-            if (is_null($user_info)) {
-                return FALSE;
-            } else {
-                S($openid, json_encode($user_info), 3600);
-                return TRUE;
-            }
+        $weixinService = new WeixinService();
+        $weixin_user_result = $weixinService->getByOpenid($openid);
+        if ($weixin_user_result['success'] === FALSE && $weixin_user_result['code'] === WeixinService::$ERROR_NO_REGISTER) {
+            return FALSE;
         }
-        return TRUE;
+        if ($weixin_user_result['success'] === TRUE) {
+            return TRUE;
+        }
+        return ['success' => FALSE, 'message' => '未知的原因'];;
     }
 
 }

@@ -25,8 +25,3 @@ function check_num_id ($id)
 
     return TRUE;
 }
-
-function is_register ()
-{
-
-}

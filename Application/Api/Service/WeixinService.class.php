@@ -10,6 +10,9 @@ namespace Api\Service;
 
 class WeixinService extends BaseService {
 
+    public static $ERROR_NO_REGISTER = 4001;
+    public static $ERROR_INFO = [4001 => '用户没有注册',];
+
     public function __construct ()
     {
         parent::__construct();
@@ -114,7 +117,7 @@ class WeixinService extends BaseService {
             if ($weixin_user) {
                 S($cache_key, json_encode($weixin_user), 3600);
             } else {
-                return ['success' => FALSE, 'message' => '获取不到数据库的信息'];
+                return ['success' => FALSE, 'code' => self::$ERROR_NO_REGISTER, 'message' => '获取不到用户信息'];
             }
         } else {
             $weixin_user = $cache_value;
