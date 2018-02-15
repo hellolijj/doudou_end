@@ -91,16 +91,19 @@ class WeixinController extends Controller {
      */
     public function check_3rdsession ()
     {
-        $post_3rdsession = I('rd3_session');
-        $local_session = json_decode(S($post_3rdsession), TRUE);
-        if (empty($local_session)) {
-            $this->ajaxReturn(['success' => FALSE, 'data' => FALSE, 'message' => '已经过期']);
+        $post_session3rd = I('rd3_session');
+        $local_session3rd = session('session3rd');
+        if (empty($local_3rdsession)) {
+            $this->ajaxReturn(['success' => FALSE, 'data' => FALSE, 'message' => '服务端数据过期']);
         }
-        // 未过期
-        if ($post_3rdsession && $local_session['session3rd'] == $post_3rdsession) {
+        if ($post_session3rd && $post_session3rd != $local_session3rd) {
+            session('session3rd', NULL);
+            $this->ajaxReturn(['success' => FALSE, 'data' => FALSE, 'message' => '客户端端数据过期']);
+        }
+        if ($post_session3rd && $post_session3rd == $local_session3rd) {
             $this->ajaxReturn(['success' => TRUE, 'data' => TRUE]);
         } else {
-            $this->ajaxReturn(['success' => FALSE, 'data' => FALSE]);
+            $this->ajaxReturn(['success' => FALSE, 'data' => FALSE, 'message' => '未知的错误']);
         }
     }
 
@@ -114,7 +117,7 @@ class WeixinController extends Controller {
         $iv = I('iv');
         $wxHelper = NEW  \Weixin\Xiaochengxu\WXLoginHelper();
         $data = $wxHelper->getUserTel($post_3rdsession, $encryptedData, $iv);
-        $this->ajaxReturn($data);
+        $this->ajaxReturn(['success' => TRUE, 'data' => $data]);
     }
 
     /*

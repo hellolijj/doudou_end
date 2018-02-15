@@ -91,7 +91,7 @@ class WXLoginHelper {
 
         $data['session3rd'] = $session3rd;
         S($session3rd . 'session_key', $sessionKey, 3600);
-
+        session('session3rd', $session3rd);
         return $data;
     }
 
@@ -102,6 +102,7 @@ class WXLoginHelper {
     {
         $sessionKey = S($session3rd . 'session_key');
         if (!$sessionKey || !count($sessionKey)) {
+            session('session3rd', NULL);
             return ['success' => FALSE, 'message' => 'session缓存数据失效'];
         }
         $pc = new WXBizDataCrypt($this->config['appid'], $sessionKey);
