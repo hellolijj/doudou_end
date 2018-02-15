@@ -72,6 +72,9 @@ class WeixinController extends Controller {
         $iv = I("iv");
         $wxHelper = NEW  \Weixin\Xiaochengxu\WXLoginHelper();
         $data = $wxHelper->checkLogin($code, $rawData, $signature, $encryptedData, $iv);
+        if ($data['success'] === FALSE) {
+            $this->ajaxReturn(['success' => FALSE, 'message' => $data['message']]);
+        }
         $data['avatar'] = $data['avatarUrl'];    //解决命名大小写问题
         $data['nickname'] = $data['nickName'];
         S($data['session3rd'], json_encode($data), 3600);  // 此缓存用于后面的验证是否登陆
@@ -169,6 +172,5 @@ class WeixinController extends Controller {
         }
         return TRUE;
     }
-
 
 }

@@ -43,11 +43,11 @@ class WXLoginHelper {
         $res = $this->makeRequest($this->config['url'], $params);
 
         if ($res['code'] !== 200 || !isset($res['result']) || !isset($res['result'])) {
-            return ['code' => ErrorCode::$RequestTokenFailed, 'message' => '请求Token失败'];
+            return ['success' => FALSE, 'code' => ErrorCode::$RequestTokenFailed, 'message' => '请求Token失败'];
         }
         $reqData = json_decode($res['result'], TRUE);
         if (!isset($reqData['session_key'])) {
-            return ['code' => ErrorCode::$RequestTokenFailed, 'message' => '请求Token失败'];
+            return ['success' => FALSE, 'code' => ErrorCode::$RequestTokenFailed, 'message' => '请求Token失败'];
         }
         $sessionKey = $reqData['session_key'];
 
@@ -61,8 +61,9 @@ class WXLoginHelper {
 
         $signature2 = sha1($rawData . $sessionKey);
 
+
         if ($signature2 != $signature)
-            return ['code' => ErrorCode::$SignNotMatch, 'message' => '签名不匹配', 'sig1' => $signature2, 'sig2' => $sessionKey];
+            return ['success' => FALSE, 'code' => ErrorCode::$SignNotMatch, 'message' => '签名不匹配', 'sig1' => $signature2, 'sig2' => $sessionKey];
 
         /**
          *
@@ -74,7 +75,7 @@ class WXLoginHelper {
         $errCode = $pc->decryptData($encryptedData, $iv, $data);
 
         if ($errCode != 0) {
-            return ['code' => ErrorCode::$EncryptDataNotMatch, 'message' => '解密信息错误'];
+            return ['success' => FALSE, 'code' => ErrorCode::$EncryptDataNotMatch, 'message' => '解密信息错误'];
         }
 
 
@@ -92,7 +93,7 @@ class WXLoginHelper {
         $data['session3rd'] = $session3rd;
         S($session3rd . 'session_key', $sessionKey, 3600);
         session('session3rd', $session3rd);
-        return $data;
+        return ['success' => TRUE, 'data' => $data];
     }
 
     /*
