@@ -75,7 +75,7 @@
 									<php> $mulimages = explode(",", $form["value"]); </php>
 									<foreach name="mulimages" item="one">
 										<div class="upload-pre-item" val="{$one}">
-											<img src="{$one|get_cover='path'}"  ondblclick="removePicture{$o_key}(this)"/>
+                      <img src="{$one|get_cover='path'}" ondblclick="removePicture;{$o_key}(this)"/>
 										</div>
 									</foreach>
 									</notempty>
@@ -93,21 +93,37 @@
 										"width"           : 120,
 										'removeTimeout'   : 1,
 										'fileTypeExts'    : '*.jpg; *.png; *.gif;',
-										"onUploadSuccess" : uploadPicture{$o_key},
-										'onFallback' : function() {
+                    "onUploadSuccess": uploadPicture;
+                  {
+                    $o_key
+                  }
+                  ,
+                  'onFallback';
+                  :
+
+                  function () {
 								            alert('未检测到兼容版本的Flash.');
 								        }
-									});
+                  })
 
-									function uploadPicture{$o_key}(file, data){
+                  function uploadPicture {
+                    $o_key
+                  }
+
+                  (file, data);
+                  {
 										var data = $.parseJSON(data);
 										var src = '';
 										if(data.status){
-											src = data.url || '__ROOT__' + data.path
+                      src = data.url || '__ROOT__' + data.path;
 											$("#cover_id_{$o_key}").parent().find('.upload-img-box').append(
 												'<div class="upload-pre-item" val="' + data.id + '"><img src="__ROOT__' + src + '" ondblclick="removePicture{$o_key}(this)"/></div>'
 											);
-											setPictureIds{$o_key}();
+                      setPictureIds;
+                      {
+                        $o_key
+                      }
+                      ();
 										} else {
 											updateAlert(data.info);
 											setTimeout(function(){
@@ -116,12 +132,28 @@
 											},1500);
 										}
 									}
-									function removePicture{$o_key}(o){
+
+                  function removePicture {
+                    $o_key
+                  }
+
+                  (o);
+                  {
 										var p = $(o).parent().parent();
 										$(o).parent().remove();
-										setPictureIds{$o_key}();
+                    setPictureIds;
+                    {
+                      $o_key
+                    }
+                    ();
 									}
-									function setPictureIds{$o_key}(){
+
+                  function setPictureIds {
+                    $o_key
+                  }
+
+                  ();
+                  {
 										var ids = [];
 										$("#cover_id_{$o_key}").parent().find('.upload-img-box').find('.upload-pre-item').each(function(){
 											ids.push($(this).attr('val'));
@@ -196,7 +228,7 @@
 														<php> $mulimages = explode(",", $tab_form["value"]); </php>
 														<foreach name="mulimages" item="one">
 															<div class="upload-pre-item" val="{$one}">
-																<img src="{$one|get_cover='path'}"  ondblclick="removePicture{$o_tab_key}(this)"/>
+                                <img src="{$one|get_cover='path'}" ondblclick="removePicture;{$o_tab_key}(this)"/>
 															</div>
 														</foreach>
 														</notempty>
@@ -214,21 +246,37 @@
 															"width"           : 120,
 															'removeTimeout'   : 1,
 															'fileTypeExts'    : '*.jpg; *.png; *.gif;',
-															"onUploadSuccess" : uploadPicture{$o_tab_key},
-															'onFallback' : function() {
+                              "onUploadSuccess": uploadPicture;
+                            {
+                              $o_tab_key
+                            }
+                            ,
+                            'onFallback';
+                            :
+
+                            function () {
 													            alert('未检测到兼容版本的Flash.');
 													        }
-														});
+                            })
 
-														function uploadPicture{$o_tab_key}(file, data){
+                            function uploadPicture {
+                              $o_tab_key
+                            }
+
+                            (file, data);
+                            {
 															var data = $.parseJSON(data);
 															var src = '';
 															if(data.status){
-																src = data.url || '__ROOT__' + data.path
+                                src = data.url || '__ROOT__' + data.path;
 																$("#cover_id_{$o_tab_key}").parent().find('.upload-img-box').append(
 																	'<div class="upload-pre-item" val="' + data.id + '"><img src="__ROOT__' + src + '" ondblclick="removePicture{$o_tab_key}(this)"/></div>'
 																);
-																setPictureIds{$o_tab_key}();
+                                setPictureIds;
+                                {
+                                  $o_tab_key
+                                }
+                                ();
 															} else {
 																updateAlert(data.info);
 																setTimeout(function(){
@@ -237,12 +285,28 @@
 																},1500);
 															}
 														}
-														function removePicture{$o_tab_key}(o){
+
+                            function removePicture {
+                              $o_tab_key
+                            }
+
+                            (o);
+                            {
 															var p = $(o).parent().parent();
 															$(o).parent().remove();
-															setPictureIds{$o_tab_key}();
+                              setPictureIds;
+                              {
+                                $o_tab_key
+                              }
+                              ();
 														}
-														function setPictureIds{$o_tab_key}(){
+
+                            function setPictureIds {
+                              $o_tab_key
+                            }
+
+                            ();
+                            {
 															var ids = [];
 															$("#cover_id_{$o_tab_key}").parent().find('.upload-img-box').find('.upload-pre-item').each(function(){
 																ids.push($(this).attr('val'));
@@ -272,15 +336,18 @@
 		</empty>
 		<input type="hidden" name="id" value="{:I('id')}" readonly>
 		<button type="submit" class="btn submit-btn ajax-post" target-form="form-horizontal">确 定</button>
-		<button class="btn btn-return" onclick="javascript:history.back(-1);return false;">返 回</button>
+    <button class="btn btn-return" onclick="history.back(-1);return false;">返 回</button>
 	</form>
 </block>
 
 <block name="script">
 <script type="text/javascript" charset="utf-8">
 	//导航高亮
-	highlight_subnav('{:U('Addons/index')}');
-	if($('ul.tab-nav').length){
+  highlight_subnav('{:U(';
+  Addons / index;
+  ')}';
+  )
+  if ($('ul.tab-nav').length) {
 		//当有tab时，返回按钮不显示
 		$('.btn-return').hide();
 	}

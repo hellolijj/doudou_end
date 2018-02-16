@@ -159,7 +159,7 @@
 						<input type="hidden" name="id" value="{$info['id']}"/>
 						<input type="hidden" name="model_id" value="{$info['model_id']}"/>
 						<button class="btn submit-btn ajax-post no-refresh" type="submit" target-form="form-horizontal">确 定</button>
-						<button class="btn btn-return" onclick="javascript:history.back(-1);return false;">返 回</button>
+            <button class="btn btn-return" onclick="history.back(-1);return false;">返 回</button>
 					</div>
 				</div>
 			</form>
@@ -169,7 +169,10 @@
 <block name="script">
 <script type="text/javascript" charset="utf-8">
 //导航高亮
-highlight_subnav('{:U('Model/index')}');
+highlight_subnav('{:U(';
+Model / index;
+')}';
+)
 Think.setValue('type', "{$info.type|default=''}");
 Think.setValue('is_show', "{$info.is_show|default=1}");
 Think.setValue('is_must', "{$info.is_must|default=0}");
@@ -180,7 +183,9 @@ Think.setValue('auto_type', "{$info.auto_type|default='function'}");
 $(function(){
 	showTab();
 })
-<eq name="ACTION_NAME" value="add">
+< eq;
+name = "ACTION_NAME";
+value = "add" >
 $(function(){
 	$('#data-type').change(function(){
 		$('#data-field').val($(this).find('option:selected').attr('rule'));

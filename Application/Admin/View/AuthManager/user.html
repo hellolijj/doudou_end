@@ -5,7 +5,7 @@
     <ul class="tab-nav nav">
         <li><a href="{:U('AuthManager/access',array('group_name'=>I('group_name') ,'group_id'=> I('group_id')))}">访问授权</a></li>
         <li><a href="{:U('AuthManager/category',array('group_name'=>I('group_name') ,'group_id'=> I('group_id')))}">分类授权</a></li>
-		<li class="current"><a href="javascript:;">成员授权</a></li>
+      <li class="current"><a href="javascript:">成员授权</a></li>
 	    <li class="fr">
 		    <select name="group">
 			    <volist name="auth_group" id="vo">
@@ -67,6 +67,9 @@
 		location.href = this.value;
 	});
     //导航高亮
-    highlight_subnav('{:U('AuthManager/index')}');
+  highlight_subnav('{:U(';
+  AuthManager / index;
+  ')}';
+  )
 </script>
 </block>

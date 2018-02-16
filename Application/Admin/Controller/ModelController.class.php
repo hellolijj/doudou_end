@@ -8,7 +8,6 @@
 // +----------------------------------------------------------------------
 
 namespace Admin\Controller;
-use Admin\Model\AuthGroupModel;
 
 /**
  * 模型管理控制器

@@ -54,7 +54,10 @@
     <script src="__STATIC__/thinkbox/jquery.thinkbox.js"></script>
     <script type="text/javascript">
   	//导航高亮
-    highlight_subnav('{:U('Model/index')}');
+    highlight_subnav('{:U(';
+    Model / index;
+    ')}';
+    )
     $(function(){
     	$("#search").click(function(){
     		var url = $(this).attr('url');

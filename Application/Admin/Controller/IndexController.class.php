@@ -8,7 +8,6 @@
 // +----------------------------------------------------------------------
 
 namespace Admin\Controller;
-use User\Api\UserApi as UserApi;
 
 /**
  * 后台首页控制器

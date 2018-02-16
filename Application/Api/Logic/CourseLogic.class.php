@@ -11,13 +11,16 @@ namespace Api\Logic;
 use Api\Service\CourseService;
 use Api\Service\WeixinService;
 
-class CourseLogic extends BaseLogic {
+/*
+ * 基于课程的类，调用课程类的用户都是已绑定用户
+ */
+
+class CourseLogic extends UserBaseLogic {
 
 
     /*
      * 创建一个课程
      */
-    // todo 写一个专门用于上传图片的接口
     public function create ()
     {
         $openid = session('openid');
@@ -49,5 +52,41 @@ class CourseLogic extends BaseLogic {
             return $this->setError($crease_result['message']);
         }
         return $this->setSuccess([], '添加成功');
+    }
+
+    /*
+     * list 正在使用的课程
+     */
+    public function list_in_use ()
+    {
+        $uid = session('uid');
+        $user_type = session('user_type');
+        $page = intval(I('page'));
+        $page_size = 20;
+        if (!$page) {
+            $page = 1;
+        }
+        // 教师用户从course表查找
+        if ($user_type == WeixinService::$USER_TYPE_TEACHER) {
+            $courseService = new CourseService();
+            $course_items = $courseService->list_in_use($uid, $page, $page_size);
+            $course_count = D('Course')->countCourseByUid($uid);
+            $this->hasMorePage($course_count, $page, $page_size);
+            if ($course_items) {
+                return $this->setSuccess($course_items, '获取所有课程');
+            } else {
+                return $this->setError('你还没有创建课程');
+            }
+        }
+
+
+    }
+
+    /*
+    * list 锁上的所有的课程
+    */
+    public function list_lock ()
+    {
+
     }
 }

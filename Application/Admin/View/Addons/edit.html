@@ -91,9 +91,18 @@
                                     'onFallback' : function() {
                                         alert('未检测到兼容版本的Flash.');
                                     },
-							        "onUploadSuccess" : uploadPicture{$field.name}
-							    });
-								function uploadPicture{$field.name}(file, data){
+                  "onUploadSuccess": uploadPicture;
+                {
+                  $field.name
+                }
+                })
+
+                function uploadPicture {
+                  $field.name
+                }
+
+                (file, data);
+                {
 							    	var data = $.parseJSON(data);
 							    	var src = '';
 							        if(data.status){
@@ -136,9 +145,18 @@
                                     'onFallback' : function() {
                                         alert('未检测到兼容版本的Flash.');
                                     },
-							        "onUploadSuccess" : uploadFile{$field.name}
-							    });
-								function uploadFile{$field.name}(file, data){
+                  "onUploadSuccess": uploadFile;
+                {
+                  $field.name
+                }
+                })
+
+                function uploadFile {
+                  $field.name
+                }
+
+                (file, data);
+                {
 									var data = $.parseJSON(data);
 							        if(data.status){
 							        	var name = "{$field.name}";
@@ -167,7 +185,7 @@
         </div>
         <div class="form-item cf">
             <button class="btn submit-btn ajax-post hidden" id="submit" type="submit" target-form="form-horizontal">确 定</button>
-            <a class="btn btn-return" onclick="javascript:history.back(-1);return false;">返 回</a>
+          <a class="btn btn-return" onclick="history.back(-1);return false;">返 回</a>
         </div>
     </form>
     </div>

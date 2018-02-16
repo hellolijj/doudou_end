@@ -3,7 +3,7 @@
 <block name="body">
 	<div class="tab-wrap">
 		<ul class="tab-nav nav">
-			<li class="current"><a href="javascript:;">访问授权</a></li>
+      <li class="current"><a href="javascript:">访问授权</a></li>
             <li><a href="{:U('AuthManager/category',array('group_name'=>I('group_name') ,'group_id'=> I('group_id')))}">分类授权</a></li>
 			<li><a href="{:U('AuthManager/user',array('group_name'=>I('group_name') ,'group_id'=> I('group_id')))}">成员授权</a></li>
 			<li class="fr">
@@ -52,7 +52,7 @@
 
 			        <input type="hidden" name="id" value="{$this_group.id}" />
                     <button type="submit" class="btn submit-btn ajax-post" target-form="auth-form">确 定</button>
-                    <button class="btn btn-return" onclick="javascript:history.back(-1);return false;">返 回</button>
+          <button class="btn btn-return" onclick="history.back(-1);return false;">返 回</button>
 			    </form>
 			</div>
 
@@ -70,8 +70,9 @@
 <link rel="stylesheet" type="text/css" href="__STATIC__/qtip/jquery.qtip.min.css" media="all">
 <script type="text/javascript" charset="utf-8">
     +function($){
-        var rules = [{$this_group.rules}];
-        $('.auth_rules').each(function(){
+      var rules = [{$this_group.rules
+    }]
+      $('.auth_rules').each(function () {
             if( $.inArray( parseInt(this.value,10),rules )>-1 ){
                 $(this).prop('checked',true);
             }
@@ -115,7 +116,10 @@
 			location.href = this.value;
         });
         //导航高亮
-        highlight_subnav('{:U('AuthManager/index')}');
+      highlight_subnav('{:U(';
+      AuthManager / index;
+      ')}';
+    )
     }(jQuery);
 </script>
 </block>

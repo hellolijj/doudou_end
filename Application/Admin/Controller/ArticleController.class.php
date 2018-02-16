@@ -8,7 +8,6 @@
 // +----------------------------------------------------------------------
 namespace Admin\Controller;
 use Admin\Model\AuthGroupModel;
-use Think\Page;
 
 /**
  * 后台内容控制器

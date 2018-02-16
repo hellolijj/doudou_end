@@ -108,12 +108,12 @@
             if(!isPlaceholer()){
                 $(".placeholder_copy").css({
                     display:'block'
-                })
+                });
                 $("#itemBox input").keydown(function(){
                     $(this).parents(".item").next(".placeholder_copy").css({
                         display:'none'
-                    })                    
-                })
+                    })
+                });
                 $("#itemBox input").blur(function(){
                     if($(this).val()==""){
                         $(this).parents(".item").next(".placeholder_copy").css({

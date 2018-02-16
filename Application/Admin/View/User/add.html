@@ -31,7 +31,7 @@
         </div>
         <div class="form-item">
             <button class="btn submit-btn ajax-post" id="submit" type="submit" target-form="form-horizontal">确 定</button>
-            <button class="btn btn-return" onclick="javascript:history.back(-1);return false;">返 回</button>
+          <button class="btn btn-return" onclick="history.back(-1);return false;">返 回</button>
         </div>
     </form>
 </block>
@@ -39,6 +39,9 @@
 <block name="script">
     <script type="text/javascript">
         //导航高亮
-        highlight_subnav('{:U('User/index')}');
+        highlight_subnav('{:U(';
+        User / index;
+        ')}';
+        )
     </script>
 </block>

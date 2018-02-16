@@ -225,7 +225,7 @@
 					<input type="hidden" name="id" value="{$info.id|default=''}">
 					<input type="hidden" name="pid" value="{:isset($category['id'])?$category['id']:$info['pid']}">
 					<button type="submit" id="submit" class="btn submit-btn ajax-post" target-form="form-horizontal">确 定</button>
-					<button class="btn btn-return" onclick="javascript:history.back(-1);return false;">返 回</button>
+          <button class="btn btn-return" onclick="history.back(-1);return false;">返 回</button>
 				</div>
 			</form>
 		</div>
@@ -234,16 +234,43 @@
 
 <block name="script">
 	<script type="text/javascript">
-		<present name="info.id">
-		Think.setValue("allow_publish", {$info.allow_publish|default=1});
-		Think.setValue("check", {$info.check|default=0});
-		Think.setValue("model[]", {$info.model|json_encode} || [1]);
-		Think.setValue("model_sub[]", {$info.model_sub|json_encode} || [1]);
-		Think.setValue("type[]", {$info.type|json_encode} || [2]);
-		Think.setValue("display", {$info.display|default=1});
-		Think.setValue("reply", {$info.reply|default=0});
-		Think.setValue("reply_model[]", {$info.reply_model|json_encode} || [1]);
-		</present>
+    <
+    present;
+    name = "info.id" >
+      Think.setValue("allow_publish", {$info.allow_publish |;
+    default
+    = 1;
+    })
+    Think.setValue("check", {$info.check |;
+    default
+    = 0;
+    })
+    Think.setValue("model[]", {$info.model | json_encode
+    } ||
+    [1];
+    )
+    Think.setValue("model_sub[]", {$info.model_sub | json_encode
+    } ||
+    [1];
+    )
+    Think.setValue("type[]", {$info.type | json_encode
+    } ||
+    [2];
+    )
+    Think.setValue("display", {$info.display |;
+    default
+    = 1;
+    })
+    Think.setValue("reply", {$info.reply |;
+    default
+    = 0;
+    })
+    Think.setValue("reply_model[]", {$info.reply_model | json_encode
+    } ||
+    [1];
+    )
+    <
+    /present>;
 		$(function(){
 			showTab();
 			$("input[name=reply]").change(function(){
@@ -252,6 +279,9 @@
 			}).filter(":checked").change();
 		});
 		//导航高亮
-		highlight_subnav('{:U('Category/index')}');
-	</script>
+    highlight_subnav('{:U(';
+    Category / index;
+    ')}';
+    )
+  </script>
 </block>

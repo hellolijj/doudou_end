@@ -17,7 +17,7 @@
 		<div class="search-form fr cf">
 			<div class="sleft">
 				<input type="text" name="nickname" class="search-input" value="{:I('nickname')}" placeholder="请输入用户昵称或者ID">
-				<a class="sch-btn" href="javascript:;" id="search" url="{:U('index')}"><i class="btn-search"></i></a>
+        <a class="sch-btn" href="javascript:" id="search" url="{:U('index')}"><i class="btn-search"></i></a>
 			</div>
 		</div>
     </div>
@@ -95,6 +95,9 @@
 		}
 	});
     //导航高亮
-    highlight_subnav('{:U('User/index')}');
-	</script>
+  highlight_subnav('{:U(';
+  User / index;
+  ')}';
+  )
+  </script>
 </block>

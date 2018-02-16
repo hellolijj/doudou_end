@@ -8,8 +8,8 @@
 // +----------------------------------------------------------------------
 
 namespace Admin\Controller;
-use Think\Db;
 use OT\Database;
+use Think\Db;
 
 /**
  * 数据库备份还原控制器

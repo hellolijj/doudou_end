@@ -14,7 +14,7 @@
         <div class="search-form fr cf">
             <div class="sleft">
                 <input type="text" name="title" class="search-input" value="{:I('title')}" placeholder="请输入菜单名称">
-                <a class="sch-btn" href="javascript:;" id="search" url="__SELF__"><i class="btn-search"></i></a>
+              <a class="sch-btn" href="javascript:" id="search" url="__SELF__"><i class="btn-search"></i></a>
             </div>
         </div>
     </div>
@@ -104,14 +104,17 @@
                 }
             });
             //导航高亮
-            highlight_subnav('{:U('index')}');
-            //点击排序
+          highlight_subnav('{:U(';
+          index;
+          ')}';
+        )
+          //点击排序
         	$('.list_sort').click(function(){
         		var url = $(this).attr('url');
         		var ids = $('.ids:checked');
         		var param = '';
         		if(ids.length > 0){
-        			var str = new Array();
+              var str = [];
         			ids.each(function(){
         				str.push($(this).val());
         			});

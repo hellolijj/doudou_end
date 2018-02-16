@@ -9,6 +9,7 @@
 
 namespace Admin\Model;
 use Think\Model;
+
 /**
  * 权限规则模型
  * @author 朱亚杰 <zhuyajie@topthink.net>

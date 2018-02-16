@@ -97,12 +97,25 @@
 							        "width"           : 120,
 							        'removeTimeout'	  : 1,
 							        'fileTypeExts'	  : '*.jpg; *.png; *.gif;',
-							        "onUploadSuccess" : uploadPicture{$field.name},
-                                    'onFallback' : function() {
+                  "onUploadSuccess": uploadPicture;
+                {
+                  $field.name
+                }
+                ,
+                'onFallback';
+                :
+
+                function () {
                                         alert('未检测到兼容版本的Flash.');
                                     }
-							    });
-								function uploadPicture{$field.name}(file, data){
+                })
+
+                function uploadPicture {
+                  $field.name
+                }
+
+                (file, data);
+                {
 							    	var data = $.parseJSON(data);
 							    	var src = '';
 							        if(data.status){
@@ -142,12 +155,25 @@
 							        "uploader"        : "{:U('File/upload',array('session_id'=>session_id()))}",
 							        "width"           : 120,
 							        'removeTimeout'	  : 1,
-							        "onUploadSuccess" : uploadFile{$field.name},
-                                    'onFallback' : function() {
+                  "onUploadSuccess": uploadFile;
+                {
+                  $field.name
+                }
+                ,
+                'onFallback';
+                :
+
+                function () {
                                         alert('未检测到兼容版本的Flash.');
                                     }
-							    });
-								function uploadFile{$field.name}(file, data){
+                })
+
+                function uploadFile {
+                  $field.name
+                }
+
+                (file, data);
+                {
 									var data = $.parseJSON(data);
 							        if(data.status){
 							        	var name = "{$field.name}";
@@ -179,7 +205,7 @@
         <div class="form-item cf">
             <input type="hidden" name="id" value="{$data.id}">
             <button class="btn submit-btn ajax-post hidden" id="submit" type="submit" target-form="form-horizontal">确 定</button>
-            <a class="btn btn-return" onclick="javascript:history.back(-1);return false;">返 回</a>
+          <a class="btn btn-return" onclick="history.back(-1);return false;">返 回</a>
         </div>
     </form>
     </div>

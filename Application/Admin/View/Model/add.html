@@ -62,7 +62,7 @@
 					<label class="item-label"></label>
 					<div class="controls edit_sort_btn">
 						<button class="btn submit-btn ajax-post no-refresh" type="submit" target-form="form-horizontal">确 定</button>
-						<button class="btn btn-return" onclick="javascript:history.back(-1);return false;">返 回</button>
+            <button class="btn btn-return" onclick="history.back(-1);return false;">返 回</button>
 					</div>
 				</div>
 			</form>
@@ -73,11 +73,13 @@
 <script type="text/javascript" src="__STATIC__/jquery.dragsort-0.5.1.min.js"></script>
 <script type="text/javascript" charset="utf-8">
     //导航高亮
-    highlight_subnav('{:U('Model/index')}');
-
+    highlight_subnav('{:U(';
+    Model / index;
+    ')}';
+    )
     $(function(){
     	showTab();
-    })
+    });
 //拖曳插件初始化
 $(function(){
 	$(".dragsort").dragsort({

@@ -9,7 +9,6 @@
 
 namespace Admin\Model;
 use Think\Model;
-use Admin\Model\AuthGroupModel;
 
 /**
  * 文档基础模型

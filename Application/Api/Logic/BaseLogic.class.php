@@ -22,6 +22,7 @@ class BaseLogic{
         if (is_array($openidInid)) {
             return $openidInid;
         }
+
     }
 
     public function setError ($message, $data = NULL)
@@ -69,7 +70,7 @@ class BaseLogic{
         if (!$openid) {
             return $this->setError('无效的openid参数');
         }
-        // todo 将微信信息缓存起来
+
         $user_info = json_decode(S($openid), TRUE);
         if (!count($user_info)) {
             $user_info = M('Weixin')->getByOpenid($openid);
@@ -79,6 +80,4 @@ class BaseLogic{
             S($openid, json_encode($user_info), 3600);
         }
     }
-
-
 }

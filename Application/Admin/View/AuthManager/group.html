@@ -16,7 +16,7 @@
             <input type="hidden" name="batch" value="true">
             <div style="margin-top: 10px;">
                 <button type="submit" class="btn submit-btn ajax-post" target-form="form-horizontal">确 定</button>
-                <button class="btn btn-return" onclick="javascript:history.back(-1);return false;">返 回</button>
+              <button class="btn btn-return" onclick="history.back(-1);return false;">返 回</button>
             </div>
         </form>
     </div>
@@ -32,6 +32,9 @@
         });
     });
     // 导航高亮
-    highlight_subnav('{:U('User/index')}');
+    highlight_subnav('{:U(';
+    User / index;
+    ')}';
+    )
 </script>
 </block>

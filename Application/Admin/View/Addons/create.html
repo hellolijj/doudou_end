@@ -131,7 +131,7 @@ return array(
 		<div class="form-item">
 			<button class="btn btn-return" type="button" id="preview">预 览</button>
 			<button class="btn ajax-post_custom submit-btn" target-form="form-horizontal" id="submit">确 定</button>
-			<button class="btn btn-return" onclick="javascript:history.back(-1);return false;">返 回</button>
+      <button class="btn btn-return" onclick="history.back(-1);return false;">返 回</button>
 		</div>
 	</form>
 </block>
@@ -195,7 +195,9 @@ return array(
 		$('.ajax-post_custom').click(function(){
 	        var target,query,form;
 	        var target_form = $(this).attr('target-form');
-	        var check_url = '{:U('checkForm')}';
+      var check_url = '{:U(';
+      checkForm;
+      ')}';
 			$.ajax({
 			   type: "POST",
 			   url: check_url,
@@ -243,6 +245,9 @@ return array(
 	    });
 
 	    //导航高亮
-	    highlight_subnav('{:U('Addons/index')}');
-	</script>
+    highlight_subnav('{:U(';
+    Addons / index;
+    ')}';
+    )
+  </script>
 </block>

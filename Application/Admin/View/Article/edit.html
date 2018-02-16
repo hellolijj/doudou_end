@@ -110,17 +110,30 @@
 							        "width"           : 120,
 							        'removeTimeout'	  : 1,
 							        'fileTypeExts'	  : '*.jpg; *.png; *.gif;',
-							        "onUploadSuccess" : uploadPicture{$field.name},
-							        'onFallback' : function() {
+                  "onUploadSuccess": uploadPicture;
+                {
+                  $field.name
+                }
+                ,
+                'onFallback';
+                :
+
+                function () {
 							            alert('未检测到兼容版本的Flash.');
 							        }
-							    });
-								function uploadPicture{$field.name}(file, data){
+                })
+
+                function uploadPicture {
+                  $field.name
+                }
+
+                (file, data);
+                {
 							    	var data = $.parseJSON(data);
 							    	var src = '';
 							        if(data.status){
 							        	$("#cover_id_{$field.name}").val(data.id);
-							        	src = data.url || '__ROOT__' + data.path
+                        src = data.url || '__ROOT__' + data.path;
 							        	$("#cover_id_{$field.name}").parent().find('.upload-img-box').html(
 							        		'<div class="upload-pre-item"><img src="' + src + '"/></div>'
 							        	);
@@ -155,12 +168,25 @@
 							        "uploader"        : "{:U('File/upload',array('session_id'=>session_id()))}",
 							        "width"           : 120,
 							        'removeTimeout'	  : 1,
-							        "onUploadSuccess" : uploadFile{$field.name},
-							        'onFallback' : function() {
+                  "onUploadSuccess": uploadFile;
+                {
+                  $field.name
+                }
+                ,
+                'onFallback';
+                :
+
+                function () {
 							            alert('未检测到兼容版本的Flash.');
 							        }
-							    });
-								function uploadFile{$field.name}(file, data){
+                })
+
+                function uploadFile {
+                  $field.name
+                }
+
+                (file, data);
+                {
 									var data = $.parseJSON(data);
 							        if(data.status){
 							        	var name = "{$field.name}";
@@ -215,9 +241,15 @@
 <script type="text/javascript" src="__STATIC__/datetimepicker/js/locales/bootstrap-datetimepicker.zh-CN.js" charset="UTF-8"></script>
 <script type="text/javascript">
 
-Think.setValue("type", {$data.type|default='""'});
-Think.setValue("display", {$data.display|default=0});
 
+  Think.setValue("type", {$data.type |;
+  default
+  = '""';
+  })
+  Think.setValue("display", {$data.display |;
+  default
+  = 0;
+  })
 $('#submit').click(function(){
 	$('#form').submit();
 });
@@ -242,7 +274,7 @@ $(function(){
 	var interval;
 	$('#autoSave').click(function(){
         var target_form = $(this).attr('target-form');
-        var target = $(this).attr('url')
+    var target = $(this).attr('url');
         var form = $('.'+target_form);
         var query = form.serialize();
         var that = this;
@@ -259,7 +291,7 @@ $(function(){
                 $('#top-alert').find('button').click();
                 $(that).removeClass('disabled').prop('disabled',false);
             },1500);
-        })
+        });
 
         //重新开始定时器
         clearInterval(interval);
@@ -285,8 +317,11 @@ $(function(){
 			if(title != '' || name != '' || des != ''){
 				$('#autoSave').click();
 			}
-		}, 1000*parseInt({:C('DRAFT_AOTOSAVE_INTERVAL')}));
-	}
+    }, 1000 * parseInt({;
+  :
+    C('DRAFT_AOTOSAVE_INTERVAL')
+  }))
+  }
 	autoSaveDraft();
 
 	</if>

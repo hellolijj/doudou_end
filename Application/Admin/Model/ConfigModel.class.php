@@ -9,6 +9,7 @@
 
 namespace Admin\Model;
 use Think\Model;
+
 /**
  * 配置模型
  * @author 麦当苗儿 <zuojiazi@vip.qq.com>
