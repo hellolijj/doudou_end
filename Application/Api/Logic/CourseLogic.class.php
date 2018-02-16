@@ -8,7 +8,7 @@
 
 namespace Api\Logic;
 
-use APi\Service\CourseService;
+use Api\Service\CourseService;
 use Api\Service\WeixinService;
 
 class CourseLogic extends BaseLogic {
