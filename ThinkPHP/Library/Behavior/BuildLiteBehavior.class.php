@@ -13,7 +13,6 @@ namespace Behavior;
 // 创建Lite运行文件
 // 可以替换框架入口文件运行
 // 建议绑定位置app_init
-use Think\Hook as Hook;
 class BuildLiteBehavior
 {
     public function run(&$params)

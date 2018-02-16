@@ -16,9 +16,9 @@ namespace Think;
  * 编译型模板引擎 支持动态缓存
  */
 use Think\Hook as Hook;
-//use Think\Crypt\Driver\Think as Think;
 use Think\Storage as Storage;
-use Think\Think as Think;
+
+//use Think\Crypt\Driver\Think as Think;
 
 class Template
 {

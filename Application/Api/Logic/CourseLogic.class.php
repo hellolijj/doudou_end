@@ -44,9 +44,9 @@ class CourseLogic extends BaseLogic {
         }
         // todo  课程数量要做限制
         $courseService = new CourseService();
-        $craete_result = $courseService->create($uid, $course_name, $course_class_name, $course_img, $course_remark);
-        if ($craete_result['success'] === FALSE) {
-            return $this->setError($craete_result['message']);
+        $crease_result = $courseService->create($uid, $course_name, $course_class_name, $course_img, $course_remark);
+        if ($crease_result['success'] === FALSE) {
+            return $this->setError($crease_result['message']);
         }
         return $this->setSuccess([], '添加成功');
     }
