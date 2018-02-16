@@ -8,7 +8,7 @@
 
 return array(
 
-    'APP_NAME' => 'pingshifen', 'API_LIST' => ['SCHOOL', 'STUDENT', 'WEIXIN', 'TEACHER', 'MY'],
+    'APP_NAME' => 'pingshifen', 'API_LIST' => ['SCHOOL', 'STUDENT', 'WEIXIN', 'TEACHER', 'MY', 'COURSE'],
 
     /* 数据库配置 */
     'DB_TYPE' => 'mysql', // 数据库类型
@@ -21,4 +21,6 @@ return array(
 
     'DB_PARAMS' => array(\PDO::ATTR_CASE => \PDO::CASE_NATURAL), // 数据库兼容大小写
 
+    /* 文件上传路径 */
+    'APP_ROOT' => 'http://127.0.0.1/pingshifen/', 'UPLOAD_ROOT' => 'http://127.0.0.1/pingshifen/', 'UPLOAD_DIR' => 'Uploads/Picture/',
 );

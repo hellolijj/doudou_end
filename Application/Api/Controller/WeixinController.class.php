@@ -79,14 +79,22 @@ class WeixinController extends Controller {
         $data = $data_result['data'];
         $data['avatar'] = $data['avatarUrl'];    //解决命名大小写问题
         $data['nickname'] = $data['nickName'];
-        S($data['session3rd'], json_encode($data), 3600);  // 此缓存用于后面的验证是否登陆
         $save_result = $this->save_weixin_user($data);
         if ($save_result['success'] === FALSE) {
             $this->ajaxReturn(['success' => FALSE, 'message' => $save_result['message']]);
         }
-        // session缓存
+        S($data['session3rd'], json_encode($data), 3600);  // 此缓存用于后面的验证是否登陆
         session('openid', $data['openId']);
+        $weixinService = new WeixinService();
+        $weixin_user_result = $weixinService->getByOpenid($data['openId']);
+        if ($weixin_user_result['success'] === TRUE && $weixin_user_result['data']['openid']) {
+            $regData = $weixin_user_result['data'];
+            $regData['session3rd'] = $data['session3rd'];
+            $regData['session_id'] = session_id();
+            $this->ajaxReturn(['success' => TRUE, 'data' => $regData]);
+        }
         $data['session_id'] = session_id();
+        $data['type'] = 0;  //用户类型
         $this->ajaxReturn(['success' => TRUE, 'data' => $data]);
     }
 
@@ -98,7 +106,7 @@ class WeixinController extends Controller {
     {
         $post_session3rd = I('rd3_session');
         $local_session3rd = session('session3rd');
-        if (empty($local_3rdsession)) {
+        if (empty($local_session3rd)) {
             session('session3rd', NULL);
             $this->ajaxReturn(['success' => FALSE, 'data' => FALSE, 'message' => '服务端数据过期']);
         }

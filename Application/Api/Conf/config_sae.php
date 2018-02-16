@@ -16,4 +16,8 @@ return array(
     'DB_PWD' => 'y412w2x230y4233hyzjhxw13kl5ikij2im5jikzj',  // 密码
     'DB_PORT' => '3306', // 端口
     'DB_PREFIX' => 'pingshifen_', // 数据库表前缀
+
+
+    /* 文件上传路径 */
+    'APP_ROOT' => 'https://pingshifen.applinzi.com', 'UPLOAD_ROOT' => 'http://pingshif-img.stor.sinaapp.com', 'UPLOAD_DIR' => './Uploads/',
 );
