@@ -22,5 +22,5 @@ return array(
     'DB_PARAMS' => array(\PDO::ATTR_CASE => \PDO::CASE_NATURAL), // 数据库兼容大小写
 
     /* 文件上传路径 */
-    'APP_ROOT' => 'http://127.0.0.1/pingshifen/', 'UPLOAD_ROOT' => 'http://127.0.0.1/pingshifen/', 'UPLOAD_DIR' => 'Uploads/Picture/',
+    'APP_ROOT' => 'http://127.0.0.1/pingshifen/', 'UPLOAD_DIR' => 'Uploads/Picture/', 'UPLOAD_ROOT' => 'http://127.0.0.1/pingshifen/Uploads/Picture/',
 );

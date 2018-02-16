@@ -35,7 +35,7 @@ class ImgController extends Controller {
         } else {
             $data['success'] = TRUE;
             $img_path = $info['file']['savepath'] . $info['file']['savename'];
-            $data['data'] = C('UPLOAD_ROOT') . C('UPLOAD_DIR') . $img_path;
+            $data['data'] = C('UPLOAD_ROOT') . $img_path;
         }
         $this->ajaxReturn($data, 'json');
     }
