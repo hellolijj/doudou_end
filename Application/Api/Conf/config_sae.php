@@ -19,5 +19,5 @@ return array(
 
 
     /* 文件上传路径 */
-    'APP_ROOT' => 'https://pingshifen.applinzi.com', 'UPLOAD_ROOT' => 'http://pingshif-img.stor.sinaapp.com', 'UPLOAD_DIR' => './Uploads/',
+    'APP_ROOT' => 'https://pingshifen.applinzi.com', 'UPLOAD_ROOT' => 'http://pingshif-img.stor.sinaapp.com', 'UPLOAD_DIR' => './img/',
 );
