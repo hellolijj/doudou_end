@@ -61,6 +61,7 @@ class WeixinController extends Controller {
         }
     }
 
+
     /*
      * 小程序的授权登陆接口
      */
@@ -118,7 +119,13 @@ class WeixinController extends Controller {
             $this->ajaxReturn(['success' => FALSE, 'data' => FALSE, 'message' => '客户端端数据过期']);
         }
         if ($post_session3rd && $post_session3rd == $local_session3rd) {
-            $this->ajaxReturn(['success' => TRUE, 'data' => TRUE]);
+            $user_info_result = $this->get_user_info(session('openid'));
+            if ($user_info_result['success'] === TRUE) {
+                $data = $user_info_result['data'];
+            } else {
+                $data = [];
+            }
+            $this->ajaxReturn(['success' => TRUE, 'data' => $data, 'message' => '登陆成功']);
         } else {
             $this->ajaxReturn(['success' => FALSE, 'data' => FALSE, 'message' => '未知的错误']);
         }
@@ -179,5 +186,22 @@ class WeixinController extends Controller {
         }
         return ['success' => FALSE, 'message' => '未知的原因'];;
     }
+
+    /*
+     * 获取用户信息
+     */
+    private function get_user_info ($openid = '')
+    {
+        if (!$openid) {
+            return ['success' => FALSE, 'message' => '参数为空'];
+        }
+        $weixinService = new WeixinService();
+        $weixin_user_result = $weixinService->getByOpenid($openid);
+        if ($weixin_user_result['success'] === FALSE) {
+            return ['success' => FALSE, 'message' => '获取信息失败'];;
+        }
+        return ['success' => TRUE, 'data' => $weixin_user_result['data']];
+    }
+
 
 }
