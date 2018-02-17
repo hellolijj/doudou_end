@@ -8,6 +8,7 @@
 
 namespace Api\Logic;
 
+use Api\Service\ClassServie;
 use Api\Service\CourseService;
 use Api\Service\WeixinService;
 
@@ -78,14 +79,56 @@ class CourseLogic extends UserBaseLogic {
                 return $this->setError('你还没有创建课程');
             }
         }
-
-
     }
 
     /*
     * list 锁上的所有的课程
     */
     public function list_lock ()
+    {
+
+    }
+
+    /*
+     * 检索课程
+     */
+    public function search ()
+    {
+        $course_id = intval(I('course_id'));
+        if (!$course_id) {
+            return $this->setError('传入的参数不能为空');
+        }
+        $courseService = new CourseService();
+        $course = $courseService->search($course_id);
+        return $course;
+    }
+
+    /*
+     * 添加课程
+     */
+    public function add ()
+    {
+        $course_id = intval(I('course_id'));
+        $uid = intval(session('uid'));
+        $user_type = intval(session('user_type'));
+        if (!$course_id || !$uid || !$user_type) {
+            return $this->setError('参数不能为空');
+        }
+        if ($user_type != WeixinService::$USER_TYPE_STUDENT) {
+            return $this->setError('非学生用户不能加入课程');
+        }
+        $courseService = new CourseService();
+        $course_add_result = $courseService->add($uid, $course_id);
+        if ($course_add_result['success'] === FALSE) {
+            return $this->setError($course_add_result['message']);
+        }
+        return $this->setSuccess([], '添加成功');
+    }
+
+    /*
+     * 退出课程
+     */
+    public function quite ()
     {
 
     }
