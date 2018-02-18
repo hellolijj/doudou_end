@@ -17,7 +17,11 @@ class UserBaseLogic extends BaseLogic {
 
     public function __construct ()
     {
-        $this->check_uid();
+        $check_uid_result = $this->check_uid();
+        if ($check_uid_result['success'] === FALSE) {
+            echo json_encode($check_uid_result);
+            die;
+        }
     }
 
     private function check_uid ()
@@ -30,6 +34,9 @@ class UserBaseLogic extends BaseLogic {
         }
         $uid = intval($weixin_user_result['data']['uid']);
         $user_type = intval($weixin_user_result['data']['type']);
+        if (!$uid || !$user_type) {
+            return ['success' => FALSE, 'message' => '为了不影响你的正常使用请先完善个人信息'];
+        }
         session('uid', $uid);
         session('user_type', $user_type);
     }

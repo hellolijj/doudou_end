@@ -18,8 +18,6 @@ use Api\Service\WeixinService;
  */
 
 class CourseLogic extends UserBaseLogic {
-
-
     /*
      * 创建一个课程
      */
