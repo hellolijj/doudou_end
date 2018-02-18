@@ -3,6 +3,7 @@
 namespace Api\Service;
 
 use Api\Model\CourseModel;
+use Api\Model\WeixinModel;
 
 class CourseService extends BaseService {
 
@@ -23,7 +24,7 @@ class CourseService extends BaseService {
         if (!$tid || !is_numeric($tid)) {
             return ['success' => FALSE, 'message' => 'uid参数错误'];
         }
-        $teacher = D('Teacher')->cache(X60)->find($tid);
+        $teacher = D('Teacher')->cache(60)->find($tid);
         $course_lists = D('Course')->getCourseByUid($tid, $page, $page_size);
         foreach ($course_lists as &$course_list) {
             $course_list['teacher'] = ['name' => $teacher['name'], 'school' => $teacher['school'],];
@@ -34,8 +35,6 @@ class CourseService extends BaseService {
     /*
      * 输入course_id 添加课程
      * todo 1、教师用户不能添加课程 2、你已经添加了该课程不能重复添加
-     *
-     *
      */
     public function add ($uid, $course_id)
     {
@@ -73,6 +72,44 @@ class CourseService extends BaseService {
             $course['is_ok'] = FALSE;
             $course['err_message'] = '该课程已锁定不能加入';
         }
+        return ['success' => TRUE, 'data' => $course];
+    }
+
+
+    public function get_current_course ($uid, $user_type, $course_id = '')
+    {
+        if (!$uid || !$user_type || !is_numeric($course_id)) {
+            return ['success' => FALSE, 'message' => '参数不能为空'];
+        }
+        if (!in_array($user_type, [WeixinModel::$USER_TYPE_STUDENT, WeixinModel::$USER_TYPE_TEACHER])) {
+            return ['success' => FALSE, 'message' => '用户类型错误'];
+        }
+        if ($user_type == WeixinModel::$USER_TYPE_TEACHER) {
+            $where['uid'] = $uid;
+            if ($course_id) {
+                $where['id'] = $course_id;
+            }
+            $course = D('Course')->cache(60)->where($where)->order('gmt_create desc')->find();
+        } elseif ($user_type == WeixinModel::$USER_TYPE_STUDENT) {
+            unset($where);
+            $where['uid'] = $uid;
+            if ($course_id) {
+                $where['cid'] = $course_id;
+            }
+            $CLASS = D('Class');
+            $class = $CLASS->cache(60)->where($where)->order('gmt_create desc')->find();
+            if (!$class) {
+                return ['success' => FALSE, 'message' => $CLASS->getError()];
+            }
+            $course = D('Course')->cache(60)->order('gmt_create desc')->find($class['cid']);
+        }
+
+        if (!$course) {
+            return ['success' => FALSE, 'message' => '搜索课程为空'];
+        }
+        $tid = $course['uid'];
+        $teacher = D('Teacher')->getById($tid);
+        $course['teacher'] = ['name' => $teacher['name'], 'school' => $teacher['school']];
         return ['success' => TRUE, 'data' => $course];
     }
 

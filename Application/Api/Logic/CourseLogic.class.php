@@ -138,4 +138,20 @@ class CourseLogic extends UserBaseLogic {
     {
 
     }
+
+    /*
+     * 获取当前课程
+     */
+    public function current ()
+    {
+        $uid = session('uid');
+        $user_type = session('user_type');
+        $current_course_id = intval(I('current_course_id'));
+        $courseService = new CourseService();
+        $course_item_result = $courseService->get_current_course($uid, $user_type, $current_course_id);
+        if ($course_item_result['success'] === FALSE) {
+            $this->setError($course_item_result['message']);
+        }
+        return $this->setSuccess($course_item_result['data']);
+    }
 }
