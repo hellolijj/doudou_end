@@ -15,12 +15,23 @@ use Api\Service\WeixinService;
 
 class UserBaseLogic extends BaseLogic {
 
+    public $uid = 0;
+    public $user_type = 0;
+
     public function __construct ()
     {
         $check_uid_result = $this->check_uid();
         if ($check_uid_result['success'] === FALSE) {
             echo json_encode($check_uid_result);
             die;
+        }
+        $this->uid = session('uid');
+        $this->user_type = session('type');
+        if (empty($this->user_type) || empty($this->uid)) {
+            return ['success' => FALSE, 'message' => '参数不能为空'];
+        }
+        if (in_array($this->user_type, [WeixinModel::$USER_TYPE_TEACHER, WeixinModel::$USER_TYPE_STUDENT])) {
+            return ['success' => FALSE, 'message' => '用户类型错误'];
         }
     }
 

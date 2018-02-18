@@ -148,7 +148,7 @@ class CourseLogic extends UserBaseLogic {
         $courseService = new CourseService();
         $course_item_result = $courseService->get_current_course($uid, $user_type, $current_course_id);
         if ($course_item_result['success'] === FALSE) {
-            $this->setError($course_item_result['message']);
+            return $this->setError($course_item_result['message']);
         }
         return $this->setSuccess($course_item_result['data']);
     }

@@ -48,8 +48,7 @@ class CourseService extends BaseService {
         }
         $data = ['uid' => $uid, 'cid' => $course_id, 'gmt_create' => time(), 'gmt_modified' => time(),];
         M('Class')->add($data);
-
-
+        M('Course')->where(['id' => $course_id])->setInc('count');
     }
 
     public function search ($course_id)
@@ -99,7 +98,7 @@ class CourseService extends BaseService {
             $CLASS = D('Class');
             $class = $CLASS->cache(60)->where($where)->order('gmt_create desc')->find();
             if (!$class) {
-                return ['success' => FALSE, 'message' => $CLASS->getError()];
+                return ['success' => FALSE, 'message' => '搜索结果为空'];
             }
             $course = D('Course')->cache(60)->order('gmt_create desc')->find($class['cid']);
         }
