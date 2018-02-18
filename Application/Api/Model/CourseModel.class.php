@@ -30,14 +30,28 @@ class CourseModel extends BaseModel {
         return $list_in_use;
     }
 
+    public function getCourseByUids ($uids, $page, $page_size)
+    {
+        if (!check_num_ids($uids)) {
+            return ['success' => FALSE, 'message' => 'uids参数错误'];
+        }
+        $where['status'] = self::$STATUS_IN_USE;
+        $where['id'] = ['in', implode(',', $uids)];
+        $page = $page ? $page : 1;
+        $page_size = $page_size ? $page_size : 20;
+        $list_in_use = $this->cache(60)->where($where)->order('gmt_create desc')->limit($page_size)->page($page)->select();
+        return $list_in_use;
+    }
+
     public function countCourseByUid ($uid)
     {
         $where = ['uid' => $uid, 'status' => self::$STATUS_IN_USE,];
-        $count = $this->cache(60)->where($uid)->count();
+        $count = $this->cache(60)->where($where)->count();
         if (!$count) {
             return 0;
         }
         return $count;
     }
+
 
 }

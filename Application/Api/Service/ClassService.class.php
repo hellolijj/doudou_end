@@ -27,4 +27,29 @@ class ClassService extends BaseService {
         }
         return ['success' => TRUE];
     }
+
+    /*
+     * 罗列出学生所有在使用的课程
+     */
+    public function list_in_use_for_student ($sid, $page, $page_size)
+    {
+        if (!$sid || !is_numeric($sid)) {
+            return ['success' => FALSE, 'message' => 'uid参数错误'];
+        }
+        // todo uid -> cid -> tid
+        $classes = D('Class')->getClassByUid($sid);
+        $course_ids = result_to_array($classes, 'cid');
+        $courses = D('Course')->getCourseByUids($course_ids, $page, $page_size);
+        $tids = result_to_array($courses, 'uid');
+        $teachers = D('Teacher')->getByIds($tids);
+        $teachers_result = result_to_map($teachers, 'id');
+        foreach ($courses as $key => &$course) {
+            $tid = $course['uid'];  //教师uid
+            // 添加教师信息
+            if ($teachers_result[$tid]) {
+                $course['teacher'] = ['name' => $teachers_result[$tid]['name'], 'school' => $teachers_result[$tid]['school'],];
+            }
+        }
+        return $courses;
+    }
 }

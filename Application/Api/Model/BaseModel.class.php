@@ -48,7 +48,7 @@ class BaseModel extends Model {
         }
         $id = intval($id);
 
-        return $this->field($field)->where(array('id' => $id))->find();
+        return $this->cache(60)->field($field)->where(array('id' => $id))->find();
     }
 
     public function getByIds (array $id_arr, $field = '*')
@@ -62,7 +62,7 @@ class BaseModel extends Model {
             $result = $this->getById($id, $field);
         } else {
             $ids = implode(',', $id_arr);
-            $result = $this->field($field)->where(array('id' => array('IN' => $ids)))->find();
+            $result = $this->field($field)->where(array('id' => array('IN', $ids)))->select();
         }
 
         return $result;
@@ -78,7 +78,7 @@ class BaseModel extends Model {
         return $this->field($field)->where(array('id' => $id))->select();
     }
 
-    public function listByIds ($id_arr, $field = '*')
+    /*public function listByIds ($id_arr, $field = '*')
     {
         if (empty($id_arr) || !is_array($id_arr) || check_num_ids($id_arr)) {
             return NULL;
@@ -93,7 +93,7 @@ class BaseModel extends Model {
         }
 
         return $result;
-    }
+    }*/
 
     public function listByPageWhere ($where, $page_num, $page_size = 20, $order_by = 'id DESC')
     {

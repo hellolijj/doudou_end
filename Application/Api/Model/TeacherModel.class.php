@@ -16,4 +16,15 @@ class TeacherModel extends BaseModel {
 
     protected $_auto = array(array('gmt_create', 'time', self::MODEL_INSERT, 'function'), array('gmt_modified', 'gmt_create', self::MODEL_INSERT, 'field'), array('gmt_modified', 'time', self::MODEL_UPDATE, 'function'), array('status', 1, self::MODEL_INSERT),);
 
+    public function getByIds ($tids)
+    {
+        if (!check_num_ids($tids)) {
+            return ['success' => FALSE, 'message' => 'tids参数错误'];
+        }
+        $where['id'] = ['in', implode(',', $tids)];
+        $teachers = $this->cache(TRUE)->where($where)->select();
+        return $teachers;
+    }
+
+
 }

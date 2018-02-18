@@ -8,6 +8,7 @@
 
 namespace Api\Logic;
 
+use Api\Service\ClassService;
 use Api\Service\ClassServie;
 use Api\Service\CourseService;
 use Api\Service\WeixinService;
@@ -70,14 +71,19 @@ class CourseLogic extends UserBaseLogic {
         // 教师用户从course表查找
         if ($user_type == WeixinService::$USER_TYPE_TEACHER) {
             $courseService = new CourseService();
-            $course_items = $courseService->list_in_use($uid, $page, $page_size);
+            $course_items = $courseService->list_in_use_for_teacher($uid, $page, $page_size);
             $course_count = D('Course')->countCourseByUid($uid);
-            $this->hasMorePage($course_count, $page, $page_size);
-            if ($course_items) {
-                return $this->setSuccess($course_items, '获取所有课程');
-            } else {
-                return $this->setError('你还没有创建课程');
-            }
+
+        } elseif ($user_type == WeixinService::$USER_TYPE_STUDENT) {
+            $classService = new ClassService();
+            $course_items = $classService->list_in_use_for_student($uid, $page, $page_size);
+            $course_count = D('Class')->countClassByUid($uid);
+        }
+        $this->hasMorePage($course_count, $page, $page_size);
+        if ($course_items) {
+            return $this->setSuccess($course_items, '获取所有课程');
+        } else {
+            return $this->setError('你还没有创建课程');
         }
     }
 

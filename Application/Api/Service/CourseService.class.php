@@ -18,13 +18,13 @@ class CourseService extends BaseService {
         return ['success' => TRUE, 'message' => '数据添加成功'];
     }
 
-    public function list_in_use ($uid, $page, $page_size)
+    public function list_in_use_for_teacher ($tid, $page, $page_size)
     {
-        if (!$uid || !is_numeric($uid)) {
+        if (!$tid || !is_numeric($tid)) {
             return ['success' => FALSE, 'message' => 'uid参数错误'];
         }
-        $teacher = D('Teacher')->cache(60)->find($uid);
-        $course_lists = D('Course')->getCourseByUid($uid, $page, $page_size);
+        $teacher = D('Teacher')->cache(X60)->find($tid);
+        $course_lists = D('Course')->getCourseByUid($tid, $page, $page_size);
         foreach ($course_lists as &$course_list) {
             $course_list['teacher'] = ['name' => $teacher['name'], 'school' => $teacher['school'],];
         }
