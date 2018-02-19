@@ -47,4 +47,36 @@ class SigninLogic extends UserBaseLogic {
         }
         return $this->setSuccess([], '签到创建成功');
     }
+
+
+    /*
+     * 罗列所有的点名列表
+     */
+    public function list_all ()
+    {
+        $cid = intval(I('cid'));
+        $page = intval(I('page'));
+        $page_size = intval(I('page_size'));
+        if (!$cid || !is_numeric($cid)) {
+            return $this->setError('无效的课程号');
+        }
+        $page = $page ? $page : 1;
+        $page_size = $page_size ? $page_size : 10;
+        $signin_items = M('Signin')->cache(60)->page($page)->limit($page_size)->order('gmt_create desc')->select();
+        if (!$signin_items) {
+            if ($this->user_type == WeixinModel::$USER_TYPE_TEACHER) {
+                return $this->setError('你还没有发布点名哦～');
+            } elseif ($this->user_type == WeixinModel::$USER_TYPE_STUDENT) {
+                return $this->setError('你的老师还没发布点名');
+            } else {
+                return $this->setError('用户类型错误');
+            }
+        }
+        $signinService = new SigninService();
+        $classfied_signin_result = $signinService->classfy_signin_items($signin_items);
+        if ($classfied_signin_result['success'] === FALSE) {
+            return $classfied_signin_result;
+        }
+        return $this->setSuccess($classfied_signin_result['data'], '点名获取成功');
+    }
 }
