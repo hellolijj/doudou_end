@@ -11,6 +11,7 @@ namespace Api\Logic;
 /*
  * userbase 调用此类表示都是已经注册用户
  */
+use Api\Model\WeixinModel;
 use Api\Service\WeixinService;
 
 class UserBaseLogic extends BaseLogic {
@@ -26,7 +27,7 @@ class UserBaseLogic extends BaseLogic {
             die;
         }
         $this->uid = session('uid');
-        $this->user_type = session('type');
+        $this->user_type = session('user_type');
         if (empty($this->user_type) || empty($this->uid)) {
             return ['success' => FALSE, 'message' => '参数不能为空'];
         }
@@ -50,5 +51,6 @@ class UserBaseLogic extends BaseLogic {
         }
         session('uid', $uid);
         session('user_type', $user_type);
+        return ['success' => TRUE, 'message' => '检查没有问题'];
     }
 }

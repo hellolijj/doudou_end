@@ -102,7 +102,6 @@ class CourseService extends BaseService {
             }
             $course = D('Course')->cache(60)->order('gmt_create desc')->find($class['cid']);
         }
-
         if (!$course) {
             return ['success' => FALSE, 'message' => '搜索课程为空'];
         }

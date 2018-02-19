@@ -8,7 +8,7 @@
 
 return array(
 
-    'APP_NAME' => 'pingshifen', 'API_LIST' => ['SCHOOL', 'STUDENT', 'WEIXIN', 'TEACHER', 'MY', 'COURSE'],
+    'APP_NAME' => 'pingshifen', 'API_LIST' => ['SCHOOL', 'STUDENT', 'WEIXIN', 'TEACHER', 'MY', 'COURSE', 'SIGNIN'],
 
     /* 数据库配置 */
     'DB_TYPE' => 'mysql', // 数据库类型
