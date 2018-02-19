@@ -89,6 +89,9 @@ class CourseService extends BaseService {
                 $where['id'] = $course_id;
             }
             $course = D('Course')->cache(60)->where($where)->order('gmt_create desc')->find();
+            if (!$course) {
+                return ['success' => FALSE, 'message' => '你还没有课程，快去创建课程吧～'];
+            }
         } elseif ($user_type == WeixinModel::$USER_TYPE_STUDENT) {
             unset($where);
             $where['uid'] = $uid;
@@ -101,10 +104,11 @@ class CourseService extends BaseService {
                 return ['success' => FALSE, 'message' => '搜索结果为空'];
             }
             $course = D('Course')->cache(60)->order('gmt_create desc')->find($class['cid']);
+            if (!$course) {
+                return ['success' => FALSE, 'message' => '你还没有课程，快去加入课程吧～'];
+            }
         }
-        if (!$course) {
-            return ['success' => FALSE, 'message' => '搜索课程为空'];
-        }
+
         $tid = $course['uid'];
         $teacher = D('Teacher')->getById($tid);
         $course['teacher'] = ['name' => $teacher['name'], 'school' => $teacher['school']];
