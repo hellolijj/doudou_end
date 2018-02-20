@@ -64,7 +64,8 @@ class SigninService extends BaseService {
         }
         // 判断时间
         $ts = time();
-        $signin_item = M('Signin')->cache('signin_' . $sid, 60)->find($sid);
+        $signin_item = M('Signin')->find($sid);
+        //        $signin_item = M('Signin')->cache('signin_' . $sid, 60)->find($sid);
         if (!$signin_item) {
             return ['success' => FALSE, 'message' => '本次签到不存在'];
         }
@@ -82,7 +83,7 @@ class SigninService extends BaseService {
             return $is_signined;
         }
         if ($is_signined === TRUE) {
-            return ['success' => FALSE, 'message' => '不能重复签到'];
+            return ['success' => FALSE, 'message' => '你已经签到过了'];
         }
         return ['success' => TRUE, 'message' => '验证成功'];
     }
