@@ -29,6 +29,23 @@ class ClassService extends BaseService {
     }
 
     /*
+     * 判断uid是否加入课程cid
+     * @return true || false || array
+     */
+    public function is_join_course ($uid, $course_id)
+    {
+        if (!$uid || !$course_id) {
+            return ['success' => FALSE, 'message' => '参数不能为空'];
+        }
+        $Class = D('Class');
+        $is_add_result = $Class->cache(60)->where(['uid' => $uid, 'cid' => $course_id])->find();
+        if ($is_add_result) {
+            return TRUE;
+        }
+        return FALSE;
+    }
+
+    /*
      * 罗列出学生所有在使用的课程
      */
     public function list_in_use_for_student ($sid, $page, $page_size)

@@ -9,6 +9,7 @@
 namespace Api\Logic;
 
 use Api\Model\WeixinModel;
+use Api\Service\SigninRecordService;
 use Api\Service\SigninService;
 
 class SigninLogic extends UserBaseLogic {
@@ -52,7 +53,7 @@ class SigninLogic extends UserBaseLogic {
     /*
      * 罗列所有的点名列表
      */
-    public function list_all ()
+    public function list_all_item ()
     {
         $cid = intval(I('cid'));
         $page = intval(I('page'));
@@ -62,7 +63,7 @@ class SigninLogic extends UserBaseLogic {
         }
         $page = $page ? $page : 1;
         $page_size = $page_size ? $page_size : 10;
-        $signin_items = M('Signin')->cache(60)->page($page)->limit($page_size)->order('gmt_create desc')->select();
+        $signin_items = M('Signin')->cache(60)->where(['cid' => $cid])->page($page)->limit($page_size)->order('gmt_create desc')->select();
         if (!$signin_items) {
             if ($this->user_type == WeixinModel::$USER_TYPE_TEACHER) {
                 return $this->setError('你还没有发布点名哦～');
@@ -79,4 +80,74 @@ class SigninLogic extends UserBaseLogic {
         }
         return $this->setSuccess($classfied_signin_result['data'], '点名获取成功');
     }
+
+    /*
+     * 查看所有的签到记录
+     */
+    public function list_all_record ()
+    {
+        $signin_id = intval(I('signin_id'));
+        $page = intval(I('page'));
+        $page_size = intval(I('page_size'));
+        if (!$signin_id) {
+            return $this->setError('参数错误');
+        }
+        $page = $page ? $page : 1;
+        $page_size = $page_size ? $page_size : 20;
+        $signin_records = M('Signin_record')->cache('signin_' . $signin_id, 30)->where(['sid' => $signin_id])->page($page)->limit($page_size)->select();
+        $signin_records_count = intval(M('Signin_record')->where(['sid' => $signin_id])->count());
+        $this->hasMorePage($signin_records_count, $page, $page_size);
+        $signinRecordService = new SigninRecordService();
+        $signinRecordService->signin_record_add_info($signin_records);
+
+        return $this->setSuccess(['finish' => $signin_records, 'undo' => []]);
+    }
+
+    /*
+     * 在线签到
+     */
+    public function signin_online ()
+    {
+        $signin_id = intval(I('signin_id'));
+        $course_id = intval(I('course_id'));
+        $latitude = floatval(I('latitude'));
+        $longitude = floatval(I('longitude'));
+        if (!$signin_id || !$course_id || !$longitude || !$latitude) {
+            return $this->setError('参数错误');
+        }
+        if ($this->user_type != WeixinModel::$USER_TYPE_STUDENT) {
+            return $this->setError('非学生用户不能签到');
+        }
+        // TODO 是不是本班学生，是不是重复签到， 是不是学生身份，时间符不符合标准 地理位置怎么样
+        $signinService = new SigninService();
+        $check_result = $signinService->check_signin_online($this->uid, $course_id, $signin_id);
+        if ($check_result['success'] === FALSE) {
+            return $this->setError($check_result['message']);
+        }
+        D('SigninRecord')->add($course_id, $signin_id, $this->uid, $latitude, $longitude);
+        return $this->setSuccess([], '签到成功');
+    }
+
+    /*
+     * 查看某次签到的详细相信信息
+     */
+    public function get_management ()
+    {
+        $signin_id = intval(I('signin_id'));
+        $course_id = intval(I('course_id'));
+        if (!$signin_id || !$course_id) {
+            return $this->setError('参数错误');
+        }
+        $signin_management = M('Signin')->cache('signin_management_' . $signin_id)->find($signin_id);
+        if (!$signin_management) {
+            return $this->setError('本次签到信息不存在');
+        }
+        $signin_management['start_time_formate_date'] = date('Y-m-d', $signin_management['start_time']);
+        $signin_management['start_time_formate_time'] = date('H:i', $signin_management['start_time']);
+        $signin_management['end_time_formate_time'] = date('H:i', $signin_management['end_time']);
+
+
+        return $this->setSuccess($signin_management, '获取成功');
+    }
+
 }

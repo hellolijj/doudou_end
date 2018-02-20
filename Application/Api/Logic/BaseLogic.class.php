@@ -43,7 +43,7 @@ class BaseLogic{
         return $this->result;
     }
 
-    public function hasMorePage ($total_count, $page = 0, $page_size = 0)
+    public function hasMorePage ($total_count, $page = 0, $page_size = 20)
     {
         $has_more = FALSE;
         if (!is_numeric($page) || !is_numeric($page_size) || $page <= 0 || $page_size <= 0) {
@@ -58,6 +58,7 @@ class BaseLogic{
         $this->result['is_openid'] = session('openid') ? TRUE : FALSE;
         $this->result['page'] = $page;
         $this->result['page_size'] = $page_size;
+        $this->result['total_count'] = $total_count;
         $this->result['has_more'] = $has_more;
     }
 
