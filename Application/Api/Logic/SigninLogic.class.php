@@ -125,6 +125,7 @@ class SigninLogic extends UserBaseLogic {
             return $this->setError($check_result['message']);
         }
         D('SigninRecord')->add($course_id, $signin_id, $this->uid, $latitude, $longitude);
+        M('Signin')->where(['id' => $signin_id])->setInc('count');
         return $this->setSuccess([], '签到成功');
     }
 
