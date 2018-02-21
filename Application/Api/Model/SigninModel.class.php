@@ -31,7 +31,7 @@ class SigninModel extends BaseModel {
         return $signin_items;
     }
 
-    public function countIncByid ($sid)
+    public function countIncByid ($cid, $sid)
     {
         if (!$sid) {
             return FALSE;
