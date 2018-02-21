@@ -22,6 +22,8 @@ class ClassService extends BaseService {
         }
         $Class = D('Class');
         $is_add_result = $Class->getByUidAndCid($uid, $course_id);
+        var_dump($is_add_result);
+        die;
         if ($is_add_result) {
             return ['success' => FALSE, 'message' => '你已经加入了'];
         }
