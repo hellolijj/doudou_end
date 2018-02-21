@@ -93,8 +93,8 @@ class SigninLogic extends UserBaseLogic {
         }
         $page = $page ? $page : 1;
         $page_size = $page_size ? $page_size : 20;
-        $signin_records = M('Signin_record')->cache('signin_' . $signin_id, 30)->where(['sid' => $signin_id])->page($page)->limit($page_size)->select();
-        $signin_records_count = intval(M('Signin_record')->where(['sid' => $signin_id])->count());
+        $signin_records = D('SigninRecord')->listBySid($signin_id, $page, $page_size);
+        $signin_records_count = D('SigninRecord')->countBySid($signin_id);
         $this->hasMorePage($signin_records_count, $page, $page_size);
         $signinRecordService = new SigninRecordService();
         $signinRecordService->signin_record_add_info($signin_records);

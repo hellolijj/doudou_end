@@ -68,14 +68,14 @@ class BaseModel extends Model {
         return $result;
     }
 
-    public function listById ($id, $field = '*')
+    public function listById ($id, $page = 1, $page_size = 20)
     {
         if (empty($id) || !is_numeric($id)) {
             return FALSE;
         }
         $id = intval($id);
 
-        return $this->field($field)->where(array('id' => $id))->select();
+        return $this->where(array('id' => $id))->page($page)->limit($page_size)->select();
     }
 
     /*public function listByIds ($id_arr, $field = '*')
