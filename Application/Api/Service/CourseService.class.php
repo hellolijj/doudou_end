@@ -42,8 +42,7 @@ class CourseService extends BaseService {
             return ['success' => FALSE, 'message' => 'uid参数错误'];
         }
         $is_add_result = D('Class')->getByUidAndCid($uid, $course_id);
-        print_r($is_add_result);
-        if (!empty($is_add_result)) {
+        if (!$is_add_result) {
             return ['success' => FALSE, 'message' => '该课程你已加入，不能重复添加'];
         }
         $data = ['uid' => $uid, 'cid' => $course_id, 'gmt_create' => time(), 'gmt_modified' => time(),];
