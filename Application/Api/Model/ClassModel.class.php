@@ -24,7 +24,7 @@ class ClassModel extends BaseModel {
         $where = ['uid' => $uid, 'status' => self::$STATUS_IN_USE,];
         $page = $page ? $page : 1;
         $page_size = $page_size ? $page_size : 20;
-        $list_in_use = $this->cache(60)->where($where)->order('gmt_create desc')->limit($page_size)->page($page)->select();
+        $list_in_use = $this->cache(60)->where($where)->order('gmt_create desc')->page($page)->select();
         return $list_in_use;
     }
 

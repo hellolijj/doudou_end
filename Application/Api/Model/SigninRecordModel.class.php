@@ -31,16 +31,19 @@ class SigninRecordModel extends BaseModel {
         $cache_key = 'pingshifen_signin_record_by_signin_id_' . $sid;
         $signin_record_items = json_decode(S($cache_key), TRUE);
         if (!$signin_record_items || count($signin_record_items) == 0) {
-            $signin_record_items = $this->where(['sid' => $sid])->page($page)->limit($page_size)->select();
+            $signin_record_items = $this->where(['sid' => $sid])->page($page)->select();
             S($cache_key, json_encode($signin_record_items), 3600);
         }
         return ['success' => TRUE, 'data' => $signin_record_items];
     }
 
+    /*
+     * return count
+     */
     public function countBySid ($sid)
     {
         if (!$sid) {
-            return ['success' => FALSE, 'message' => '参数错误'];
+            return 0;
         }
         return intval(M('Signin_record')->where(['sid' => $sid])->count());
     }

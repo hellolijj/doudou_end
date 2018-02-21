@@ -93,7 +93,11 @@ class SigninLogic extends UserBaseLogic {
         }
         $page = $page ? $page : 1;
         $page_size = $page_size ? $page_size : 20;
-        $signin_records = D('SigninRecord')->listBySid($signin_id, $page, $page_size);
+        $signin_records_result = D('SigninRecord')->listBySid($signin_id, $page, $page_size);
+        if ($signin_records_result['success'] == FALSE) {
+            return $signin_records_result;
+        }
+        $signin_records = $signin_records_result['data'];
         $signin_records_count = D('SigninRecord')->countBySid($signin_id);
         $this->hasMorePage($signin_records_count, $page, $page_size);
         $signinRecordService = new SigninRecordService();
@@ -124,7 +128,7 @@ class SigninLogic extends UserBaseLogic {
             return $this->setError($check_result['message']);
         }
         D('SigninRecord')->add($course_id, $signin_id, $this->uid, $latitude, $longitude);
-        M('Signin')->where(['id' => $signin_id])->setInc('count');
+        D('Signin')->countIncById($signin_id);
         return $this->setSuccess([], '签到成功');
     }
 

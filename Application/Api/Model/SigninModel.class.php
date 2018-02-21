@@ -13,8 +13,7 @@ class SigninModel extends BaseModel {
     {
         $data = ['uid' => $uid, 'cid' => $cid, 'title' => $title, 'start_time' => $start_time, 'end_time' => $end_time, 'address' => $address, 'latitude' => $latitude, 'longitude' => $longitude, 'radius' => $radius, 'gmt_create' => time(), 'gmt_modified' => time(),];
         $cache_key = 'pingshifen_signin_by_cid_' . $cid;
-        $signin_items = M('Signin')->where(['cid' => $cid])->page($page)->limit($page_size)->order('gmt_create desc')->select();
-        S($cache_key, json_encode($signin_items));
+        S($cache_key, NULL);
         return M('Signin')->add($data);
     }
 
@@ -26,11 +25,19 @@ class SigninModel extends BaseModel {
         $cache_key = 'pingshifen_signin_by_cid_' . $cid;
         $signin_items = json_decode(S($cache_key), TRUE);
         if (!$signin_items || count($signin_items) == 0) {
-            $signin_items = M('Signin')->where(['cid' => $cid])->page($page)->limit($page_size)->order('gmt_create desc')->select();
+            $signin_items = M('Signin')->where(['cid' => $cid])->page($page)->order('gmt_create desc')->select();
             S($cache_key, json_encode($signin_items));
         }
         return $signin_items;
     }
 
-
+    public function countIncByid ($sid)
+    {
+        if (!$sid) {
+            return FALSE;
+        }
+        $this->where(['id' => $sid])->setInc('count');
+        $cache_key = 'pingshifen_signin_by_cid_' . $cid;
+        S($cache_key, NULL);
+    }
 }
