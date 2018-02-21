@@ -108,7 +108,7 @@ class CourseLogic extends UserBaseLogic {
     }
 
     /*
-     * 添加课程
+     * 学生用户 添加课程
      */
     public function add ()
     {
