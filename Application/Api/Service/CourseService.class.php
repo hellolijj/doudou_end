@@ -43,6 +43,8 @@ class CourseService extends BaseService {
         }
         $classService = new ClassService();
         $is_add_result = $classService->is_join_course($uid, $course_id);
+        var_dump($is_add_result);
+        die;
         if ($is_add_result) {
             return ['success' => FALSE, 'message' => '该课程你已加入，不能重复添加'];
         }
