@@ -126,7 +126,7 @@ class CourseLogic extends UserBaseLogic {
         if ($course_add_result['success'] === FALSE) {
             return $this->setError($course_add_result['message']);
         }
-        return $this->setSuccess([], '添加成功');
+        return $this->setSuccess($course_id, '添加成功');
     }
 
     /*

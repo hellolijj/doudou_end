@@ -38,6 +38,21 @@ class ClassModel extends BaseModel {
         return $count;
     }
 
+    public function getByUidAndCid ($uid, $cid)
+    {
+        if (!$uid || !$cid) {
+            return FALSE;
+        }
+        $cache_key = 'pingshifen_class_by_uid_' . $uid . '_cid_' . $cid;
+        $class_item = json_encode(S($cache_key), TRUE);
+        if (!$class_item || count($class_item) == 0) {
+            $class_item = $this->where(['uid' => $uid, 'cid' => $cid])->find();
+            S($cache_key, json_encode($class_item), 3600);
+        }
+
+        return $class_item;
+    }
+
 
 
 }

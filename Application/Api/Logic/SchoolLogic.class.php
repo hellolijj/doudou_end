@@ -30,7 +30,7 @@ class SchoolLogic extends BaseLogic {
         if ($school_lists) {
             return $this->setSuccess($school_lists, '获取学校成功');
         } else {
-            return $this->setError('搜索结果为空');
+            return $this->setError('搜索不到学校');
         }
     }
 

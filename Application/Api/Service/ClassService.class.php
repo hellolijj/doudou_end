@@ -21,7 +21,7 @@ class ClassService extends BaseService {
             return ['success' => FALSE, 'message' => '参数不能为空'];
         }
         $Class = D('Class');
-        $is_add_result = $Class->cache('class_get_by_uid_' . $uid . '_cid_', $course_id)->where(['uid' => $uid, 'cid' => $course_id])->find();
+        $is_add_result = $Class->getByUidAndCid($uid, $course_id);
         if ($is_add_result) {
             return ['success' => FALSE, 'message' => '你已经加入了'];
         }
