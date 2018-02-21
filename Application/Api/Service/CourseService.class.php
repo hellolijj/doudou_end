@@ -41,11 +41,8 @@ class CourseService extends BaseService {
         if (!$course_id || !$uid) {
             return ['success' => FALSE, 'message' => 'uid参数错误'];
         }
-        $classService = new ClassService();
-        $is_add_result = $classService->is_join_course($uid, $course_id);
-        var_dump($is_add_result);
-        die;
-        if ($is_add_result) {
+        $is_add_result = D('Class')->getByUidAndCid($uid, $course_id);
+        if (!empty($is_add_result)) {
             return ['success' => FALSE, 'message' => '该课程你已加入，不能重复添加'];
         }
         $data = ['uid' => $uid, 'cid' => $course_id, 'gmt_create' => time(), 'gmt_modified' => time(),];

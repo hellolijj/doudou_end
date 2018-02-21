@@ -39,9 +39,7 @@ class ClassService extends BaseService {
         }
         $Class = D('Class');
         $is_add_result = $Class->getByUidAndCid($uid, $course_id);
-        print_r($is_add_result);
-        die;
-        if ($is_add_result) {
+        if (!empty($is_add_result)) {
             return TRUE;
         }
         return FALSE;
