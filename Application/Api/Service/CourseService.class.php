@@ -16,7 +16,7 @@ class CourseService extends BaseService {
         if (!$create_result) {
             return ['success' => FALSE, 'message' => $COURSE->getError()];
         }
-        return ['success' => TRUE, 'message' => '数据添加成功'];
+        return ['success' => TRUE, 'data' => $create_result, 'message' => '数据添加成功'];
     }
 
     public function list_in_use_for_teacher ($tid, $page, $page_size)
