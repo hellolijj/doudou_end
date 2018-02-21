@@ -22,8 +22,22 @@ class TeacherModel extends BaseModel {
             return ['success' => FALSE, 'message' => 'tids参数错误'];
         }
         $where['id'] = ['in', implode(',', $tids)];
-        $teachers = $this->cache(TRUE)->where($where)->select();
+        $teachers = $this->where($where)->select();
         return $teachers;
+    }
+
+    public function getById ($id, $field = '*')
+    {
+        if (!$id) {
+            return FALSE;
+        }
+        $cache_key = 'pingshifen_teacher_by_id_' . $id;
+        $teacher_item = json_decode(S($cache_key), TRUE);
+        if (!$teacher_item || count($teacher_item) == 0) {
+            $teacher_item = $this->find($id);
+            S($cache_key, json_encode($teacher_item), 3600);
+        }
+        return $teacher_item;
     }
 
 

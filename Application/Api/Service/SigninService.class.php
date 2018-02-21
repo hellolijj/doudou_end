@@ -19,7 +19,7 @@ class SigninService extends BaseService {
             return ['success' => FALSE, 'message' => '传入的参数为空'];
         }
         $tid = $signin_items[0]['uid'];
-        $teacher = D('Teacher')->cache('teacher_uid_' . $tid, 3600)->find($tid);
+        $teacher = D('Teacher')->getById($tid);
         $before_signin_items = [];  // 已经过期的点名
         $last_signin_items = [];   //点名过程中
         $after_signin_items = [];  // 还没有开始
