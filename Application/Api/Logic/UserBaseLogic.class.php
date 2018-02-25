@@ -29,10 +29,12 @@ class UserBaseLogic extends BaseLogic {
         $this->uid = session('uid');
         $this->user_type = session('user_type');
         if (empty($this->user_type) || empty($this->uid)) {
-            return ['success' => FALSE, 'message' => '参数不能为空'];
+            echo json_encode(['success' => FALSE, 'message' => '参数不能为空']);
+            die;
         }
-        if (in_array($this->user_type, [WeixinModel::$USER_TYPE_TEACHER, WeixinModel::$USER_TYPE_STUDENT])) {
-            return ['success' => FALSE, 'message' => '用户类型错误'];
+        if (!in_array($this->user_type, [WeixinModel::$USER_TYPE_TEACHER, WeixinModel::$USER_TYPE_STUDENT])) {
+            echo json_encode(['success' => FALSE, 'message' => '用户类型错误']);
+            die;
         }
     }
 

@@ -50,7 +50,6 @@ class GatewayController extends BaseController {
         $result = new BaseLogic();
 
         $this->method = I('method');
-        $this->session_openid = I('openid');
         $timestamp = I('timestamp');
 
         // 检查时间戳

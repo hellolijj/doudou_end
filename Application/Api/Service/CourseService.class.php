@@ -2,6 +2,7 @@
 
 namespace Api\Service;
 
+use Api\Logic\QuestionLogic;
 use Api\Model\CourseModel;
 use Api\Model\WeixinModel;
 
@@ -111,6 +112,12 @@ class CourseService extends BaseService {
         $tid = $course['uid'];
         $teacher = D('Teacher')->getById($tid);
         $course['teacher'] = ['name' => $teacher['name'], 'school' => $teacher['school']];
+
+        $course_question_model = QuestionLogic::get_current($course_id);
+        if ($course_question_model['success'] === FALSE) {
+            return $course_question_model;
+        }
+        $course['question'] = [$course_question_model['data']];
         return ['success' => TRUE, 'data' => $course];
     }
 
