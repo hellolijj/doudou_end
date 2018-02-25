@@ -21,8 +21,7 @@ class UserBaseLogic extends BaseLogic {
 
     public function __construct ()
     {
-        echo 4526;
-        die;
+        parent::__construct();
         $check_uid_result = $this->check_uid();
         if ($check_uid_result['success'] === FALSE) {
             echo json_encode($check_uid_result);
@@ -43,6 +42,8 @@ class UserBaseLogic extends BaseLogic {
     private function check_uid ()
     {
         $openid = session('openid');
+        var_dump($openid);
+        die;
         $weixinService = new WeixinService();
         $weixin_user_result = $weixinService->getByOpenid($openid);
         if ($weixin_user_result['success'] === FALSE) {
