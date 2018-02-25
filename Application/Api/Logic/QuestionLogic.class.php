@@ -64,9 +64,6 @@ class QuestionLogic extends UserBaseLogic {
      */
     public function get_id_items ()
     {
-        echo 355;
-        die;
-
         $chapter_id = intval(I('chapterID'));
         $type = trim(I('type'));
 

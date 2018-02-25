@@ -30,9 +30,6 @@ class GatewayController extends BaseController {
      */
     public function route ()
     {
-        print_r(session());
-        die;
-
         $this->check();
         
         $method_arr = explode('.', $this->method);
