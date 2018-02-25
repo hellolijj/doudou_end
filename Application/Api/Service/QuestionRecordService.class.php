@@ -26,7 +26,7 @@ class QuestionRecordService extends BaseService {
             return ['success' => FALSE, 'message' => '获取正确答案错误'];
         }
         $answer = $question_item['answer'];
-        $data = ['uid' => $uid, 'qid' => $qid, 'choose' => $choose, 'answer' => $answer, 'result' => $result, 'gmt_create' => time(), 'gmt_modified' => time()];
+        $data = ['uid' => $uid, 'cid' => $cid, 'qid' => $qid, 'choose' => $choose, 'answer' => $answer, 'result' => $result, 'gmt_create' => time(), 'gmt_modified' => time()];
         M('Question_record')->add($data);
         $this->update_count($qid, $choose, $result);
         return ['success' => TRUE];
