@@ -20,7 +20,8 @@ class BaseLogic{
     {
         $openidInid = $this->openidInit();
         if (is_array($openidInid)) {
-            return $openidInid;
+            echo json_encode($openidInid);
+            die;
         }
 
     }
