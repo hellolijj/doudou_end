@@ -21,6 +21,8 @@ class UserBaseLogic extends BaseLogic {
 
     public function __construct ()
     {
+        echo 4526;
+        die;
         $check_uid_result = $this->check_uid();
         if ($check_uid_result['success'] === FALSE) {
             echo json_encode($check_uid_result);
