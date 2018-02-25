@@ -13,9 +13,6 @@ use Api\Logic\BaseLogic;
 
 class GatewayController extends BaseController {
 
-    protected $secret_key = 'L39e5e2OdI3e542Aa1Cb9cb80ef';
-    protected $session_uid = 0;
-    protected $session_openid = 0;
     protected $method = '';
 
     protected $params = [];
@@ -73,28 +70,5 @@ class GatewayController extends BaseController {
         // todo 对方法的判断
     }
 
-    /**
-     * 1、对openid uid 进行检查
-     * 2、看userinfo在不在memchche上
-     * 3、如果 userinfo 在memcache上 就继续。如果不在memcache则添加缓存
-     * 4、如果openid 不在平台上，则添加到平台。
-     */
-    private function dealOpenidOrUid ()
-    {
-        $result = new BaseLogic();
-        // 判断uid openid
-        $uid = I('uid') ? I('uid') : session('uid');
-        $openid = I('openid') ? I('openid') : session('openid');
-        if (empty($openid) && empty($openid)) {
-            $this->ajaxReturn($result->setError('无效的OPENID参数'));
-        }
-        // update session
-        if (I('uid') && I('uid') != session('uid')) {
-            session('uid', $uid);
-        }
-        if (I('openid') && I('openid') != session('openid')) {
-            session('openid', $openid);
-        }
-    }
 
 }

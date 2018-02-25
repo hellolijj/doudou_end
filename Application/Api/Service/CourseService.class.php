@@ -113,7 +113,8 @@ class CourseService extends BaseService {
         $teacher = D('Teacher')->getById($tid);
         $course['teacher'] = ['name' => $teacher['name'], 'school' => $teacher['school']];
 
-        $course_question_model = QuestionLogic::get_current($course_id);
+        $course_question_model = QuestionLogic::get_current($course['id']);
+
         if ($course_question_model['success'] === FALSE) {
             return $course_question_model;
         }
