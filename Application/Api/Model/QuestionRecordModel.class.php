@@ -34,6 +34,8 @@ class QuestionRecordModel extends BaseModel {
             return ['success' => FALSE, '参数错误'];
         }
         $question_items = $this->where(['uid' => $uid, 'cid' => $cid, 'result' => self::$RESULT_WRONG])->field('qid as id')->select();
+        $question_items = result_to_map($question_items, 'id');
+
         return $question_items;
     }
 }
