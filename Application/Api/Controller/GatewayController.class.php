@@ -17,6 +17,11 @@ class GatewayController extends BaseController {
 
     protected $params = [];
 
+    public function __construct ()
+    {
+        parent::__construct();
+    }
+
 
     /**
      * 1、检查关键信息 时间错 method在不在
@@ -25,6 +30,8 @@ class GatewayController extends BaseController {
      */
     public function route ()
     {
+        print_r(session());
+        die;
 
         $this->check();
         

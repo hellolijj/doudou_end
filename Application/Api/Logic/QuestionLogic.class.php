@@ -20,8 +20,6 @@ class QuestionLogic extends UserBaseLogic {
 
     public function __construct ()
     {
-        var_dump(session());
-        die;
 
         parent::__construct();
 
