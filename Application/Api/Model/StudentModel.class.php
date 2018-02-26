@@ -25,5 +25,19 @@ class StudentModel extends BaseModel {
 
     public static $SEX_DESC = [0 => '保密', 1 => '男', 2 => '女',];
 
+    public function getById ($id)
+    {
+        if (!$id) {
+            return FALSE;
+        }
+        $cache_key = 'pingshifen_student_by_id_' . $id;
+        $student_item = json_decode(S($cache_key), TRUE);
+        if (!$student_item || count($student_item) == 0) {
+            $student_item = $this->find($id);
+            S($cache_key, json_encode($student_item), 3600);
+        }
+        return $student_item;
+    }
+
 
 }

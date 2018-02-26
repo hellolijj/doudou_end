@@ -9,6 +9,7 @@
 
 namespace Api\Controller;
 
+use Api\Model\WeixinModel;
 use Api\Service\WeixinService;
 use Think\Controller;
 
@@ -86,8 +87,7 @@ class WeixinController extends Controller {
         }
         S($data['session3rd'], json_encode($data), 3600);  // 此缓存用于后面的验证是否登陆
         session('openid', $data['openId']);
-        $weixinService = new WeixinService();
-        $weixin_user_result = $weixinService->getByOpenid($data['openId']);
+        $weixin_user_result = $this->get_user_info(session('openid'));
         if ($weixin_user_result['success'] === TRUE && $weixin_user_result['data']['openid']) {
             $regData = $weixin_user_result['data'];
             $regData['session3rd'] = $data['session3rd'];
@@ -200,7 +200,32 @@ class WeixinController extends Controller {
         if ($weixin_user_result['success'] === FALSE) {
             return ['success' => FALSE, 'message' => '获取信息失败'];;
         }
-        return ['success' => TRUE, 'data' => $weixin_user_result['data']];
+
+        // todo 如果是已注册用户，则返回真实姓名、班级、学号等信息。
+        $weixin_user = $weixin_user_result['data'];
+        if (in_array($weixin_user['type'], [WeixinModel::$USER_TYPE_STUDENT, WeixinModel::$USER_TYPE_TEACHER])) {
+            if ($weixin_user['type'] == WeixinModel::$USER_TYPE_STUDENT) {
+                $student_user = D('Student')->getById($weixin_user['uid']);
+                if ($student_user['name']) {
+                    $weixin_user['name'] = $student_user['name'];
+                }
+                if ($student_user['number']) {
+                    $weixin_user['number'] = $student_user['number'];
+                }
+                if ($student_user['school']) {
+                    $weixin_user['school'] = $student_user['school'];
+                }
+            } elseif ($weixin_user['type'] == WeixinModel::$USER_TYPE_TEACHER) {
+                $teacher_user = D('Teacher')->getById($weixin_user['uid']);
+                if ($teacher_user['name']) {
+                    $weixin_user['name'] = $teacher_user['name'];
+                }
+                if ($teacher_user['school']) {
+                    $weixin_user['school'] = $teacher_user['school'];
+                }
+            }
+        }
+        return ['success' => TRUE, 'data' => $weixin_user];
     }
 
 
