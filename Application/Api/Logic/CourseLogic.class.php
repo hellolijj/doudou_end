@@ -11,6 +11,7 @@ namespace Api\Logic;
 use Api\Service\ClassService;
 use Api\Service\ClassServie;
 use Api\Service\CourseService;
+use Api\Service\SigninRecordService;
 use Api\Service\WeixinService;
 
 /*
@@ -151,5 +152,40 @@ class CourseLogic extends UserBaseLogic {
             return $this->setError($course_item_result['message']);
         }
         return $this->setSuccess($course_item_result['data']);
+    }
+
+
+    /*
+     * 获取课程信息返回给客户端
+     */
+    public function get_info ()
+    {
+        $course_id = intval(I('course_id'));
+        if (!$course_id) {
+            return $this->setError('参数错误');
+        }
+        $course_info = D('Course')->getById($course_id);
+        return $this->setSuccess($course_info);
+    }
+
+    /*
+     * list班级的所有学生列表
+     */
+    public function list_student ()
+    {
+        $course_id = intval(I('course_id'));
+        if (!$course_id) {
+            return $this->setError('参数错误');
+        }
+        $student_list = D('Class')->where(['cid' => $course_id])->select();
+        if (empty($student_list)) {
+            return $this->setError('该课程还没有学生加入');
+        }
+
+        // todo 不知道为什么，这里竟然能公用。后面要拆开
+        $signinRecordService = new SigninRecordService();
+        $signinRecordService->signin_record_add_info($student_list);
+
+        return $this->setSuccess($student_list, '获取成功');
     }
 }
