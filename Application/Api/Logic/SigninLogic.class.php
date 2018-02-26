@@ -105,6 +105,8 @@ class SigninLogic extends UserBaseLogic {
         $signinRecordService->signin_record_add_info($signin_records);
 
         $no_sign_records = $signinRecordService->no_sign_records($signin_id);
+        print_r($no_sign_records);
+        die;
         $signinRecordService->signin_record_add_info($no_sign_records);
 
 
