@@ -42,8 +42,34 @@ class SigninRecordService extends BaseService {
                 $signin_record['name'] = $student_arr[$uid]['name'];
                 $signin_record['head_img'] = $student_arr[$uid]['head_img'];
                 $signin_record['number'] = $student_arr[$uid]['number'];
+                $signin_record['gmt_create_format'] = date('H:i:s', $signin_record['gmt_create']);
             }
-            $signin_record['gmt_create_format'] = date('H:i:s', $signin_record['gmt_create']);
         }
+    }
+
+
+    /*
+     * 未签到名单
+     */
+    public function no_sign_records ($sign_id)
+    {
+
+        /*SELECT *
+        FROM  `pingshifen_class`
+        LEFT JOIN pingshifen_signin_record ON pingshifen_class.uid = pingshifen_signin_record.uid
+                AND pingshifen_signin_record.sid =13
+        WHERE pingshifen_signin_record.uid IS NULL
+                AND pingshifen_class.cid =140523
+        LIMIT 0 , 30*/
+
+        if (!$sign_id) {
+            return ['success' => FALSE, 'message' => '参数错误'];
+        }
+        $cid = D('Signin')->getCidById($sign_id);
+        $cid = intval($cid);
+        $Class = M('Class');
+        $no_signin_record = $Class->join('pingshifen_signin_record ON pingshifen_class.uid = pingshifen_signin_record.uid and pingshifen_signin_record.sid = ' . $sign_id, 'left')->where(['pingshifen_signin_record.uid' => ['EXP', 'IS NULL'], 'pingshifen_class.cid' => $cid,])->select();
+
+        return $no_signin_record;
     }
 }

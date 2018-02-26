@@ -40,4 +40,18 @@ class SigninModel extends BaseModel {
         $cache_key = 'pingshifen_signin_by_cid_' . $cid;
         S($cache_key, NULL);
     }
+
+    public function getCidById ($id)
+    {
+        if (!$id) {
+            return FALSE;
+        }
+        $cache_key = 'pingshifen_signin_get_cid_by_id_' . $id;
+        $signin_cid = S($cache_key);
+        if (!$signin_cid || count($signin_cid) == 0) {
+            $signin_cid = M('Signin')->where(['id' => $id])->getField('cid');
+            S($cache_key, $signin_cid);
+        }
+        return $signin_cid;
+    }
 }
