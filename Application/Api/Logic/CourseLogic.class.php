@@ -19,6 +19,12 @@ use Api\Service\WeixinService;
  */
 
 class CourseLogic extends UserBaseLogic {
+
+    public function __construct ()
+    {
+        parent::__construct();
+    }
+
     /*
      * 创建一个课程
      */
@@ -53,6 +59,33 @@ class CourseLogic extends UserBaseLogic {
             return $this->setError($crease_result['message']);
         }
         return $this->setSuccess($crease_result['data'], '添加成功');
+    }
+
+    /*
+     * 更新课程信息
+     */
+    public function update ()
+    {
+        $course_id = intval(I('course_id'));
+        // 入参校验
+        $course_name = I('course_name');
+        $course_img = I('course_img');
+        $course_class_name = I('course_class_name');
+        $course_remark = I('course_remark');
+        if (!$course_name || !$course_img || !$course_class_name || !$course_id) {
+            return $this->setError('参入参数不能为空');
+        }
+        if ($this->user_type != WeixinService::$USER_TYPE_TEACHER) {
+            return $this->setError('不是教师用户');
+        }
+        $data = ['name' => $course_name, 'class_name' => $course_class_name, 'logo' => $course_img, 'remark' => $course_remark, 'gmt_modified' => time(),];
+        $Course = D('Course');
+        $course_save = $Course->where(['id' => $course_id])->save($data);
+        if (!$course_save) {
+            return $this->setError($Course->getError());
+
+        }
+        return $this->setSuccess(NULL, '更新成功');
     }
 
     /*
@@ -165,6 +198,9 @@ class CourseLogic extends UserBaseLogic {
             return $this->setError('参数错误');
         }
         $course_info = D('Course')->getById($course_id);
+        if (empty($course_info)) {
+            return $this->setError('查不到该课程信息');
+        }
         return $this->setSuccess($course_info);
     }
 

@@ -48,7 +48,7 @@ class BaseModel extends Model {
         }
         $id = intval($id);
 
-        return $this->cache(60)->field($field)->where(array('id' => $id))->find();
+        return $this->field($field)->where(array('id' => $id))->find();
     }
 
     public function getByIds (array $id_arr, $field = '*')
