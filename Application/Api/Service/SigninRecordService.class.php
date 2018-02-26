@@ -42,7 +42,9 @@ class SigninRecordService extends BaseService {
                 $signin_record['name'] = $student_arr[$uid]['name'];
                 $signin_record['head_img'] = $student_arr[$uid]['head_img'];
                 $signin_record['number'] = $student_arr[$uid]['number'];
-                $signin_record['gmt_create_format'] = date('H:i:s', $signin_record['gmt_create']);
+                if ($signin_record['gmt_create']) {
+                    $signin_record['gmt_create_format'] = date('H:i:s', $signin_record['gmt_create']);
+                }
             }
         }
     }
@@ -68,10 +70,7 @@ class SigninRecordService extends BaseService {
         $cid = D('Signin')->getCidById($sign_id);
         $cid = intval($cid);
         $Class = M('Class');
-        $no_signin_record = $Class->table('Class')->join('pingshifen_signin_record ON pingshifen_class.uid = pingshifen_signin_record.uid and pingshifen_signin_record.sid = ' . $sign_id, 'left')->where(['pingshifen_signin_record.uid' => ['EXP', 'IS NULL'], 'pingshifen_class.cid' => $cid,])->select();
-
-
-
+        $no_signin_record = $Class->field('pingshifen_class.uid')->join('pingshifen_signin_record ON pingshifen_class.uid = pingshifen_signin_record.uid and pingshifen_signin_record.sid = ' . $sign_id, 'left')->where(['pingshifen_signin_record.uid' => ['EXP', 'IS NULL'], 'pingshifen_class.cid' => $cid,])->select();
         return $no_signin_record;
     }
 }
