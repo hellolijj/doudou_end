@@ -30,6 +30,8 @@ class SigninRecordService extends BaseService {
 
     public function signin_record_add_info (&$signin_records)
     {
+        print_r($signin_records);
+        die('afa');
         $uids = result_to_array($signin_records, 'uid');
         $where['id'] = ['in', implode(',', $uids)];
         $student_arr = M('Student')->where($where)->select();

@@ -36,10 +36,11 @@
 			'Teacher' instanceof Api\Model\TeacherModel,
 		],
 		\DL('') => [
-			'SchoolLogic' instanceof Api\Logic\SchoolLogic,
+			'WeixinLogic' instanceof Api\Logic\WeixinLogic,
 			'StudentLogic' instanceof Api\Logic\StudentLogic,
-			'DownloadLogic' instanceof Admin\Logic\DownloadLogic,
 			'ArticleLogic' instanceof Admin\Logic\ArticleLogic,
+			'SchoolLogic' instanceof Api\Logic\SchoolLogic,
+			'DownloadLogic' instanceof Admin\Logic\DownloadLogic,
 			'BaseLogic' instanceof Api\Logic\BaseLogic,
 		],
 		\DS('') => [
