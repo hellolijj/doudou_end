@@ -113,7 +113,6 @@ class CourseLogic extends UserBaseLogic {
             if ($course_items_result['success'] === FALSE) {
                 return $this->setError($course_items_result['message']);
             }
-            print_r($course_items_result);
             $course_items = $course_items_result['data'];
 
             $course_count = D('Class')->countClassByUid($uid);
