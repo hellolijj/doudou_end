@@ -23,6 +23,7 @@ class CourseLogic extends UserBaseLogic {
     public function __construct ()
     {
         parent::__construct();
+
     }
 
     /*
@@ -109,6 +110,8 @@ class CourseLogic extends UserBaseLogic {
         } elseif ($user_type == WeixinService::$USER_TYPE_STUDENT) {
             $classService = new ClassService();
             $course_items_result = $classService->list_in_use_for_student($uid, $page, $page_size);
+            print_r($course_items_result);
+            die;
             if ($course_items_result['success'] === FALSE) {
                 return $this->setError($course_items_result['message']);
             }
