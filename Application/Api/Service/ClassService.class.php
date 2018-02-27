@@ -70,6 +70,6 @@ class ClassService extends BaseService {
                 $course['teacher'] = ['name' => $teachers_result[$tid]['name'], 'school' => $teachers_result[$tid]['school'],];
             }
         }
-        return $courses;
+        return ['success' => TRUE, 'data' => $course];
     }
 }

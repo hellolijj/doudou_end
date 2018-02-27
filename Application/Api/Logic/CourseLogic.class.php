@@ -108,7 +108,11 @@ class CourseLogic extends UserBaseLogic {
 
         } elseif ($user_type == WeixinService::$USER_TYPE_STUDENT) {
             $classService = new ClassService();
-            $course_items = $classService->list_in_use_for_student($uid, $page, $page_size);
+            $course_items_result = $classService->list_in_use_for_student($uid, $page, $page_size);
+            if ($course_items_result['success'] === FALSE) {
+                return $this->setError($course_items_result['message']);
+            }
+            $course_items = $course_items_result['data'];
             $course_count = D('Class')->countClassByUid($uid);
         }
         $this->hasMorePage($course_count, $page, $page_size);
