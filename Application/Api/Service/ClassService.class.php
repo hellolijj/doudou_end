@@ -51,10 +51,13 @@ class ClassService extends BaseService {
     public function list_in_use_for_student ($sid, $page, $page_size)
     {
         if (!$sid || !is_numeric($sid)) {
-            return ['success' => FALSE, 'message' => 'uid参数错误'];
+            return ['success' => FALSE, 'message' => '参数错误'];
         }
         // todo uid -> cid -> tid
         $classes = D('Class')->getClassByUid($sid);
+        if (empty($classes)) {
+            return ['success' => FALSE, 'message' => '你还没有加入课程'];
+        }
         $course_ids = result_to_array($classes, 'cid');
         $courses = D('Course')->getCourseByUids($course_ids, $page, $page_size);
         if (!$courses) {
