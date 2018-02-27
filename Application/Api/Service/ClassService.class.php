@@ -60,6 +60,8 @@ class ClassService extends BaseService {
         }
         $course_ids = result_to_array($classes, 'cid');
         $courses = D('Course')->getCourseByUids($course_ids, $page, $page_size);
+        print_r($courses);
+        die;
         if (!$courses) {
             return ['success' => FALSE, 'message' => '查不到课程'];
         }
