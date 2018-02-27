@@ -9,11 +9,17 @@
 namespace Api\Logic;
 
 use Api\Model\WeixinModel;
+use Api\Service\InvitationService;
 use Api\Service\StudentService;
 use Api\Service\TeacherService;
 use Api\Service\WeixinService;
 
-class MyLogic extends BaseLogic {
+class MyLogic extends UserBaseLogic {
+
+    public function __construct ()
+    {
+        parent::__construct();
+    }
 
     /*
      * info，给my_index页面提供接口,
@@ -67,5 +73,23 @@ class MyLogic extends BaseLogic {
         }
         $user_info['user_type'] = WeixinModel::$USER_TYPE[$user_type];
         return ['success' => TRUE, 'data' => $user_info];
+    }
+
+    /*
+     * 用户获取邀请码
+     */
+    public function invite ()
+    {
+        $user_type = $this->user_type;
+        //        if ($user_type == WeixinModel::$USER_TYPE_STUDENT) {
+        //            return $this->setSuccess(['invitor' => 'student']);
+        //        }
+        $uid = $this->uid;
+        $invitationService = new InvitationService();
+        $invitation_code_result = $invitationService->get_invitation_code($uid);
+        if ($invitation_code_result['success'] === FALSE) {
+            return $this->setError($invitation_code_result);
+        }
+        return $this->setSuccess(['invitor' => 'teacher', 'invitation_code' => $invitation_code_result['data']], '获取成功');
     }
 }
