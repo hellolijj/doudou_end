@@ -81,9 +81,9 @@ class MyLogic extends UserBaseLogic {
     public function invite ()
     {
         $user_type = $this->user_type;
-        //        if ($user_type == WeixinModel::$USER_TYPE_STUDENT) {
-        //            return $this->setSuccess(['invitor' => 'student']);
-        //        }
+        if ($user_type == WeixinModel::$USER_TYPE_STUDENT) {
+            return $this->setSuccess(['invitor' => 'student']);
+        }
         $uid = $this->uid;
         $invitationService = new InvitationService();
         $invitation_code_result = $invitationService->get_invitation_code($uid);
