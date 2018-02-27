@@ -19,7 +19,10 @@ class InvitationService extends BaseService {
      */
     public function getInvitor ($invitation_code)
     {
-        if (in_array($invitation_code, self::$SYSTEM_INVITION_CODE)) {
+        $invitation_code_item = D('InvitationCode')->getByCode($invitation_code);
+        if ($invitation_code_item) {
+            return $invitation_code_item['uid'];
+        } elseif (in_array($invitation_code, self::$SYSTEM_INVITION_CODE)) {
             return BaseService::$SYSTEM_UID;
         } else {
             return FALSE;
