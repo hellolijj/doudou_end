@@ -101,7 +101,10 @@ class CourseService extends BaseService {
             $CLASS = D('Class');
             $class = $CLASS->cache(60)->where($where)->order('gmt_create desc')->find();
             if (!$class) {
-                return ['success' => FALSE, 'message' => 'NO_JOIN'];
+                if ($course_id) {
+                    return ['success' => FALSE, 'message' => 'NO_JOIN'];
+                }
+                return ['success' => FALSE, 'message' => '你没有加入该课程，快去加入吧'];
             }
             $course = D('Course')->cache(60)->order('gmt_create desc')->find($class['cid']);
             if (!$course) {
