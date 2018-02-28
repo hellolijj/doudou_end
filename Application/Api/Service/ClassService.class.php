@@ -75,4 +75,33 @@ class ClassService extends BaseService {
         }
         return ['success' => TRUE, 'data' => $courses];
     }
+
+    public function list_in_lock_for_student ($sid)
+    {
+        if (!$sid || !is_numeric($sid)) {
+            return ['success' => FALSE, 'message' => '参数错误'];
+        }
+        $classes = D('Class')->getClassByUid($sid);
+        if (empty($classes)) {
+            return ['success' => FALSE, 'message' => '你还没有加入课程'];
+        }
+        $course_ids = result_to_array($classes, 'cid');
+        $courses = D('Course')->listLockCourseByCids($course_ids);
+        if (!$courses) {
+            return ['success' => FALSE, 'message' => '查不到课程'];
+        }
+        $tids = result_to_array($courses, 'uid');
+        $teachers = D('Teacher')->getByIds($tids);
+        $teachers_result = result_to_map($teachers, 'id');
+        foreach ($courses as $key => &$course) {
+            $tid = $course['uid'];  //教师uid
+            // 添加教师信息
+            if ($teachers_result[$tid]) {
+                $course['teacher'] = ['name' => $teachers_result[$tid]['name'], 'school' => $teachers_result[$tid]['school'],];
+            }
+        }
+        return ['success' => TRUE, 'data' => $courses];
+
+
+    }
 }

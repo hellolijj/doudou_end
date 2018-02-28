@@ -25,8 +25,21 @@ class CourseService extends BaseService {
         if (!$tid || !is_numeric($tid)) {
             return ['success' => FALSE, 'message' => 'uid参数错误'];
         }
-        $teacher = D('Teacher')->cache(60)->find($tid);
+        $teacher = D('Teacher')->getById($tid);
         $course_lists = D('Course')->getCourseByUid($tid, $page, $page_size);
+        foreach ($course_lists as &$course_list) {
+            $course_list['teacher'] = ['name' => $teacher['name'], 'school' => $teacher['school'],];
+        }
+        return $course_lists;
+    }
+
+    public function list_in_lock_for_teacher ($tid)
+    {
+        if (!$tid || !is_numeric($tid)) {
+            return ['success' => FALSE, 'message' => 'uid参数错误'];
+        }
+        $teacher = D('Teacher')->getById($tid);
+        $course_lists = D('Course')->listLockCourseByUid($tid);
         foreach ($course_lists as &$course_list) {
             $course_list['teacher'] = ['name' => $teacher['name'], 'school' => $teacher['school'],];
         }

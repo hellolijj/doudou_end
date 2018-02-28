@@ -116,7 +116,6 @@ class CourseLogic extends UserBaseLogic {
                 return $this->setError($course_items_result['message']);
             }
             $course_items = $course_items_result['data'];
-
             $course_count = D('Class')->countClassByUid($uid);
         }
         $this->hasMorePage($course_count, $page, $page_size);
@@ -130,9 +129,30 @@ class CourseLogic extends UserBaseLogic {
     /*
     * list 锁上的所有的课程
     */
-    public function list_lock ()
+    public function list_in_lock ()
     {
+        $uid = $this->uid;
+        $user_type = $this->user_type;
+        // 教师用户从course表查找
+        if ($user_type == WeixinService::$USER_TYPE_TEACHER) {
+            $courseService = new CourseService();
+            $course_items = $courseService->list_in_lock_for_teacher($uid);
+            $course_count = count($course_items);
 
+        } elseif ($user_type == WeixinService::$USER_TYPE_STUDENT) {
+            $classService = new ClassService();
+            $course_items_result = $classService->list_in_lock_for_student($uid);
+            if ($course_items_result['success'] === FALSE) {
+                return $this->setError($course_items_result['message']);
+            }
+            $course_items = $course_items_result['data'];
+            $course_count = count($course_items_result);
+        }
+        if ($course_items) {
+            return $this->setSuccess($course_items, '获取所有课程');
+        } else {
+            return $this->setError('你还没有创建课程');
+        }
     }
 
     /*
