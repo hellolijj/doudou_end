@@ -20,10 +20,12 @@ class QuestionCollectionModel extends BaseModel {
         }
 
         $cache_key = 'pingshifen_question_collection_by_uid_' . $uid . '_cid_' . $cid . '_qid_' . $qid;
-
-        $question_collection_item = json_decode(S($cache_key), TRUE);
-        if (!$question_collection_item || count($question_collection_item) == 0) {
-            $question_collection_item = $this->where(['uid' => $uid, 'cid' => $cid, 'qid' => $qid])->find();
+        $cache_value = S($cache_key);
+        if ($cache_value) {
+            return json_decode(S($cache_key), TRUE);
+        }
+        $question_collection_item = $this->where(['uid' => $uid, 'cid' => $cid, 'qid' => $qid])->find();
+        if ($question_collection_item) {
             S($cache_key, json_encode($question_collection_item));
         }
         return $question_collection_item;

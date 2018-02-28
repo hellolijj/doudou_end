@@ -32,9 +32,13 @@ class TeacherModel extends BaseModel {
             return FALSE;
         }
         $cache_key = 'pingshifen_teacher_by_id_' . $id;
-        $teacher_item = json_decode(S($cache_key), TRUE);
-        if (!$teacher_item || count($teacher_item) == 0) {
-            $teacher_item = $this->find($id);
+        $cache_value = S($cache_key);
+        if ($cache_value) {
+            return json_decode(S($cache_key), TRUE);
+        }
+
+        $teacher_item = $this->find($id);
+        if ($teacher_item) {
             S($cache_key, json_encode($teacher_item), 3600);
         }
         return $teacher_item;

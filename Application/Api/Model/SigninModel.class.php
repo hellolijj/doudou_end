@@ -23,9 +23,12 @@ class SigninModel extends BaseModel {
             return FALSE;
         }
         $cache_key = 'pingshifen_signin_by_cid_' . $cid;
-        $signin_items = json_decode(S($cache_key), TRUE);
-        if (!$signin_items || count($signin_items) == 0) {
-            $signin_items = M('Signin')->where(['cid' => $cid])->page($page)->order('gmt_create desc')->select();
+        $cache_value = S($cache_key);
+        if ($cache_value) {
+            return json_decode(S($cache_key), TRUE);
+        }
+        $signin_items = M('Signin')->where(['cid' => $cid])->page($page)->order('gmt_create desc')->select();
+        if ($signin_items) {
             S($cache_key, json_encode($signin_items));
         }
         return $signin_items;
@@ -47,10 +50,13 @@ class SigninModel extends BaseModel {
             return FALSE;
         }
         $cache_key = 'pingshifen_signin_get_cid_by_id_' . $id;
-        $signin_cid = S($cache_key);
-        if (!$signin_cid || count($signin_cid) == 0) {
-            $signin_cid = M('Signin')->where(['id' => $id])->getField('cid');
-            S($cache_key, $signin_cid);
+        $cache_value = S($cache_key);
+        if ($cache_value) {
+            return json_decode(S($cache_key), TRUE);
+        }
+        $signin_cid = M('Signin')->where(['id' => $id])->getField('cid');
+        if ($signin_cid) {
+            S($cache_key, $signin_cid, 3600);
         }
         return $signin_cid;
     }

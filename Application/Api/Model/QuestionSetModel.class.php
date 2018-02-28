@@ -15,9 +15,12 @@ class QuestionSetModel extends BaseModel {
     {
 
         $cache_key = 'pingshifen_question_set';
-        $set_items = json_decode(S($cache_key), TRUE);
-        if (!$set_items || count($set_items) == 0) {
-            $set_items = $this->select();
+        $cache_value = S($cache_key);
+        if ($cache_value) {
+            return json_decode(S($cache_key), TRUE);
+        }
+        $set_items = $this->select();
+        if ($set_items) {
             S($cache_key, json_encode($set_items), 3600);
         }
         return $set_items;

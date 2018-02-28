@@ -286,4 +286,27 @@ class CourseLogic extends UserBaseLogic {
         M('Question')->add($data);
         return $this->setSuccess([], '设置成功');
     }
+
+    /*
+     * 设置课程状态
+     */
+    public function set_status ()
+    {
+        $status = intval(I('course_status'));
+        $cid = intval(I('course_id'));
+        if (!$status || !$cid) {
+            return $this->setError('参数错误');
+        }
+        $user_type = $this->user_type;
+        if ($user_type != WeixinModel::$USER_TYPE_TEACHER) {
+            return $this->setError('此功能仅教师用户可操作');
+        }
+        $data = ['status' => $status, 'id' => $cid, 'gmt_modified' => time()];
+        $Course = D('Course');
+        $save_result = $Course->where(['uid' => $this->uid])->save($data);
+        if (!$save_result) {
+            return $this->setError('更改失败');
+        }
+        return $this->setSuccess([], '更改成功');
+    }
 }

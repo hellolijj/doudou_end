@@ -16,13 +16,15 @@ class InvitationCodeModel extends BaseModel {
             return FALSE;
         }
         $cache_key = 'pingshifen_invitation_code_by_uid_' . $uid;
-        $invitation_code_item = json_decode(S($cache_key), TRUE);
-        if (!$invitation_code_item) {
-            $invitation_code_item = $this->where(['uid' => $uid])->find();
+        $cache_value = S($cache_key);
+        if ($cache_value) {
+            return json_decode(S($cache_key), TRUE);
+        }
+        $invitation_code_item = $this->where(['uid' => $uid])->find();
+        if ($invitation_code_item) {
             S($cache_key, json_encode($invitation_code_item), 3600);
         }
         return $invitation_code_item;
-
     }
 
     public function getByCode ($code)
@@ -31,12 +33,14 @@ class InvitationCodeModel extends BaseModel {
             return FALSE;
         }
         $cache_key = 'pingshifen_invitation_code_by_code_' . $code;
-        $invitation_code_item = json_decode(S($cache_key), TRUE);
-        if (!$invitation_code_item) {
-            $invitation_code_item = $this->where(['code' => code])->find();
+        $cache_value = S($cache_key);
+        if ($cache_value) {
+            return json_decode(S($cache_key), TRUE);
+        }
+        $invitation_code_item = $this->where(['code' => code])->find();
+        if ($invitation_code_item) {
             S($cache_key, json_encode($invitation_code_item), 3600);
         }
         return $invitation_code_item;
-
     }
 }

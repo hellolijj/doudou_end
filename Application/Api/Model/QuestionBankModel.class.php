@@ -33,9 +33,12 @@ class QuestionBankModel extends BaseModel {
             return ['success' => FALSE, 'message' => '参数不能为空'];
         }
         $cache_key = 'pingshifen_question_bank_by_sid_' . $sid;
-        $question_items = json_decode(F($cache_key), TRUE);
-        if (!$question_items) {
-            $question_items = $this->where(['set_id' => $sid])->field('id')->select();
+        $cache_value = F($cache_key);
+        if ($cache_value) {
+            return json_decode(F($cache_key), TRUE);
+        }
+        $question_items = $this->where(['set_id' => $sid])->field('id')->select();
+        if ($question_items) {
             F($cache_key, json_encode($question_items));
         }
         return $question_items;
@@ -48,9 +51,12 @@ class QuestionBankModel extends BaseModel {
             return FALSE;
         }
         $cache_key = 'pingshifen_question_by_ids_' . json_encode($id_arr);
-        $question_items = json_decode(F($cache_key), TRUE);
-        if (!$question_items) {
-            $question_items = $this->where(['id' => ['IN', implode(',', $id_arr)]])->select();
+        $cache_value = F($cache_key);
+        if ($cache_value) {
+            return json_decode(F($cache_key), TRUE);
+        }
+        $question_items = $this->where(['id' => ['IN', implode(',', $id_arr)]])->select();
+        if ($question_items) {
             F($cache_key, json_encode($question_items));
         }
         return $question_items;
@@ -62,9 +68,12 @@ class QuestionBankModel extends BaseModel {
             return ['success' => FALSE, 'message' => '参数不能为空'];
         }
         $cache_key = 'pingshifen_question_bank_by_chapter_id_' . $chapter_id;
-        $question_items = json_decode(F($cache_key), TRUE);
-        if (!$question_items) {
-            $question_items = $this->where(['chapter_id' => $chapter_id])->field('id')->select();
+        $cache_value = F($cache_key);
+        if ($cache_value) {
+            return json_decode(F($cache_key), TRUE);
+        }
+        $question_items = $this->where(['chapter_id' => $chapter_id])->field('id')->select();
+        if ($question_items) {
             F($cache_key, json_encode($question_items));
         }
         return $question_items;
@@ -79,9 +88,12 @@ class QuestionBankModel extends BaseModel {
             return ['success' => FALSE, 'message' => '题目类型不对'];
         }
         $cache_key = 'pingshifen_question_bank_by_sid_' . $sid . '_type_' . $type;
-        $question_items = json_decode(F($cache_key), TRUE);
-        if (!$question_items) {
-            $question_items = $this->where(['set_id' => $sid, 'type' => array_search($type, QuestionBankModel::$TYPE)])->field('id')->select();
+        $cache_value = F($cache_key);
+        if ($cache_value) {
+            return json_decode(F($cache_key), TRUE);
+        }
+        $question_items = $this->where(['set_id' => $sid, 'type' => array_search($type, QuestionBankModel::$TYPE)])->field('id')->select();
+        if ($question_items) {
             F($cache_key, json_encode($question_items));
         }
         return $question_items;

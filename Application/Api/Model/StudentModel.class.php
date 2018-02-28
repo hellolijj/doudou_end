@@ -31,9 +31,12 @@ class StudentModel extends BaseModel {
             return FALSE;
         }
         $cache_key = 'pingshifen_student_by_id_' . $id;
-        $student_item = json_decode(S($cache_key), TRUE);
-        if (!$student_item || count($student_item) == 0) {
-            $student_item = $this->find($id);
+        $cache_value = S($cache_key);
+        if ($cache_value) {
+            return json_decode(S($cache_key), TRUE);
+        }
+        $student_item = $this->find($id);
+        if ($student_item) {
             S($cache_key, json_encode($student_item), 3600);
         }
         return $student_item;
