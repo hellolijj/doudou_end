@@ -74,8 +74,7 @@ class WeixinService extends BaseService {
 
         // 更新缓存信息
         $cache_key = $openid;
-        $weixin_user = $Weixin->getByOpenid($openid);
-        S($cache_key, json_encode($weixin_user), 3600);
+        S($cache_key, NULL);
         return TRUE;
     }
 
@@ -110,19 +109,16 @@ class WeixinService extends BaseService {
             return ['success' => FALSE, 'message' => 'openid为空'];
         }
         $cache_key = $openid;
-        $cache_value = json_decode(S($cache_key), TRUE);
-        if (empty($cache_value)) {
-            $Weixin = D('Weixin');
-            $weixin_user = $Weixin->getByOpenid($openid);
-            if ($weixin_user) {
-                S($cache_key, json_encode($weixin_user), 3600);
-            } else {
-                return ['success' => FALSE, 'code' => self::$ERROR_NO_REGISTER, 'message' => '获取不到用户信息'];
-            }
-        } else {
-            $weixin_user = $cache_value;
+        $cache_value = S($cache_key);
+        if ($cache_value) {
+            return ['success' => TRUE, 'data' => json_decode($cache_value, TRUE)];
         }
-
+        $Weixin = D('Weixin');
+        $weixin_user = $Weixin->getByOpenid($openid);
+        if (!$weixin_user) {
+            return ['success' => FALSE, 'code' => self::$ERROR_NO_REGISTER, 'message' => '获取不到用户信息'];
+        }
+        S($cache_key, json_encode($weixin_user), 3600);
         return ['success' => TRUE, 'data' => $weixin_user];;
     }
 
