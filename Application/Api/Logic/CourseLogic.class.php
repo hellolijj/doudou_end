@@ -8,9 +8,11 @@
 
 namespace Api\Logic;
 
+use Api\Model\WeixinModel;
 use Api\Service\ClassService;
 use Api\Service\ClassServie;
 use Api\Service\CourseService;
+use Api\Service\QuestionSetService;
 use Api\Service\SigninRecordService;
 use Api\Service\WeixinService;
 
@@ -211,6 +213,18 @@ class CourseLogic extends UserBaseLogic {
         if (empty($course_info)) {
             return $this->setError('查不到该课程信息');
         }
+        // 添加课程集信息 todo 这里以后要封装
+        $question_set = D('Question')->getByCid($course_id);
+        $question_set_title = '';
+        if ($question_set) {
+            $question_set_item = D('QuestionSet')->getById($question_set['set_id']);
+            if ($question_set_item) {
+                $question_set_title = $question_set_item['title'];
+            }
+        }
+        if ($question_set_title) {
+            $course_info['question_set_title'] = $question_set_title;
+        }
         return $this->setSuccess($course_info);
     }
 
@@ -233,5 +247,43 @@ class CourseLogic extends UserBaseLogic {
         $signinRecordService->signin_record_add_info($student_list);
 
         return $this->setSuccess($student_list, '获取成功');
+    }
+
+    /*
+     * 获取题库集
+     */
+    public function list_sets ()
+    {
+        $sets = D('QuestionSet')->listAll();
+        if (empty($sets)) {
+            return $this->setError('系统没有题库');
+        }
+        $questionSetService = new QuestionSetService();
+        $questionSetService->items_add_teacher_info($sets);
+
+        return $this->setSuccess($sets, '查询成功');
+    }
+
+    /*
+     * 设置课程题库
+     */
+    public function set_question_set ()
+    {
+        $set_id = intval(I('set_id'));
+        $cid = intval(I('course_id'));
+        if (!$set_id || !$cid) {
+            return $this->setError('参数错误');
+        }
+        $question_set = D('Question')->getByCid($cid);
+        if ($question_set) {
+            return $this->setError('该课程已经添加题库了，暂不支持多题库');
+        }
+        $user_type = $this->user_type;
+        if ($user_type != WeixinModel::$USER_TYPE_TEACHER) {
+            return $this->setError('此功能仅教师用户可操作');
+        }
+        $data = ['cid' => $cid, 'set_id' => $set_id, 'gmt_create' => time(), 'gmt_modified' => time(),];
+        M('Question')->add($data);
+        return $this->setSuccess([], '设置成功');
     }
 }

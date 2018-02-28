@@ -20,7 +20,6 @@ class QuestionLogic extends UserBaseLogic {
 
     public function __construct ()
     {
-
         parent::__construct();
 
         $cid = intval(I('course_id'));

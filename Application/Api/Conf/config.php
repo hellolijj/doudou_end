@@ -25,5 +25,5 @@ return array(
     'APP_ROOT' => 'http://127.0.0.1/pingshifen/', 'UPLOAD_DIR' => 'Uploads/Picture/', 'UPLOAD_ROOT' => 'http://127.0.0.1/pingshifen/Uploads/Picture/',
 
     /* 公众号的相关配置 */
-    'APP_ID' => 'wx7af4d4e3dc78c624', 'APP_SECRET' => '5d70813a51f658c26a922e7eae0c9196',
+    'APP_ID' => 'wx7af4d4e3dc78c624', 'APP_SECRET' => '5d70813a51f658c26a922e7eae0c9196', 'APP_LOGO' => 'http://pingshif-img.stor.sinaapp.com/2018-02-21/logo01222_1979.jpg',
 );
