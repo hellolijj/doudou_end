@@ -42,10 +42,10 @@ class UserBaseLogic extends BaseLogic {
     private function check_uid ()
     {
         $openid = session('openid');
+        session($openid, NULL);
         $weixinService = new WeixinService();
         $weixin_user_result = $weixinService->getByOpenid($openid);
-        var_dump($weixin_user_result);
-        die;
+
         if ($weixin_user_result['success'] === FALSE) {
             return $weixin_user_result;
         }
