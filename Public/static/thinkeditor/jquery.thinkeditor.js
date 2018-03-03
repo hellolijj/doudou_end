@@ -164,7 +164,7 @@ var
 Range = function(textarea){
     /* 绑定Range对象的textarea */
     this.textarea = textarea;
-}
+};
 
 /**
  * 扩展Range原型，主要添加了get,set,insert三个方法
@@ -278,7 +278,7 @@ Dialog = function(editor, options){
         "content"       : "<div></div>",
         "onOkClick"     : $.noop,
         "onCancelClick" : $.noop
-    }
+    };
 
     //合并配置并创建弹出层
     options = $.extend({}, defaults, options || {});
@@ -299,7 +299,7 @@ Dialog = function(editor, options){
         "close"  : $dialog.find(".thinkeditor-dialog-close"),
         "ok"     : $dialog.find(".thinkeditor-dialog-btn-ok"),
         "cancel" : $dialog.find(".thinkeditor-dialog-btn-cancel")
-    }
+    };
 
     /* 绑定关闭事件 */
     this.btn.close.click(function(){
@@ -325,7 +325,7 @@ Dialog = function(editor, options){
 
     //显示弹出层
     $dialog.add($modal).fadeIn("fast");
-}
+};
 
 /**
  * 弹出层标准接口
@@ -529,17 +529,17 @@ ThinkEditor = function(textarea, options){
             fix_img_scroll();
         });
         var fix_img_scroll = function(){
-            imgs = $preview.find("img") //获取预览下所有图片
+          imgs = $preview.find("img"); //获取预览下所有图片
             if (imgs.length > 0){
-                imgs_height = 0
+              imgs_height = 0;
                 for (var i in imgs){
-                    tm = new Image()
-                    tm.src = this.src
-                    tow = tm.width
-                    toh = tm.height
-                    var limit_width = $preview.width()*0.5 //父容器50%的宽度
+                  tm = new Image();
+                  tm.src = this.src;
+                  tow = tm.width;
+                  toh = tm.height;
+                  var limit_width = $preview.width() * 0.5; //父容器50%的宽度
                     if (tow > limit_width){ //如果原始图片宽度大于限制宽度，真实rh高度也要缩放比例
-                        r = tow / limit_width
+                      r = tow / limit_width;
                         rh = toh / r
                     }else{
                         rh = toh
@@ -548,7 +548,7 @@ ThinkEditor = function(textarea, options){
                 }
             }
             caculate_and_scroll($textarea, $preview, imgs_height);
-        }
+        };
 
         var caculate_and_scroll = function(editor, preview, imgs_height){ //这里只要再按比例计算一下滚动高度就行
             real_height = preview[0].scrollHeight + imgs_height;
@@ -565,7 +565,7 @@ ThinkEditor = function(textarea, options){
         }
     }
 
-}
+};
 
 /**
  * 编辑器原型，用于扩展编辑器的外部调用接口
@@ -588,7 +588,7 @@ ThinkEditor.prototype = {
      * @param {Object} options 编辑器配置项
      */
     "plugin" : function(name, options){
-        var plugin = Plugin[name]
+      var plugin = Plugin[name];
         plugin.markdown.call(this, options, plugin);
         return this;
     },
@@ -696,10 +696,10 @@ ThinkEditor.prototype = {
             sanitize: true,
             smartLists: true,
             smartypants: false
-        }
+        };
         return marked(text, opt);
     }
-}
+};
 
 /**
  * 通过textarea获取通过当前textarea创建的ThinkEditor对象
@@ -748,7 +748,7 @@ $.fn.thinkeditor = function(options){
     return this.each(function(){
         $(this).data("ThinkEditor", new ThinkEditor(this, options));
     });
-}
+};
 
 /**
  * ThinkEditor编辑器插件，工具按显示的每一个按钮代表一个插件
@@ -982,7 +982,7 @@ $.thinkeditor.plugin({
                     "</div>"
                 ].join("");
                 self.drop.append(html);
-            }
+            };
             reader.readAsDataURL(file);
         },
 

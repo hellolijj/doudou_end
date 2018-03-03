@@ -93,9 +93,8 @@ function includeCss(css, onload){
     if($("link[href='" + path + css + "']").length){
         fire(onload);
         return;
-    };
-
-    //加载CSS文件
+    }
+  //加载CSS文件
     $("<link/>")
         .load(function(){fire(onload)})
         .attr({
@@ -160,7 +159,7 @@ function setCurrent(){
     var options = lists[this.key][0], box = lists[this.key][1];
     if(lists.current != this.key){
         lists.current = this.key;
-        options.modal && box.data("ThinkBoxModal").css({"zIndex": zIndex-1})
+      options.modal && box.data("ThinkBoxModal").css({"zIndex": zIndex - 1});
         box.css({"zIndex": zIndex++});
     }
 }
@@ -544,8 +543,10 @@ ThinkBox.prototype = {
         if(options.tools){
             button = $("<button/>").attr("name", name).text(config[0]);
             config[1] && button.addClass("thinkbox-button-" + config[1]);
-            if(!$.isFunction(config[2])){config[2] = $.noop};
-            $(".thinkbox-tools", box).append(button);
+          if (!$.isFunction(config[2])) {
+            config[2] = $.noop
+          }
+          $(".thinkbox-tools", box).append(button);
         }
         return this;
     },
@@ -558,8 +559,10 @@ ThinkBox.prototype = {
             .attr("name", newName).text(config[0]);
         options.buttons[newName] = config;
         config[1] && button.removeClass().addClass("thinkbox-button-" + config[1]);
-        if(!$.isFunction(config[2])){config[2] = $.noop};
-        return this;
+      if (!$.isFunction(config[2])) {
+        config[2] = $.noop
+      }
+      return this;
     },
 
     /* 卸载一个按钮 */
@@ -591,7 +594,7 @@ ThinkBox.prototype = {
     "maximize" : function(){
         return this;
     }
-}
+};
 
 /* 按ESC关闭弹出层 */
 _doc.mousedown(function(){lists.current = null})
@@ -615,7 +618,7 @@ $.thinkbox = function(element, options){
         if(data) return options.display === false ? data : data.show();
     }
     return new ThinkBox(element, options);
-}
+};
 
 /**
  +----------------------------------------------------------

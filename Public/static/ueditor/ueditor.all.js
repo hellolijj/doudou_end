@@ -2343,8 +2343,8 @@ var domUtils = dom.domUtils = {
         while(start !== node){
             if(start.nextSibling){
                 return 0
-            };
-            start = start.parentNode;
+            }
+          start = start.parentNode;
         }
         return 1;
     },
@@ -8491,7 +8491,7 @@ UE.plugins['insertcode'] = function() {
                                         }else{
                                             code += cn.data
                                         }
-                                    })
+                                    });
                                     if(!/\n$/.test(code)){
                                         code += '\n';
                                     }
@@ -8906,7 +8906,7 @@ UE.plugins['insertcode'] = function() {
                                 }else{
                                     htmlstr += cn.data
                                 }
-                            })
+                            });
                             if(!/\n$/.test(htmlstr)){
                                 htmlstr += '\n';
                             }
@@ -8941,7 +8941,7 @@ UE.plugins['insertcode'] = function() {
                                     frag.appendChild(me.document.createTextNode(utils.html( cn.data.replace(/&nbsp;/g,' '))));
 
                                 }
-                            })
+                            });
                             if(frag.lastChild.nodeName != 'BR'){
                                 frag.appendChild(me.document.createElement('br'))
                             }
@@ -8968,7 +8968,7 @@ UE.plugins['insertcode'] = function() {
         if(keyCode == 40){
             var rng = me.selection.getRange(),pre,start = rng.startContainer;
             if(rng.collapsed && (pre = domUtils.findParentByTagName(rng.startContainer,'pre',true)) && !pre.nextSibling){
-                var last = pre.lastChild
+              var last = pre.lastChild;
                 while(last && last.nodeName == 'BR'){
                     last = last.previousSibling;
                 }
@@ -9437,7 +9437,7 @@ UE.plugins['undo'] = function () {
                             save(me);
                             clearInterval(interalTimer)
                         }
-                    },300)
+                    }, 300);
                     return;
                 }
                 save(me);
@@ -10485,7 +10485,7 @@ UE.plugins['list'] = function () {
                         me.fireEvent('contentchange');
                         me.fireEvent('saveScene');
                         domUtils.preventDefault(evt);
-                        return;
+
 
                     }
 
@@ -10879,7 +10879,7 @@ UE.plugins['list'] = function () {
                     }
                     if(tag == ci.nodeName.toLowerCase()){
                         return 1
-                    };
+                    }
                 }
                 return 0;
 
@@ -10896,7 +10896,7 @@ UE.plugins['list'] = function () {
                     if(tag == ci.nodeName.toLowerCase()){
                         node = ci;
                         break;
-                    };
+                    }
                 }
                 return node ? getStyle(node) || domUtils.getComputedStyle(node, 'list-style-type') : null;
             }
@@ -11034,8 +11034,8 @@ UE.plugins['list'] = function () {
                                     if(node.firstChild().tagName == 'br' ){
                                         node.removeChild(node.firstChild())
                                     }
-                                };
-                                break;
+                                }
+                                  break;
                                 case 'pre':
                                     node.innerText(node.innerText().replace(/&nbsp;/g,' '))
 
@@ -11492,7 +11492,7 @@ UE.plugins['keystrokes'] = function() {
                     }
                     if(start === parent.lastChild)
                         evt.preventDefault();
-                    return;
+
                 }
             }
         }
@@ -11968,7 +11968,7 @@ UE.plugins['pasteplain'] = function(){
         tmpCell.style.borderTopWidth = cell.style.borderBottomWidth;
         flag && domUtils.addClass(cell, "selectTdClass");
         return tmpCell;
-    }
+    };
 
     UETable.prototype = {
         getMaxRows:function () {
@@ -12925,15 +12925,8 @@ UE.plugins['pasteplain'] = function(){
     };
     function showError(e) {
     }
-})();/**
- * Created with JetBrains PhpStorm.
- * User: taoqili
- * Date: 13-2-20
- * Time: 下午6:25
- * To change this template use File | Settings | File Templates.
- */
-;
-(function () {
+})();
+  (function () {
     var UT = UE.UETable,
         getTableItemsByRange = function (editor) {
             return UT.getTableItemsByRange(editor);
@@ -13031,7 +13024,7 @@ UE.plugins['pasteplain'] = function(){
                 } else {
                     rng.setStart(next, 0)
                 }
-                rng.setCursor(false, true)
+              rng.setCursor(false, true);
                 this.fireEvent("tablehasdeleted")
 
             }
@@ -13875,14 +13868,14 @@ UE.plugins['table'] = function () {
                 var str = '';
                 utils.each(table.selectedTds,function(td){
                     str += td[browser.ie?'innerText':'textContent'];
-                })
+                });
                 return str;
             }else{
                 return orgGetText.call(me.selection)
             }
 
         }
-    })
+    });
 
     //处理拖动及框选相关方法
     var startTd = null, //鼠标按下时的锚点td
@@ -16934,7 +16927,7 @@ UE.plugins['snapscreen'] = function(){
             }
         }
     };
-}
+};
 
 ///import core
 ///commands 插入空行
@@ -20489,7 +20482,7 @@ baidu.editor.ui = {};(function (){
 
                 var buff = [];
                 for (var i = 0, ci; ci = list[i]; i++) {
-                    buff[i] = this.formatHtml('<span unselectable="on" onclick="$$.editor.execCommand(&quot;elementpath&quot;, &quot;' + i + '&quot;);">' + ci + '</span>');
+                  buff[i] = this.formatHtml('<span unselectable="on" onclick="$$.editor.execCommand(&quot;elementpath&quot;, &quot;' + i + '&quot;)">' + ci + '</span>');
                 }
                 bottom.innerHTML = '<div class="edui-editor-breadcrumb" onmousedown="return false;">' + this.editor.getLang("elementPathTip") + ': ' + buff.join(' &gt; ') + '</div>';
 

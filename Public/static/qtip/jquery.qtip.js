@@ -24,13 +24,13 @@
 	else if(jQuery && !jQuery.fn.qtip) {
 		factory(jQuery);
 	}
-}
+};
 (function($) {
 	/* This currently causes issues with Safari 6, so for it's disabled */
 	//"use strict"; // (Dis)able ECMAScript "strict" operation for this function. See more: http://ejohn.org/blog/ecmascript-5-strict-mode-json-and-more/
 
-;// Munge the primitives - Paul Irish tip
-var TRUE = true,
+// Munge the primitives - Paul Irish tip
+  var TRUE = true,
 FALSE = false,
 NULL = null,
 
@@ -96,8 +96,8 @@ BROWSER = {
 	) || FALSE
 };
 
-;function QTip(target, options, id, attr) {
-	// Elements and ID
+  function QTip(target, options, id, attr) {
+    // Elements and ID
 	this.id = id;
 	this.target = target;
 	this.tooltip = NULL;
@@ -296,8 +296,8 @@ PROTOTYPE.destroy = function(immediate) {
 	return this.target;
 };
 
-;function invalidOpt(a) {
-	return a === NULL || $.type(a) !== 'object';
+  function invalidOpt(a) {
+    return a === NULL || $.type(a) !== 'object';
 }
 
 function invalidContent(c) {
@@ -578,8 +578,8 @@ PROTOTYPE.set = function(option, value) {
 	return this;
 };
 
-;PROTOTYPE._update = function(content, element, reposition) {
-	var self = this,
+  PROTOTYPE._update = function (content, element, reposition) {
+    var self = this,
 		cache = this.cache;
 
 	// Make sure tooltip is rendered and content is defined. If not return
@@ -683,8 +683,10 @@ PROTOTYPE._removeTitle = function(reposition)
 	}
 };
 
-;PROTOTYPE.reposition = function(event, effect) {
-	if(!this.rendered || this.positioning || this.destroyed) { return this; }
+  PROTOTYPE.reposition = function (event, effect) {
+    if (!this.rendered || this.positioning || this.destroyed) {
+      return this;
+    }
 
 	// Set positioning flag
 	this.positioning = TRUE;
@@ -936,8 +938,8 @@ C.abbrev = function() {
 
 C.clone = function() {
 	return new CORNER( this.string(), this.forceY );
-};;
-PROTOTYPE.toggle = function(state, event) {
+};
+  PROTOTYPE.toggle = function (state, event) {
 	var cache = this.cache,
 		options = this.options,
 		tooltip = this.tooltip;
@@ -1093,8 +1095,10 @@ PROTOTYPE.show = function(event) { return this.toggle(TRUE, event); };
 
 PROTOTYPE.hide = function(event) { return this.toggle(FALSE, event); };
 
-;PROTOTYPE.focus = function(event) {
-	if(!this.rendered || this.destroyed) { return this; }
+  PROTOTYPE.focus = function (event) {
+    if (!this.rendered || this.destroyed) {
+      return this;
+    }
 
 	var qtips = $(SELECTOR),
 		tooltip = this.tooltip,
@@ -1139,8 +1143,10 @@ PROTOTYPE.blur = function(event) {
 	return this;
 };
 
-;PROTOTYPE.disable = function(state) {
-	if(this.destroyed) { return this; }
+  PROTOTYPE.disable = function (state) {
+    if (this.destroyed) {
+      return this;
+    }
 
 	if('boolean' !== typeof state) {
 		state = !(this.tooltip.hasClass(CLASS_DISABLED) || this.disabled);
@@ -1158,8 +1164,7 @@ PROTOTYPE.blur = function(event) {
 
 PROTOTYPE.enable = function() { return this.disable(FALSE); };
 
-;PROTOTYPE._createButton = function()
-{
+  PROTOTYPE._createButton = function () {
 	var self = this,
 		elements = this.elements,
 		tooltip = elements.tooltip,
@@ -1206,8 +1211,8 @@ PROTOTYPE._updateButton = function(button)
 	else { elem.remove(); }
 };
 
-;// Widget class creator
-function createWidgetClass(cls) {
+// Widget class creator
+  function createWidgetClass(cls) {
 	return WIDGET.concat('').join(cls ? '-'+cls+' ' : ' ');
 }
 
@@ -1234,8 +1239,12 @@ PROTOTYPE._setWidget = function()
 	if(elements.button) {
 		elements.button.toggleClass(NAMESPACE+'-icon', !on);
 	}
-};;function showMethod(event) {
-	if(this.tooltip.hasClass(CLASS_DISABLED)) { return FALSE; }
+};
+
+  function showMethod(event) {
+    if (this.tooltip.hasClass(CLASS_DISABLED)) {
+      return FALSE;
+    }
 
 	// Clear hide timers
 	clearTimeout(this.timers.show);
@@ -1540,8 +1549,8 @@ PROTOTYPE._unassignEvents = function() {
 	else { $(targets[0]).unbind('.'+this._id+'-create'); }
 };
 
-;// Initialization method
-function init(elem, id, opts)
+// Initialization method
+  function init(elem, id, opts)
 {
 	var obj, posOptions, attr, config, title,
 
@@ -1772,8 +1781,8 @@ QTIP.bind = function(opts, event)
 
 // Populated in render method
 QTIP.api = {};
-;$.each({
-	/* Allow other plugins to successfully retrieve the title of an element with a qTip applied */
+  $.each({
+    /* Allow other plugins to successfully retrieve the title of an element with a qTip applied */
 	attr: function(attr, val) {
 		if(this.length) {
 			var self = this[0],
@@ -1841,8 +1850,8 @@ if(!$.ui) {
 	};
 }
 
-;// qTip version
-QTIP.version = '2.1.1';
+// qTip version
+  QTIP.version = '2.1.1';
 
 // Base ID for all qTips
 QTIP.nextid = 0;
@@ -1924,8 +1933,7 @@ QTIP.defaults = {
 	}
 };
 
-;var TIP,
-
+  var TIP,
 // .bind()/.on() namespace
 TIPNS = '.qtip-tip',
 
@@ -2539,7 +2547,9 @@ $.extend(TRUE, QTIP.defaults, {
 	}
 });
 
-;}));
+})
+)
+  ;
 }( window, document ));
 
 

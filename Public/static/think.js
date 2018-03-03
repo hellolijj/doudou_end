@@ -25,7 +25,7 @@
 			"query"    : parse[5],
 			"fragment" : parse[6]
 		};
-	}
+  };
 
 	ThinkPHP.parse_str = function(str){
 		var value = str.split("&"), vars = {}, param;
@@ -34,7 +34,7 @@
 			vars[param[0]] = param[1];
 		}
 		return vars;
-	}
+  };
 
 	ThinkPHP.parse_name = function(name, type){
 		if(type){
@@ -59,7 +59,7 @@
 			}
 		}
 		return name;
-	}
+  };
 
 	//scheme://host:port/path?query#fragment
 	ThinkPHP.U = function(url, vars, suffix){
@@ -127,7 +127,7 @@
 
 		url = this.APP + url;
 		return url;
-	}
+  };
 
 	/* 设置表单的值 */
 	ThinkPHP.setValue = function(name, value){
@@ -143,7 +143,7 @@
 			input.filter("[value='" + value + "']").each(function(){this.checked = true});
 		} else if(input.eq(0).is(":checkbox")) { //复选框
 			if(!$.isArray(value)){
-				val = new Array();
+        val = [];
 				val[0] = value;
 			} else {
 				val = value;
