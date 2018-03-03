@@ -178,4 +178,37 @@ class ScriptController extends Controller {
         }
         return $res;
     }
+
+
+    public function erji_plat ()
+    {
+        $erji_items = M('co_2016_testerji', '')->where(['test_num' => 5])->select();
+        $chapter_id = 26;
+        $set_id = 1004;
+
+        $option = ['A' => 16, 'B' => 32, 'C' => 64, 'D' => 128];
+
+        $data = [];
+        echo "<pre>";
+        //        var_dump($erji_items);
+        foreach ($erji_items as $erji_item) {
+            $data['content'] = $erji_item['question'];
+            $data['option_a'] = str_replace('[A]', '', $erji_item['opta']);
+            $data['option_b'] = str_replace('[B]', '', $erji_item['optb']);
+            $data['option_c'] = str_replace('[C]', '', $erji_item['optc']);
+            $data['option_d'] = str_replace('[D]', '', $erji_item['optd']);
+            $data['answer'] = $option[$erji_item['rightans']];
+            $data['analysis'] = '';
+            $data['gmt_create'] = time();
+            $data['gmt_modified'] = time();
+
+            /* add more */
+            $data['set_id'] = $set_id;
+            $data['chapter_id'] = $chapter_id;
+            $data['type'] = 1;
+
+            M('question_bank')->add($data);
+        }
+
+    }
 }
