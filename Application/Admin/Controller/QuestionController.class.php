@@ -35,7 +35,7 @@ class QuestionController extends Controller {
 
 
             $new_filename = 'http://pingshif-uploads.stor.sinaapp.com/xls/2018-03-03/5a9a84ff40efc.xls';
-            $data = $this->getExcelData($new_filename, '.xls');
+            $data = $this->getExcelData($new_filename, 'xls');
 
             //            $data = $this->getExcelData($new_filename, $exts);
             list($title, $fields, $contents) = $data;
