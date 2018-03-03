@@ -11,4 +11,6 @@ return array(
 
     'APP_ROOT' => 'http://127.0.0.1/pingshifen/',
 
+    'UPLOAD_DIR' => './Uploads/',
+
 );

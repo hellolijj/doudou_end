@@ -10,6 +10,8 @@ namespace Admin\Controller;
 
 use Admin\Service\QuestionUploadService;
 use Think\Controller;
+use Think\Upload;
+
 
 /*
  * 用于处理用户前端上传题目
@@ -19,7 +21,7 @@ class QuestionController extends Controller {
     public function index ()
     {
         if (IS_POST) {
-            /*header("Content-Type:text/html;charset=utf-8");
+            header("Content-Type:text/html;charset=utf-8");
             $upload = new Upload(); // 实例化上传类
             $upload->maxSize = 3145728; // 设置附件上传大小
             //文件真正类型判断可参考http://blog.csdn.net/qq_21386275/article/details/69987371
@@ -31,13 +33,11 @@ class QuestionController extends Controller {
             $exts = $info['ext'];
             if (!$info) {// 上传错误提示错误信息
                 $this->ajaxReturn(['success' => FALSE, 'message' => $upload->getError()]);
-            }*/
+            }
 
+            $new_filename = C('UPLOAD_DIR') . $filename;
 
-            $new_filename = 'saestor://uploads/xls/2018-03-03/5a9a84ff40efc.xls';
-            $data = $this->getExcelData($new_filename, 'xls');
-
-            //            $data = $this->getExcelData($new_filename, $exts);
+            $data = $this->getExcelData($new_filename, $exts);
             list($title, $fields, $contents) = $data;
 
             $chapter_arr = [];
