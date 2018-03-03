@@ -24,6 +24,7 @@ class QuestionUploadService {
 
     public function option_convert ($answer)
     {
+        $answer = strtoupper(trim($answer));
 
         if (!$answer) {
             die('不能为空');
