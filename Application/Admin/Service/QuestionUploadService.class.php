@@ -79,17 +79,17 @@ class QuestionUploadService {
         $data = ['uid' => $uid, 'title' => $title, 'count' => $count, 'gmt_create' => time(), 'gmt_modified' => time(),];
         $map = ['uid' => $uid, 'title' => $title,];
 
-        //        if (M('question_set')->where($map)->find()) {
-        //            return FALSE;
-        //        }
-        //
-        //        $set_id = M('Question_set')->add($data);
-        //        if (!$set_id) {
-        //            return FALSE;
-        //        }
+        if (M('question_set')->where($map)->find()) {
+            return FALSE;
+        }
 
-        //        return $set_id;
-        return 199;
+        $set_id = M('Question_set')->add($data);
+        if (!$set_id) {
+            return FALSE;
+        }
+
+        return $set_id;
+
 
     }
 
@@ -102,16 +102,14 @@ class QuestionUploadService {
         $data = ['sid' => $sid, 'title' => $title, 'count' => $count, 'gmt_create' => time(), 'gmt_modified' => time(),];
         $map = ['sid' => $sid, 'title' => $title,];
 
-        //        if (M('question_chapter')->where($map)->find()) {
-        //            return FALSE;
-        //        }
-        //        $chapter_id = M('question_chapter')->add($data);
-        //        if (!$chapter_id) {
-        //            return FALSE;
-        //        }
-        //        return $chapter_id;
-
-        return 1005;
+        if (M('question_chapter')->where($map)->find()) {
+            return FALSE;
+        }
+        $chapter_id = M('question_chapter')->add($data);
+        if (!$chapter_id) {
+            return FALSE;
+        }
+        return $chapter_id;
     }
 
 

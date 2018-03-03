@@ -125,7 +125,7 @@ class QuestionController extends Controller {
                 unset($content['A']);
             }
 
-            //            M('question_bank')->addAll($contents);
+            M('question_bank')->addAll($contents);
             print_r($chapter_arr);
             print_r($chapter_arr_count);
             print_r($contents);
