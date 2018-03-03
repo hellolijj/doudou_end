@@ -64,8 +64,7 @@ class QuestionController extends Controller {
 
                 // B 字段 题目类型
                 if (!in_array($content['B'], array_keys(QuestionUploadService::$QUESTION_TYPE))) {
-                    echo '';
-                    die('题目类型错误');
+                    $this->ajaxReturn(['success' => FALSE, 'message' => '题目类型错误']);
                 }
                 $content['type'] = QuestionUploadService::$QUESTION_TYPE[$content['B']];
                 unset($content['B']);
@@ -73,10 +72,10 @@ class QuestionController extends Controller {
                 // C 字段 题干
                 if ($fields['C'] != '题干') {
                     return FALSE;
+                    $this->ajaxReturn(['success' => FALSE, 'message' => '题目类型错误']);
                 }
                 if (!$content['C']) {
-                    echo '题干不能为空';
-                    die('题目类型错误');
+                    $this->ajaxReturn(['success' => FALSE, 'message' => '题干不能为空']);
                 }
                 $content['content'] = $content['C'];
                 unset($content['C']);
@@ -93,7 +92,7 @@ class QuestionController extends Controller {
 
                 // H 正确答案
                 if (!$content['H']) {
-                    return FALSE;
+                    $this->ajaxReturn(['success' => FALSE, 'message' => '正确答案不能为空']);
                 }
                 $content['answer'] = $questionUploadService->option_convert(trim($content['H']));
                 unset($content['H']);
@@ -135,7 +134,7 @@ class QuestionController extends Controller {
                 $this->ajaxReturn(['success' => FALSE, 'message' => '添加失败']);
             }
 
-            return $this->ajaxReturn(['success' => TRUE, 'message' => '添加成功']);
+            $this->ajaxReturn(['success' => TRUE, 'message' => '添加成功']);
 
 
         } else {
