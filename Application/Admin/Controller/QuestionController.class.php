@@ -78,7 +78,7 @@ class QuestionController extends Controller {
                     echo '题干不能为空';
                     die('题目类型错误');
                 }
-                $content['contents'] = $content['C'];
+                $content['content'] = $content['C'];
                 unset($content['C']);
 
                 // D E F G 字段 题干
@@ -98,7 +98,11 @@ class QuestionController extends Controller {
                 $content['answer'] = $questionUploadService->option_convert(trim($content['H']));
                 unset($content['H']);
 
+
                 $content['analysis'] = $content['I'];
+                if (is_null($content['analysis'])) {
+                    $content['analysis'] = '';
+                }
                 unset($content['I']);
             }
 
@@ -123,12 +127,16 @@ class QuestionController extends Controller {
                 $content['set_id'] = $set_id;
                 $content['chapter_id'] = $chapter_arr_id[$content['A']];
                 unset($content['A']);
+                $add = M('question_bank')->add($content);
             }
 
-            M('question_bank')->addAll($contents);
-            print_r($chapter_arr);
-            print_r($chapter_arr_count);
-            print_r($contents);
+
+            if (!$add) {
+                $this->ajaxReturn(['success' => FALSE, 'message' => '添加失败']);
+            }
+
+            return $this->ajaxReturn(['success' => TRUE, 'message' => '添加成功']);
+
 
         } else {
             $this->display();
