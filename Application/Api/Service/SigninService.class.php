@@ -62,11 +62,11 @@ class SigninService extends BaseService {
         if (!$signin_item) {
             return ['success' => FALSE, 'message' => '本次签到不存在'];
         }
-        /*$signin_start_time = intval($signin_item['start_time']);
+        $signin_start_time = intval($signin_item['start_time']);
         $signin_end_time = intval($signin_item['end_time']);
         if ($ts < $signin_start_time || $ts > $signin_end_time) {
             return ['success' => FALSE, 'message' => '不在规定时间内签到'];
-        }*/
+        }
         // todo 判断地理位置逻辑
 
         // 判断是否重复签到
