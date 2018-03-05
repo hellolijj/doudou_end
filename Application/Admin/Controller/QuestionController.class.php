@@ -92,6 +92,7 @@ class QuestionController extends Controller {
 
                 // H 正确答案
                 if (!$content['H']) {
+
                     $this->ajaxReturn(['success' => FALSE, 'message' => '正确答案不能为空']);
                 }
                 $content['answer'] = $questionUploadService->option_convert(trim($content['H']));
@@ -127,16 +128,12 @@ class QuestionController extends Controller {
                 $content['chapter_id'] = $chapter_arr_id[$content['A']];
                 unset($content['A']);
                 $add = M('question_bank')->add($content);
+                if (!$add) {
+                    $this->ajaxReturn(['success' => FALSE, 'message' => '添加失败', 'str' => json_decode($content)]);
+                    die;
+                }
             }
-
-
-            if (!$add) {
-                $this->ajaxReturn(['success' => FALSE, 'message' => '添加失败']);
-            }
-
             $this->ajaxReturn(['success' => TRUE, 'message' => '添加成功']);
-
-
         } else {
             $this->display();
         }
