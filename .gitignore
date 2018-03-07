@@ -1,5 +1,4 @@
-./Runtime
-./Runtime/*
-./readme.html
-.idea
+*.DS_Store
+Runtime/*
+Uploads/*
 .idea/*
