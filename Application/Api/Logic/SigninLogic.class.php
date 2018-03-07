@@ -94,7 +94,7 @@ class SigninLogic extends UserBaseLogic {
         $page = $page ? $page : 1;
         $page_size = $page_size ? $page_size : 20;
         $signin_records_result = D('SigninRecord')->listBySid($signin_id, $page, $page_size);
-        if ($signin_records_result['success'] == FALSE) {
+        if ($signin_records_result['success'] === FALSE) {
             return $signin_records_result;
         }
         $signin_records = $signin_records_result['data'];
