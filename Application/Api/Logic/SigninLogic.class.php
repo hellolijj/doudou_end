@@ -99,7 +99,6 @@ class SigninLogic extends UserBaseLogic {
         }
         $signin_records = $signin_records_result['data'];
         $signin_records_count = count($signin_records);
-        //        D('SigninRecord')->countBySid($signin_id);
         $this->hasMorePage($signin_records_count, $page, $page_size);
         $signinRecordService = new SigninRecordService();
         $signinRecordService->signin_record_add_info($signin_records);
