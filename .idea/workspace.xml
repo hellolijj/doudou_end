@@ -1,25 +1,352 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" readonly="true" id="b8f5d9e1-cf0e-4ff7-81ec-75807ed902bd" name="Default" comment="加油啊">
-      <change beforePath="" afterPath="$PROJECT_DIR$/Application/Api/Logic/MyLogic.class.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Application/Api/Service/InvitationService.class.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Application/Api/Service/TeacherService.class.php" />
+    <list default="true" readonly="true" id="b8f5d9e1-cf0e-4ff7-81ec-75807ed902bd" name="Default" comment="add 数据库配置文件">
+      <change beforePath="" afterPath="$PROJECT_DIR$/Uploads/Uploads/xls/2018-03-03/dsf" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Uploads/xls/2018-03-03/sie" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/33abc544-207c-45ec-8459-1a038f630304.xml" afterPath="$PROJECT_DIR$/.idea/dataSources/33abc544-207c-45ec-8459-1a038f630304.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" afterPath="$PROJECT_DIR$/.idea/deployment.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" afterPath="$PROJECT_DIR$/.idea/php.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/pingshifen.iml" afterPath="$PROJECT_DIR$/.idea/pingshifen.iml" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/.phpstorm.meta.php" afterPath="$PROJECT_DIR$/.phpstorm.meta.php" />
-      <change beforePath="$PROJECT_DIR$/Application/Api/Conf/config.php" afterPath="$PROJECT_DIR$/Application/Api/Conf/config.php" />
-      <change beforePath="$PROJECT_DIR$/Application/Api/Controller/WeixinController.class.php" afterPath="$PROJECT_DIR$/Application/Api/Controller/WeixinController.class.php" />
-      <change beforePath="$PROJECT_DIR$/Application/Api/Logic/BaseLogic.class.php" afterPath="$PROJECT_DIR$/Application/Api/Logic/BaseLogic.class.php" />
-      <change beforePath="$PROJECT_DIR$/Application/Api/Logic/SchoolLogic.class.php" afterPath="$PROJECT_DIR$/Application/Api/Logic/SchoolLogic.class.php" />
-      <change beforePath="$PROJECT_DIR$/Application/Api/Logic/StudentLogic.class.php" afterPath="$PROJECT_DIR$/Application/Api/Logic/StudentLogic.class.php" />
-      <change beforePath="$PROJECT_DIR$/Application/Api/Logic/TeacherLogic.class.php" afterPath="$PROJECT_DIR$/Application/Api/Logic/TeacherLogic.class.php" />
-      <change beforePath="$PROJECT_DIR$/Application/Api/Model/StudentModel.class.php" afterPath="$PROJECT_DIR$/Application/Api/Model/StudentModel.class.php" />
-      <change beforePath="$PROJECT_DIR$/Application/Api/Model/WeixinModel.class.php" afterPath="$PROJECT_DIR$/Application/Api/Model/WeixinModel.class.php" />
-      <change beforePath="$PROJECT_DIR$/Application/Api/Service/BaseService.class.php" afterPath="$PROJECT_DIR$/Application/Api/Service/BaseService.class.php" />
-      <change beforePath="$PROJECT_DIR$/Application/Api/Service/StudentService.class.php" afterPath="$PROJECT_DIR$/Application/Api/Service/StudentService.class.php" />
-      <change beforePath="$PROJECT_DIR$/Application/Api/Service/WeixinService.class.php" afterPath="$PROJECT_DIR$/Application/Api/Service/WeixinService.class.php" />
-      <change beforePath="$PROJECT_DIR$/ThinkPHP/Library/Weixin/Xiaochengxu/WXLoginHelper.class.php" afterPath="$PROJECT_DIR$/ThinkPHP/Library/Weixin/Xiaochengxu/WXLoginHelper.class.php" />
+      <change beforePath="$PROJECT_DIR$/Addons/AdaptiveImages/.htaccess" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/AdaptiveImages/AdaptiveImagesAddon.class.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/AdaptiveImages/Controller/AdaptiveImagesController.class.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/AdaptiveImages/config.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/Attachment/AttachmentAddon.class.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/Attachment/Controller/AttachmentController.class.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/Attachment/Model/AttachmentModel.class.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/Attachment/View/Article/detail.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/Attachment/View/Article/edit.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/Attachment/View/Config/config.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/Attachment/adminlist.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/DevTeam/DevTeamAddon.class.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/DevTeam/config.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/DevTeam/widget.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/Digg/Controller/DiggController.class.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/Digg/DiggAddon.class.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/Digg/Model/DiggModel.class.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/Digg/config.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/Digg/css/font-awesome.min.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/Digg/css/style.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/Digg/fonts/FontAwesome.otf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/Digg/fonts/fontawesome-webfont.eot" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/Digg/fonts/fontawesome-webfont.svg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/Digg/fonts/fontawesome-webfont.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/Digg/fonts/fontawesome-webfont.woff" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/Digg/vote.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/Editor/Controller/UploadController.class.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/Editor/EditorAddon.class.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/Editor/config.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/Editor/content.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/EditorForAdmin/Controller/UploadController.class.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/EditorForAdmin/EditorForAdminAddon.class.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/EditorForAdmin/config.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/EditorForAdmin/content.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/EditorForAdmin/marked.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/Iswaf/IswafAddon.class.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/Iswaf/admin.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/Iswaf/iswaf/apis/aehotfix.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/Iswaf/iswaf/apis/aewhitelist.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/Iswaf/iswaf/apis/appinfo.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/Iswaf/iswaf/apis/client_log.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/Iswaf/iswaf/apis/create_config.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/Iswaf/iswaf/apis/delhotfix.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/Iswaf/iswaf/apis/delwhitelist.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/Iswaf/iswaf/apis/dir_get_infos.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/Iswaf/iswaf/apis/dir_grep.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/Iswaf/iswaf/apis/dir_tree.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/Iswaf/iswaf/apis/file_get_infos.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/Iswaf/iswaf/apis/getfiles.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/Iswaf/iswaf/apis/info.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/Iswaf/iswaf/apis/lshotfixs.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/Iswaf/iswaf/conf/conf.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/Iswaf/iswaf/conf/conf_default.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/Iswaf/iswaf/database/filehash1.ini" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/Iswaf/iswaf/database/keys/lock4d86feee47712976539c4b83a433a08f" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/Iswaf/iswaf/database/keys/lock53aebc818923a01e197c05c81c587480" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/Iswaf/iswaf/database/keys/lockc8880083bf598d2501f64da29d067b3b" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/Iswaf/iswaf/database/keys/lockdc08563525e2462b57440e2e8136dda9" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/Iswaf/iswaf/database/keys/lockea2666a4409c2c88994a19eaaa169259" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/Iswaf/iswaf/database/notify1.ini" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/Iswaf/iswaf/extensions/callback_xss.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/Iswaf/iswaf/extensions/denier.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/Iswaf/iswaf/extensions/filemode.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/Iswaf/iswaf/extensions/filter.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/Iswaf/iswaf/extensions/hotfixs.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/Iswaf/iswaf/extensions/inject.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/Iswaf/iswaf/extensions/safemode.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/Iswaf/iswaf/extensions/server_args.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/Iswaf/iswaf/extensions/upload.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/Iswaf/iswaf/extensions/webserver.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/Iswaf/iswaf/extensions/webshell.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/Iswaf/iswaf/extensions/xssclean.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/Iswaf/iswaf/iswaf.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/QiuBai/Controller/QiuBaiController.class.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/QiuBai/QiuBaiAddon.class.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/QiuBai/config.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/QiuBai/widget.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/ReturnTop/ReturnTopAddon.class.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/ReturnTop/config.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/ReturnTop/config.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/ReturnTop/content.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/ReturnTop/css/01.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/ReturnTop/css/010.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/ReturnTop/css/011.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/ReturnTop/css/012.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/ReturnTop/css/013.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/ReturnTop/css/014.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/ReturnTop/css/015.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/ReturnTop/css/016.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/ReturnTop/css/017.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/ReturnTop/css/018.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/ReturnTop/css/019.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/ReturnTop/css/02.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/ReturnTop/css/020.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/ReturnTop/css/021.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/ReturnTop/css/022.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/ReturnTop/css/023.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/ReturnTop/css/024.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/ReturnTop/css/025.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/ReturnTop/css/026.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/ReturnTop/css/027.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/ReturnTop/css/028.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/ReturnTop/css/029.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/ReturnTop/css/03.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/ReturnTop/css/030.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/ReturnTop/css/031.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/ReturnTop/css/032.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/ReturnTop/css/033.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/ReturnTop/css/034.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/ReturnTop/css/035.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/ReturnTop/css/036.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/ReturnTop/css/037.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/ReturnTop/css/038.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/ReturnTop/css/039.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/ReturnTop/css/04.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/ReturnTop/css/040.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/ReturnTop/css/041.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/ReturnTop/css/042.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/ReturnTop/css/043.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/ReturnTop/css/044.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/ReturnTop/css/045.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/ReturnTop/css/046.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/ReturnTop/css/047.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/ReturnTop/css/048.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/ReturnTop/css/049.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/ReturnTop/css/05.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/ReturnTop/css/050.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/ReturnTop/css/051.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/ReturnTop/css/052.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/ReturnTop/css/053.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/ReturnTop/css/054.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/ReturnTop/css/055.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/ReturnTop/css/056.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/ReturnTop/css/057.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/ReturnTop/css/058.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/ReturnTop/css/059.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/ReturnTop/css/06.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/ReturnTop/css/060.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/ReturnTop/css/061.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/ReturnTop/css/062.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/ReturnTop/css/063.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/ReturnTop/css/064.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/ReturnTop/css/065.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/ReturnTop/css/066.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/ReturnTop/css/067.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/ReturnTop/css/068.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/ReturnTop/css/069.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/ReturnTop/css/07.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/ReturnTop/css/070.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/ReturnTop/css/071.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/ReturnTop/css/072.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/ReturnTop/css/073.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/ReturnTop/css/074.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/ReturnTop/css/075.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/ReturnTop/css/076.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/ReturnTop/css/077.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/ReturnTop/css/078.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/ReturnTop/css/079.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/ReturnTop/css/08.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/ReturnTop/css/080.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/ReturnTop/css/081.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/ReturnTop/css/082.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/ReturnTop/css/083.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/ReturnTop/css/084.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/ReturnTop/css/085.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/ReturnTop/css/086.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/ReturnTop/css/087.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/ReturnTop/css/088.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/ReturnTop/css/089.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/ReturnTop/css/09.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/ReturnTop/css/090.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/ReturnTop/css/091.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/ReturnTop/css/092.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/ReturnTop/css/093.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/ReturnTop/css/094.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/ReturnTop/css/095.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/ReturnTop/css/096.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/ReturnTop/css/097.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/ReturnTop/css/098.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/ReturnTop/css/099.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/ReturnTop/images/01.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/ReturnTop/images/010.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/ReturnTop/images/011.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/ReturnTop/images/012.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/ReturnTop/images/013.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/ReturnTop/images/014.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/ReturnTop/images/015.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/ReturnTop/images/016.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/ReturnTop/images/017.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/ReturnTop/images/018.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/ReturnTop/images/019.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/ReturnTop/images/02.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/ReturnTop/images/020.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/ReturnTop/images/021.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/ReturnTop/images/022.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/ReturnTop/images/023.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/ReturnTop/images/024.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/ReturnTop/images/025.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/ReturnTop/images/026.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/ReturnTop/images/027.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/ReturnTop/images/028.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/ReturnTop/images/029.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/ReturnTop/images/03.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/ReturnTop/images/030.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/ReturnTop/images/031.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/ReturnTop/images/032.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/ReturnTop/images/033.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/ReturnTop/images/034.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/ReturnTop/images/035.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/ReturnTop/images/036.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/ReturnTop/images/037.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/ReturnTop/images/038.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/ReturnTop/images/039.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/ReturnTop/images/04.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/ReturnTop/images/040.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/ReturnTop/images/041.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/ReturnTop/images/042.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/ReturnTop/images/043.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/ReturnTop/images/044.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/ReturnTop/images/045.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/ReturnTop/images/046.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/ReturnTop/images/047.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/ReturnTop/images/048.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/ReturnTop/images/049.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/ReturnTop/images/05.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/ReturnTop/images/050.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/ReturnTop/images/051.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/ReturnTop/images/052.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/ReturnTop/images/053.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/ReturnTop/images/054.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/ReturnTop/images/055.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/ReturnTop/images/056.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/ReturnTop/images/057.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/ReturnTop/images/058.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/ReturnTop/images/059.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/ReturnTop/images/06.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/ReturnTop/images/060.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/ReturnTop/images/061.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/ReturnTop/images/062.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/ReturnTop/images/063.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/ReturnTop/images/064.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/ReturnTop/images/065.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/ReturnTop/images/066.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/ReturnTop/images/067.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/ReturnTop/images/068.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/ReturnTop/images/069.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/ReturnTop/images/07.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/ReturnTop/images/070.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/ReturnTop/images/071.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/ReturnTop/images/072.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/ReturnTop/images/073.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/ReturnTop/images/074.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/ReturnTop/images/075.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/ReturnTop/images/076.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/ReturnTop/images/077.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/ReturnTop/images/078.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/ReturnTop/images/079.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/ReturnTop/images/08.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/ReturnTop/images/080.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/ReturnTop/images/081.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/ReturnTop/images/082.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/ReturnTop/images/083.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/ReturnTop/images/084.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/ReturnTop/images/085.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/ReturnTop/images/086.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/ReturnTop/images/087.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/ReturnTop/images/088.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/ReturnTop/images/089.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/ReturnTop/images/09.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/ReturnTop/images/090.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/ReturnTop/images/091.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/ReturnTop/images/092.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/ReturnTop/images/093.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/ReturnTop/images/094.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/ReturnTop/images/095.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/ReturnTop/images/096.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/ReturnTop/images/097.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/ReturnTop/images/098.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/ReturnTop/images/099.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/ReturnTop/scrolltopcontrol.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/SiteStat/SiteStatAddon.class.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/SiteStat/config.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/SiteStat/info.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/SocialComment/SocialCommentAddon.class.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/SocialComment/comment.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/SocialComment/config.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/SystemInfo/SystemInfoAddon.class.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/SystemInfo/config.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Addons/SystemInfo/widget.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/MP_verify_j2yNccp2CagsFaFM.txt" afterPath="$PROJECT_DIR$/MP_verify_j2yNccp2CagsFaFM.txt" />
+      <change beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change beforePath="$PROJECT_DIR$/Runtime/Logs/Api/18_01_27.log" afterPath="$PROJECT_DIR$/Runtime/Logs/Api/18_01_27.log" />
+      <change beforePath="$PROJECT_DIR$/Runtime/Logs/Api/18_01_28.log" afterPath="$PROJECT_DIR$/Runtime/Logs/Api/18_01_28.log" />
+      <change beforePath="$PROJECT_DIR$/Runtime/Logs/Api/18_01_31.log" afterPath="$PROJECT_DIR$/Runtime/Logs/Api/18_01_31.log" />
+      <change beforePath="$PROJECT_DIR$/Runtime/Logs/Api/18_02_02.log" afterPath="$PROJECT_DIR$/Runtime/Logs/Api/18_02_02.log" />
+      <change beforePath="$PROJECT_DIR$/Runtime/Logs/Api/18_02_03.log" afterPath="$PROJECT_DIR$/Runtime/Logs/Api/18_02_03.log" />
+      <change beforePath="$PROJECT_DIR$/Runtime/Logs/Api/18_02_04.log" afterPath="$PROJECT_DIR$/Runtime/Logs/Api/18_02_04.log" />
+      <change beforePath="$PROJECT_DIR$/Runtime/Logs/Api/18_02_05.log" afterPath="$PROJECT_DIR$/Runtime/Logs/Api/18_02_05.log" />
+      <change beforePath="$PROJECT_DIR$/Runtime/Logs/Api/18_02_08.log" afterPath="$PROJECT_DIR$/Runtime/Logs/Api/18_02_08.log" />
+      <change beforePath="$PROJECT_DIR$/Runtime/Logs/Home/18_01_27.log" afterPath="$PROJECT_DIR$/Runtime/Logs/Home/18_01_27.log" />
+      <change beforePath="$PROJECT_DIR$/Runtime/Logs/Home/18_02_02.log" afterPath="$PROJECT_DIR$/Runtime/Logs/Home/18_02_02.log" />
+      <change beforePath="$PROJECT_DIR$/Uploads/Attachment/README.md" afterPath="$PROJECT_DIR$/Uploads/Attachment/README.md" />
+      <change beforePath="$PROJECT_DIR$/Uploads/Download/README.md" afterPath="$PROJECT_DIR$/Uploads/Download/README.md" />
+      <change beforePath="$PROJECT_DIR$/Uploads/Editor/README.md" afterPath="$PROJECT_DIR$/Uploads/Editor/README.md" />
+      <change beforePath="$PROJECT_DIR$/Uploads/Picture/README.md" afterPath="$PROJECT_DIR$/Uploads/Picture/README.md" />
+      <change beforePath="$PROJECT_DIR$/config.yaml" afterPath="$PROJECT_DIR$/config.yaml" />
+      <change beforePath="$PROJECT_DIR$/index.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
+      <change beforePath="$PROJECT_DIR$/install.php" afterPath="$PROJECT_DIR$/install.php" />
+      <change beforePath="$PROJECT_DIR$/license.txt" afterPath="$PROJECT_DIR$/license.txt" />
+      <change beforePath="$PROJECT_DIR$/logo.png" afterPath="$PROJECT_DIR$/logo.png" />
+      <change beforePath="$PROJECT_DIR$/readme.html" afterPath="$PROJECT_DIR$/readme.html" />
+      <change beforePath="$PROJECT_DIR$/static/css/app.c825abd1e23d67076ebd93bece88611c.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/css/app.c825abd1e23d67076ebd93bece88611c.css.map" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/css/app.fd4c991a1681e303aec2c294b4fee09f.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/css/app.fd4c991a1681e303aec2c294b4fee09f.css.map" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/img/bg-center-panel.22562ea.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/img/demo.e203cf5.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/app.869a77b967622554327d.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/app.869a77b967622554327d.js.map" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/app.fe2120c68bd1c692008f.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/app.fe2120c68bd1c692008f.js.map" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/manifest.2d99cdf528252ffb06a3.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/manifest.2d99cdf528252ffb06a3.js.map" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/manifest.9781ed3b1035c62e4c6f.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/manifest.9781ed3b1035c62e4c6f.js.map" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/vendor.0d49e1e5045ec6dd34ee.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/js/vendor.0d49e1e5045ec6dd34ee.js.map" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/test.php" afterPath="$PROJECT_DIR$/test.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -42,126 +369,16 @@
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
         <item name="pingshifen@127.0.0.1" type="feb32156:DbDataSourceImpl" />
       </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="pingshifen@127.0.0.1" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="pingshifen@127.0.0.1" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="pingshifen: schema" type="c314c289:MysqlImplModel$Schema" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="pingshifen@127.0.0.1" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="pingshifen: schema" type="c314c289:MysqlImplModel$Schema" />
-        <item name="pingshifen_student: table" type="98d5ac3d:MysqlImplModel$Table" />
-      </path>
     </expand>
     <select />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="MyLogic.class.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Application/Api/Logic/MyLogic.class.php">
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="25" column="29" lean-forward="true" selection-start-line="25" selection-start-column="29" selection-end-line="25" selection-end-column="29" />
-              <folding>
-                <element signature="e#114#140#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="StudentService.class.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Application/Api/Service/StudentService.class.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="211">
-              <caret line="42" column="34" lean-forward="false" selection-start-line="42" selection-start-column="22" selection-end-line="42" selection-end-column="34" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TeacherService.class.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Application/Api/Service/TeacherService.class.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="275">
-              <caret line="39" column="32" lean-forward="false" selection-start-line="39" selection-start-column="22" selection-end-line="39" selection-end-column="32" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="StudentModel.class.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Application/Api/Model/StudentModel.class.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="WeixinService.class.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Application/Api/Service/WeixinService.class.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="554">
-              <caret line="135" column="82" lean-forward="false" selection-start-line="135" selection-start-column="82" selection-end-line="135" selection-end-column="82" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BaseService.class.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Application/Api/Service/BaseService.class.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="227">
-              <caret line="25" column="20" lean-forward="false" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="20" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="WeixinModel.class.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Application/Api/Model/WeixinModel.class.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="24" column="6" lean-forward="false" selection-start-line="24" selection-start-column="6" selection-end-line="24" selection-end-column="6" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BaseModel.class.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Application/Api/Model/BaseModel.class.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="config.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Application/Api/Conf/config.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="10" column="92" lean-forward="false" selection-start-line="10" selection-start-column="92" selection-end-line="10" selection-end-column="92" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BaseLogic.class.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Application/Api/Logic/BaseLogic.class.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="203">
-              <caret line="26" column="31" lean-forward="false" selection-start-line="26" selection-start-column="31" selection-end-line="26" selection-end-column="31" />
+            <state relative-caret-position="30">
+              <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
               <folding />
             </state>
           </provider>
@@ -169,46 +386,65 @@
       </file>
     </leaf>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTTP Request" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>DATA_CACHE_TYPE</find>
-      <find>article</find>
-      <find>is_re</find>
-      <find>hasmo</find>
-      <find>IS_AJAX</find>
-      <find>$user_type_cache_value</find>
-      <find>ajax</find>
-      <find>ajaxret</find>
-      <find>gmt_create</find>
-      <find>gmt_modified</find>
-      <find>参数为空</find>
-      <find>cache</find>
-      <find>签名不匹配</find>
-      <find>$signature</find>
-      <find>$encryptedData</find>
-      <find>encryptData</find>
-      <find>'', 'htmlspecialchars_decode'</find>
-      <find>$rawData</find>
-      <find>解密信息错</find>
-      <find>解密信息错误</find>
-      <find>$session3rd</find>
-      <find>$data</find>
-      <find>$sessionKey</find>
-      <find>无效的api参数</find>
-      <find>register</find>
-      <find>无效的api方法</find>
-      <find>无效的API方法</find>
-      <find>无效的API参数</find>
+      <find>var_dump</find>
       <find>die</find>
-      <find>S(</find>
+      <find>PINGSHIFEN_SIGNIN_R</find>
+      <find>get_info</find>
+      <find>$STATUS_LOCKED</find>
+      <find>pingshifen_class_by_uid_</find>
+      <find>list_in_use</find>
+      <find>cache</find>
+      <find>cache_ke</find>
+      <find>cache_key</find>
+      <find>__PUBLIC__/Admin</find>
+      <find>../src</find>
+      <find>选完文件后</find>
+      <find>css</find>
+      <find>js</find>
+      <find>cannot</find>
+      <find>sheetname</find>
+      <find>pingshifen_question_upload_se</find>
+      <find>answe</find>
+      <find>pingshifen_question</find>
+      <find>题目类型错误</find>
+      <find>TYPE</find>
+      <find>M(</find>
+      <find>M('</find>
+      <find>load(</find>
+      <find>添加set_id失败</find>
+      <find>添加失败</find>
+      <find>content</find>
+      <find>return</find>
+      <find>exp</find>
     </findStrings>
     <replaceStrings>
       <replace />
       <replace>$cache_value</replace>
+      <replace>avatar</replace>
+      <replace>$where</replace>
+      <replace>pingshifen</replace>
+      <replace>$choose</replace>
+      <replace>=&gt;</replace>
+      <replace>die;</replace>
+      <replace>__PUBLIC__/Admin/</replace>
     </replaceStrings>
     <dirStrings>
-      <dir>$PROJECT_DIR$/Application</dir>
       <dir>$PROJECT_DIR$/ThinkPHP/Library/Weixin</dir>
+      <dir>$PROJECT_DIR$/Application</dir>
+      <dir>$PROJECT_DIR$/Application/Api/Service</dir>
+      <dir>$PROJECT_DIR$/Application/Api/Logic</dir>
+      <dir>$PROJECT_DIR$/Application/Api</dir>
+      <dir>$PROJECT_DIR$/Application/Api/Model</dir>
     </dirStrings>
   </component>
   <component name="Git.Settings">
@@ -223,57 +459,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Application/Admin/Controller/ConfigController.class.php" />
-        <option value="$PROJECT_DIR$/Application/Admin/Controller/UserController.class.php" />
-        <option value="$PROJECT_DIR$/Application/Api/Logic/DownloadLogic.class.php" />
-        <option value="$PROJECT_DIR$/Application/Api/Service/ShortMessageService.php" />
-        <option value="$PROJECT_DIR$/Application/Api/Model/SchoolModel.class.php" />
-        <option value="$PROJECT_DIR$/Application/Api/Service/SchoolService.class.php" />
-        <option value="$PROJECT_DIR$/Application/Api/Controller/Getway.class.php" />
-        <option value="$PROJECT_DIR$/Application/Api/Common/function.php" />
-        <option value="$PROJECT_DIR$/Application/Api/Controller/GetwayController.class.php" />
-        <option value="$PROJECT_DIR$/Application/Api/Conf/database.php" />
-        <option value="$PROJECT_DIR$/Application/Api/Controller/UserController.class.php" />
-        <option value="$PROJECT_DIR$/Application/Api/Logic/ArticleLogic.class.php" />
-        <option value="$PROJECT_DIR$/Application/Api/Controller/IndexController.class.php" />
-        <option value="$PROJECT_DIR$/Application/Api/Controller/HomeController.class.php" />
-        <option value="$PROJECT_DIR$/Application/Api/Model/BaseModel.class.php" />
-        <option value="$PROJECT_DIR$/Application/Home/Controller/IndexController.class.php" />
-        <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/Application/Api/Controller/BaseController.class.php" />
-        <option value="$PROJECT_DIR$/ThinkPHP/Library/Vendor/Weixin/Xiaochengxu/errorCode.php" />
-        <option value="$PROJECT_DIR$/ThinkPHP/Library/Vendor/Weixin/Xiaochengxu/PKCS7Encoder.php" />
-        <option value="$PROJECT_DIR$/ThinkPHP/Library/Vendor/Weixin/Xiaochengxu/WXBizDataCrypt.php" />
-        <option value="$PROJECT_DIR$/ThinkPHP/Library/Vendor/Weixin/Xiaochengxu/Prpcrypt.php" />
-        <option value="$PROJECT_DIR$/Application/Common/Conf/config.php" />
-        <option value="$PROJECT_DIR$/ThinkPHP/Library/Vendor/Weixin/Xiaochengxu/WXLoginHelper.php" />
-        <option value="$PROJECT_DIR$/ThinkPHP/Library/Vendor/Weixin/Xiaochengxu/ErrorCode.php" />
-        <option value="$PROJECT_DIR$/ThinkPHP/Library/Weixin/Xiaochengxu/ErrorCode.class.php" />
-        <option value="$PROJECT_DIR$/ThinkPHP/Library/Weixin/Xiaochengxu/PKCS7Encoder.class.php" />
-        <option value="$PROJECT_DIR$/ThinkPHP/Library/Weixin/Xiaochengxu/Prpcrypt.class.php" />
-        <option value="$PROJECT_DIR$/ThinkPHP/Library/Weixin/Xiaochengxu/WXBizDataCrypt.class.php" />
-        <option value="$PROJECT_DIR$/ThinkPHP/Library/Think/Model.class.php" />
-        <option value="$PROJECT_DIR$/Application/Api/Logic/WeixinLogic.class.php" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/33abc544-207c-45ec-8459-1a038f630304/console_2.sql" />
-        <option value="$USER_HOME$/Desktop/SHOW_CREATE_TABLE_pingshifen_weixin.tsv" />
-        <option value="$PROJECT_DIR$/Application/Api/Controller/GatewayController.class.php" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/33abc544-207c-45ec-8459-1a038f630304/console.sql" />
-        <option value="$PROJECT_DIR$/Application/Api/Service/InvitationCodeService.class.php" />
-        <option value="$PROJECT_DIR$/Application/Api/Service/BaseService.class.php" />
-        <option value="$PROJECT_DIR$/Application/Api/Logic/SchoolLogic.class.php" />
-        <option value="$PROJECT_DIR$/Application/Api/Service/InvitationService.class.php" />
-        <option value="$PROJECT_DIR$/Application/Api/Logic/TeacherLogic.class.php" />
-        <option value="$PROJECT_DIR$/ThinkPHP/Library/Weixin/Xiaochengxu/WXLoginHelper.class.php" />
-        <option value="$PROJECT_DIR$/Application/Api/Logic/StudentLogic.class.php" />
-        <option value="$PROJECT_DIR$/Application/Api/Controller/WeixinController.class.php" />
+        <option value="$USER_HOME$/Desktop/pingshifen_pingshifen_question_bank.sql" />
         <option value="$PROJECT_DIR$/Application/Api/Logic/BaseLogic.class.php" />
-        <option value="$PROJECT_DIR$/Application/Api/Conf/config.php" />
-        <option value="$PROJECT_DIR$/Application/Api/Model/WeixinModel.class.php" />
-        <option value="$PROJECT_DIR$/Application/Api/Model/StudentModel.class.php" />
-        <option value="$PROJECT_DIR$/Application/Api/Service/WeixinService.class.php" />
-        <option value="$PROJECT_DIR$/Application/Api/Service/StudentService.class.php" />
-        <option value="$PROJECT_DIR$/Application/Api/Service/TeacherService.class.php" />
+        <option value="$PROJECT_DIR$/Application/Api/Service/QuestionRecordService.class.php" />
+        <option value="$PROJECT_DIR$/Application/Api/Model/QuestionRecordModel.class.php" />
+        <option value="$PROJECT_DIR$/ThinkPHP/Library/Weixin/WechatSdk/JsSdk.class.php" />
+        <option value="$PROJECT_DIR$/ThinkPHP/Library/Weixin/WechatSdk/Wechat.class.php" />
+        <option value="$PROJECT_DIR$/Application/Api/Common/function.php" />
+        <option value="$PROJECT_DIR$/Application/Api/Service/TempMsgService.class.php" />
+        <option value="$PROJECT_DIR$/Application/Api/Logic/SigninLogic.class.php" />
+        <option value="$PROJECT_DIR$/Application/Api/Service/SigninRecordService.class.php" />
+        <option value="$PROJECT_DIR$/Application/Api/Model/BaseModel.class.php" />
+        <option value="$PROJECT_DIR$/Application/Api/Controller/WeixinController.class.php" />
         <option value="$PROJECT_DIR$/Application/Api/Logic/MyLogic.class.php" />
+        <option value="$PROJECT_DIR$/Application/Api/Service/InvitationService.class.php" />
+        <option value="$PROJECT_DIR$/Application/Admin/Controller/ScriptController.class.php" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/33abc544-207c-45ec-8459-1a038f630304/console.sql" />
+        <option value="$PROJECT_DIR$/Application/Api/Controller/GatewayController.class.php" />
+        <option value="$PROJECT_DIR$/Application/Api/Conf/config.php" />
+        <option value="$PROJECT_DIR$/Application/Api/Service/QuestionSetService.class.php" />
+        <option value="$PROJECT_DIR$/Application/Api/Logic/QuestionLogic.class.php" />
+        <option value="$PROJECT_DIR$/Application/Api/Model/ClassModel.class.php" />
+        <option value="$PROJECT_DIR$/Application/Api/Model/InvitationCodeModel.class.php" />
+        <option value="$PROJECT_DIR$/Application/Api/Model/QuestionBankModel.class.php" />
+        <option value="$PROJECT_DIR$/Application/Api/Model/QuestionCollectionModel.class.php" />
+        <option value="$PROJECT_DIR$/Application/Api/Model/QuestionModel.class.php" />
+        <option value="$PROJECT_DIR$/Application/Api/Model/QuestionSetModel.class.php" />
+        <option value="$PROJECT_DIR$/Application/Api/Model/SigninModel.class.php" />
+        <option value="$PROJECT_DIR$/Application/Api/Model/SigninRecordModel.class.php" />
+        <option value="$PROJECT_DIR$/Application/Api/Model/StudentModel.class.php" />
+        <option value="$PROJECT_DIR$/Application/Api/Model/TeacherModel.class.php" />
+        <option value="$PROJECT_DIR$/Application/Api/Service/CourseService.class.php" />
+        <option value="$PROJECT_DIR$/Application/Api/Model/CourseModel.class.php" />
+        <option value="$PROJECT_DIR$/Application/Api/Service/ClassService.class.php" />
+        <option value="$PROJECT_DIR$/Application/Api/Logic/CourseLogic.class.php" />
+        <option value="$PROJECT_DIR$/Application/Api/Logic/StudentLogic.class.php" />
+        <option value="$PROJECT_DIR$/Application/Api/Service/WeixinService.class.php" />
+        <option value="$PROJECT_DIR$/Application/Api/Logic/UserBaseLogic.class.php" />
+        <option value="$PROJECT_DIR$/Public/Admin/header.html" />
+        <option value="$PROJECT_DIR$/Application/Admin/View/Index/home.html" />
+        <option value="$PROJECT_DIR$/Uploads/xls/2018-03-03/sie" />
+        <option value="$PROJECT_DIR$/Application/Admin/Model/QuestionBankModel.class.php" />
+        <option value="$PROJECT_DIR$/Application/Admin/Conf/config.php" />
+        <option value="$PROJECT_DIR$/Application/Admin/Conf/config_sae.php" />
+        <option value="$PROJECT_DIR$/Application/Common/Conf/config_sae.php" />
+        <option value="$PROJECT_DIR$/Application/Api/Service/SigninService.class.php" />
+        <option value="$PROJECT_DIR$/Application/Admin/Controller/QuestionController.class.php" />
+        <option value="$PROJECT_DIR$/Application/Admin/Service/QuestionUploadService.class.php" />
+        <option value="$PROJECT_DIR$/Application/Admin/View/layout.html" />
+        <option value="$PROJECT_DIR$/Application/Admin/View/Question/index.html" />
+        <option value="$PROJECT_DIR$/weixin/oauth_xsc.php" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -289,9 +525,10 @@
       <path value="$PROJECT_DIR$" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
+  <component name="ProjectFrameBounds">
+    <option name="y" value="23" />
     <option name="width" value="1440" />
-    <option name="height" value="900" />
+    <option name="height" value="803" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -312,7 +549,6 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -320,15 +556,11 @@
               <item name="pingshifen" type="b2602c69:ProjectViewProjectNode" />
               <item name="pingshifen" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
-            <path>
-              <item name="pingshifen" type="b2602c69:ProjectViewProjectNode" />
-              <item name="pingshifen" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Application" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -337,6 +569,9 @@
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="database.data.extractors.current.id" value="Tab-separated (TSV)_id" />
+    <property name="full.screen.before.presentation.mode" value="true" />
+    <property name="SearchEverywhereHistoryKey" value="classmo&#9;FILE&#9;file:///usr/local/var/www/pingshifen/Application/Api/Model/ClassModel.class.php&#10;sig&#9;FILE&#9;file:///usr/local/var/www/pingshifen/Application/Api/Model/SigninModel.class.php&#10;signi&#9;FILE&#9;file:///usr/local/var/www/pingshifen/Application/Api/Model/SigninModel.class.php&#10;listBySid&#9;null&#9;null&#10;signinre&#9;FILE&#9;file:///usr/local/var/www/pingshifen/Application/Api/Model/SigninRecordModel.class.php" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -393,356 +628,382 @@
       <workItem from="1517885599568" duration="8000" />
       <workItem from="1518074077567" duration="6848000" />
       <workItem from="1518083653899" duration="2676000" />
-      <workItem from="1518441091486" duration="48501000" />
+      <workItem from="1518441091486" duration="49937000" />
+      <workItem from="1518654292714" duration="5925000" />
+      <workItem from="1518665908108" duration="32444000" />
+      <workItem from="1518875131459" duration="1657000" />
+      <workItem from="1518929202077" duration="758000" />
+      <workItem from="1518939139753" duration="7242000" />
+      <workItem from="1518955937570" duration="1747000" />
+      <workItem from="1518958241561" duration="41933000" />
+      <workItem from="1519308850238" duration="1590000" />
+      <workItem from="1519311041451" duration="6925000" />
+      <workItem from="1519355342812" duration="14473000" />
+      <workItem from="1519438300366" duration="1800000" />
+      <workItem from="1519440219809" duration="28848000" />
+      <workItem from="1519569987317" duration="18610000" />
+      <workItem from="1519702480819" duration="3596000" />
+      <workItem from="1519713921321" duration="4970000" />
+      <workItem from="1519796821991" duration="14000000" />
+      <workItem from="1519977993260" duration="68000" />
+      <workItem from="1519983499055" duration="14000" />
+      <workItem from="1519988462575" duration="5441000" />
+      <workItem from="1520047418836" duration="23743000" />
+      <workItem from="1520141641802" duration="771000" />
+      <workItem from="1520157165321" duration="1003000" />
+      <workItem from="1520177928423" duration="55000" />
+      <workItem from="1520242580132" duration="3238000" />
+      <workItem from="1520330367243" duration="1789000" />
+      <workItem from="1520391815185" duration="432000" />
     </task>
-    <task id="LOCAL-00003" summary="add">
-      <created>1517539525927</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
+    <task id="LOCAL-00114" summary="问题终于找到了">
+      <created>1519571552707</created>
+      <option name="number" value="00114" />
+      <option name="presentableId" value="LOCAL-00114" />
       <option name="project" value="LOCAL" />
-      <updated>1517539525927</updated>
+      <updated>1519571552707</updated>
     </task>
-    <task id="LOCAL-00004" summary="add">
-      <created>1517539703379</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
+    <task id="LOCAL-00115" summary="错题记录时候添加cid">
+      <created>1519572238051</created>
+      <option name="number" value="00115" />
+      <option name="presentableId" value="LOCAL-00115" />
       <option name="project" value="LOCAL" />
-      <updated>1517539703379</updated>
+      <updated>1519572238051</updated>
     </task>
-    <task id="LOCAL-00005" summary="替换 static 文件">
-      <created>1517541663703</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
+    <task id="LOCAL-00116" summary="修改错误回顾计算算法">
+      <created>1519572648769</created>
+      <option name="number" value="00116" />
+      <option name="presentableId" value="LOCAL-00116" />
       <option name="project" value="LOCAL" />
-      <updated>1517541663703</updated>
+      <updated>1519572648769</updated>
     </task>
-    <task id="LOCAL-00006" summary="微信网页授权验证文件">
-      <created>1517632957559</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
+    <task id="LOCAL-00117" summary="完成 未签到名单列表展示">
+      <created>1519630168878</created>
+      <option name="number" value="00117" />
+      <option name="presentableId" value="LOCAL-00117" />
       <option name="project" value="LOCAL" />
-      <updated>1517632957559</updated>
+      <updated>1519630168878</updated>
     </task>
-    <task id="LOCAL-00007" summary="添加微信网页授权类">
-      <created>1517633282910</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
+    <task id="LOCAL-00118" summary="find bug 1112">
+      <created>1519630646627</created>
+      <option name="number" value="00118" />
+      <option name="presentableId" value="LOCAL-00118" />
       <option name="project" value="LOCAL" />
-      <updated>1517633282910</updated>
+      <updated>1519630646627</updated>
     </task>
-    <task id="LOCAL-00008" summary="删除 url中带着 openid">
-      <created>1517633585789</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
+    <task id="LOCAL-00119" summary="find bug 3">
+      <created>1519630731044</created>
+      <option name="number" value="00119" />
+      <option name="presentableId" value="LOCAL-00119" />
       <option name="project" value="LOCAL" />
-      <updated>1517633585789</updated>
+      <updated>1519630731044</updated>
     </task>
-    <task id="LOCAL-00009" summary="add weixincontroller">
-      <created>1517638544915</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
+    <task id="LOCAL-00120" summary="find bug 4">
+      <created>1519631122623</created>
+      <option name="number" value="00120" />
+      <option name="presentableId" value="LOCAL-00120" />
       <option name="project" value="LOCAL" />
-      <updated>1517638544915</updated>
+      <updated>1519631122623</updated>
     </task>
-    <task id="LOCAL-00010" summary="更新 前端应用">
-      <created>1517639280598</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
+    <task id="LOCAL-00121" summary="解决bug">
+      <created>1519631946410</created>
+      <option name="number" value="00121" />
+      <option name="presentableId" value="LOCAL-00121" />
       <option name="project" value="LOCAL" />
-      <updated>1517639280598</updated>
+      <updated>1519631946411</updated>
     </task>
-    <task id="LOCAL-00011" summary="代码优化">
-      <created>1517641917982</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
+    <task id="LOCAL-00122" summary="查看班级同学列表">
+      <created>1519652615613</created>
+      <option name="number" value="00122" />
+      <option name="presentableId" value="LOCAL-00122" />
       <option name="project" value="LOCAL" />
-      <updated>1517641917985</updated>
+      <updated>1519652615613</updated>
     </task>
-    <task id="LOCAL-00012" summary="配置文件 新增接口">
-      <created>1517642076844</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
+    <task id="LOCAL-00123" summary="教师用户修改课程信息">
+      <created>1519654095594</created>
+      <option name="number" value="00123" />
+      <option name="presentableId" value="LOCAL-00123" />
       <option name="project" value="LOCAL" />
-      <updated>1517642076844</updated>
+      <updated>1519654095594</updated>
     </task>
-    <task id="LOCAL-00013" summary="代码优化1">
-      <created>1517645658356</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
+    <task id="LOCAL-00124" summary="小程序转发">
+      <created>1519662409946</created>
+      <option name="number" value="00124" />
+      <option name="presentableId" value="LOCAL-00124" />
       <option name="project" value="LOCAL" />
-      <updated>1517645658356</updated>
+      <updated>1519662409946</updated>
     </task>
-    <task id="LOCAL-00014" summary="代码优化 openid">
-      <created>1517646822093</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
+    <task id="LOCAL-00125" summary="课程邀请机制 ，邀请加入课程">
+      <created>1519700303636</created>
+      <option name="number" value="00125" />
+      <option name="presentableId" value="LOCAL-00125" />
       <option name="project" value="LOCAL" />
-      <updated>1517646822093</updated>
+      <updated>1519700303637</updated>
     </task>
-    <task id="LOCAL-00015" summary="修改配置文件">
-      <created>1518081948154</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
+    <task id="LOCAL-00126" summary="细节优化">
+      <created>1519700471932</created>
+      <option name="number" value="00126" />
+      <option name="presentableId" value="LOCAL-00126" />
       <option name="project" value="LOCAL" />
-      <updated>1518081948154</updated>
+      <updated>1519700471932</updated>
     </task>
-    <task id="LOCAL-00016" summary="代码优化 删除不必要的 微信uid 代码">
-      <created>1518082096069</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
+    <task id="LOCAL-00127" summary="邀请机制">
+      <created>1519711400660</created>
+      <option name="number" value="00127" />
+      <option name="presentableId" value="LOCAL-00127" />
       <option name="project" value="LOCAL" />
-      <updated>1518082096069</updated>
+      <updated>1519711400660</updated>
     </task>
-    <task id="LOCAL-00017" summary="修改 think 核心库&#10;1、添加小程序验证文件&#10;2、修改 对返回数组的判断 的逻辑">
-      <created>1518082282216</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
+    <task id="LOCAL-00128" summary="改动 邀请码">
+      <created>1519713178844</created>
+      <option name="number" value="00128" />
+      <option name="presentableId" value="LOCAL-00128" />
       <option name="project" value="LOCAL" />
-      <updated>1518082282216</updated>
+      <updated>1519713178844</updated>
     </task>
-    <task id="LOCAL-00018" summary="代码优化">
-      <created>1518082531342</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
+    <task id="LOCAL-00129" summary="解决没有查看课程守候的bug">
+      <created>1519718300486</created>
+      <option name="number" value="00129" />
+      <option name="presentableId" value="LOCAL-00129" />
       <option name="project" value="LOCAL" />
-      <updated>1518082531342</updated>
+      <updated>1519718300486</updated>
     </task>
-    <task id="LOCAL-00019" summary="修改 小程序配置文件&#10;修改缓存方法">
-      <created>1518084080010</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
+    <task id="LOCAL-00130" summary="找bug">
+      <created>1519718579561</created>
+      <option name="number" value="00130" />
+      <option name="presentableId" value="LOCAL-00130" />
       <option name="project" value="LOCAL" />
-      <updated>1518084080010</updated>
+      <updated>1519718579562</updated>
     </task>
-    <task id="LOCAL-00020" summary="删除测试代码">
-      <created>1518084201173</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
+    <task id="LOCAL-00131" summary="find bug">
+      <created>1519718781315</created>
+      <option name="number" value="00131" />
+      <option name="presentableId" value="LOCAL-00131" />
       <option name="project" value="LOCAL" />
-      <updated>1518084201173</updated>
+      <updated>1519718781316</updated>
     </task>
-    <task id="LOCAL-00021" summary="测试签名">
-      <created>1518084438406</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
+    <task id="LOCAL-00132" summary="1">
+      <created>1519719474659</created>
+      <option name="number" value="00132" />
+      <option name="presentableId" value="LOCAL-00132" />
       <option name="project" value="LOCAL" />
-      <updated>1518084438406</updated>
+      <updated>1519719474659</updated>
     </task>
-    <task id="LOCAL-00022" summary="input 函数过滤方法">
-      <created>1518085184822</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
+    <task id="LOCAL-00133" summary="  2">
+      <created>1519719573510</created>
+      <option name="number" value="00133" />
+      <option name="presentableId" value="LOCAL-00133" />
       <option name="project" value="LOCAL" />
-      <updated>1518085184822</updated>
+      <updated>1519719573510</updated>
     </task>
-    <task id="LOCAL-00023" summary="修改小程序配置">
-      <created>1518085358507</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
+    <task id="LOCAL-00134" summary="3">
+      <created>1519719670307</created>
+      <option name="number" value="00134" />
+      <option name="presentableId" value="LOCAL-00134" />
       <option name="project" value="LOCAL" />
-      <updated>1518085358507</updated>
+      <updated>1519719670307</updated>
     </task>
-    <task id="LOCAL-00024" summary="修改过滤函数">
-      <created>1518085511618</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
+    <task id="LOCAL-00135" summary="solute bug">
+      <created>1519719737272</created>
+      <option name="number" value="00135" />
+      <option name="presentableId" value="LOCAL-00135" />
       <option name="project" value="LOCAL" />
-      <updated>1518085511618</updated>
+      <updated>1519719737272</updated>
     </task>
-    <task id="LOCAL-00025" summary="删除 PHP 转义函数">
-      <created>1518085746422</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
+    <task id="LOCAL-00136" summary="统计课程数量">
+      <created>1519740445630</created>
+      <option name="number" value="00136" />
+      <option name="presentableId" value="LOCAL-00136" />
       <option name="project" value="LOCAL" />
-      <updated>1518085746422</updated>
+      <updated>1519740445630</updated>
     </task>
-    <task id="LOCAL-00026" summary="修改小程序配置">
-      <created>1518085819317</created>
-      <option name="number" value="00026" />
-      <option name="presentableId" value="LOCAL-00026" />
+    <task id="LOCAL-00137" summary="添加题库管理">
+      <created>1519803514756</created>
+      <option name="number" value="00137" />
+      <option name="presentableId" value="LOCAL-00137" />
       <option name="project" value="LOCAL" />
-      <updated>1518085819317</updated>
+      <updated>1519803514756</updated>
     </task>
-    <task id="LOCAL-00027" summary="修改小程序配置">
-      <created>1518085990499</created>
-      <option name="number" value="00027" />
-      <option name="presentableId" value="LOCAL-00027" />
+    <task id="LOCAL-00138" summary="修改 缓存 false string bug">
+      <created>1519818447239</created>
+      <option name="number" value="00138" />
+      <option name="presentableId" value="LOCAL-00138" />
       <option name="project" value="LOCAL" />
-      <updated>1518085990499</updated>
+      <updated>1519818447239</updated>
     </task>
-    <task id="LOCAL-00028" summary="修改小">
-      <created>1518086059416</created>
-      <option name="number" value="00028" />
-      <option name="presentableId" value="LOCAL-00028" />
+    <task id="LOCAL-00139" summary="锁定课程展示">
+      <created>1519820010638</created>
+      <option name="number" value="00139" />
+      <option name="presentableId" value="LOCAL-00139" />
       <option name="project" value="LOCAL" />
-      <updated>1518086059416</updated>
+      <updated>1519820010638</updated>
     </task>
-    <task id="LOCAL-00029" summary="error code">
-      <created>1518086167205</created>
-      <option name="number" value="00029" />
-      <option name="presentableId" value="LOCAL-00029" />
+    <task id="LOCAL-00140" summary="bug">
+      <created>1519820770642</created>
+      <option name="number" value="00140" />
+      <option name="presentableId" value="LOCAL-00140" />
       <option name="project" value="LOCAL" />
-      <updated>1518086167205</updated>
+      <updated>1519820770642</updated>
     </task>
-    <task id="LOCAL-00030" summary="修改小程序配置">
-      <created>1518086359265</created>
-      <option name="number" value="00030" />
-      <option name="presentableId" value="LOCAL-00030" />
+    <task id="LOCAL-00141" summary="找到bug在 用户绑定的时候没有更新缓存">
+      <created>1519821378673</created>
+      <option name="number" value="00141" />
+      <option name="presentableId" value="LOCAL-00141" />
       <option name="project" value="LOCAL" />
-      <updated>1518086359265</updated>
+      <updated>1519821378673</updated>
     </task>
-    <task id="LOCAL-00031" summary="修改小">
-      <created>1518086451087</created>
-      <option name="number" value="00031" />
-      <option name="presentableId" value="LOCAL-00031" />
+    <task id="LOCAL-00142" summary="find bug">
+      <created>1519821484699</created>
+      <option name="number" value="00142" />
+      <option name="presentableId" value="LOCAL-00142" />
       <option name="project" value="LOCAL" />
-      <updated>1518086451087</updated>
+      <updated>1519821484699</updated>
     </task>
-    <task id="LOCAL-00032" summary="老子不完了">
-      <created>1518086593750</created>
-      <option name="number" value="00032" />
-      <option name="presentableId" value="LOCAL-00032" />
+    <task id="LOCAL-00143" summary="find bug">
+      <created>1519821586007</created>
+      <option name="number" value="00143" />
+      <option name="presentableId" value="LOCAL-00143" />
       <option name="project" value="LOCAL" />
-      <updated>1518086593750</updated>
+      <updated>1519821586007</updated>
     </task>
-    <task id="LOCAL-00033" summary="苦逼的调试啊">
-      <created>1518442042921</created>
-      <option name="number" value="00033" />
-      <option name="presentableId" value="LOCAL-00033" />
+    <task id="LOCAL-00144" summary="解决了bug的">
+      <created>1519821789400</created>
+      <option name="number" value="00144" />
+      <option name="presentableId" value="LOCAL-00144" />
       <option name="project" value="LOCAL" />
-      <updated>1518442042921</updated>
+      <updated>1519821789400</updated>
     </task>
-    <task id="LOCAL-00034" summary="又一次苦逼的调试……">
-      <created>1518442434192</created>
-      <option name="number" value="00034" />
-      <option name="presentableId" value="LOCAL-00034" />
+    <task id="LOCAL-00145" summary="增加 题库上传功能">
+      <created>1520074869810</created>
+      <option name="number" value="00145" />
+      <option name="presentableId" value="LOCAL-00145" />
       <option name="project" value="LOCAL" />
-      <updated>1518442434192</updated>
+      <updated>1520074869810</updated>
     </task>
-    <task id="LOCAL-00035" summary="调试的很难受啊">
-      <created>1518442574528</created>
-      <option name="number" value="00035" />
-      <option name="presentableId" value="LOCAL-00035" />
+    <task id="LOCAL-00146" summary="增加 phpexcel 库">
+      <created>1520074929829</created>
+      <option name="number" value="00146" />
+      <option name="presentableId" value="LOCAL-00146" />
       <option name="project" value="LOCAL" />
-      <updated>1518442574528</updated>
+      <updated>1520074929829</updated>
     </task>
-    <task id="LOCAL-00036" summary="hen">
-      <created>1518442711805</created>
-      <option name="number" value="00036" />
-      <option name="presentableId" value="LOCAL-00036" />
+    <task id="LOCAL-00147" summary="增加 admin入口 文件 css文件">
+      <created>1520075352314</created>
+      <option name="number" value="00147" />
+      <option name="presentableId" value="LOCAL-00147" />
       <option name="project" value="LOCAL" />
-      <updated>1518442711805</updated>
+      <updated>1520075352314</updated>
     </task>
-    <task id="LOCAL-00037" summary="我好像找出问题了，，">
-      <created>1518442814329</created>
-      <option name="number" value="00037" />
-      <option name="presentableId" value="LOCAL-00037" />
+    <task id="LOCAL-00148" summary="add admin css file">
+      <created>1520075636048</created>
+      <option name="number" value="00148" />
+      <option name="presentableId" value="LOCAL-00148" />
       <option name="project" value="LOCAL" />
-      <updated>1518442814329</updated>
+      <updated>1520075636049</updated>
     </task>
-    <task id="LOCAL-00038" summary="我找到错误了，原来是我从git上下载的代码是tp5，php7中的类是 类名来构建的，而php5中 类是通过 __contrust()方法构建的">
-      <created>1518443051660</created>
-      <option name="number" value="00038" />
-      <option name="presentableId" value="LOCAL-00038" />
+    <task id="LOCAL-00149" summary="add php excel modle">
+      <created>1520075982667</created>
+      <option name="number" value="00149" />
+      <option name="presentableId" value="LOCAL-00149" />
       <option name="project" value="LOCAL" />
-      <updated>1518443051660</updated>
+      <updated>1520075982668</updated>
     </task>
-    <task id="LOCAL-00039" summary="增加 3rd session 判断">
-      <created>1518445894559</created>
-      <option name="number" value="00039" />
-      <option name="presentableId" value="LOCAL-00039" />
+    <task id="LOCAL-00150" summary="find bug">
+      <created>1520076582757</created>
+      <option name="number" value="00150" />
+      <option name="presentableId" value="LOCAL-00150" />
       <option name="project" value="LOCAL" />
-      <updated>1518445894559</updated>
+      <updated>1520076582757</updated>
     </task>
-    <task id="LOCAL-00040" summary="苦逼又来测试">
-      <created>1518447081003</created>
-      <option name="number" value="00040" />
-      <option name="presentableId" value="LOCAL-00040" />
+    <task id="LOCAL-00151" summary="find bug 2">
+      <created>1520076740349</created>
+      <option name="number" value="00151" />
+      <option name="presentableId" value="LOCAL-00151" />
       <option name="project" value="LOCAL" />
-      <updated>1518447081003</updated>
+      <updated>1520076740349</updated>
     </task>
-    <task id="LOCAL-00041" summary="继续调试代码">
-      <created>1518447700857</created>
-      <option name="number" value="00041" />
-      <option name="presentableId" value="LOCAL-00041" />
+    <task id="LOCAL-00152" summary="solve bug">
+      <created>1520076922203</created>
+      <option name="number" value="00152" />
+      <option name="presentableId" value="LOCAL-00152" />
       <option name="project" value="LOCAL" />
-      <updated>1518447700857</updated>
+      <updated>1520076922203</updated>
     </task>
-    <task id="LOCAL-00042" summary="tiaoshi">
-      <created>1518447863981</created>
-      <option name="number" value="00042" />
-      <option name="presentableId" value="LOCAL-00042" />
+    <task id="LOCAL-00153" summary="find bug 3">
+      <created>1520076987639</created>
+      <option name="number" value="00153" />
+      <option name="presentableId" value="LOCAL-00153" />
       <option name="project" value="LOCAL" />
-      <updated>1518447863981</updated>
+      <updated>1520076987639</updated>
     </task>
-    <task id="LOCAL-00043" summary="修改小程序配置">
-      <created>1518448049282</created>
-      <option name="number" value="00043" />
-      <option name="presentableId" value="LOCAL-00043" />
+    <task id="LOCAL-00154" summary="修改上传文件 配置路径">
+      <created>1520077641362</created>
+      <option name="number" value="00154" />
+      <option name="presentableId" value="LOCAL-00154" />
       <option name="project" value="LOCAL" />
-      <updated>1518448049282</updated>
+      <updated>1520077641362</updated>
     </task>
-    <task id="LOCAL-00044" summary="调试 session">
-      <created>1518450400371</created>
-      <option name="number" value="00044" />
-      <option name="presentableId" value="LOCAL-00044" />
+    <task id="LOCAL-00155" summary="放开数据库 文件">
+      <created>1520077746160</created>
+      <option name="number" value="00155" />
+      <option name="presentableId" value="LOCAL-00155" />
       <option name="project" value="LOCAL" />
-      <updated>1518450400371</updated>
+      <updated>1520077746160</updated>
     </task>
-    <task id="LOCAL-00045" summary="加油啊">
-      <created>1518450742191</created>
-      <option name="number" value="00045" />
-      <option name="presentableId" value="LOCAL-00045" />
+    <task id="LOCAL-00156" summary="add 数据库配置文件">
+      <created>1520077916820</created>
+      <option name="number" value="00156" />
+      <option name="presentableId" value="LOCAL-00156" />
       <option name="project" value="LOCAL" />
-      <updated>1518450742191</updated>
+      <updated>1520077916820</updated>
     </task>
-    <task id="LOCAL-00046" summary="我仿佛看到了希望">
-      <created>1518450895499</created>
-      <option name="number" value="00046" />
-      <option name="presentableId" value="LOCAL-00046" />
+    <task id="LOCAL-00157" summary="修改 题库上传bug">
+      <created>1520082139511</created>
+      <option name="number" value="00157" />
+      <option name="presentableId" value="LOCAL-00157" />
       <option name="project" value="LOCAL" />
-      <updated>1518450895499</updated>
+      <updated>1520082139511</updated>
     </task>
-    <task id="LOCAL-00047" summary="完成session 登陆缓存机制">
-      <created>1518451567871</created>
-      <option name="number" value="00047" />
-      <option name="presentableId" value="LOCAL-00047" />
+    <task id="LOCAL-00158" summary="大小写错误">
+      <created>1520082986203</created>
+      <option name="number" value="00158" />
+      <option name="presentableId" value="LOCAL-00158" />
       <option name="project" value="LOCAL" />
-      <updated>1518451567871</updated>
+      <updated>1520082986203</updated>
     </task>
-    <task id="LOCAL-00048" summary="完成手机号的授权绑定 和 微信用户的自动注册">
-      <created>1518509373360</created>
-      <option name="number" value="00048" />
-      <option name="presentableId" value="LOCAL-00048" />
+    <task id="LOCAL-00159" summary="找到位置的错误">
+      <created>1520083385370</created>
+      <option name="number" value="00159" />
+      <option name="presentableId" value="LOCAL-00159" />
       <option name="project" value="LOCAL" />
-      <updated>1518509373360</updated>
+      <updated>1520083385370</updated>
     </task>
-    <task id="LOCAL-00049" summary="修改openid验证方法">
-      <created>1518515743152</created>
-      <option name="number" value="00049" />
-      <option name="presentableId" value="LOCAL-00049" />
+    <task id="LOCAL-00160" summary="add 数据库配置文件">
+      <created>1520177969565</created>
+      <option name="number" value="00160" />
+      <option name="presentableId" value="LOCAL-00160" />
       <option name="project" value="LOCAL" />
-      <updated>1518515743152</updated>
+      <updated>1520177969565</updated>
     </task>
-    <task id="LOCAL-00050" summary="加油啊，加油">
-      <created>1518533688758</created>
-      <option name="number" value="00050" />
-      <option name="presentableId" value="LOCAL-00050" />
+    <task id="LOCAL-00161" summary="优化题库上传bug">
+      <created>1520243146918</created>
+      <option name="number" value="00161" />
+      <option name="presentableId" value="LOCAL-00161" />
       <option name="project" value="LOCAL" />
-      <updated>1518533688759</updated>
+      <updated>1520243146918</updated>
     </task>
-    <task id="LOCAL-00051" summary="修改 s错误">
-      <created>1518535096665</created>
-      <option name="number" value="00051" />
-      <option name="presentableId" value="LOCAL-00051" />
+    <task id="LOCAL-00162" summary="修改 题库上传 功能">
+      <created>1520391898181</created>
+      <option name="number" value="00162" />
+      <option name="presentableId" value="LOCAL-00162" />
       <option name="project" value="LOCAL" />
-      <updated>1518535096665</updated>
+      <updated>1520391898182</updated>
     </task>
-    <option name="localTasksCounter" value="52" />
+    <option name="localTasksCounter" value="163" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="157000000" />
+    <option name="totallyTimeSpent" value="381508000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -754,30 +1015,53 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <frame x="0" y="23" width="1440" height="803" extended-state="0" />
     <layout>
-      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31438935" sideWeight="0.6072961" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23676682" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23748212" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32889965" sideWeight="0.49713877" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31438935" sideWeight="0.39270386" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22818312" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32889965" sideWeight="0.49713877" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4465174" sideWeight="0.42131618" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18884121" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32889965" sideWeight="0.49713877" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21530758" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2031439" sideWeight="0.46852645" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4978102" sideWeight="0.44563663" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30062112" sideWeight="0.4914163" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29975125" sideWeight="0.4914163" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4465174" sideWeight="0.57868385" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection Results" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32889965" sideWeight="0.49713877" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection Results" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32889965" sideWeight="0.49713877" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3279503" sideWeight="0.49713877" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32889965" sideWeight="0.49713877" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30062112" sideWeight="0.4914163" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4465174" sideWeight="0.42131618" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32889965" sideWeight="0.49713877" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20149253" sideWeight="0.44563663" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4465174" sideWeight="0.57868385" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1874106" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection Results" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32889965" sideWeight="0.49713877" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1602289" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3279503" sideWeight="0.49713877" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21530758" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -790,32 +1074,33 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="input 函数过滤方法" />
-    <MESSAGE value="修改过滤函数" />
-    <MESSAGE value="删除 PHP 转义函数" />
-    <MESSAGE value="error code" />
-    <MESSAGE value="修改小" />
-    <MESSAGE value="老子不完了" />
-    <MESSAGE value="苦逼的调试啊" />
-    <MESSAGE value="又一次苦逼的调试……" />
-    <MESSAGE value="调试的很难受啊" />
-    <MESSAGE value="hen" />
-    <MESSAGE value="我好像找出问题了，，" />
-    <MESSAGE value="我找到错误了，原来是我从git上下载的代码是tp5，php7中的类是 类名来构建的，而php5中 类是通过 __contrust()方法构建的" />
-    <MESSAGE value="增加 3rd session 判断" />
-    <MESSAGE value="苦逼又来测试" />
-    <MESSAGE value="继续调试代码" />
-    <MESSAGE value="tiaoshi" />
-    <MESSAGE value="修改小程序配置" />
-    <MESSAGE value="调试 session" />
-    <MESSAGE value="加油啊" />
-    <MESSAGE value="我仿佛看到了希望" />
-    <MESSAGE value="完成session 登陆缓存机制" />
-    <MESSAGE value="完成手机号的授权绑定 和 微信用户的自动注册" />
-    <MESSAGE value="修改openid验证方法" />
-    <MESSAGE value="加油啊，加油" />
-    <MESSAGE value="修改 s错误" />
-    <option name="LAST_COMMIT_MESSAGE" value="修改 s错误" />
+    <option name="SHOW_UNVERSIONED_FILES_WHILE_COMMIT" value="false" />
+    <MESSAGE value="统计课程数量" />
+    <MESSAGE value="添加题库管理" />
+    <MESSAGE value="修改 缓存 false string bug" />
+    <MESSAGE value="锁定课程展示" />
+    <MESSAGE value="bug" />
+    <MESSAGE value="找到bug在 用户绑定的时候没有更新缓存" />
+    <MESSAGE value="解决了bug" />
+    <MESSAGE value="解决了bug的" />
+    <MESSAGE value="增加 题库上传功能" />
+    <MESSAGE value="增加 phpexcel 库" />
+    <MESSAGE value="增加 admin入口 文件 css文件" />
+    <MESSAGE value="add admin css file" />
+    <MESSAGE value="add php excel modle" />
+    <MESSAGE value="find bug" />
+    <MESSAGE value="find bug 2" />
+    <MESSAGE value="solve bug" />
+    <MESSAGE value="find bug 3" />
+    <MESSAGE value="修改上传文件 配置路径" />
+    <MESSAGE value="放开数据库 文件" />
+    <MESSAGE value="修改 题库上传bug" />
+    <MESSAGE value="大小写错误" />
+    <MESSAGE value="找到位置的错误" />
+    <MESSAGE value="add 数据库配置文件" />
+    <MESSAGE value="优化题库上传bug" />
+    <MESSAGE value="修改 题库上传 功能" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改 题库上传 功能" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -825,417 +1110,375 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/Application/Api/Controller/WeixinController.class.php</url>
-          <line>92</line>
+          <line>105</line>
           <option name="timeStamp" value="9" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/Application/Api/Controller/WeixinController.class.php</url>
-          <line>145</line>
+          <line>173</line>
           <option name="timeStamp" value="10" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/Application/Api/Service/TeacherService.class.php</url>
+          <line>32</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/Application/Api/Model/QuestionCountModel.class.php</url>
+          <line>23</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/Application/Api/Logic/CourseLogic.class.php</url>
+          <line>196</line>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/Application/Api/Logic/CourseLogic.class.php</url>
+          <line>174</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/Application/Api/Logic/CourseLogic.class.php</url>
+          <line>131</line>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="11" />
+      <option name="time" value="21" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/ThinkPHP/Library/Weixin/Xiaochengxu/Prpcrypt.class.php">
+    <entry file="file://$PROJECT_DIR$/Application/Api/Model/SigninModel.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="24" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="24" />
-          <folding />
+        <state relative-caret-position="400">
+          <caret line="55" column="9" lean-forward="false" selection-start-line="52" selection-start-column="8" selection-end-line="55" selection-end-column="9" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ThinkPHP/Library/Weixin/Xiaochengxu/ErrorCode.class.php">
+    <entry file="file://$PROJECT_DIR$/Application/Api/Model/SigninRecordModel.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="5" lean-forward="true" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ThinkPHP/Mode/Api/functions.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="818" column="9" lean-forward="false" selection-start-line="818" selection-start-column="9" selection-end-line="818" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ThinkPHP/Common/functions.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="1221" column="9" lean-forward="false" selection-start-line="1221" selection-start-column="9" selection-end-line="1221" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ThinkPHP/Library/Think/Model.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="249">
-          <caret line="318" column="20" lean-forward="false" selection-start-line="318" selection-start-column="20" selection-end-line="318" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ThinkPHP/Conf/debug.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ThinkPHP/Conf/convention.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="466">
-          <caret line="76" column="20" lean-forward="false" selection-start-line="76" selection-start-column="5" selection-end-line="76" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ThinkPHP/Mode/Sae/convention.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="36" column="33" lean-forward="false" selection-start-line="36" selection-start-column="33" selection-end-line="36" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Desktop/pingshifen_pingshifen_weixin.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Desktop/SHOW_CREATE_TABLE_pingshifen_weixin.tsv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="1" lean-forward="true" selection-start-line="0" selection-start-column="1" selection-end-line="14" selection-end-column="53" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/33abc544-207c-45ec-8459-1a038f630304/console_2.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="36" lean-forward="false" selection-start-line="0" selection-start-column="36" selection-end-line="0" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/88cfaa9b/33abc544-207c-45ec-8459-1a038f630304/pingshifen.pingshifen_student">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Api/Service/ShortMessageService.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/88cfaa9b/33abc544-207c-45ec-8459-1a038f630304/pingshifen.pingshifen_student">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/88cfaa9b/33abc544-207c-45ec-8459-1a038f630304/pingshifen.pingshifen_student">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/88cfaa9b/33abc544-207c-45ec-8459-1a038f630304/pingshifen.pingshifen_student">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/88cfaa9b/33abc544-207c-45ec-8459-1a038f630304/pingshifen.pingshifen_teacher">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/88cfaa9b/33abc544-207c-45ec-8459-1a038f630304/pingshifen.pingshifen_student">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/88cfaa9b/33abc544-207c-45ec-8459-1a038f630304/pingshifen.pingshifen_student">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/33abc544-207c-45ec-8459-1a038f630304/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="36" lean-forward="true" selection-start-line="0" selection-start-column="36" selection-end-line="0" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/88cfaa9b/33abc544-207c-45ec-8459-1a038f630304/pingshifen.pingshifen_student">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Api/Controller/GatewayController.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="41" column="57" lean-forward="false" selection-start-line="41" selection-start-column="49" selection-end-line="41" selection-end-column="57" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/88cfaa9b/33abc544-207c-45ec-8459-1a038f630304/pingshifen.pingshifen_student">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/88cfaa9b/33abc544-207c-45ec-8459-1a038f630304/pingshifen.pingshifen_student">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/88cfaa9b/33abc544-207c-45ec-8459-1a038f630304/pingshifen.pingshifen_student">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/88cfaa9b/33abc544-207c-45ec-8459-1a038f630304/pingshifen.pingshifen_weixin">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/88cfaa9b/33abc544-207c-45ec-8459-1a038f630304/pingshifen.pingshifen_student">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/88cfaa9b/33abc544-207c-45ec-8459-1a038f630304/pingshifen.pingshifen_student">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/88cfaa9b/33abc544-207c-45ec-8459-1a038f630304/pingshifen.pingshifen_student">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/88cfaa9b/33abc544-207c-45ec-8459-1a038f630304/pingshifen.pingshifen_student">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/88cfaa9b/33abc544-207c-45ec-8459-1a038f630304/pingshifen.pingshifen_student">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Api/Service/SchoolService.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="11" column="4" lean-forward="false" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Api/Logic/SchoolLogic.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="382">
-          <caret line="32" column="34" lean-forward="false" selection-start-line="32" selection-start-column="34" selection-end-line="32" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="24" column="7" lean-forward="false" selection-start-line="24" selection-start-column="7" selection-end-line="24" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Api/Service/InvitationService.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="31" column="20" lean-forward="false" selection-start-line="31" selection-start-column="20" selection-end-line="31" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Api/Logic/TeacherLogic.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="265">
-          <caret line="52" column="42" lean-forward="false" selection-start-line="52" selection-start-column="42" selection-end-line="52" selection-end-column="42" />
-          <folding>
-            <element signature="e#117#151#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ThinkPHP/Library/Weixin/Xiaochengxu/WXBizDataCrypt.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-20">
-          <caret line="33" column="20" lean-forward="false" selection-start-line="33" selection-start-column="20" selection-end-line="33" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ThinkPHP/Library/Weixin/Xiaochengxu/WXLoginHelper.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="383">
-          <caret line="113" column="40" lean-forward="false" selection-start-line="113" selection-start-column="36" selection-end-line="113" selection-end-column="40" />
-          <folding>
-            <element signature="e#4306#6338#0#PHP" expanded="false" />
-            <element signature="e#6434#6933#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Api/Logic/StudentLogic.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
-          <caret line="50" column="36" lean-forward="true" selection-start-line="50" selection-start-column="36" selection-end-line="50" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Api/Logic/WeixinLogic.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="23" column="34" lean-forward="false" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Api/Controller/WeixinController.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="409">
-          <caret line="159" column="9" lean-forward="true" selection-start-line="150" selection-start-column="8" selection-end-line="159" selection-end-column="9" />
-          <folding>
-            <element signature="e#120#141#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Api/Logic/BaseLogic.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="26" column="31" lean-forward="false" selection-start-line="26" selection-start-column="31" selection-end-line="26" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Api/Conf/config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="10" column="92" lean-forward="false" selection-start-line="10" selection-start-column="92" selection-end-line="10" selection-end-column="92" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Api/Model/BaseModel.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Api/Model/WeixinModel.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="24" column="6" lean-forward="false" selection-start-line="24" selection-start-column="6" selection-end-line="24" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Api/Service/BaseService.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
-          <caret line="25" column="20" lean-forward="false" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="20" />
-          <folding />
+        <state relative-caret-position="190">
+          <caret line="31" column="7" lean-forward="false" selection-start-line="31" selection-start-column="7" selection-end-line="34" selection-end-column="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Application/Api/Model/StudentModel.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="400">
+          <caret line="36" column="9" lean-forward="false" selection-start-line="33" selection-start-column="8" selection-end-line="36" selection-end-column="9" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Api/Service/WeixinService.class.php">
+    <entry file="file://$PROJECT_DIR$/Application/Api/Model/WeixinModel.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="554">
-          <caret line="135" column="82" lean-forward="false" selection-start-line="135" selection-start-column="82" selection-end-line="135" selection-end-column="82" />
-          <folding />
+        <state relative-caret-position="360">
+          <caret line="29" column="5" lean-forward="false" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Api/Model/TeacherModel.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-10">
+          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Api/Service/CourseService.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="123">
+          <caret line="35" column="34" lean-forward="false" selection-start-line="35" selection-start-column="34" selection-end-line="35" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Api/Model/CourseModel.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="49" column="30" lean-forward="false" selection-start-line="49" selection-start-column="30" selection-end-line="49" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Api/Service/ClassService.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="78" column="32" lean-forward="false" selection-start-line="78" selection-start-column="32" selection-end-line="78" selection-end-column="32" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Application/Api/Service/StudentService.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="211">
-          <caret line="42" column="34" lean-forward="false" selection-start-line="42" selection-start-column="22" selection-end-line="42" selection-end-column="34" />
+        <state relative-caret-position="375">
+          <caret line="30" column="36" lean-forward="false" selection-start-line="30" selection-start-column="36" selection-end-line="30" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Api/Logic/CourseLogic.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="22" column="35" lean-forward="false" selection-start-line="22" selection-start-column="35" selection-end-line="22" selection-end-column="35" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Api/Service/TeacherService.class.php">
+    <entry file="file://$PROJECT_DIR$/Application/Api/Logic/UserBaseLogic.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="39" column="32" lean-forward="false" selection-start-line="39" selection-start-column="22" selection-end-line="39" selection-end-column="32" />
+        <state relative-caret-position="0">
+          <caret line="43" column="36" lean-forward="false" selection-start-line="43" selection-start-column="36" selection-end-line="43" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Api/Service/WeixinService.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="810">
+          <caret line="59" column="0" lean-forward="false" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Runtime/Cache/Admin/049ad0fbc4579ec0053f845ee20dffd2.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Runtime/Cache/Admin/20914c0f075f91df3579ffbdf5180b02.php" />
+    <entry file="file://$PROJECT_DIR$/Application/Admin/Controller/IndexController.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Admin/View/Index/home.html" />
+    <entry file="file://$PROJECT_DIR$/Public/Admin/header.html" />
+    <entry file="file://$PROJECT_DIR$/Uploads/Picture/2018-02-26/5a94036b9366d.jpeg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Uploads/Picture/2018-02-21/5a8d7ac324d20.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Uploads/Picture/2018-02-21/5a8d7b092a1db.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Uploads/Picture/2018-02-16/5a86aa4c83c56.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Uploads/2018-02-16/5a869cd0aaf15.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Uploads/Uploads/xls/2018-03-03/dsf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Uploads/xls/2018-03-03/sie">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="5" lean-forward="false" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ThinkPHP/Library/Org/Util/PHPExcel/Reader/Excel5.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="258">
+          <caret line="1137" column="100" lean-forward="false" selection-start-line="1137" selection-start-column="91" selection-end-line="1137" selection-end-column="100" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ThinkPHP/Library/Org/Util/PHPExcel/Worksheet.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="172">
+          <caret line="804" column="5" lean-forward="true" selection-start-line="804" selection-start-column="5" selection-end-line="804" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Api/Model/QuestionBankModel.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1290">
+          <caret line="91" column="13" lean-forward="true" selection-start-line="91" selection-start-column="13" selection-end-line="91" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Api/Service/BaseService.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-63">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Admin/Model/QuestionBankModel.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Api/Controller/ImgController.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-66">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ThinkPHP/Library/Org/Util/PHPExcel/Reader/Excel2007.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="262">
+          <caret line="344" column="21" lean-forward="false" selection-start-line="344" selection-start-column="21" selection-end-line="344" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Admin/Controller/ScriptController.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1290">
+          <caret line="175" column="26" lean-forward="false" selection-start-line="175" selection-start-column="26" selection-end-line="175" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Runtime/Logs/Admin/18_03_03.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="205">
+          <caret line="1532" column="0" lean-forward="true" selection-start-line="1532" selection-start-column="0" selection-end-line="1532" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ThinkPHP/Mode/Sae/convention.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="29" column="4" lean-forward="false" selection-start-line="29" selection-start-column="4" selection-end-line="29" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Api/Conf/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="24" column="50" lean-forward="true" selection-start-line="24" selection-start-column="50" selection-end-line="24" selection-end-column="84" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Admin/Conf/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="2" lean-forward="false" selection-start-line="15" selection-start-column="2" selection-end-line="15" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Admin/Conf/config_sae.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="10" column="39" lean-forward="false" selection-start-line="10" selection-start-column="39" selection-end-line="10" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Common/Conf/config_sae.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Api/Conf/config_sae.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="18" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Common/Conf/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ThinkPHP/Library/Think/Model.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5415">
+          <caret line="369" column="26" lean-forward="false" selection-start-line="369" selection-start-column="20" selection-end-line="369" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Api/Service/SigninService.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="969">
+          <caret line="62" column="9" lean-forward="true" selection-start-line="62" selection-start-column="9" selection-end-line="62" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Api/Logic/SigninLogic.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="213">
+          <caret line="130" column="57" lean-forward="false" selection-start-line="130" selection-start-column="57" selection-end-line="130" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Api/Logic/StudentLogic.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="52" column="37" lean-forward="false" selection-start-line="52" selection-start-column="37" selection-end-line="52" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Admin/View/Question/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Admin/Service/QuestionUploadService.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="157">
+          <caret line="16" column="40" lean-forward="false" selection-start-line="16" selection-start-column="40" selection-end-line="16" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Admin/View/layout.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="52" column="43" lean-forward="true" selection-start-line="52" selection-start-column="43" selection-end-line="52" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Admin/Controller/QuestionController.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="287">
+          <caret line="63" column="0" lean-forward="true" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MP_verify_j2yNccp2CagsFaFM.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="5" lean-forward="false" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Api/Logic/MyLogic.class.php">
+    <entry file="file://$PROJECT_DIR$/weixin/oauth_xsc.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="25" column="29" lean-forward="true" selection-start-line="25" selection-start-column="29" selection-end-line="25" selection-end-column="29" />
-          <folding>
-            <element signature="e#114#140#0#PHP" expanded="true" />
-          </folding>
+        <state relative-caret-position="135">
+          <caret line="9" column="26" lean-forward="true" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+          <folding />
         </state>
       </provider>
     </entry>
