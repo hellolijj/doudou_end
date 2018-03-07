@@ -14,7 +14,7 @@ class QuestionUploadService {
 
         '章节' => 'chapter', '类型' => 'type',];
 
-    public static $QUESTION_TYPE = ['单选题' => '1', '判断题' => '2', '多选题' => '3',];
+    public static $QUESTION_TYPE = ['判断题' => '1', '单选题' => '2', '多选题' => '3',];
 
 
     public function add_question ($data)
