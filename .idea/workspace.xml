@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" readonly="true" id="b8f5d9e1-cf0e-4ff7-81ec-75807ed902bd" name="Default" comment="加油啊">
+    <list default="true" readonly="true" id="b8f5d9e1-cf0e-4ff7-81ec-75807ed902bd" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/Application/Api/Logic/SigninLogic.class.php" afterPath="$PROJECT_DIR$/Application/Api/Logic/SigninLogic.class.php" />
+      <change beforePath="$PROJECT_DIR$/Application/Api/Model/SigninRecordModel.class.php" afterPath="$PROJECT_DIR$/Application/Api/Model/SigninRecordModel.class.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -49,14 +49,22 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="SigninLogic.class.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="SigninLogic.class.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Application/Api/Logic/SigninLogic.class.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="96" column="49" lean-forward="false" selection-start-line="96" selection-start-column="49" selection-end-line="96" selection-end-column="49" />
-              <folding>
-                <element signature="e#114#140#0#PHP" expanded="true" />
-              </folding>
+            <state relative-caret-position="118">
+              <caret line="98" column="9" lean-forward="true" selection-start-line="98" selection-start-column="9" selection-end-line="98" selection-end-column="9" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SigninRecordModel.class.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Application/Api/Model/SigninRecordModel.class.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="407">
+              <caret line="34" column="71" lean-forward="true" selection-start-line="34" selection-start-column="71" selection-end-line="34" selection-end-column="71" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -85,7 +93,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>DATA_CACHE_TYPE</find>
       <find>article</find>
       <find>is_re</find>
       <find>hasmo</find>
@@ -115,6 +122,7 @@
       <find>无效的API参数</find>
       <find>die</find>
       <find>S(</find>
+      <find>list_all_record</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -142,7 +150,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Application/Admin/Controller/UserController.class.php" />
         <option value="$PROJECT_DIR$/Application/Api/Logic/DownloadLogic.class.php" />
         <option value="$PROJECT_DIR$/Application/Api/Service/ShortMessageService.php" />
         <option value="$PROJECT_DIR$/Application/Api/Model/SchoolModel.class.php" />
@@ -193,6 +200,7 @@
         <option value="$PROJECT_DIR$/Application/Api/Logic/MyLogic.class.php" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/Application/Api/Logic/SigninLogic.class.php" />
+        <option value="$PROJECT_DIR$/Application/Api/Model/SigninRecordModel.class.php" />
       </list>
     </option>
   </component>
@@ -308,13 +316,6 @@
       <workItem from="1518074077567" duration="6848000" />
       <workItem from="1518083653899" duration="2676000" />
       <workItem from="1518441091486" duration="48501000" />
-    </task>
-    <task id="LOCAL-00003" summary="add">
-      <created>1517539525927</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1517539525927</updated>
     </task>
     <task id="LOCAL-00004" summary="add">
       <created>1517539703379</created>
@@ -652,11 +653,18 @@
       <option name="project" value="LOCAL" />
       <updated>1518535096665</updated>
     </task>
-    <option name="localTasksCounter" value="52" />
+    <task id="LOCAL-00052" summary="解决 列表bug">
+      <created>1520395806929</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1520395806929</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="157119000" />
+    <option name="totallyTimeSpent" value="157324000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -678,7 +686,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32889965" sideWeight="0.49713877" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21530758" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4978102" sideWeight="0.44563663" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12846716" sideWeight="0.44563663" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -738,7 +746,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="input 函数过滤方法" />
     <MESSAGE value="修改过滤函数" />
     <MESSAGE value="删除 PHP 转义函数" />
     <MESSAGE value="error code" />
@@ -763,7 +770,8 @@
     <MESSAGE value="修改openid验证方法" />
     <MESSAGE value="加油啊，加油" />
     <MESSAGE value="修改 s错误" />
-    <option name="LAST_COMMIT_MESSAGE" value="修改 s错误" />
+    <MESSAGE value="解决 列表bug" />
+    <option name="LAST_COMMIT_MESSAGE" value="解决 列表bug" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -787,20 +795,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/ThinkPHP/Library/Weixin/Xiaochengxu/Prpcrypt.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="24" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ThinkPHP/Library/Weixin/Xiaochengxu/ErrorCode.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="5" lean-forward="true" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ThinkPHP/Mode/Api/functions.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
@@ -1133,6 +1127,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
           <caret line="25" column="29" lean-forward="true" selection-start-line="25" selection-start-column="29" selection-end-line="25" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Api/Logic/SigninLogic.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="118">
+          <caret line="98" column="9" lean-forward="true" selection-start-line="98" selection-start-column="9" selection-end-line="98" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Api/Model/SigninRecordModel.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="407">
+          <caret line="34" column="71" lean-forward="true" selection-start-line="34" selection-start-column="71" selection-end-line="34" selection-end-column="71" />
+          <folding />
         </state>
       </provider>
     </entry>

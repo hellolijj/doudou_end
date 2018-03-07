@@ -31,7 +31,8 @@ class SigninRecordModel extends BaseModel {
         $cache_key = 'pingshifen_signin_record_by_signin_id_' . $sid;
         $cache_value = S($cache_key);
         if ($cache_value) {
-            return json_decode(S($cache_key), TRUE);
+            $signin_record_items = json_encode(S($cache_key), TRUE);
+            return ['success' => TRUE, 'data' => $signin_record_items];
         }
         $signin_record_items = $this->where(['sid' => $sid])->page($page)->select();
         if ($signin_record_items) {
