@@ -19,8 +19,7 @@ class SigninRecordService extends BaseService {
         if (!$uid || !$sid) {
             return ['success' => FALSE, 'message' => '参数错误'];
         }
-        $cache_key = 'signin_record_uid_' . $uid . '_sid_' . $sid;
-        $signin_record = M('Signin_record')->cache($cache_key, 60)->where(['uid' => $uid, 'sid' => $sid])->find();
+        $signin_record = D('SigninRecord')->getByUidAndSid($uid, $sid);
         if (!$signin_record) {
             return FALSE;
         } else {

@@ -47,7 +47,7 @@ class ClassModel extends BaseModel {
         $cache_key = 'pingshifen_class_by_uid_' . $uid . '_cid_' . $cid;
         $cache_value = S($cache_key);
         if ($cache_value) {
-            return json_encode(S($cache_key), TRUE);
+            return json_decode(S($cache_key), TRUE);
         }
         $class_item = $this->where(['uid' => $uid, 'cid' => $cid])->find();
         if ($class_item) {

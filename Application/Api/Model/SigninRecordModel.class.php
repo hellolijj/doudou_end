@@ -11,8 +11,6 @@ class SigninRecordModel extends BaseModel {
 
     // todo page page_size 暂时不做
 
-
-
     public function add ($cid, $sid, $uid, $latitude, $longitude)
     {
         $data = ['cid' => $cid, 'sid' => $sid, 'uid' => $uid, 'latitude' => $latitude, 'longitude' => $longitude, 'gmt_create' => time(), 'gmt_modified' => time(),];
@@ -50,5 +48,28 @@ class SigninRecordModel extends BaseModel {
             return 0;
         }
         return intval(M('Signin_record')->where(['sid' => $sid])->count());
+    }
+
+
+    /*
+     *
+     */
+
+    public function getByUidAndSid ($uid, $sid)
+    {
+        if (!$uid || !$sid) {
+            return FALSE;
+        }
+
+        $cache_key = 'pingshifen_signin_record_by_uid_' . $uid . '_sid_' . $sid;
+        $cache_value = S($cache_key);
+        if ($cache_value) {
+            return json_decode(S($cache_key), TRUE);
+        }
+        $signin_record_item = $this->where(['uid' => $uid, 'sid' => $sid])->find();
+        if ($signin_record_item) {
+            S($cache_key, json_encode($signin_record_item));
+        }
+        return $signin_record_item;
     }
 }
