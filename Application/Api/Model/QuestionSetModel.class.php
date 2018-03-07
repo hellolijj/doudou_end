@@ -19,7 +19,7 @@ class QuestionSetModel extends BaseModel {
         if ($cache_value) {
             return json_decode(S($cache_key), TRUE);
         }
-        $set_items = $this->select();
+        $set_items = $this->where(['status' => 1])->select();
         if ($set_items) {
             S($cache_key, json_encode($set_items), 3600);
         }
