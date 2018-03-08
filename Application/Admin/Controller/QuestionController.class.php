@@ -47,7 +47,7 @@ class QuestionController extends Controller {
             // 数据库字段映射
             foreach ($fields as $field) {
                 if (!in_array($field, array_keys(QuestionUploadService::$OPTION_CONVERT))) {
-                    $this->ajaxReturn(['success' => FALSE, 'message' => '字段不对应']);
+                    $this->ajaxReturn(['success' => FALSE, 'message' => '字段不对应', 'field' => $field]);
                 }
             }
 
@@ -89,6 +89,19 @@ class QuestionController extends Controller {
                 unset($content['F']);
                 $content['option_d'] = $content['G'];
                 unset($content['G']);
+                // $option 可以为空
+                if (is_null($content['option_a'])) {
+                    $content['option_a'] = '';
+                }
+                if (is_null($content['option_b'])) {
+                    $content['option_b'] = '';
+                }
+                if (is_null($content['option_c'])) {
+                    $content['option_c'] = '';
+                }
+                if (is_null($content['option_d'])) {
+                    $content['option_d'] = '';
+                }
 
                 // H 正确答案
                 if (!$content['H']) {
