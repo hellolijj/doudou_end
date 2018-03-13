@@ -1,0 +1,5 @@
+Uploads/*
+*.DS_Store
+Runtime/*
+.idea/*
+.phpstorm.meta.php
