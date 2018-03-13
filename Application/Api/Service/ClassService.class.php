@@ -60,6 +60,9 @@ class ClassService extends BaseService {
         }
         $course_ids = result_to_array($classes, 'cid');
         $courses = D('Course')->getCourseByUids($course_ids, $page, $page_size);
+        if (!$courses) {
+            return ['success' => FALSE, 'message' => '无锁定课程'];
+        }
         $tids = result_to_array($courses, 'uid');
         $teachers = D('Teacher')->getByIds($tids);
         $teachers_result = result_to_map($teachers, 'id');
