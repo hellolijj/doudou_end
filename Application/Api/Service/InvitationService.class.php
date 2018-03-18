@@ -24,6 +24,8 @@ class InvitationService extends BaseService {
             return $invitation_code_item['uid'];
         } elseif (in_array($invitation_code, self::$SYSTEM_INVITION_CODE)) {
             return BaseService::$SYSTEM_UID;
+        } elseif ($invitation_code == date('Ymd', time())) {
+            return BaseService::$SYSTEM_UID;
         } else {
             return FALSE;
         }
