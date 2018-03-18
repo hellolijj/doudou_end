@@ -11,7 +11,7 @@ namespace Api\Service;
 
 class InvitationService extends BaseService {
 
-    public static $SYSTEM_INVITION_CODE = ['ZJGSU', 'IEEE', '20180205'];
+    public static $SYSTEM_INVITION_CODE = ['ZJGSU', 'IEEE', '20180205', '20180318'];
 
     /*
      * 根据邀请码，获取邀请人。如果获取不到，则说明无效的邀请码
