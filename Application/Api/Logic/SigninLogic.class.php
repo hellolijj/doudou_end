@@ -9,7 +9,9 @@
 namespace Api\Logic;
 
 use Api\Model\WeixinModel;
+use Api\Service\BaseService;
 use Api\Service\SigninRecordService;
+use Api\Service\SigninReplaceService;
 use Api\Service\SigninService;
 
 class SigninLogic extends UserBaseLogic {
@@ -156,6 +158,34 @@ class SigninLogic extends UserBaseLogic {
 
 
         return $this->setSuccess($signin_management, '获取成功');
+    }
+
+    /*
+     * 教师处理代签
+     */
+    public function replace() {
+
+        $signin_id = intval(I('signin_id'));
+        $course_id = intval(I('course_id'));
+        $student_id = intval(I('student_id'));
+        $operation = I('operation');
+        if (!$signin_id || !$course_id || !$student_id || !$operation) {
+            return $this->setError('参数错误');
+        }
+        if (!in_array($operation, SigninReplaceService::$OPERATE_LIST)) {
+            return $this->setError('参数错误');
+        }
+        if ($this->user_type == BaseService::$USER_TYPE_TEACHER) {
+            return $this->setError('该操作只能教师用户');
+        }
+        $signinReplaceService = new SigninReplaceService();
+        $signin_replace_result = $signinReplaceService->replace($this->uid, $course_id, $signin_id, $student_id, $operation);
+        if ($signin_replace_result['success'] == FALSE) {
+            return $this->setError($signin_replace_result['message']);
+        }
+
+        return $this->setSuccess([], '操作成功');
+
     }
 
 }

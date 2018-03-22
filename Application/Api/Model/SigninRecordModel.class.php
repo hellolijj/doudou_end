@@ -11,12 +11,22 @@ class SigninRecordModel extends BaseModel {
 
     // todo page page_size 暂时不做
 
+    public static $STATUS_REPLACE = 2;
+    public static $STATUS_LEAVE = 3;
+    public static $STATUS_ABSENCE = 4;
+
     public function add ($cid, $sid, $uid, $latitude, $longitude)
     {
         $data = ['cid' => $cid, 'sid' => $sid, 'uid' => $uid, 'latitude' => $latitude, 'longitude' => $longitude, 'gmt_create' => time(), 'gmt_modified' => time(),];
         M('Signin_record')->add($data);
 
-        // todo 加入后改变缓存数据
+        $cache_key = 'pingshifen_signin_record_by_signin_id_' . $sid;
+        S($cache_key, NULL);
+    }
+
+    public function add_with_status($cid, $sid, $uid, $status) {
+        $data = ['cid' => $cid, 'sid' => $sid, 'uid' => $uid, 'latitude' => 0, 'longitude' => 0, 'status' => $status, 'gmt_create' => time(), 'gmt_modified' => time(),];
+        M('Signin_record')->add($data);
         $cache_key = 'pingshifen_signin_record_by_signin_id_' . $sid;
         S($cache_key, NULL);
     }
