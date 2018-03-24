@@ -94,7 +94,7 @@ class QuestionService extends BaseService {
             $question_item['a_count'] = '0';
             $question_item['b_count'] = '0';
             $question_item['c_count'] = '0';
-            $question_item['d_count'] = '0';
+            $question_item['d_count'] = '0' ;
             if ($question_count_items[$qid]) {
                 $question_item['false_count'] = $question_record_items[$qid]['wrong_cnt'];
                 $question_item['true_count'] = $question_record_items[$qid]['right_cnt'];
