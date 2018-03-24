@@ -44,7 +44,6 @@ class Sae
             sae_set_display_errors(false); //记录日志不将日志打印出来
         }
         sae_debug($logstr);
-        print_r($logstr . 'str' );
         if ($is_debug) {
             sae_set_display_errors(true);
         }
