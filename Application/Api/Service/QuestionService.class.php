@@ -56,6 +56,9 @@ class QuestionService extends BaseService {
         $question_collection_items = D('QuestionCollection')->getByUidAndQids($uid, $question_id_arr);
         $question_collection_items = result_to_map($question_collection_items, 'qid');
 
+        $question_count_items = D('QuestionCount')->getByQids($question_id_arr);
+        print_r($question_count_items);
+
 
         foreach ($question_items as &$question_item) {
             $qid = $question_item['id'];

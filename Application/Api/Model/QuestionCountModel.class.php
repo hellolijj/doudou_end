@@ -28,4 +28,15 @@ class QuestionCountModel extends BaseModel {
         $question_record_item = $this->where(['qid' => $qid])->find();
         return $question_record_item;
     }
+
+    public function getByQids($qids) {
+
+        if (count($qids) == 0) {
+            return ['success' => FALSE, '参数错误'];
+        }
+
+
+        $question_count_items = $this->where(['qid' => ['IN', implode(',', $qids)]])->select();
+        return $question_count_items;
+    }
 }
