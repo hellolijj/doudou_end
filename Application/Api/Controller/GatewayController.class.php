@@ -30,6 +30,7 @@ class GatewayController extends BaseController {
      */
     public function route ()
     {
+        echo trace('test','提示','SQL')
         $this->check();
         
         $method_arr = explode('.', $this->method);
