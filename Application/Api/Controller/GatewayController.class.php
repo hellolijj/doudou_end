@@ -30,7 +30,7 @@ class GatewayController extends BaseController {
      */
     public function route ()
     {
-        $this->check();
+        $this->check();,
         
         $method_arr = explode('.', $this->method);
         $logic_name = $method_arr[1];
