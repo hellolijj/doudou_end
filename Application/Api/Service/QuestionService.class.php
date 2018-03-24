@@ -89,6 +89,10 @@ class QuestionService extends BaseService {
             $question_item['false_count'] = '13';
             $question_item['true_count'] = '3535';
             $question_item['wrong_rate'] = '0.12';
+            $question_item['a_count'] = '23';
+            $question_item['b_count'] = '23';
+            $question_item['c_count'] = '23';
+            $question_item['d_count'] = '23';
 
             // 题目类型
             $question_item['option_type'] = $question_item['type'] - 1 . '';
