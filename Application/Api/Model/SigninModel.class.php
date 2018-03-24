@@ -17,6 +17,7 @@ class SigninModel extends BaseModel {
         return M('Signin')->add($data);
     }
 
+
     public function listByCid ($cid, $page = 1, $page_size = 20)
     {
         if (!$cid) {
@@ -60,4 +61,23 @@ class SigninModel extends BaseModel {
         }
         return $signin_cid;
     }
+
+    public function getById ($id)
+    {
+        if (!$id) {
+            return FALSE;
+        }
+        $cache_key = 'pingshifen_signin_get_by_id_' . $id;
+        $cache_value = S($cache_key);
+        if ($cache_value) {
+            return json_decode(S($cache_key), TRUE);
+        }
+        $signin_item = M('Signin')->where(['id' => $id])->find();
+        if ($signin_item) {
+            S($cache_key, json_encode($signin_item), 3600);
+        }
+        return $signin_item;
+    }
+
+
 }

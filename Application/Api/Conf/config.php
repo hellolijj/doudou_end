@@ -26,7 +26,4 @@ return array(
 
     /* 公众号的相关配置 */
     'APP_ID' => 'wx7af4d4e3dc78c624', 'APP_SECRET' => '5d70813a51f658c26a922e7eae0c9196', 'APP_LOGO' => 'http://pingshif-img.stor.sinaapp.com/2018-02-21/logo01222_1979.jpg',
-
-    'SHOW_PAGE_TRACE' => TRUE, 'LOG_RECORD' => TRUE, // 开启日志记录
-    'LOG_LEVEL' => 'EMERG,ALERT,CRIT,ERR,SQL', // 只记录EMERG ALERT CRIT ERR 错误
 );
