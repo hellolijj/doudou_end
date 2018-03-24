@@ -89,24 +89,24 @@ class QuestionService extends BaseService {
             unset($question_item['analysis']);
 
             // 题目统计
-            $question_item['false_count'] = '0';
-            $question_item['true_count'] = '0';
-            $question_item['wrong_rate'] = '0';
-            $question_item['a_count'] = '0';
-            $question_item['b_count'] = '0';
-            $question_item['c_count'] = '0';
-            $question_item['d_count'] = '0';
+            $question_item['false_count'] = 0;
+            $question_item['true_count'] = 0;
+            $question_item['wrong_rate'] = 0;
+            $question_item['a_count'] = 0;
+            $question_item['b_count'] = 0;
+            $question_item['c_count'] = 0;
+            $question_item['d_count'] = 0;
             if ($question_count_items[$qid]) {
-                $question_item['false_count'] = $question_count_items[$qid]['wrong_cnt'];
-                $question_item['true_count'] = $question_count_items[$qid]['right_cnt'];
+                $question_item['false_count'] = intval($question_count_items[$qid]['wrong_cnt']);
+                $question_item['true_count'] = intval($question_count_items[$qid]['right_cnt']);
                 $total = $question_item['false_count'] + $question_item['true_count'];
                 if ($total) {
                     $question_item['wrong_rate'] = round($question_item['false_count'] / $total, 2);
                 }
-                $question_item['a_count'] = $question_count_items[$qid]['option_a'];
-                $question_item['b_count'] = $question_count_items[$qid]['option_b'];
-                $question_item['c_count'] = $question_count_items[$qid]['option_c'];
-                $question_item['d_count'] = $question_count_items[$qid]['option_d'];
+                $question_item['a_count'] = intval($question_count_items[$qid]['option_a']);
+                $question_item['b_count'] = intval($question_count_items[$qid]['option_b']);
+                $question_item['c_count'] = intval($question_count_items[$qid]['option_c']);
+                $question_item['d_count'] = intval($question_count_items[$qid]['option_d']);
             }
 
             // 题目类型
