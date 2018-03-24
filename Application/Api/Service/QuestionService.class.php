@@ -58,7 +58,7 @@ class QuestionService extends BaseService {
 
         $question_count_items = D('QuestionCount')->getByQids($question_id_arr);
         $question_count_items = result_to_map($question_count_items, 'qid');
-        print_r($question_count_items);die;
+
 
         foreach ($question_items as &$question_item) {
             $qid = $question_item['id'];
@@ -97,6 +97,7 @@ class QuestionService extends BaseService {
             $question_item['c_count'] = '0';
             $question_item['d_count'] = '0';
             if ($question_count_items[$qid]) {
+                print_r($question_count_items[$qid]);
                 $question_item['false_count'] = $question_count_items[$qid]['wrong_cnt'];
                 $question_item['true_count'] = $question_count_items[$qid]['right_cnt'];
                 $total = $question_item['false_count'] + $question_item['true_count'];
