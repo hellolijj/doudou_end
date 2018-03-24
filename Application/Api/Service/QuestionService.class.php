@@ -57,8 +57,7 @@ class QuestionService extends BaseService {
         $question_collection_items = result_to_map($question_collection_items, 'qid');
 
         $question_count_items = D('QuestionCount')->getByQids($question_id_arr);
-        print_r($question_count_items);
-
+        $question_count_items = result_to_map($question_count_items, 'qid');
 
         foreach ($question_items as &$question_item) {
             $qid = $question_item['id'];
@@ -89,13 +88,25 @@ class QuestionService extends BaseService {
             unset($question_item['analysis']);
 
             // 题目统计
-            $question_item['false_count'] = '13';
-            $question_item['true_count'] = '3535';
-            $question_item['wrong_rate'] = '0.12';
-            $question_item['a_count'] = '23';
-            $question_item['b_count'] = '23';
-            $question_item['c_count'] = '23';
-            $question_item['d_count'] = '23';
+            $question_item['false_count'] = '0';
+            $question_item['true_count'] = '0';
+            $question_item['wrong_rate'] = '0';
+            $question_item['a_count'] = '0';
+            $question_item['b_count'] = '0';
+            $question_item['c_count'] = '0';
+            $question_item['d_count'] = '0';
+            if ($question_count_items[$qid]) {
+                $question_item['false_count'] = $question_record_items[$qid]['wrong_cnt'];
+                $question_item['true_count'] = $question_record_items[$qid]['right_cnt'];
+                $total = $question_item['false_count'] + $question_item['true_count'];
+                if ($total) {
+                    $question_item['wrong_rate'] = round($question_item['false_count'] / $total, 2);
+                }
+                $question_item['a_count'] = $question_record_items[$qid]['question_a'];
+                $question_item['b_count'] = $question_record_items[$qid]['question_b'];
+                $question_item['c_count'] = $question_record_items[$qid]['question_c'];
+                $question_item['d_count'] = $question_record_items[$qid]['question_d'];
+            }
 
             // 题目类型
             $question_item['option_type'] = $question_item['type'] - 1 . '';
