@@ -10,7 +10,7 @@ class IndexController extends Controller {
     }
 
     public function email() {
-        $mail = new SaeMail();
+        $mail = new \SaeMail();
         $ret = $mail->quickSend( '1217046214@qq.com', //接受者邮箱
             '邮件标题',   //邮件标题
             '邮件发送成功',   //邮件内容
@@ -24,8 +24,10 @@ class IndexController extends Controller {
             var_dump($mail->errno(), $mail->errmsg());
         else
             echo '发生成功';
+    }
 
-
+    public function send() {
+        email();
     }
 
 }
