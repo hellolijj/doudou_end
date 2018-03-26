@@ -4,7 +4,7 @@ function email() {
 
     $mail = new \SaeMail();
 
-    $ret = $mail->quickSend("hello_lijj@foxmail.com", "邮件标题", "邮件内容", "hello_lijj@qq.com", "hello_lijj", "smtp.sina.com", 25, TRUE); //指定smtp和端口
+    $ret = $mail->quickSend("hello_lijj@foxmail.com", "这是qq发给foxmail的邮件", "lijjmake", "hello_lijj@qq.com", "hello_lijj", "smtp.qq.com", 465, TRUE); //指定smtp和端口
 
 //    'zvalkqmewgnyjfeh'
     //发送失败时输出错误码和错误信息
