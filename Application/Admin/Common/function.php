@@ -7,7 +7,7 @@ function email() {
         '邮件发送成功',   //邮件内容
         'hello_lijj@qq.com' , //发送方邮箱
         'hello_lijj',             //发送方邮箱密码
-        'smtp.exmail.qq.com',
+        'smtp.qq.com',
         465);
 
     //发送失败时输出错误码和错误信息
