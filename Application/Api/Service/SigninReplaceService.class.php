@@ -38,7 +38,7 @@ class SigninReplaceService extends BaseService {
             D('Signin')->countIncById($course_id, $signin_id);
         } elseif ($operation == SigninReplaceService::$OPERATE_LIST[2]) {
             D('SigninRecord')->add_with_status($course_id, $signin_id, $student_uid, SigninRecordModel::$STATUS_ABSENCE);
-            D('Signin')->countIncById($course_id, $signin_id);
+             D('Signin')->countDecById($course_id, $signin_id);
         }
 
         return ['success' => TRUE];

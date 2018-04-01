@@ -28,19 +28,33 @@ class SigninModel extends BaseModel {
         if ($cache_value) {
             return json_decode(S($cache_key), TRUE);
         }
-        $signin_items = M('Signin')->where(['cid' => $cid])->page($page)->order('gmt_create desc')->select();
+        $signin_items = M('Signin')->where(['cid' => $cid])->order('gmt_create desc')->select();
         if ($signin_items) {
             S($cache_key, json_encode($signin_items));
         }
         return $signin_items;
     }
-
+    /**
+     * 签到数加1
+     */
     public function countIncByid ($cid, $sid)
     {
         if (!$sid) {
             return FALSE;
         }
         $this->where(['id' => $sid])->setInc('count');
+        $cache_key = 'pingshifen_signin_by_cid_' . $cid;
+        S($cache_key, NULL);
+    }
+
+    /**
+     * 签到数减1
+     */
+    public function countDecById ($cid, $sid) {
+        if (!$sid) {
+            return FALSE;
+        }
+        $this->where(['id' => $sid])->setDec('count');
         $cache_key = 'pingshifen_signin_by_cid_' . $cid;
         S($cache_key, NULL);
     }
