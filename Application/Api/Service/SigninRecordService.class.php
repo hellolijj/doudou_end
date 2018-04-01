@@ -34,7 +34,6 @@ class SigninRecordService extends BaseService {
         $student_arr = M('Student')->where($where)->select();
         $student_arr = result_to_map($student_arr, 'id');
 
-
         foreach ($signin_records as &$signin_record) {
             $uid = $signin_record['uid'];
             if ($uid) {
@@ -46,6 +45,7 @@ class SigninRecordService extends BaseService {
                 }
             }
         }
+
     }
 
 

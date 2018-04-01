@@ -132,3 +132,13 @@ function request_get ($url = '')
     curl_close($ch);
     return $data;
 }
+
+/**
+ *  比较函数，适用于 sork usort uksork
+ */
+function cmp($a, $b) {
+    if ($a == $b) {
+        return 0;
+    }
+    return $a > $b ? 1 : -1;
+}

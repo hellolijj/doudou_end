@@ -11,9 +11,12 @@ class SigninRecordModel extends BaseModel {
 
     // todo page page_size 暂时不做
 
+    public static $STATUS_NORMAL = 1;    // 正常签到
     public static $STATUS_REPLACE = 2;   // 代签
     public static $STATUS_LEAVE = 3;     // 请假
     public static $STATUS_ABSENCE = 4;   // 缺到
+
+    public static $STATUS_VALID = [1, 2, 3];
 
     public function add ($cid, $sid, $uid, $latitude, $longitude)
     {
@@ -42,7 +45,7 @@ class SigninRecordModel extends BaseModel {
             $signin_record_items = json_decode(S($cache_key), TRUE);
             return ['success' => TRUE, 'data' => $signin_record_items];
         }
-        $signin_record_items = $this->where(['sid' => $sid])->select();
+        $signin_record_items = $this->where(['sid' => $sid, 'status' => ['IN' => implode(',', self::$STATUS_VALID)]])->select();
         if ($signin_record_items) {
             S($cache_key, json_encode($signin_record_items), 3600);
         }
