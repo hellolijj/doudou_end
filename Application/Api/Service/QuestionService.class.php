@@ -58,7 +58,7 @@ class QuestionService extends BaseService {
 
         $question_count_items = D('QuestionCount')->getByQids($question_id_arr);
         $question_count_items = result_to_map($question_count_items, 'qid');
-        print_r($question_count_items);die;
+
 
 
         foreach ($question_items as &$question_item) {
@@ -108,7 +108,10 @@ class QuestionService extends BaseService {
                 $question_item['b_count'] = intval($question_count_items[$qid]['option_b']);
                 $question_item['c_count'] = intval($question_count_items[$qid]['option_c']);
                 $question_item['d_count'] = intval($question_count_items[$qid]['option_d']);
+
+                print_r($question_item);
             }
+
 
             // 题目类型
             $question_item['option_type'] = $question_item['type'] - 1 . '';
