@@ -8,6 +8,7 @@
 
 namespace Api\Logic;
 
+use Api\Model\SigninRecordModel;
 use Api\Model\WeixinModel;
 use Api\Service\BaseService;
 use Api\Service\SigninRecordService;
@@ -172,7 +173,7 @@ class SigninLogic extends UserBaseLogic {
         if (!$signin_id || !$course_id || !$student_id || !$operation) {
             return $this->setError('参数错误');
         }
-        if (!in_array($operation, SigninReplaceService::$OPERATE_LIST)) {
+        if (!in_array($operation, SigninRecordModel::$STATUS_REPLANCE)) {
             return $this->setError('参数错误');
         }
         if ($this->user_type == BaseService::$USER_TYPE_TEACHER) {

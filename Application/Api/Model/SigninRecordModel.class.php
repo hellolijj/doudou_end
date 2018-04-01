@@ -7,6 +7,8 @@
  */
 
 namespace Api\Model;
+use Api\Service\SigninReplaceService;
+
 class SigninRecordModel extends BaseModel {
 
     // todo page page_size 暂时不做
@@ -18,6 +20,12 @@ class SigninRecordModel extends BaseModel {
 
     public static $STATUS_VALID = [1, 2, 3];
 
+    public static $STATUS_REPLANCE = [
+        2 => 'replace',
+        3 => 'leave',
+        4 => 'absence',
+    ];
+
     public function add ($cid, $sid, $uid, $latitude, $longitude)
     {
         $data = ['cid' => $cid, 'sid' => $sid, 'uid' => $uid, 'latitude' => $latitude, 'longitude' => $longitude, 'gmt_create' => time(), 'gmt_modified' => time(),];
@@ -27,12 +35,32 @@ class SigninRecordModel extends BaseModel {
         S($cache_key, NULL);
     }
 
+    /**
+     * @param $cid
+     * @param $sid
+     * @param $uid
+     * @param $status
+     *
+     */
     public function add_with_status($cid, $sid, $uid, $status) {
         $data = ['cid' => $cid, 'sid' => $sid, 'uid' => $uid, 'latitude' => 0, 'longitude' => 0, 'status' => $status, 'gmt_create' => time(), 'gmt_modified' => time(),];
         M('Signin_record')->add($data);
         $cache_key = 'pingshifen_signin_record_by_signin_id_' . $sid;
         S($cache_key, NULL);
     }
+
+    public function update_with_status($cid, $sid, $uid, $status) {
+        $map = ['cid' => $cid, 'sid' => $sid, 'uid' => $uid];
+        $data = [
+            'status' => $status,
+            'gmt_modified' => time(),
+        ];
+        M('Signin_record')->where($map)->save($data);
+        $cache_key = 'pingshifen_signin_record_by_signin_id_' . $sid;
+        S($cache_key, NULL);
+
+    }
+
 
     public function listBySid ($sid, $page = 1, $page_size = 20)
     {
@@ -67,7 +95,6 @@ class SigninRecordModel extends BaseModel {
     /*
      *
      */
-
     public function getByUidAndSid ($uid, $sid)
     {
         if (!$uid || !$sid) {
@@ -84,5 +111,24 @@ class SigninRecordModel extends BaseModel {
             S($cache_key, json_encode($signin_record_item));
         }
         return $signin_record_item;
+    }
+
+    /**
+     * 判断是否已经操作过
+     */
+    public function is_operated($course_id, $sid, $uid) {
+        if (!$uid || !$sid || !$course_id) {
+            return FALSE;
+        }
+        $map = [
+            'cid' => $course_id,
+            'sid' => $sid,
+            'uid' => $uid,
+        ];
+        if (M('Signin_record')->where($map)->find()) {
+            return TRUE;
+        } else {
+            return FALSE;
+        }
     }
 }

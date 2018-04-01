@@ -14,9 +14,6 @@ use Api\Model\SigninRecordModel;
 
 class SigninReplaceService extends BaseService {
 
-    public static $OPERATE_LIST = ['replace', 'leave', 'absence'];  // '代签，请假， 缺席'
-
-
     /*
      * todo 1、判断是否为该课程教师 2、根据不同的操作方法进行不同的操作。
      */
@@ -30,18 +27,28 @@ class SigninReplaceService extends BaseService {
             //return ['success' => FALSE, 'message' => '签到信息错误'];
         }
 
-        if ($operation == SigninReplaceService::$OPERATE_LIST[0]) {
-            D('SigninRecord')->add_with_status($course_id, $signin_id, $student_uid, SigninRecordModel::$STATUS_REPLACE);
-            D('Signin')->countIncById($course_id, $signin_id);
-        } elseif ($operation == SigninReplaceService::$OPERATE_LIST[1]) {
-            D('SigninRecord')->add_with_status($course_id, $signin_id, $student_uid, SigninRecordModel::$STATUS_LEAVE);
-            D('Signin')->countIncById($course_id, $signin_id);
-        } elseif ($operation == SigninReplaceService::$OPERATE_LIST[2]) {
-            D('SigninRecord')->add_with_status($course_id, $signin_id, $student_uid, SigninRecordModel::$STATUS_ABSENCE);
-             D('Signin')->countDecById($course_id, $signin_id);
-        }
-
+        $this->deal_not_by_self($course_id, $signin_id, $student_uid, key(SigninRecordModel::$STATUS_REPLANCE));
         return ['success' => TRUE];
+    }
+
+
+    /**
+     * 非本人操作
+     * 1、判断是否已经存在记录，如果存在则update 否则 add
+     * 2、add 数量加1 、 update 只有在 absence方法时候，才会减1 其他情况不变
+     */
+    private function deal_not_by_self($course_id, $signin_id, $student_id, $op_type_status) {
+        $SIGNIN_RECORD = D('SigninRecord');
+        $is_operated = $SIGNIN_RECORD->is_operated($course_id, $signin_id, $student_id);
+        if ($is_operated) {
+            $SIGNIN_RECORD->update_with_status($course_id, $signin_id, $student_id, $op_type_status);
+            if ($op_type_status == SigninRecordModel::$STATUS_ABSENCE) {
+                D('Signin')->countDecById($course_id, $signin_id);
+            }
+        } else {
+            $SIGNIN_RECORD->add_with_status($course_id, $signin_id, $student_id, $op_type_status);
+            D('Signin')->countIncById($course_id, $signin_id);
+        }
     }
 
 
