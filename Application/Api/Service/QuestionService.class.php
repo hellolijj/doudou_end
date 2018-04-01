@@ -108,9 +108,6 @@ class QuestionService extends BaseService {
                 $question_item['b_count'] = intval($question_count_items[$qid]['option_b']);
                 $question_item['c_count'] = intval($question_count_items[$qid]['option_c']);
                 $question_item['d_count'] = intval($question_count_items[$qid]['option_d']);
-
-                print_r($question_item);
-                die;
             }
 
 
