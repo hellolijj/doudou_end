@@ -26,8 +26,7 @@ class SigninReplaceService extends BaseService {
         if ($signin_item['uid'] != $teacher_uid || $signin_item['cid'] != $course_id) {
             //return ['success' => FALSE, 'message' => '签到信息错误'];
         }
-        echo key(SigninRecordModel::$STATUS_REPLANCE);
-        $this->deal_not_by_self($course_id, $signin_id, $student_uid, key(SigninRecordModel::$STATUS_REPLANCE));
+        $this->deal_not_by_self($course_id, $signin_id, $student_uid,  array_search($operation, SigninRecordModel::$STATUS_REPLANCE));
         return ['success' => TRUE];
     }
 
