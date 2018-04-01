@@ -45,7 +45,7 @@ class SigninRecordModel extends BaseModel {
             $signin_record_items = json_decode(S($cache_key), TRUE);
             return ['success' => TRUE, 'data' => $signin_record_items];
         }
-        $signin_record_items = $this->where(['sid' => $sid, 'status' => ['IN' => '1,2,3']])->select();
+        $signin_record_items = $this->where(['sid' => $sid, 'status' => ['IN', implode(',', self::$STATUS_VALID)]])->select();
         if ($signin_record_items) {
             S($cache_key, json_encode($signin_record_items), 3600);
         }
