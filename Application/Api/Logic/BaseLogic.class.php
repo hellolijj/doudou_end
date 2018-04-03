@@ -23,7 +23,6 @@ class BaseLogic{
             echo json_encode($openidInid);
             die;
         }
-
     }
 
     public function setError ($message, $data = NULL)
@@ -72,12 +71,11 @@ class BaseLogic{
         if (!$openid) {
             return $this->setError('无效的openid参数');
         }
-
         $user_info = json_decode(S($openid), TRUE);
         if (!count($user_info)) {
             $user_info = M('Weixin')->getByOpenid($openid);
             if (is_null($user_info)) {
-                return ['success' => FALSE, 'message' => '你还没有注册'];
+                return ['success' => FALSE, 'message' => '你还没有注册'];  // 这里说明没有存入 weixin表
             }
             S($openid, json_encode($user_info), 3600);
         }

@@ -43,13 +43,14 @@ class GatewayController extends BaseController {
             $this->ajaxReturn($result->setError('无效的API参数'));
         }
 
+
         $this->ajaxReturn($logic->{$function_name}());
     }
 
     private function check ()
     {
-        $result = new BaseLogic();
 
+        $result = new BaseLogic();
         $this->method = I('method');
         $timestamp = I('timestamp');
 
