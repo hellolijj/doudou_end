@@ -92,8 +92,8 @@ class WeixinService extends BaseService {
             return $Weixin->getError();
         }
         // 更新缓存信息
-        $weixin_user = $Weixin->getByOpenid($openid);
-        S($openid, json_encode($weixin_user), 3600);
+        $cache_key = $openid;
+        S($cache_key, NULL);
         return TRUE;
     }
 
