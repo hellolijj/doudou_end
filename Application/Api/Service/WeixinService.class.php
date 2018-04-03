@@ -119,7 +119,7 @@ class WeixinService extends BaseService {
             return ['success' => FALSE, 'code' => self::$ERROR_NO_REGISTER, 'message' => '获取不到用户信息'];
         }
         S($cache_key, json_encode($weixin_user), 3600);
-        return ['success' => TRUE, 'data' => $weixin_user];;
+        return ['success' => TRUE, 'data' => $weixin_user];
     }
 
     /*

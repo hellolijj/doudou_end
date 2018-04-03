@@ -51,6 +51,8 @@ class UserBaseLogic extends BaseLogic {
         }
         $uid = intval($weixin_user_result['data']['uid']);
         $user_type = intval($weixin_user_result['data']['type']);
+        print_r($weixin_user_result);
+        var_dump([$uid, $user_type]);die;
         if (!$uid || !$user_type) {
             return ['success' => FALSE, 'message' => '为了不影响你的正常使用请先完善个人信息'];
         }
