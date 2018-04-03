@@ -176,7 +176,7 @@ class SigninLogic extends UserBaseLogic {
         if (!in_array($operation, SigninRecordModel::$STATUS_REPLANCE)) {
             return $this->setError('参数错误');
         }
-        if ($this->user_type == BaseService::$USER_TYPE_TEACHER) {
+        if ($this->user_type != BaseService::$USER_TYPE_TEACHER) {
             return $this->setError('该操作只能教师用户');
         }
         $signinReplaceService = new SigninReplaceService();
