@@ -22,7 +22,6 @@ class WeixinController extends Controller {
     public function index ()
     {
 
-
     }
 
     /*
@@ -73,8 +72,13 @@ class WeixinController extends Controller {
         $signature = I("signature");
         $encryptedData = I("encryptedData");
         $iv = I("iv");
-        $wxHelper = NEW  \Weixin\Xiaochengxu\WXLoginHelper();
-        $data_result = $wxHelper->checkLogin($code, $rawData, $signature, $encryptedData, $iv);
+        $from = I('from');
+        if ($from) {
+            $wxHelper = NEW  \Weixin\Xiaochengxu\WXLoginHelper($code, $rawData, $signature, $encryptedData, $iv, $from);
+        } else {
+            $wxHelper = NEW  \Weixin\Xiaochengxu\WXLoginHelper($code, $rawData, $signature, $encryptedData, $iv);
+        }
+        $data_result = $wxHelper->checkLogin();
         if ($data_result['success'] === FALSE) {
             $this->ajaxReturn(['success' => FALSE, 'message' => $data_result['message']]);
         }

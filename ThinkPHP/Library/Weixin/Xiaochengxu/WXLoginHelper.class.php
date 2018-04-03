@@ -12,23 +12,38 @@ namespace Weixin\Xiaochengxu;
 class WXLoginHelper {
 
     //默认配置
-    protected $config = ['url' => "https://api.weixin.qq.com/sns/jscode2session", //微信获取session_key接口url
+    protected $config = [
+        'url' => "https://api.weixin.qq.com/sns/jscode2session", //微信获取session_key接口url
         'appid' => 'wx7af4d4e3dc78c624', // APPId
         'secret' => '5d70813a51f658c26a922e7eae0c9196', // 秘钥
         'grant_type' => 'authorization_code', // grant_type，一般情况下固定的
     ];
+
+    private $code = '';
+    private $rawData = '';
+    private $signature = '';
+    private $encryptedData = '';
+    private $iv = '';
 
 
     /**
      * 构造函数
      * WXLoginHelper constructor.
      */
-    public function __construct ()
+    public function __construct ($code, $rawData, $signature, $encryptedData, $iv, $from = 'student')
     {
-
+        $this->code = $code;
+        $this->rawData = $rawData;
+        $this->signature = $signature;
+        $this->encryptedData = $encryptedData;
+        $this->iv = $iv;
+        if ($from == 'teacher') {
+            $this->config['appid'] = 'wx60dbecdccbea11f7';
+            $this->config['secret'] = 'de9cf314a6f4ed9a63cfd997a928eec9';
+        }
     }
 
-    public function checkLogin ($code, $rawData, $signature, $encryptedData, $iv)
+    public function checkLogin ()
     {
         /**
          * 4.server调用微信提供的jsoncode2session接口获取openid, session_key, 调用失败应给予客户端反馈
@@ -38,8 +53,7 @@ class WXLoginHelper {
          * 接口地址："https://api.weixin.qq.com/sns/jscode2session?appid=APPID&secret=SECRET&js_code=JSCODE&grant_type=authorization_code"
          */
 
-        $params = ['appid' => $this->config['appid'], 'secret' => $this->config['secret'], 'js_code' => $code, 'grant_type' => $this->config['grant_type']];
-
+        $params = ['appid' => $this->config['appid'], 'secret' => $this->config['secret'], 'js_code' => $this->code, 'grant_type' => $this->config['grant_type']];
         $res = $this->makeRequest($this->config['url'], $params);
 
         if ($res['code'] !== 200 || !isset($res['result']) || !isset($res['result'])) {
@@ -59,17 +73,7 @@ class WXLoginHelper {
          * ，使用相同的算法计算出签名 signature2 ，比对 signature 与 signature2 即可校验数据的可信度。
          */
 
-        $signature2 = sha1($rawData . $sessionKey);
-        //        var_dump($rawData);
-        //        echo $rawData;
-        //        echo $signature . "\n";
-        //        echo $sessionKey . "\n";
-        //        echo $signature2;
-        //        die;
-
-
-        //        if ($signature2 != $signature)
-        //            return ['success' => FALSE, 'code' => ErrorCode::$SignNotMatch, 'message' => '签名不匹配', 'sig1' => $signature2, 'sig2' => $sessionKey];
+        $signature2 = sha1(  $this->rawData . $sessionKey);
 
         /**
          *
@@ -78,7 +82,7 @@ class WXLoginHelper {
          * （使用官方提供的方法即可）
          */
         $pc = new WXBizDataCrypt($this->config['appid'], $sessionKey);
-        $errCode = $pc->decryptData($encryptedData, $iv, $data);
+        $errCode = $pc->decryptData($this->encryptedData, $this->iv, $data);
 
         if ($errCode != 0) {
             return ['success' => FALSE, 'code' => ErrorCode::$EncryptDataNotMatch, 'message' => '解密信息错误'];
