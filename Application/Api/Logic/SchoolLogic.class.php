@@ -8,7 +8,9 @@
 
 namespace Api\Logic;
 
-class SchoolLogic extends BaseLogic {
+use Think\Controller;
+
+class SchoolLogic extends Controller {
 
 
     public function search ()
@@ -17,21 +19,22 @@ class SchoolLogic extends BaseLogic {
         $page = intval(I('page'));
         $page_size = intval(I('page_size'));
         if (!$s_name) {
-            return $this->setError('参数为空');
+            return ['success' => FALSE, 'message' => '参数为空', 'data' => NULL, 'is_openid' => session('openid') ? TRUE : FALSE];
         }
         $page = empty($page) ? 1 : $page;
         $page_size = empty($page_size) ? 20 : $page_size;
         $where['name'] = ['LIKE', '%' . $s_name . '%'];
         $SCHOOL = D('School');
         $school_lists = $SCHOOL->listByPageWhere($where, $page, $page_size, 'id');
-        $total_count = $SCHOOL->countByWhere($where);
-        $this->hasMorePage($total_count, $page, $page_size);
+//        $total_count = $SCHOOL->countByWhere($where);
+//        $this->hasMorePage($total_count, $page, $page_size);
 
         if ($school_lists) {
-            return $this->setSuccess($school_lists, '获取学校成功');
+            return ['success' => TRUE, 'message' => '获取学校成功', 'data' => $school_lists, 'is_openid' => session('openid') ? TRUE : FALSE];
         } else {
-            return $this->setError('搜索不到学校');
+            return ['success' => FALSE, 'message' => '搜索不到学校', 'data' => NULL, 'is_openid' => session('openid') ? TRUE : FALSE];
         }
     }
+
 
 }
