@@ -110,6 +110,7 @@ class WeixinService extends BaseService {
         }
         $cache_key = $openid;
         $cache_value = S($cache_key);
+
         if ($cache_value) {
             return ['success' => TRUE, 'data' => json_decode($cache_value, TRUE)];
         }
