@@ -112,7 +112,7 @@ class QuestionLogic extends UserBaseLogic {
         $questionService = new QuestionService();
         $questionService->add_more_field($this->uid, $question_items);
 
-        return ['status' => 1, 'msg' => '成功', 'data' => $question_items,];
+            return ['status' => 1, 'msg' => '成功', 'data' => $question_items,];
     }
 
     /*
