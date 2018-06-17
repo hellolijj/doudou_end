@@ -32,5 +32,5 @@ define ( 'RUNTIME_PATH', './Runtime/' );
  * 引入核心入口
  * ThinkPHP亦可移动到WEB以外的目录
  */
-die;
+
 require './ThinkPHP/ThinkPHP.php';
