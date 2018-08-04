@@ -8,6 +8,8 @@
 
 namespace Api\Service;
 
+use Api\Model\WeixinModel;
+
 class WeixinService extends BaseService {
 
     public static $ERROR_NO_REGISTER = 4001;
@@ -19,7 +21,6 @@ class WeixinService extends BaseService {
     }
 
 
-
     /*
      * 判断openid 是否绑定
      * @param user_type string 'student' or 'teacher' or null
@@ -28,6 +29,7 @@ class WeixinService extends BaseService {
     public function is_bind ($openid, $user_type = '')
     {
         $weixin_user = json_decode(S($openid), TRUE);
+
         $USER_TYPE = [1 => 'student', 2 => 'teacher',];
         if (!$weixin_user) {
             return ['success' => FALSE, 'message' => '缓存信息失效'];
@@ -55,7 +57,9 @@ class WeixinService extends BaseService {
                 return ['success' => FALSE, 'message' => '已经绑定了教师用户'];
             }
         }
-        return ['success' => FALSE, 'message' => '未知错误'];
+
+
+
     }
 
     /*
@@ -136,6 +140,42 @@ class WeixinService extends BaseService {
             return $weixin_user_result;
         }
         return ['success' => TRUE, 'data' => $weixin_user_result['data']['type']];
+    }
+
+    /*
+     * 判断用户是否存在打开过，是否
+     */
+    public function is_register($openid) {
+        if (!$openid) {
+            return FALSE;
+        }
+
+        $weixin_user = D('Weixin')->getByOpenid($openid);
+        if (empty($weixin_user)) {
+            return FALSE;
+        }
+        $user_type = $weixin_user['type'];
+        if ($user_type <= WeixinModel::$USER_TYPE_UNREGISTER) {
+            return FALSE;
+        }
+        return TRUE;
+    }
+
+    /**
+     * @param $openid 用户openid
+     * @return true false
+     * 判断openid用户是否是路人
+     */
+    public function is_passer($openid) {
+        if (!$openid) {
+            return ['status' => 1, 'data' => '参数错误'];
+        }
+
+        $weixin_user = D('Weixin')->getByOpenid($openid);
+        if (empty($weixin_user)) {
+            return FALSE;
+        }
+        return TRUE;
     }
 
 

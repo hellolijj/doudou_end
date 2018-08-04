@@ -11,11 +11,12 @@ namespace Weixin\Xiaochengxu;
 
 class WXLoginHelper {
 
+
     //默认配置
     protected $config = [
         'url' => "https://api.weixin.qq.com/sns/jscode2session", //微信获取session_key接口url
-        'appid' => 'wx7af4d4e3dc78c624', // APPId
-        'secret' => '5d70813a51f658c26a922e7eae0c9196', // 秘钥
+        'appid' => '', // APPId
+        'secret' => '', // 秘钥
         'grant_type' => 'authorization_code', // grant_type，一般情况下固定的
     ];
 
@@ -38,8 +39,11 @@ class WXLoginHelper {
         $this->encryptedData = $encryptedData;
         $this->iv = $iv;
         if ($from == 'teacher') {
-            $this->config['appid'] = 'wx60dbecdccbea11f7';
-            $this->config['secret'] = 'de9cf314a6f4ed9a63cfd997a928eec9';
+            $this->config['appid'] = C('TEA_APP_ID');
+            $this->config['secret'] = C('TEA_APP_SECRET');
+        } else {
+            $this->config['appid'] = C('STU_APP_ID');
+            $this->config['secret'] = C('STU_APP_SECRET');
         }
     }
 
@@ -57,11 +61,12 @@ class WXLoginHelper {
         $res = $this->makeRequest($this->config['url'], $params);
 
         if ($res['code'] !== 200 || !isset($res['result']) || !isset($res['result'])) {
-            return ['success' => FALSE, 'code' => ErrorCode::$RequestTokenFailed, 'message' => '请求Token失败'];
+            return ['success' => FALSE, 'code' => ErrorCode::$RequestTokenFailed, 'message' => '请求Token失败1'];
         }
+        return $res;
         $reqData = json_decode($res['result'], TRUE);
         if (!isset($reqData['session_key'])) {
-            return ['success' => FALSE, 'code' => ErrorCode::$RequestTokenFailed, 'message' => '请求Token失败'];
+            return ['success' => FALSE, 'code' => ErrorCode::$RequestTokenFailed, 'message' => '请求Token失败2'];
         }
         $sessionKey = $reqData['session_key'];
 
@@ -104,6 +109,22 @@ class WXLoginHelper {
         S($session3rd . 'session_key', $sessionKey, 3600);
         session('session3rd', $session3rd);
         return ['success' => TRUE, 'data' => $data];
+    }
+
+    /**
+     * 检查微信小程序是否登陆接口，只要获取到了openid就行
+     */
+    public function checkLoginV2() {
+        $params = ['appid' => $this->config['appid'], 'secret' => $this->config['secret'], 'js_code' => $this->code, 'grant_type' => $this->config['grant_type']];
+        $res = $this->makeRequest($this->config['url'], $params);
+        if ($res['code'] !== 200 || !isset($res['result']) || !isset($res['result'])) {
+            return ['success' => FALSE, 'code' => ErrorCode::$RequestTokenFailed, 'message' => '请求Token失败'];
+        }
+        $reqData = json_decode($res['result'], TRUE);
+        if (!empty($reqData['errcode'])) {
+            return ['success' => FALSE, 'message' => $reqData['errmsg']];
+        }
+        return $reqData;
     }
 
     /*

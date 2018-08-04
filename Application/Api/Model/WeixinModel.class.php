@@ -29,4 +29,27 @@ class WeixinModel extends BaseModel {
         return $this->where(['openid' => $openid])->find();
     }
 
+    public function addAsPasser($openid) {
+        $data = ['openid' => $openid, 'uid' => 0, 'type' => 0, 'gmt_create' => time(), 'gmt_modified' => time()];
+        if (FALSE == $this->getByOpenid($openid)) {
+            M('Weixin')->add($data);
+            $cache_key = 'pingshifen_weixin_items_by_openid' . $openid;
+            S($cache_key, NULL);
+        }
+    }
+
+    public function updateInfo($openid, $data) {
+        if (!$openid || count($data) == 0) {
+            return FALSE;
+        }
+        $data['gmt_modified'] = time();
+        $save_result = M('Weixin')->where(['openid' => $openid])->save($data);
+        if (!$save_result) {
+            return FALSE;
+        }
+        $cache_key = 'pingshifen_weixin_items_by_openid' . $openid;
+        S($cache_key, NULL);
+        return TRUE;
+    }
+
 }

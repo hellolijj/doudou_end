@@ -12,6 +12,7 @@ namespace Api\Controller;
 use Api\Model\WeixinModel;
 use Api\Service\WeixinService;
 use Think\Controller;
+use Weixin\Xiaochengxu\WXLoginHelper;
 
 /**
  * 微信控制器
@@ -85,6 +86,9 @@ class WeixinController extends Controller {
         $data = $data_result['data'];
         $data['avatar'] = $data['avatarUrl'];    //解决命名大小写问题
         $data['nickname'] = $data['nickName'];
+
+        $this->ajaxReturn($data_result);
+
         $save_result = $this->save_weixin_user($data);
         if ($save_result['success'] === FALSE) {
             $this->ajaxReturn(['success' => FALSE, 'message' => $save_result['message']]);
@@ -103,6 +107,31 @@ class WeixinController extends Controller {
         $this->ajaxReturn(['success' => TRUE, 'data' => $data]);
     }
 
+
+    /*
+     * 处理小程序上传微信个人信息
+     */
+    public function login_v2() {
+        $nickname = I('nickname');
+        $gender = intval(I('gender'));
+        $city = I('city');
+        $province = I('province');
+        $country = I('country');
+        $avater = I('avatarUrl');
+        $openid = session('openid');
+
+        $data = [
+            'nickname' => $nickname,
+            'gender' => $gender,
+            'country' => $country,
+            'province' => $province,
+            'city' => $city,
+            'avatar' => $avater,
+        ];
+
+        D('Weixin')->updateInfo($openid, $data);
+        $this->ajaxReturn(['user_info' => $data]);
+    }
 
     /*
      * 跟客户端保持check_3rdsession相同,,实际上就是检查是否登陆
@@ -230,6 +259,52 @@ class WeixinController extends Controller {
             }
         }
         return ['success' => TRUE, 'data' => $weixin_user];
+    }
+
+
+
+    /*
+     * 请求接口，获取openid
+     */
+    public function code_to_openid() {
+        $code = I('code');
+
+        if (!$code) {
+            $this->ajaxReturn(['data' => '缺少登陆code参数，请删除小程序，重新进入', 'is_login' => 1, 'status' => 1]);
+        }
+        $wxHelper = NEW WXLoginHelper($code);
+        $data_result = $wxHelper->checkLoginV2();
+
+        if ($data_result['success'] === FALSE) {
+            $this->ajaxReturn(['data' => $data_result['message'], 'is_login' => 0, 'status' => 1,]);
+        }
+
+        $openid = $data_result['openid'];
+        $session_key = $data_result['session_key'];
+        session('openid', $openid);
+        session('session_key', $session_key);
+
+
+        $weixinService = new WeixinService();
+        $is_passer = $weixinService->is_passer($openid);
+        if ($is_passer['code'] == 1) {
+            $this->ajaxReturn($is_passer);
+        }
+
+        if (FALSE === $is_passer) {
+            D('Weixin')->addAsPasser($openid);
+        }
+
+        if (FALSE === $weixinService->is_register($openid)) {
+            $this->ajaxReturn(['data' => session_id(), 'is_login' => 0, 'is_register' => 0, 'status' => 0]);
+        }
+
+        $WEIXIN = D('Weixin');
+        $weixin_user = $WEIXIN->getByOpenid($openid);
+
+
+        $this->ajaxReturn(['data' => session_id(), 'is_login' => 1, 'is_register' => $weixin_user['type'], 'status' => 0]);
+
     }
 
 
