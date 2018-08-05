@@ -302,8 +302,11 @@ class WeixinController extends Controller {
         $WEIXIN = D('Weixin');
         $weixin_user = $WEIXIN->getByOpenid($openid);
 
+        // 处理原理check_3rd_接口数据
+        $user_info_result = $this->get_user_info($openid);
 
-        $this->ajaxReturn(['data' => session_id(), 'is_login' => 1, 'is_register' => $weixin_user['type'], 'status' => 0]);
+
+        $this->ajaxReturn(['data' => session_id(), 'is_login' => 1, 'is_register' => $weixin_user['type'], 'user_info' => $user_info_result['data'], 'status' => 0]);
 
     }
 
