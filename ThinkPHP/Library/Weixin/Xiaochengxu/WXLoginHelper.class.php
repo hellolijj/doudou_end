@@ -114,7 +114,16 @@ class WXLoginHelper {
     /**
      * 检查微信小程序是否登陆接口，只要获取到了openid就行
      */
-    public function checkLoginV2() {
+    public function checkLoginV2($tag = 'student') {
+
+        if ($tag == 'teacher') {
+            $this->config['appid'] = C('TEA_APP_ID');
+            $this->config['secret'] = C('TEA_APP_SECRET');
+        } else {
+            $this->config['appid'] = C('STU_APP_ID');
+            $this->config['secret'] = C('STU_APP_SECRET');
+        }
+
         $params = ['appid' => $this->config['appid'], 'secret' => $this->config['secret'], 'js_code' => $this->code, 'grant_type' => $this->config['grant_type']];
         $res = $this->makeRequest($this->config['url'], $params);
         if ($res['code'] !== 200 || !isset($res['result']) || !isset($res['result'])) {

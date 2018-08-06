@@ -268,12 +268,13 @@ class WeixinController extends Controller {
      */
     public function code_to_openid() {
         $code = I('code');
+        $from = I('from');
 
         if (!$code) {
             $this->ajaxReturn(['data' => '缺少登陆code参数，请删除小程序，重新进入', 'is_login' => 1, 'status' => 1]);
         }
         $wxHelper = NEW WXLoginHelper($code);
-        $data_result = $wxHelper->checkLoginV2();
+        $data_result = $wxHelper->checkLoginV2($from);
 
         if ($data_result['success'] === FALSE) {
             $this->ajaxReturn(['data' => $data_result['message'], 'is_login' => 0, 'status' => 1,]);
