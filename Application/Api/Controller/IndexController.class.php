@@ -31,8 +31,13 @@ class IndexController extends BaseController {
         $yangyunqing_value = intval($reqi_contents[150054]['stFanTuanScoreInfo']['ddwPopularity']);
         $xiaozhan_value = intval($reqi_contents[1320228]['stFanTuanScoreInfo']['ddwPopularity']);
 
-
         return ['sunnee' => $yangyunqing_value, 'xz' => $xiaozhan_value];
+    }
+
+    public function shishi() {
+        $data = $this->craw();
+        echo "sunnee:" . $data['sunnee'] . "<br/>";
+        echo 'xz:' . $data['xz'] ."\n";
     }
 
     public function inserdb() {
