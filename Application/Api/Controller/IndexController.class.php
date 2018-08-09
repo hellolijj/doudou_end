@@ -69,6 +69,13 @@ class IndexController extends BaseController {
         ];
 
         M('crew_mingxing')->add($data);
+    }
+
+    public function get() {
+        $data = M('crew_mingxing')->order('id desc')->limit(20)->select();
+
+        $this->assign('list', $data)->display('showdata');
+
 
     }
 

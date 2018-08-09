@@ -1,0 +1,30 @@
+<html><head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, initial-scale=1.0, user-scalable=no">
+  <meta name="format-detection" content="telephone=no, email=no">
+  <meta name="HandheldFriendly" content="true">
+  <title></title>
+  <link rel="stylesheet" href="__PUBLIC__/Api/css/full.css">
+  <link rel="stylesheet" href="__PUBLIC__/Api/css/style.css">
+</head>
+<body ontouchstart="">
+<section class="ui-container">
+  <section id="table">
+    <h1 class="title">xz、sunnee人气数据记录</h1>
+    <div class="demo-item">
+      <div class="demo-block">
+        <table class="ui-table ui-border-tb" style="font-size: 8px;">
+          <thead>
+          <tr><th>时间</th><th>xz</th><th>sunnee</th><th>与xz差距</th><th>xz涨幅</th><th>nee涨幅</th></tr>
+          </thead>
+          <tbody>
+          <volist name="list" id="vo">
+            <tr><td>{$vo.time}</td><td>{$vo.xz}</td><td>{$vo.sunnee}</td><td>{$vo.gap}</td><td>{$vo.xz_incre}</td><td>{$vo.sunnee_incre}</td></tr>
+          </volist>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+</section>
+</body></html>
