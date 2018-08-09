@@ -18,8 +18,8 @@ class IndexController extends BaseController {
     //系统首页
     public function index ()
     {
-
-
+        echo "豆豆云主助教后台接口首页";
+        echo date('Y-m-d H:i:s', time());
     }
 
 
