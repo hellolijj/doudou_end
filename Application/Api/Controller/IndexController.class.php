@@ -59,7 +59,7 @@ class IndexController extends BaseController {
         }
 
         $data = [
-            'time' => date('md H:m', time()),
+            'time' => date('md H:i', time()),
             'xz' => $xz_value,
             'sunnee' => $sunnee_value,
             'gap' => $sunnee_value -  $xz_value,
@@ -67,6 +67,7 @@ class IndexController extends BaseController {
             'sunnee_incre' => $sunnee_value - $sunnee_last_value,
             'gmt_create' => time(),
         ];
+
         M('crew_mingxing')->add($data);
 
     }
