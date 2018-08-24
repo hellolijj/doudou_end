@@ -19,7 +19,7 @@ class SchoolLogic extends Controller {
         $page = intval(I('page'));
         $page_size = intval(I('page_size'));
         if (!$s_name) {
-            return ['success' => FALSE, 'message' => '参数为空', 'data' => NULL, 'is_openid' => session('openid') ? TRUE : FALSE];
+            return ['success' => FALSE, 'message' => '参数为空', 'data' => NULL, 'is_openid' => get_openid() ? TRUE : FALSE];
         }
         $page = empty($page) ? 1 : $page;
         $page_size = empty($page_size) ? 20 : $page_size;
@@ -30,9 +30,9 @@ class SchoolLogic extends Controller {
 //        $this->hasMorePage($total_count, $page, $page_size);
 
         if ($school_lists) {
-            return ['success' => TRUE, 'message' => '获取学校成功', 'data' => $school_lists, 'is_openid' => session('openid') ? TRUE : FALSE];
+            return ['success' => TRUE, 'message' => '获取学校成功', 'data' => $school_lists, 'is_openid' => get_openid() ? TRUE : FALSE];
         } else {
-            return ['success' => FALSE, 'message' => '搜索不到学校', 'data' => NULL, 'is_openid' => session('openid') ? TRUE : FALSE];
+            return ['success' => FALSE, 'message' => '搜索不到学校', 'data' => NULL, 'is_openid' => get_openid() ? TRUE : FALSE];
         }
     }
 

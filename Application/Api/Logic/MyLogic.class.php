@@ -27,7 +27,7 @@ class MyLogic extends UserBaseLogic {
      */
     public function index ()
     {
-        $openid = session('openid');
+        $openid = get_openid();
         $weixinService = new WeixinService();
         $weixin_user_result = $weixinService->getByOpenid($openid);
         if ($weixin_user_result['success'] === FALSE) {
@@ -43,7 +43,7 @@ class MyLogic extends UserBaseLogic {
      */
     public function info ()
     {
-        $openid = session('openid');
+        $openid = get_openid();
         $weixinService = new WeixinService();
         $user_info_result = $weixinService->getByOpenid($openid);
         if ($user_info_result['success'] === FALSE) {

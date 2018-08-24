@@ -142,3 +142,30 @@ function cmp($a, $b) {
     }
     return $a > $b ? 1 : -1;
 }
+
+
+/**
+ *  获取openid
+ */
+function get_openid() {
+    $openid = session('openid');
+
+    if (!$openid) {
+        $openid = I('openid');
+    }
+
+    return $openid;
+}
+
+/**
+ *  获取uid
+ */
+function get_uid() {
+    $uid = trim(session('uid'));
+
+    if (!$uid) {
+        $uid = trim(I('uid'));
+    }
+
+    return $uid;
+}

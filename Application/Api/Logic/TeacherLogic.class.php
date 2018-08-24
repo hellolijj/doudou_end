@@ -43,7 +43,7 @@ class TeacherLogic extends BaseLogic {
 
         // 添加头像url 性别等参数 todo 使用crul抓取图像存到本地服务器
         $weixinService = new WeixinService();
-        $weixin_user_result = $weixinService->getByOpenid(session('openid'));
+        $weixin_user_result = $weixinService->getByOpenid(get_openid());
         if (FALSE === $weixin_user_result) {
             $this->setError($weixin_user_result['message']);
         }

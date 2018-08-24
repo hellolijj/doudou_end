@@ -25,7 +25,7 @@ class BaseService {
 
     public function __construct ()
     {
-        self::$current_user_openid = session('openid');
+        self::$current_user_openid = get_openid();
         self::$current_user_type = $this->getUserType();
         self::$current_user_info = $this->getUserInfo();
 

@@ -17,7 +17,7 @@ class WeixinLogic extends BaseLogic {
 
     public function getOpenid ()
     {
-        $openid = session('openid');
+        $openid = get_openid();
         if ($openid) {
             return $this->setSuccess(['openid' => $openid], '获取openid成功');
         } else {

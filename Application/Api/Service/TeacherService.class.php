@@ -13,7 +13,7 @@ class TeacherService extends BaseService {
     public function bind ($name, $tel, $school, $head_img, $sex)
     {
         $data = ['name' => $name, 'tel' => $tel, 'school' => $school, 'head_img' => $head_img, 'sex' => $sex, 'gmt_create' => time(), 'gmt_modified' => time(),];
-        $openid = session('openid');
+        $openid = get_openid();
         $weixinService = new WeixinService();
         $is_band = $weixinService->is_bind($openid, 'teacher');
         if (FALSE === $is_band) {

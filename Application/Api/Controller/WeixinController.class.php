@@ -54,7 +54,7 @@ class WeixinController extends Controller {
 
     public function getOpenid ()
     {
-        $openid = session('openid');
+        $openid = get_openid();
         if ($openid) {
             $this->ajaxReturn(['success' => TRUE, 'data' => $openid]);
         } else {
@@ -95,7 +95,7 @@ class WeixinController extends Controller {
         }
         S($data['session3rd'], json_encode($data), 3600);  // 此缓存用于后面的验证是否登陆
         session('openid', $data['openId']);
-        $weixin_user_result = $this->get_user_info(session('openid'));
+        $weixin_user_result = $this->get_user_info(get_openid());
         if ($weixin_user_result['success'] === TRUE && $weixin_user_result['data']['openid']) {
             $regData = $weixin_user_result['data'];
             $regData['session3rd'] = $data['session3rd'];
@@ -118,7 +118,7 @@ class WeixinController extends Controller {
         $province = I('province');
         $country = I('country');
         $avater = I('avatarUrl');
-        $openid = session('openid');
+        $openid = get_openid();
 
         $data = [
             'nickname' => $nickname,
@@ -144,7 +144,7 @@ class WeixinController extends Controller {
             session('session3rd', NULL);
             $this->ajaxReturn(['success' => FALSE, 'data' => FALSE, 'message' => '服务端数据过期']);
         }
-        if (!session('openid')) {
+        if (!get_openid()) {
             $this->ajaxReturn(['success' => FALSE, 'data' => FALSE, 'message' => 'openid数据失效']);
         }
         if ($post_session3rd && $post_session3rd != $local_session3rd) {
@@ -152,7 +152,7 @@ class WeixinController extends Controller {
             $this->ajaxReturn(['success' => FALSE, 'data' => FALSE, 'message' => '客户端端数据过期']);
         }
         if ($post_session3rd && $post_session3rd == $local_session3rd) {
-            $user_info_result = $this->get_user_info(session('openid'));
+            $user_info_result = $this->get_user_info(get_openid());
             if ($user_info_result['success'] === TRUE) {
                 $data = $user_info_result['data'];
             } else {

@@ -33,7 +33,7 @@ class CourseLogic extends UserBaseLogic {
      */
     public function create ()
     {
-        $openid = session('openid');
+        $openid = get_openid();
         $weixinService = new WeixinService();
         $weixin_user_result = $weixinService->getByOpenid($openid);
         if ($weixin_user_result['success'] === FALSE) {
@@ -96,7 +96,7 @@ class CourseLogic extends UserBaseLogic {
      */
     public function list_in_use ()
     {
-        $uid = session('uid');
+        $uid = get_uid();
         $user_type = session('user_type');
         $page = intval(I('page'));
         $page_size = 20;
@@ -175,7 +175,7 @@ class CourseLogic extends UserBaseLogic {
     public function add ()
     {
         $course_id = intval(I('course_id'));
-        $uid = intval(session('uid'));
+        $uid = intval(get_uid());
         $user_type = intval(session('user_type'));
         if (!$course_id || !$uid || !$user_type) {
             return $this->setError('参数不能为空');
@@ -204,7 +204,7 @@ class CourseLogic extends UserBaseLogic {
      */
     public function current ()
     {
-        $uid = session('uid');
+        $uid = get_uid();
         $user_type = session('user_type');
         $current_course_id = intval(I('current_course_id'));
         $courseService = new CourseService();

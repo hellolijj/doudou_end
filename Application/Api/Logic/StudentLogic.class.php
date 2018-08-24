@@ -42,7 +42,7 @@ class StudentLogic extends BaseLogic {
 
         // 添加头像url 性别等参数 todo 使用crul抓取图像存到本地服务器
         $weixinService = new WeixinService();
-        $weixin_user_result = $weixinService->getByOpenid(session('openid'));
+        $weixin_user_result = $weixinService->getByOpenid(get_openid());
         if (FALSE === $weixin_user_result) {
             $this->setError($weixin_user_result['message']);
         }
@@ -60,7 +60,7 @@ class StudentLogic extends BaseLogic {
 
     public function info ()
     {
-        $uid = session('uid');
+        $uid = get_uid();
         if (!$uid) {
             $this->setError('无效的openid');
         }
@@ -77,7 +77,7 @@ class StudentLogic extends BaseLogic {
         if (!$name) {
             return $this->setError('不能设置为空');
         }
-        $uid = intval(session('uid'));
+        $uid = intval(get_uid());
         $Student = D('Student');
         $data = ['id' => $uid, 'name' => $name,];
         if (!$Student->save($data)) {
@@ -96,7 +96,7 @@ class StudentLogic extends BaseLogic {
         if ($number <= 0) {
             return $this->setError('number参数错误');
         }
-        $uid = intval(session('uid'));
+        $uid = intval(get_uid());
         $Student = D('Student');
         $data = ['id' => $uid, 'number' => $number,];
         if (!$Student->save($data)) {
@@ -113,7 +113,7 @@ class StudentLogic extends BaseLogic {
     {
         $sex = I('sex');
 
-        $uid = intval(session('uid'));
+        $uid = intval(get_uid());
         $Student = D('Student');
         $data = ['id' => $uid, 'sex' => 2,  //todo 使用model中文映射
         ];

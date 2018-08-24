@@ -27,7 +27,7 @@ class UserBaseLogic extends BaseLogic {
             echo json_encode($check_uid_result);
             die;
         }
-        $this->uid = session('uid');
+        $this->uid = get_uid();
         $this->user_type = session('user_type');
         if (empty($this->user_type) || empty($this->uid)) {
             echo json_encode(['success' => FALSE, 'message' => '参数不能为空']);
@@ -41,7 +41,7 @@ class UserBaseLogic extends BaseLogic {
 
     private function check_uid ()
     {
-        $openid = session('openid');
+        $openid = get_openid();
         $weixinService = new WeixinService();
         $weixin_user_result = $weixinService->getByOpenid($openid);
 //        print_r($weixin_user_result);die;

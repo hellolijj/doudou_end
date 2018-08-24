@@ -42,9 +42,9 @@ class QuestionLogic extends UserBaseLogic {
             return ['success' => FALSE, 'message' => '参数错误'];
         }
         // 收藏数量 错题数量
-        $question_collection_id_arr = D('QuestionCollection')->getIdsByUidAndCid(session('uid'), $course_id);
+        $question_collection_id_arr = D('QuestionCollection')->getIdsByUidAndCid(get_uid(), $course_id);
         $collection_count = count($question_collection_id_arr);
-        $question_wrong_record_id_arr = D('QuestionRecord')->getIdsByUidAndCid(session('uid'), $course_id);
+        $question_wrong_record_id_arr = D('QuestionRecord')->getIdsByUidAndCid(get_uid(), $course_id);
         $wrong_record_count = count($question_wrong_record_id_arr);
 
         $question = D('Question')->getByCid($course_id);

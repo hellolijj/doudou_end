@@ -30,7 +30,7 @@ class BaseLogic{
         $this->result['success'] = FALSE;
         $this->result['message'] = $message;
         $this->result['data'] = $data;
-        $this->result['is_openid'] = session('openid') ? TRUE : FALSE;
+        $this->result['is_openid'] = get_openid() ? TRUE : FALSE;
         return $this->result;
     }
 
@@ -39,7 +39,7 @@ class BaseLogic{
         $this->result['success'] = TRUE;
         $this->result['message'] = $message;
         $this->result['data'] = $data;
-        $this->result['is_openid'] = session('openid') ? TRUE : FALSE;
+        $this->result['is_openid'] = get_openid() ? TRUE : FALSE;
         return $this->result;
     }
 
@@ -55,7 +55,7 @@ class BaseLogic{
         $total_page = ceil($total_count / $page_size);
         $has_more = $page < $total_page ? TRUE : FALSE;
 
-        $this->result['is_openid'] = session('openid') ? TRUE : FALSE;
+        $this->result['is_openid'] = get_openid() ? TRUE : FALSE;
         $this->result['page'] = $page;
         $this->result['page_size'] = $page_size;
         $this->result['total_count'] = $total_count;
@@ -67,7 +67,7 @@ class BaseLogic{
      */
     private function openidInit ()
     {
-        $openid = session('openid');
+        $openid = get_openid();
         if (!$openid) {
             return $this->setError('无效的openid参数');
         }
