@@ -2,7 +2,7 @@ handle:
 - rewrite: if ( !is_dir() && !is_file() && path ~ "api" ) goto "index.php/Api/Gateway/route"
 - directoryindex:  /index.html 
 
-cron:
-- description: 爬去明星数据
-  url: /index.php/api/Index/inserdb
-  schedule: "*/1 * * * *"
+#cron:
+#- description: 爬去明星数据
+#  url: /index.php/api/Index/inserdb
+#  schedule: "*/1 * * * *"
