@@ -102,7 +102,7 @@ class StudentLogic extends BaseLogic {
         if (!$Student->save($data)) {
             return $this->setError(NULL, $Student->getError());
         } else {
-            $cache_key = 'student_uid_' . $uid;
+            $cache_key = 'pingshifen_student_by_id_' . $uid;
         dump(S($cache_key));die;
             S($cache_key, null);
             return $this->setSuccess(NULL, '修改成功');
