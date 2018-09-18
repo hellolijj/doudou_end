@@ -92,6 +92,7 @@ class StudentLogic extends BaseLogic {
      */
     public function numberSet ()
     {
+        dump(S());die;
         $number = intval(I('number'));
         if ($number <= 0) {
             return $this->setError('number参数错误');
