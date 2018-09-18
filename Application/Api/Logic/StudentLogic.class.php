@@ -92,7 +92,6 @@ class StudentLogic extends BaseLogic {
      */
     public function numberSet ()
     {
-        dump(S());die;
         $number = intval(I('number'));
         if ($number <= 0) {
             return $this->setError('number参数错误');
@@ -104,6 +103,7 @@ class StudentLogic extends BaseLogic {
             return $this->setError(NULL, $Student->getError());
         } else {
             $cache_key = 'student_uid_' . $uid;
+        dump(S($cache_key));die;
             S($cache_key, null);
             return $this->setSuccess(NULL, '修改成功');
         }
