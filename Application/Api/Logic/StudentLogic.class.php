@@ -103,7 +103,6 @@ class StudentLogic extends BaseLogic {
             return $this->setError(NULL, $Student->getError());
         } else {
             $cache_key = 'pingshifen_student_by_id_' . $uid;
-        dump($cache_key);die;
             S($cache_key, null);
             return $this->setSuccess(NULL, '修改成功');
         }
