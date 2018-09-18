@@ -131,16 +131,17 @@ class StudentLogic extends BaseLogic {
     }
 
     /*
-     * set number
+     * set sex
      */
     public function sexSet ()
     {
-        $sex = I('sex');
-
+        $sex = intval(I('sex'));
+        if (!($sex == 0 || $sex == 1 || $sex == 2)) {
+            return $this->setError('sex参数错误');
+        }
         $uid = intval(get_uid());
         $Student = D('Student');
-        $data = ['id' => $uid, 'sex' => 2,  //todo 使用model中文映射
-        ];
+        $data = ['id' => $uid, 'sex' => $sex,];
         if (!$Student->save($data)) {
             return $this->setError(NULL, $Student->getError());
         } else {
