@@ -83,6 +83,8 @@ class StudentLogic extends BaseLogic {
         if (!$Student->save($data)) {
             return $this->setError(NULL, $Student->getError());
         } else {
+            $cache_key = 'student_uid_' . $uid;
+            S($cache_key, null);
             return $this->setSuccess(NULL, '修改成功');
         }
     }
@@ -107,6 +109,26 @@ class StudentLogic extends BaseLogic {
             return $this->setSuccess(NULL, '修改成功');
         }
     }
+    /*
+     * set number
+     */
+    public function telSet ()
+    {
+        $tel = intval(I('tel'));
+        if ($tel <= 0) {
+            return $this->setError('tel参数错误');
+        }
+        $uid = intval(get_uid());
+        $Student = D('Student');
+        $data = ['id' => $uid, 'tel' => $tel,];
+        if (!$Student->save($data)) {
+            return $this->setError(NULL, $Student->getError());
+        } else {
+            $cache_key = 'student_uid_' . $uid;
+            S($cache_key, null);
+            return $this->setSuccess(NULL, '修改成功');
+        }
+    }
 
     /*
      * set number
@@ -122,6 +144,8 @@ class StudentLogic extends BaseLogic {
         if (!$Student->save($data)) {
             return $this->setError(NULL, $Student->getError());
         } else {
+            $cache_key = 'student_uid_' . $uid;
+            S($cache_key, null);
             return $this->setSuccess(NULL, '修改成功');
         }
     }
