@@ -193,11 +193,13 @@ class SigninLogic extends UserBaseLogic {
      */
     public function abolish ()
     {
-        $signin_id = intval(I('signin_id'));
+        $id = intval(I('signin_id'));
         $SIGNIN = D('signin');
-        $data = $SIGNIN->where(['id' => $signin_id])->find();
+        $data = $SIGNIN->where(['id' => $id])->find();
+        $data['status'] = 0;
+        $res = $SIGNIN->update($id,$data);
         // TODO 是不是本班学生，是不是重复签到， 是不是学生身份，时间符不符合标准 地理位置怎么样
-        return $this->setSuccess($data, 'aa');
+        return $this->setSuccess($res, 'aa');
     }
 
 
