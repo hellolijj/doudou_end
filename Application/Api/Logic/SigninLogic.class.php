@@ -66,7 +66,7 @@ class SigninLogic extends UserBaseLogic {
         $page = $page ? $page : 1;
         $page_size = $page_size ? $page_size : 10;
         $signin_items = D('Signin')->listByCid($cid, $page, $page_size);
-        dump( D('Signin')->getLastSql());die;
+        // dump( D('Signin')->getLastSql());die;
         if (!$signin_items) {
             if ($this->user_type == WeixinModel::$USER_TYPE_TEACHER) {
                 return $this->setError('你还没有发布点名哦～');

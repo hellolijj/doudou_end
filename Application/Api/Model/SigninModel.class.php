@@ -26,15 +26,15 @@ class SigninModel extends BaseModel {
         if (!$cid) {
             return FALSE;
         }
-        $cache_key = 'pingshifen_signin_by_cid_' . $cid;
-        $cache_value = S($cache_key);
-        if ($cache_value) {
-            return json_decode(S($cache_key), TRUE);
-        }
-        $signin_items = M('Signin')->where(['cid' => $cid, 'status' => '1'])->order('gmt_create desc')->select();
-        if ($signin_items) {
-            S($cache_key, json_encode($signin_items));
-        }
+        // $cache_key = 'pingshifen_signin_by_cid_' . $cid;
+        // $cache_value = S($cache_key);
+        // if ($cache_value) {
+        //     return json_decode(S($cache_key), TRUE);
+        // }
+        $signin_items = M('Signin')->where(array('cid'=>$cid, 'status' => 1))->order('gmt_create desc')->select();
+        // if ($signin_items) {
+        //     S($cache_key, json_encode($signin_items));
+        // }
         return $signin_items;
     }
     /**
