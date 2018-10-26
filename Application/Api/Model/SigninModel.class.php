@@ -9,6 +9,9 @@
 namespace Api\Model;
 class SigninModel extends BaseModel {
 
+    public static $STATUS_NORMAL = 1;    // 正常
+    public static $STATUS_ABOLISH = 0;   // 废除签到
+
     public function add ($uid, $cid, $title, $start_time, $end_time, $address, $latitude, $longitude, $radius)
     {
         $data = ['uid' => $uid, 'cid' => $cid, 'title' => $title, 'start_time' => $start_time, 'end_time' => $end_time, 'address' => $address, 'latitude' => $latitude, 'longitude' => $longitude, 'radius' => $radius, 'gmt_create' => time(), 'gmt_modified' => time(),];
@@ -28,7 +31,7 @@ class SigninModel extends BaseModel {
         if ($cache_value) {
             return json_decode(S($cache_key), TRUE);
         }
-        $signin_items = M('Signin')->where(['cid' => $cid])->order('gmt_create desc')->select();
+        $signin_items = M('Signin')->where(['cid' => $cid, 'status' => '1'])->order('gmt_create desc')->select();
         if ($signin_items) {
             S($cache_key, json_encode($signin_items));
         }

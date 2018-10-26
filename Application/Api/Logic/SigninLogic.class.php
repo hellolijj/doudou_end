@@ -188,5 +188,15 @@ class SigninLogic extends UserBaseLogic {
         return $this->setSuccess([], '操作成功');
 
     }
+    /*
+     * 废除签到
+     */
+    public function abolish ()
+    {
+        $course_id = intval(I('cid'));
+        // TODO 是不是本班学生，是不是重复签到， 是不是学生身份，时间符不符合标准 地理位置怎么样
+        return $this->setSuccess([], 'aa');
+    }
+
 
 }
