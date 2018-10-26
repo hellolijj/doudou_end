@@ -100,6 +100,8 @@ class SigninModel extends BaseModel {
     {
         $data['gmt_modified'] = time();
         $res = $this->where(['id' => $id])->save($data);
+        $cache_key = 'pingshifen_signin_by_id_' . $id;
+        S($cache_key, NULL);
         return $res;
     }
 
