@@ -205,7 +205,24 @@ class SigninLogic extends UserBaseLogic {
         } else {
             return $this->setError($res);
         }
-        
+    }
+    /*
+     * 延长签到
+     */
+    public function signin_extend ()
+    {
+        $id = intval(I('signin_id'));
+        $end_time = intval(I('end_time'))
+        $SIGNIN = D('signin');
+        $data = $SIGNIN->where(['id' => $id])->find();
+        $data['end_time'] = $end_time;
+        $res = $SIGNIN->update_gmt($id,$data);
+        // TODO 是不是本班学生，是不是重复签到， 是不是学生身份，时间符不符合标准 地理位置怎么样
+        if ($res != 0) {
+            return $this->setSuccess($res, '修改成功');
+        } else {
+            return $this->setError($res);
+        }
     }
 
 
