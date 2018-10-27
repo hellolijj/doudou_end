@@ -217,7 +217,8 @@ class SigninLogic extends UserBaseLogic {
         $data = $SIGNIN->where(['id' => $id])->find();
         $data['end_time'] = $end_time;
         $res = $SIGNIN->update_gmt($id,$data);
-        // TODO 是不是本班学生，是不是重复签到， 是不是学生身份，时间符不符合标准 地理位置怎么样
+        $cache_key = 'signin_management_' . $signin_id;
+        S($cache_key, null);
         if ($res != 0) {
             return $this->setSuccess($res, '修改成功');
         } else {
