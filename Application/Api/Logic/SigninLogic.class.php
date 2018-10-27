@@ -150,7 +150,8 @@ class SigninLogic extends UserBaseLogic {
         if (!$signin_id || !$course_id) {
             return $this->setError('参数错误');
         }
-        $signin_management = M('Signin')->cache('signin_management_' . $signin_id)->find($signin_id);
+        // $signin_management = M('Signin')->cache('signin_management_' . $signin_id)->find($signin_id);
+        $signin_management = M('Signin')->where(['id' => $signin_id])->find($signin_id);
         if (!$signin_management) {
             return $this->setError('本次签到信息不存在');
         }
@@ -217,8 +218,6 @@ class SigninLogic extends UserBaseLogic {
         $data = $SIGNIN->where(['id' => $id])->find();
         $data['end_time'] = $end_time;
         $res = $SIGNIN->update_gmt($id,$data);
-        $cache_key = 'signin_management_' . $signin_id;
-        S($cache_key, null);
         if ($res != 0) {
             return $this->setSuccess($res, '修改成功');
         } else {
