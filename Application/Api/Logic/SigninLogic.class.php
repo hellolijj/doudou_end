@@ -212,7 +212,7 @@ class SigninLogic extends UserBaseLogic {
     public function signin_extend ()
     {
         $id = intval(I('signin_id'));
-        $end_time = intval(I('end_time'))
+        $end_time = intval(I('end_time'));
         $SIGNIN = D('signin');
         $data = $SIGNIN->where(['id' => $id])->find();
         $data['end_time'] = $end_time;
