@@ -114,7 +114,7 @@ class SigninService extends BaseService {
         if ($signin_item['radius'] <= $length) {
             return ['success' => FALSE, 'message' => '不在规定距离'];
         }
-        return ['success' => TRUE, 'message' => '验证成功'];
+        return ['success' => TRUE, 'message' => $length];
     }
 
 
