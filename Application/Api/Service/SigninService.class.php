@@ -111,10 +111,10 @@ class SigninService extends BaseService {
         $b = $radLng1 - $radLng2;
         $length = 2 * asin(sqrt(pow(sin($a / 2), 2) + cos($radLat1) * cos($radLat2) * pow(sin($b / 2), 2))) * 6371004;
 
-        // if ($signin_item['radius'] <= $length) {
-            return ['success' => FALSE, 'message' => $length, 'radLat1' => $radLat1, 'radLat2' =>$radLat2, 'radLng1' =>$radLng1, 'radLng2' =>$radLng2, 'a' =>$a, 'b' =>$b, 'length' => $length];
-        // }
-        return ['success' => TRUE, 'message' => $length];
+        if ($signin_item['radius'] <= $length) {
+            return ['success' => FALSE, 'message' => '不在规定距离'];
+        }
+        return ['success' => TRUE, 'message' => '验证通过'];
     }
 
 
