@@ -35,8 +35,11 @@ class SigninLogic extends UserBaseLogic {
         $start_time = intval(I('start_time'));
         $end_time = intval(I('end_time'));
         $address = I('address');
-        $latitude = floatval(I('latitude'));
-        $longitude = floatval(I('longitude'));
+        //因为要小数点后15位，不能用float
+        // $latitude = floatval(I('latitude'));
+        // $longitude = floatval(I('longitude'));
+        $latitude = I('latitude');
+        $longitude = I('longitude');
         $radius = intval(I('radius'));
         if (!$cid || !$title || !$address || !$latitude || !$longitude || !$radius) {
             return $this->setError('参数不能为空');
@@ -121,8 +124,8 @@ class SigninLogic extends UserBaseLogic {
     {
         $signin_id = intval(I('signin_id'));
         $course_id = intval(I('course_id'));
-        $latitude = floatval(I('latitude'));
-        $longitude = floatval(I('longitude'));
+        $latitude = I('latitude');
+        $longitude = I('longitude');
         if (!$signin_id || !$course_id || !$longitude || !$latitude) {
             return $this->setError('参数错误');
         }
