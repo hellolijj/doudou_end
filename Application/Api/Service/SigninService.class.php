@@ -68,6 +68,18 @@ class SigninService extends BaseService {
             return ['success' => FALSE, 'message' => '不在规定时间内签到'];
         }
         // todo 判断地理位置逻辑
+        // 把判断距离的函数分离到$this->check_location()     2018-12-3 13:30:38
+        // $tea_lat = $signInfo['latitude'];
+        // $tea_lon = $signInfo['longitude'];
+        // $st_lat = I('latitude');
+        // $st_lon = I('longitude');
+        // $radLat1 = deg2rad($tea_lat); //deg2rad()函数将角度转换为弧度
+        // $radLat2 = deg2rad($st_lat);
+        // $radLng1 = deg2rad($tea_lon);
+        // $radLng2 = deg2rad($st_lon);
+        // $a = $radLat1 - $radLat2;
+        // $b = $radLng1 - $radLng2;
+        // $s = 2 * asin(sqrt(pow(sin($a / 2), 2) + cos($radLat1) * cos($radLat2) * pow(sin($b / 2), 2))) * 6378.137 * 1000;
 
         // 判断是否重复签到
         $signinRecordService = new SigninRecordService();
@@ -77,6 +89,30 @@ class SigninService extends BaseService {
         }
         if ($is_signined === TRUE) {
             return ['success' => FALSE, 'message' => '你已经签到过了'];
+        }
+        return ['success' => TRUE, 'message' => '验证成功'];
+    }
+    /*
+     * 判断距离
+     */
+    public function check_location ($uid, $sid, $lat, $lng)
+    {
+        if (!$uid || !$sid || !$lat || !$lng) {
+            return ['success' => FALSE, 'message' => '传入的参数为空'];
+        }
+        $signin_item = M('Signin')->find($sid);
+        $tea_lat = $signin_item['latitude'];
+        $tea_lon = $signin_item['longitude'];
+        $radLat1 = deg2rad($tea_lat); //deg2rad()函数将角度转换为弧度
+        $radLat2 = deg2rad($st_lat);
+        $radLng1 = deg2rad($tea_lon);
+        $radLng2 = deg2rad($st_lon);
+        $a = $radLat1 - $radLat2;
+        $b = $radLng1 - $radLng2;
+        $length = 2 * asin(sqrt(pow(sin($a / 2), 2) + cos($radLat1) * cos($radLat2) * pow(sin($b / 2), 2))) * 6378.137 * 1000;
+
+        if ($signin_item['radius'] <= $length) {
+            return ['success' => FALSE, 'message' => '不在规定距离'];
         }
         return ['success' => TRUE, 'message' => '验证成功'];
     }
