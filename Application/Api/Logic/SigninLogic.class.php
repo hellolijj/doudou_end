@@ -132,8 +132,11 @@ class SigninLogic extends UserBaseLogic {
         // TODO 是不是本班学生，是不是重复签到， 是不是学生身份，时间符不符合标准 地理位置怎么样
         $signinService = new SigninService();
         $check_result = $signinService->check_signin_online($this->uid, $course_id, $signin_id);
+        $location_check_result = $signinService->check_location($this->uid, $signin_id, $latitude, $longitude);
         if ($check_result['success'] === FALSE) {
             return $this->setError($check_result['message']);
+        } else if ($location_check_result['success'] === FALSE ) {
+            return $this->setError($location_check_result['message']);
         }
         D('SigninRecord')->add($course_id, $signin_id, $this->uid, $latitude, $longitude);
         D('Signin')->countIncById($course_id, $signin_id);
