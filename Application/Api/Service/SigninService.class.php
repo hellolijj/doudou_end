@@ -104,15 +104,15 @@ class SigninService extends BaseService {
         $tea_lat = $signin_item['latitude'];
         $tea_lon = $signin_item['longitude'];
         $radLat1 = deg2rad($tea_lat); //deg2rad()函数将角度转换为弧度
-        $radLat2 = deg2rad($st_lat);
+        $radLat2 = deg2rad($lat);
         $radLng1 = deg2rad($tea_lon);
-        $radLng2 = deg2rad($st_lon);
+        $radLng2 = deg2rad($lng);
         $a = $radLat1 - $radLat2;
         $b = $radLng1 - $radLng2;
         $length = 2 * asin(sqrt(pow(sin($a / 2), 2) + cos($radLat1) * cos($radLat2) * pow(sin($b / 2), 2))) * 6371004;
 
         // if ($signin_item['radius'] <= $length) {
-            return ['success' => FALSE, 'message' => $length, 'radLat1' => $radLat1, 'radLat2' =>$radLat2, 'radLng1' =>$radLng1, 'radLng2' =>$radLng2, 'a' =>$a, 'b' =>$b, ];
+            return ['success' => FALSE, 'message' => $length, 'radLat1' => $radLat1, 'radLat2' =>$radLat2, 'radLng1' =>$radLng1, 'radLng2' =>$radLng2, 'a' =>$a, 'b' =>$b, 'length' => $length];
         // }
         return ['success' => TRUE, 'message' => $length];
     }
