@@ -111,7 +111,7 @@ class SigninService extends BaseService {
         $b = $radLng1 - $radLng2;
         $length = 2 * asin(sqrt(pow(sin($a / 2), 2) + cos($radLat1) * cos($radLat2) * pow(sin($b / 2), 2))) * 6371004;
         //增加误差
-        $length = $length - 100;
+        $length = $length - 300;
         if ($signin_item['radius'] <= $length) {
             return ['success' => FALSE, 'message' => '不在规定距离'];
         }

@@ -139,9 +139,9 @@ class SigninLogic extends UserBaseLogic {
         if ($check_result['success'] === FALSE) {
             return $this->setError($check_result['message']);
         }
-        // else if ($location_check_result['success'] === FALSE ) {
-        //     return $this->setError($location_check_result['message']);
-        // }
+        else if ($location_check_result['success'] === FALSE ) {
+            return $this->setError($location_check_result['message']);
+        }
         D('SigninRecord')->add($course_id, $signin_id, $this->uid, $latitude, $longitude);
         D('Signin')->countIncById($course_id, $signin_id);
         return $this->setSuccess(['length' => $location_check_result ], '签到成功');
